@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -16,30 +17,67 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window   = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [self showViewControllers];
+    [self.window addSubview:self.tabBarController.view];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (void)showViewControllers
+{
+    self.rootVC   = [[RootViewController alloc] init];
+    self.rootVC.title = @"Demos";
+    self.rootVC.hidesBottomBarWhenPushed = NO;
+    
+    self.secondVC = [[SecondViewController alloc] init];
+    self.secondVC.title = @"Second";
+    self.secondVC.hidesBottomBarWhenPushed = NO;
+    
+    self.thirdVC  = [[ThirdViewController alloc] init];
+    self.thirdVC.title = @"Third";
+    self.thirdVC.hidesBottomBarWhenPushed = NO;
+    
+    self.forthVC  = [[ForthViewController alloc] init];
+    self.forthVC.title = @"Forth";
+    self.forthVC.hidesBottomBarWhenPushed = NO;
+    
+    
+    self.rootNaVC   = [[UINavigationController alloc] initWithRootViewController:self.rootVC];
+    self.secondNaVC = [[UINavigationController alloc] initWithRootViewController:self.secondVC];
+    self.thirdNaVC  = [[UINavigationController alloc] initWithRootViewController:self.thirdVC];
+    self.forthNaVC  = [[UINavigationController alloc] initWithRootViewController:self.forthVC];
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = @[self.rootNaVC, self.secondNaVC, self.thirdNaVC, self.forthNaVC];
+
+
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+   
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+   
 }
 
 @end

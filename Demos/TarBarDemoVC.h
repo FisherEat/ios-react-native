@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TarBarDemoVC.h
 //  Demos
 //
 //  Created by schiller on 15/7/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TarBarDemoVC : UIViewController
 
 @end
-
