@@ -13,7 +13,6 @@
 #import "TarBarDemoVC.h"
 #import "AnimationDemoVC.h"
 #import "TNCycleScrollView.h"
-#import "config.h"
 #import "TNTableViewCell.h"
 #import "TNHomeSpecialSaleCell.h"
 
@@ -74,21 +73,33 @@
         weakSelf.pageControl.currentPage = pageNum % weakSelf.pageControl.numberOfPages;
     }];
     
+    
+    NSArray *imageNameArray = @[@"shui", @"shang", @"hu"];
     //添加轮转视图
-    //    for (int i = 0; i < 3; i++) {
-    //        UIImageView *adImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, ceil(HEADER_IMAGEVIEW_SHOW_HEIGHT))];
-    //        [adImageView setImage:[UIImage imageNamed:@"loading_image_640x480"]];
-    //        adImageView.contentMode   = UIViewContentModeScaleAspectFill;
-    //        adImageView.clipsToBounds = YES;
-    //        adImageView.userInteractionEnabled = YES;
-    //        [self.adViewsArray addObject:adImageView];
-    //
-    //    }
-    //
+        for (int i = 0; i < 3; i++) {
+            UIImageView *adImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, ceil(HEADER_IMAGEVIEW_SHOW_HEIGHT))];
+            [adImageView setImage:[UIImage imageNamed:@"loading_image_640x480"]];
+            adImageView.contentMode   = UIViewContentModeScaleAspectFill;
+            adImageView.clipsToBounds = YES;
+            adImageView.userInteractionEnabled = YES;
+            adImageView.image = [imageNameArray objectAtIndex:i];
+            [self.adViewsArray addObject:adImageView];
+            
+        }
+    
     self.pageControl.numberOfPages = 3 ;//[self.adViewsArray count];
     
     self.myTable.tableHeaderView = self.adCycleScrollView;
     
+    [self.adCycleScrollView reloadScrollViewData];
+    self.adCycleScrollView.fetchContentViewAtIndex = ^UIView *(NSInteger pageIndex)
+    {
+        __strong __typeof(&*weakSelf)strongSelf = weakSelf;
+        if (!strongSelf.adViewsArray[pageIndex]) {
+        }
+        return strongSelf.adViewsArray[pageIndex];
+        
+    };
 }
 
 

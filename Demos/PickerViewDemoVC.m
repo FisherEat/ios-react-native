@@ -7,7 +7,6 @@
 //
 
 #import "PickerViewDemoVC.h"
-#import "UIView+Positioning.h"
 #import "CNPPopupController.h"
 
 @interface PickerViewDemoVC ()<UIPickerViewDataSource,UIPickerViewDelegate,CNPPopupControllerDelegate>

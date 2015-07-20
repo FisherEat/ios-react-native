@@ -7,8 +7,15 @@
 //
 
 #import "SecondViewController.h"
+#import "UIViewController+ScrollingNavbar.h"
 
-@interface SecondViewController ()
+@interface SecondViewController ()<UIScrollViewDelegate,AMScrollingNavbarDelegate>
+
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) NSLayoutConstraint *headerLayout;
+@property (nonatomic, strong) UIView       *headerView;
+@property (nonatomic, strong) UIView       *contentView;
+@property (nonatomic, strong) UIToolbar    *topBar;
 
 @end
 
@@ -16,24 +23,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"second";
+    [self setTitle:@"ScrollView"];
     self.view.backgroundColor = [UIColor whiteColor];
-    // Do any additional setup after loading the view.
+    [self.navigationController.navigationBar setBarTintColor:UIColorFromRGB(0x184fa2)];
+    [self fakeContent];
+    
+     [self followScrollView:self.scrollView withDelay:60];
+    [self setScrollableViewConstraint:self.headerLayout withOffset:60];
+    
+ }
+
+- (void)fakeContent {
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -60, self.view.width, self.view.height)];
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 60, [UIScreen mainScreen].bounds.size.width, 40)];
+    [label setText:@"My content"];
+    [label setTextAlignment:NSTextAlignmentCenter];
+    [label setFont:[UIFont fontWithName:@"Futura" size:24]];
+    [label setTextColor:[UIColor whiteColor]];
+    [label setBackgroundColor:[UIColor clearColor]];
+    [self.scrollView addSubview:label];
+    [self.view setBackgroundColor:UIColorFromRGB(0x08245d)];
+    [self.scrollView setBackgroundColor:UIColorFromRGB(0x08245d)];
+    
+    // Fake some content
+    [self.scrollView setContentSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 800)];
+    [self.view addSubview:self.scrollView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

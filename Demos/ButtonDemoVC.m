@@ -8,7 +8,6 @@
 //
 
 #import "ButtonDemoVC.h"
-#import "UIView+Positioning.h"
 
 static NSInteger i = 0;
 
@@ -45,7 +44,7 @@ static NSInteger i = 0;
 
 - (void)addButton
 {
-    self.myButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.myButton         = [UIButton buttonWithType:UIButtonTypeCustom];
     self.myButton.frame   = CGRectMake(0, self.myLabel.bottom + 20 , 60, 60);
     self.myButton.centerX = self.view.centerX;
 
@@ -65,8 +64,13 @@ static NSInteger i = 0;
     i++;
     
     if (i >= 5) {
-        self.myAlertView = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"清空纪录" otherButtonTitles:@"我要接着写", nil];
+        self.myAlertView = [[UIAlertView alloc] initWithTitle:@"Warn"
+                                                      message:msg
+                                                     delegate:nil
+                                            cancelButtonTitle:@"clear all"
+                                            otherButtonTitles:@"continue", nil];
         [self.myAlertView show];
+        
         i = 0;
     }
     

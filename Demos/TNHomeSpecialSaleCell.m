@@ -9,7 +9,6 @@
 
 
 #import "TNHomeSpecialSaleCell.h"
-#import "UIView+Positioning.h"
 
 @implementation TNHomeSpecialSaleView
 

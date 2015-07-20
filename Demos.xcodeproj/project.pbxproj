@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B31B5C892A00ED4040 /* FifthViewController.m */; };
+		65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
 		65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
 		65ECE87A1B588AA9003134B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ECE8781B588AA9003134B2 /* Main.storyboard */; };
@@ -43,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		65D9B9B21B5C892A00ED4040 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		65D9B9B31B5C892A00ED4040 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		65D9B9B51B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollingNavbar.h"; sourceTree = "<group>"; };
+		65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollingNavbar.m"; sourceTree = "<group>"; };
 		65ECE86B1B588AA9003134B2 /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ECE86F1B588AA9003134B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65ECE8701B588AA9003134B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +127,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		65E945F11B5C8C54002CC8BB /* DemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				65ECE89D1B5899EC003134B2 /* ScrollDemoVC.h */,
+				65ECE89E1B5899EC003134B2 /* ScrollDemoVC.m */,
+				65ECE89A1B58985A003134B2 /* ButtonDemoVC.h */,
+				65ECE89B1B58985A003134B2 /* ButtonDemoVC.m */,
+				65ECE8A61B589A5D003134B2 /* AnimationDemoVC.h */,
+				65ECE8A71B589A5D003134B2 /* AnimationDemoVC.m */,
+				65ECE8A31B589A4D003134B2 /* TarBarDemoVC.h */,
+				65ECE8A41B589A4D003134B2 /* TarBarDemoVC.m */,
+				65ECE8A01B589A30003134B2 /* PickerViewDemoVC.h */,
+				65ECE8A11B589A30003134B2 /* PickerViewDemoVC.m */,
+			);
+			name = DemoVC;
+			sourceTree = "<group>";
+		};
+		65E945F21B5C8CA9002CC8BB /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				65D9B9B21B5C892A00ED4040 /* FifthViewController.h */,
+				65D9B9B31B5C892A00ED4040 /* FifthViewController.m */,
+				65ECE8CB1B58CA92003134B2 /* ThirdViewController.h */,
+				65ECE8CC1B58CA92003134B2 /* ThirdViewController.m */,
+				65ECE8CE1B58CA9C003134B2 /* ForthViewController.h */,
+				65ECE8CF1B58CA9C003134B2 /* ForthViewController.m */,
+				65ECE8A91B589AA9003134B2 /* RootViewController.h */,
+				65ECE8AA1B589AA9003134B2 /* RootViewController.m */,
+				65ECE8C51B58B08B003134B2 /* UITabBarViewController.h */,
+				65ECE8C61B58B08B003134B2 /* UITabBarViewController.m */,
+				65ECE8C81B58BF25003134B2 /* SecondViewController.h */,
+				65ECE8C91B58BF25003134B2 /* SecondViewController.m */,
+			);
+			name = TabBarVC;
+			sourceTree = "<group>";
+		};
 		65ECE8621B588AA9003134B2 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +204,7 @@
 			children = (
 				65ECE86F1B588AA9003134B2 /* Info.plist */,
 				65ECE8701B588AA9003134B2 /* main.m */,
+				6523294C1B5CC05500D69074 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,6 +237,8 @@
 		65ECE8AD1B589AEB003134B2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				65D9B9B51B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.h */,
+				65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */,
 				65ECE8D11B590359003134B2 /* CNPPopupController.h */,
 				65ECE8D21B590359003134B2 /* CNPPopupController.m */,
 				65ECE8C21B58AA8F003134B2 /* UIView+Positioning.h */,
@@ -216,26 +262,8 @@
 		65ECE8AF1B589AFE003134B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				65ECE8CB1B58CA92003134B2 /* ThirdViewController.h */,
-				65ECE8CC1B58CA92003134B2 /* ThirdViewController.m */,
-				65ECE8CE1B58CA9C003134B2 /* ForthViewController.h */,
-				65ECE8CF1B58CA9C003134B2 /* ForthViewController.m */,
-				65ECE8A91B589AA9003134B2 /* RootViewController.h */,
-				65ECE8AA1B589AA9003134B2 /* RootViewController.m */,
-				65ECE89A1B58985A003134B2 /* ButtonDemoVC.h */,
-				65ECE89B1B58985A003134B2 /* ButtonDemoVC.m */,
-				65ECE89D1B5899EC003134B2 /* ScrollDemoVC.h */,
-				65ECE89E1B5899EC003134B2 /* ScrollDemoVC.m */,
-				65ECE8A01B589A30003134B2 /* PickerViewDemoVC.h */,
-				65ECE8A11B589A30003134B2 /* PickerViewDemoVC.m */,
-				65ECE8A31B589A4D003134B2 /* TarBarDemoVC.h */,
-				65ECE8A41B589A4D003134B2 /* TarBarDemoVC.m */,
-				65ECE8A61B589A5D003134B2 /* AnimationDemoVC.h */,
-				65ECE8A71B589A5D003134B2 /* AnimationDemoVC.m */,
-				65ECE8C51B58B08B003134B2 /* UITabBarViewController.h */,
-				65ECE8C61B58B08B003134B2 /* UITabBarViewController.m */,
-				65ECE8C81B58BF25003134B2 /* SecondViewController.h */,
-				65ECE8C91B58BF25003134B2 /* SecondViewController.m */,
+				65E945F21B5C8CA9002CC8BB /* TabBarVC */,
+				65E945F11B5C8C54002CC8BB /* DemoVC */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -407,6 +435,8 @@
 				65ECE8A21B589A30003134B2 /* PickerViewDemoVC.m in Sources */,
 				65ECE8C41B58AA8F003134B2 /* UIView+Positioning.m in Sources */,
 				65ECE8D01B58CA9C003134B2 /* ForthViewController.m in Sources */,
+				65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */,
+				65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */,
 				65ECE8A81B589A5D003134B2 /* AnimationDemoVC.m in Sources */,
 				65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */,
 				65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */,
@@ -465,7 +495,7 @@
 		65ECE88C1B588AA9003134B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -487,6 +517,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demos/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -498,6 +530,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -509,7 +545,7 @@
 		65ECE88D1B588AA9003134B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -530,12 +566,18 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demos/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -550,6 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -561,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

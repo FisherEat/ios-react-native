@@ -21,3 +21,10 @@
 #define HEADER_IMAGEVIEW_SHOW_HEIGHT (180 * SCREEN_WIDTH / 320)//640：360（宽：高）
 
 #define IOS7_OR_LATER [[UIDevice currentDevice].systemVersion floatValue] >= 7.0
+
+//RGB
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define kTNTopBarLineRect CGRectMake(0, 64, SCREEN_WIDTH, 0.5)
+#define kNavigationBarHeight  64.5
