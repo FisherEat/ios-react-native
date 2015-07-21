@@ -34,7 +34,7 @@
     self.window   = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     [self showViewControllers];
-    [self.window addSubview:self.tabBarController.view];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
     
