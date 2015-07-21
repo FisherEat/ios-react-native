@@ -82,7 +82,7 @@
             adImageView.contentMode   = UIViewContentModeScaleAspectFill;
             adImageView.clipsToBounds = YES;
             adImageView.userInteractionEnabled = YES;
-            adImageView.image = [imageNameArray objectAtIndex:i];
+           // adImageView.image = [imageNameArray objectAtIndex:i];
             [self.adViewsArray addObject:adImageView];
             
         }
