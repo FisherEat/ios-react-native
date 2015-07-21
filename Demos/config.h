@@ -28,3 +28,7 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define kTNTopBarLineRect CGRectMake(0, 64, SCREEN_WIDTH, 0.5)
 #define kNavigationBarHeight  64.5
+
+//方法简写
+#define mAlert(title, msg, cancel, other)   [[[UIAlertView alloc] initWithTitle:title \
+         message:msg delegate:nil cancelButtonTitle:cancel otherButtonTitles:other, nil] show] 

@@ -8,6 +8,7 @@
 //
 
 #import "ButtonDemoVC.h"
+#import "RootViewController.h"
 
 static NSInteger i = 0;
 
@@ -27,16 +28,65 @@ static NSInteger i = 0;
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self addLeftBackButton];
     [self addImageView];
     [self addTextField];
     [self addLabel];
     [self addButton];
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]   initWithTarget:self action:@selector(dismissKeyboard)];
+   
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
    
 }
 
+#pragma mark -
+#pragma mark 传值实现
+
+/** 自定义leftBarButtonItem的backButton*/
+- (void)addLeftBackButton
+{
+    self.navigationItem.hidesBackButton = YES;
+    UIButton *backButton = [UIButton buttonWithType:101];//101和系统自带的返回按钮一致
+    [backButton addTarget:self action:@selector(passTextDelegate) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setTitle:@"返回" forState:UIControlStateNormal];
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = leftButton;
+
+}
+
+/** delegate 传值*/
+- (void)passTextDelegate
+{
+    if ([self.delegate respondsToSelector:@selector(passValues:)])
+    {
+        [self.delegate passValues:self.myTextField.text];
+        //NSLog(@"%@", self.myTextField.text);
+        [self pushToRootVC];
+        
+    }else
+    {
+        mAlert(@"提示", @"请输入文字", @"Cancel", @"OK");
+        
+    }
+    
+}
+/** 随意页面跳转方法*/
+- (void)pushToRootVC
+{
+    for (UIViewController *controller in self.navigationController.viewControllers)
+    {
+        if ([controller isKindOfClass:[RootViewController class]])
+        {
+            [self.navigationController popToViewController:controller animated:YES];
+        }
+    }
+    
+}
+
+#pragma mark - 
+#pragma mark 基本UI
+
+/** 隐藏键盘*/
 - (void)dismissKeyboard
 {
       [self.myTextField resignFirstResponder];

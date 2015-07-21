@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ButtonDemoVC : UIViewController
+@protocol PassMesageDelegate <NSObject>
+
+- (NSString *)passValues:(NSString *)values;
 
 @end
+
+@interface ButtonDemoVC : UIViewController
+
+@property (nonatomic, weak) id<PassMesageDelegate> delegate;
+
+@end
+

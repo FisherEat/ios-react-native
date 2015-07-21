@@ -11,6 +11,19 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) UINavigationController *rootNaVC;/**< 首页导航控件 */
+@property (strong, nonatomic) UINavigationController *secondNaVC;
+@property (strong, nonatomic) UINavigationController *thirdNaVC;
+@property (strong, nonatomic) UINavigationController *forthNaVC;
+@property (strong, nonatomic) UINavigationController *fifthNaVC;
+
+@property (strong, nonatomic) UITabBarController     *tabBarController;
+@property (strong, nonatomic) RootViewController     *rootVC;
+@property (strong, nonatomic) SecondViewController   *secondVC;
+@property (strong, nonatomic) ThirdViewController    *thirdVC;
+@property (strong, nonatomic) ForthViewController    *forthVC;
+@property (strong, nonatomic) FifthViewController    *fifthVC;
+
 @end
 
 @implementation AppDelegate

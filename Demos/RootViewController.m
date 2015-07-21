@@ -15,19 +15,20 @@
 #import "TNCycleScrollView.h"
 #import "TNTableViewCell.h"
 #import "TNHomeSpecialSaleCell.h"
+#import "config.h"
 
 @interface RootViewController ()
 
 @end
 
-@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource, PassMesageDelegate>
 
 @property (nonatomic, strong) UITableView *myTable;
 @property (nonatomic, strong) NSMutableArray     *demoArray;
 @property (nonatomic, strong) TNCycleScrollView *adCycleScrollView;
 @property (nonatomic, strong) UIPageControl     *pageControl;
 @property (nonatomic, strong) NSMutableArray    *adViewsArray;
-
+@property (nonatomic, strong) ButtonDemoVC      *btnVC;
 
 @end
 
@@ -39,14 +40,15 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.myTable = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    
-    
-    
     self.myTable.delegate   = self;
     self.myTable.dataSource = self;
+    
+    self.btnVC = [[ButtonDemoVC alloc] init];
+    self.btnVC.delegate = self;
+    
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"shit"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo"]];
     [self setScrollAdvertise];
     
 }
@@ -66,23 +68,22 @@
         self.pageControl.currentPageIndicatorTintColor = [UIColor greenColor];
         
     }
-    
-    [self.adCycleScrollView addSubview:self.pageControl];
+
     __weak __typeof(&*self)weakSelf = self;
     [self.adCycleScrollView addPageChangedHandler:^(NSInteger pageNum) {
         weakSelf.pageControl.currentPage = pageNum % weakSelf.pageControl.numberOfPages;
     }];
     
-    
-    NSArray *imageNameArray = @[@"shui", @"shang", @"hu"];
+    NSArray *imageNameArray = @[@"shang.png", @"hu.png",@"shui.png"];
+    self.adViewsArray = @[].mutableCopy;
     //添加轮转视图
         for (int i = 0; i < 3; i++) {
-            UIImageView *adImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, ceil(HEADER_IMAGEVIEW_SHOW_HEIGHT))];
-            [adImageView setImage:[UIImage imageNamed:@"loading_image_640x480"]];
+            UIImageView *adImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, ceil(HEADER_IMAGEVIEW_SHOW_HEIGHT - 60))];
+           // [adImageView setImage:[UIImage imageNamed:@"loading_image_640x480"]];
             adImageView.contentMode   = UIViewContentModeScaleAspectFill;
             adImageView.clipsToBounds = YES;
             adImageView.userInteractionEnabled = YES;
-           // adImageView.image = [imageNameArray objectAtIndex:i];
+            [adImageView setImage:[UIImage imageNamed:[imageNameArray objectAtIndex:i]]];
             [self.adViewsArray addObject:adImageView];
             
         }
@@ -90,6 +91,8 @@
     self.pageControl.numberOfPages = 3 ;//[self.adViewsArray count];
     
     self.myTable.tableHeaderView = self.adCycleScrollView;
+    
+    [self.adCycleScrollView addSubview:self.pageControl];
     
     [self.adCycleScrollView reloadScrollViewData];
     self.adCycleScrollView.fetchContentViewAtIndex = ^UIView *(NSInteger pageIndex)
@@ -101,7 +104,6 @@
         
     };
 }
-
 
 - (void)setAcceory
 {
@@ -138,6 +140,9 @@
         {
             ButtonDemoVC *btnDemoVC = [[ButtonDemoVC alloc] init];
             btnDemoVC.title = [self.demoArray objectAtIndex:indexPath.row];
+            
+            //把delegate的属性在这里设置，奇迹般出现了能够传值。利用委托传值之必需指定delegate的代理方，必需在特定位置指定方能生效。
+            btnDemoVC.delegate = self;
             [self.navigationController pushViewController:btnDemoVC animated:YES];
         }
             break;
@@ -205,11 +210,21 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentified];
     }
     
-    if (indexPath.row == 0) {
+    if (indexPath.row == 0)
+    {
          cell = [self dequeSpecialSaleCell:self.myTable specialInfos:nil withRowIndex:indexPath.row];
     }
     
-    if (indexPath.row>0) {
+    //利用委托传值之必需指定delegate的代理方，必需在特定位置指定方能生效。
+    if (indexPath.row == 1)
+    {
+        cell.detailTextLabel.text = [self.btnVC.delegate passValues:@"o"];
+        cell.detailTextLabel.textColor = [UIColor blackColor];
+    }
+
+    
+    if (indexPath.row > 0)
+    {
         cell.textLabel.text = [NSString stringWithFormat:@"Cell%ld_%@",(long)indexPath.row ,[self.demoArray objectAtIndex:indexPath.row]];
         cell.contentView.backgroundColor = [UIColor colorWithRed:0.000 green:0.618 blue:0.000 alpha:1.000];
         
@@ -227,9 +242,9 @@
     button.backgroundColor= [UIColor clearColor];
     
     UIImage *image= [UIImage imageNamed:@"diy_add"];
-    button = [UIButton buttonWithType:UIButtonTypeCustom];
-    CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);
-    button.frame = frame;
+    button        = [UIButton buttonWithType:UIButtonTypeCustom];
+    CGRect frame  = CGRectMake(0.0, 0.0, image.size.width, image.size.height);
+    button.frame  = frame;
     [button setBackgroundImage:image forState:UIControlStateNormal];
     button.backgroundColor= [UIColor clearColor];
     
@@ -241,11 +256,11 @@
 - (TNTableViewCell *)dequeSpecialSaleCell:(UITableView *)tableView specialInfos:(NSArray *)specialArray withRowIndex:(NSInteger)rowIndex
 {
     TNHomeSpecialSaleCell *specialCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TNHomeSpecialSaleCell class])];
-    if (!specialCell) {
+    if (!specialCell)
+    {
         specialCell = [[TNHomeSpecialSaleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([TNHomeSpecialSaleCell class])];
         
     }
-    //  [specialCell bindSpecialInfos:<#(NSArray *)#> withIndex:<#(NSInteger)#>]
     
     return  specialCell;
     
@@ -254,6 +269,19 @@
 - (void)createNewCell
 {
     //
+}
+
+#pragma mark - 
+#pragma mark PassTextDelegate
+
+- (NSString *)passValues:(NSString *)values
+{
+    NSString *msg = [NSString stringWithFormat:@"Text From ButtonDemoVC :%@", values];
+    NSLog(@"from root view %@", values);
+    mAlert(@"提示", msg, @"Cancel", @"OK");
+    
+    return msg;
+    
 }
 
 - (void)didReceiveMemoryWarning {

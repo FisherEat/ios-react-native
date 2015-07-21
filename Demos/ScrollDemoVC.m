@@ -47,7 +47,6 @@
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]   initWithTarget:self action:@selector(dismissTheKeyboard)];
     [self.view addGestureRecognizer:tap];
-
     
 }
 
@@ -64,7 +63,7 @@
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     self.scrollView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
     //scrollView 可滑动区域大小，必须大于scroll高度方可滑动
-    self.scrollView.contentSize    = CGSizeMake(self.view.width, self.view.height * 3);
+    self.scrollView.contentSize    = CGSizeMake(self.view.width, self.view.height * 2);
     //允许下拉效果
     self.scrollView.bounces        = YES;
     //NO 则为均匀滑动
@@ -181,7 +180,6 @@
 
     }
 }
-
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
