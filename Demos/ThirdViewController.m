@@ -22,19 +22,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.bColor = [UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1.0];
+    self.bColor = [UIColor colorWithRed:0.216 green:0.800 blue:0.406 alpha:1.000];
 
-//    [self addButton];
-//    [self.myButton addTarget:self action:@selector(changeBackGroundColor) forControlEvents:UIControlEventTouchUpInside];
+    [self addButton];
+   [self.myButton addTarget:self action:@selector(changeBackGroundColor) forControlEvents:UIControlEventTouchUpInside];
 
     [self addSlider];
  
-    [self addObserver:self forKeyPath:@"bColor" options:NSKeyValueObservingOptionInitial context:nil];
+    //[self addObserver:self forKeyPath:@"bColor" options:NSKeyValueObservingOptionInitial context:nil];
     [self.mySlider addTarget:self action:@selector(changeSliderAction) forControlEvents:UIControlEventValueChanged];
 //
-//    [self addObserver:self forKeyPath:@"mySlider.value" options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew context:NULL];
+   [self addObserver:self forKeyPath:@"bColor" options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew context:NULL];
     
     [self setValue:@(0.5) forKeyPath:@"mySlider.value"];
+    
 }
 
 - (void)changeSliderAction
@@ -43,6 +44,7 @@
    // NSLog(@"slider color = %@", self.bColor);
     
 }
+
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
@@ -74,24 +76,22 @@
     
 }
 
-
-
-//- (void)addButton
-//{
-//    self.myButton = [OButton buttonWithType:UIButtonTypeCustom];
-//    self.myButton.frame    = CGRectMake(0, 150, self.view.width / 2, 50);
-//    self.myButton.centerX  = self.view.centerX;
-//    [self.myButton setTitle:@"Click Me!" forState:UIControlStateNormal];
-//    [self.view addSubview:self.myButton];
-//    
-//}
-// - (void)changeBackGroundColor
-//{
-//    self.backgroundColror = [UIColor colorWithRed:0.861 green:0.648 blue:0.703 alpha:0.990];
-//    //self.view.backgroundColor = self.backgroundColror;
-//     mAlert(@"提示", @"BackGroundColor Changed Succedly!", @"Cancel", @"OK");
-//    NSLog(@"color changed %@", self.backgroundColror);
-//}
+- (void)addButton
+{
+    self.myButton = [OButton buttonWithType:UIButtonTypeCustom];
+    self.myButton.frame    = CGRectMake(0, 150, self.view.width / 2, 50);
+    self.myButton.centerX  = self.view.centerX;
+    [self.myButton setTitle:@"Click Me!" forState:UIControlStateNormal];
+    [self.view addSubview:self.myButton];
+    
+}
+ - (void)changeBackGroundColor
+{
+    self.bColor = [UIColor colorWithRed:0.861 green:0.648 blue:0.703 alpha:0.990];
+     mAlert(@"提示", @"BackGroundColor Changed Succedly!", @"Cancel", @"OK");
+    NSLog(@"color changed %@", self.bColor);
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
