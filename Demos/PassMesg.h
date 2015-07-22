@@ -10,4 +10,11 @@
 
 @interface PassMesg : NSObject
 
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *adress;
+@property (nonatomic, strong) NSMutableArray *observerArray;
+
+- (void)changeName:(PassMesg *)person withName:(NSString *)newName;
+
+- (id)init;
 @end

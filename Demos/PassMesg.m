@@ -10,4 +10,21 @@
 
 @implementation PassMesg
 
+- (void) changeName:(PassMesg *)person withName:(NSString *)newName
+{
+    NSString *orinName = [person valueForKey:@"name"];
+    [person setValue:newName forKeyPath:@"name"];
+    NSLog(@"Change %@'s name is to :%@", orinName, newName);
+    
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.observerArray = [NSMutableArray new];
+    }
+    return self;
+}
+
 @end
