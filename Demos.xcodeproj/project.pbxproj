@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */; };
 		657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */ = {isa = PBXBuildFile; fileRef = 657686FE1B5DF1AA00173D56 /* PassMesg.m */; };
 		65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B31B5C892A00ED4040 /* FifthViewController.m */; };
 		65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650CEF621B5FA2BE00C001F3 /* TestDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemoVC.h; sourceTree = "<group>"; };
+		650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemoVC.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		657686FD1B5DF1AA00173D56 /* PassMesg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassMesg.h; sourceTree = "<group>"; };
 		657686FE1B5DF1AA00173D56 /* PassMesg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassMesg.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				65ECE89E1B5899EC003134B2 /* ScrollDemoVC.m */,
 				65ECE89A1B58985A003134B2 /* ButtonDemoVC.h */,
 				65ECE89B1B58985A003134B2 /* ButtonDemoVC.m */,
+				650CEF621B5FA2BE00C001F3 /* TestDemoVC.h */,
+				650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */,
 				65ECE8A61B589A5D003134B2 /* AnimationDemoVC.h */,
 				65ECE8A71B589A5D003134B2 /* AnimationDemoVC.m */,
 				65ECE8A31B589A4D003134B2 /* TarBarDemoVC.h */,
@@ -471,6 +476,7 @@
 				65ECE8B71B58A79C003134B2 /* TNTableViewCell.m in Sources */,
 				657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */,
 				65ECE8C11B58A9CC003134B2 /* TNHomeSpecialSaleCell.m in Sources */,
+				650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

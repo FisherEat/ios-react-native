@@ -9,12 +9,14 @@
 
 #import "ButtonDemoVC.h"
 #import "RootViewController.h"
+#import "OButton.h"
 
 static NSInteger i = 0;
 
 @interface ButtonDemoVC ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) UIButton      *myButton;
+@property (nonatomic, strong) OButton       *blockButton;
 @property (nonatomic, strong) UITextField   *myTextField;
 @property (nonatomic, strong) UIImageView   *myImgView;
 @property (nonatomic, strong) UILabel       *myLabel;
@@ -33,14 +35,40 @@ static NSInteger i = 0;
     [self addTextField];
     [self addLabel];
     [self addButton];
-   
+    [self addBlockButton];
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
    
 }
+#pragma mark - 
+#pragma mark block 传值实现
+/** 传值*/
+- (void)passMessage
+{
+    if (self.passMsgBlock && self.myTextField.text)
+    {
+        self.passMsgBlock(self.myTextField.text);
+    }
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+
+}
+
+- (void)addBlockButton
+{
+    self.blockButton = [OButton buttonWithType:UIButtonTypeCustom];
+    self.blockButton.frame = CGRectMake(self.myButton.x - self.myButton.width - 20, self.myButton.y, self.myButton.width, self.myButton.height);
+    [self.blockButton setTitle:@"Block" forState:UIControlStateNormal];
+    [self.blockButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    self.blockButton.layer.backgroundColor = [UIColor whiteColor].CGColor;
+    [self.view addSubview:self.blockButton];
+    [self.blockButton addTarget:self action:@selector(passMessage) forControlEvents:UIControlEventTouchUpInside];
+    
+}
 
 #pragma mark -
-#pragma mark 传值实现
+#pragma mark delegate 传值实现
 
 /** 自定义leftBarButtonItem的backButton*/
 - (void)addLeftBackButton
@@ -70,6 +98,7 @@ static NSInteger i = 0;
     }
     
 }
+
 /** 随意页面跳转方法*/
 - (void)pushToRootVC
 {

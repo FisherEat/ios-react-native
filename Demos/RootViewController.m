@@ -15,6 +15,7 @@
 #import "TNCycleScrollView.h"
 #import "TNTableViewCell.h"
 #import "TNHomeSpecialSaleCell.h"
+#import "TestDemoVC.h"
 #import "config.h"
 
 @interface RootViewController ()
@@ -23,8 +24,8 @@
 
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource, PassMesageDelegate>
 
-@property (nonatomic, strong) UITableView *myTable;
-@property (nonatomic, strong) NSMutableArray     *demoArray;
+@property (nonatomic, strong) UITableView       *myTable;
+@property (nonatomic, strong) NSMutableArray    *demoArray;
 @property (nonatomic, strong) TNCycleScrollView *adCycleScrollView;
 @property (nonatomic, strong) UIPageControl     *pageControl;
 @property (nonatomic, strong) NSMutableArray    *adViewsArray;
@@ -48,11 +49,57 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo"]];
     [self setScrollAdvertise];
-    
+ 
+    //test nil NULL
+    [self test];
 }
 
+#pragma mark some test 
+/**测试 nil \null \ NULL的区别*/
+- (void)test
+{
+    //nil 定义某一实例对象为空 nil 解释为 NO，可以用 ！判断
+    //Nil 定义某一类为空
+    //NULL 定义基本数据对象为空，如(void *) ,用于C语言各种数据类型的指针为空
+    //NSNull 集合对象无法包含 nil 作为其具体值，如NSArray、NSSet和NSDictionary。
+    //相应地，nil 值用一个特定的对象 NSNull 来表示。NSNull 提供了一个单一实例用于表示对象属性中的的nil值。
+    
+    NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
+    mutableDict[@"aKey"] = [NSNull null];
+    NSLog(@"aKey's value: %@", [mutableDict valueForKey:@"aKey"]);
+//    int  *p = NULL;
+//    char *r = NULL;
+//    " == " 是全等号
+    NSObject *obj = [[NSObject alloc] init];
+    //obj = nil;
+    if (obj == nil) {
+        NSLog(@"obj is nil");
+    }else
+    {
+        NSLog(@"obj is not nil ");
+    }
+    
+//    Class someClass = Nil;
+//    Class anotherClass = [NSString class];
+    
+    //几个有趣的例子
+    NSObject *obj1 = [[NSObject alloc] init];
+    NSObject *obj2 = [NSNull null];
+    NSObject *obj3 = [NSObject new];
+    NSObject *ojb4;
+    NSArray  *arr1 = [NSArray arrayWithObjects:obj1, obj2, obj3, ojb4, nil];
+    NSLog(@"array  count = %lu", [arr1 count]);
+  
+    NSObject *obj8 ;
+    NSObject *obj5 = [[NSObject alloc] init];
+    NSObject *obj6 = [NSNull null];
+    NSObject *obj7 = [NSObject new];
+    NSArray  *arr2 = [NSArray arrayWithObjects:obj8, obj5, obj6 ,obj7, nil];
+    NSLog(@"array count = %lu", [arr2 count]);
+    
+}
 #pragma mark 设置顶部轮播广告栏
 
 - (void)setScrollAdvertise
@@ -143,6 +190,14 @@
             
             //把delegate的属性在这里设置，奇迹般出现了能够传值。利用委托传值之必需指定delegate的代理方，必需在特定位置指定方能生效。
             btnDemoVC.delegate = self;
+            
+            //用block传过来的值
+            btnDemoVC.passMsgBlock = ^(NSString *str)
+            {
+                
+                mAlert(@"Block传值", str, @"Cancel", @"OK");
+                
+            };
             [self.navigationController pushViewController:btnDemoVC animated:YES];
         }
             break;
@@ -181,6 +236,14 @@
 
         }
             break;
+        
+        case 6:
+        {
+            TestDemoVC *testDemoVC = [[TestDemoVC alloc] init];
+            testDemoVC.title = [self.demoArray objectAtIndex:indexPath.row];
+            [self.navigationController pushViewController:testDemoVC animated:NO];
+            
+        }
         default:
             break;
     }

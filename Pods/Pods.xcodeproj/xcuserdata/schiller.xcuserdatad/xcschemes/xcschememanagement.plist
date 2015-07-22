@@ -4,6 +4,31 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BlocksKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-JGProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UIView+Positioning.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4640FE644C8B90C8494C8C51</key>
+		<key>06B0B93343A877A528E60C78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3B664CA337B163A63B16367</key>
+		<key>1928E53DACE11301F688FACC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2957650D3B784FA3BAE01519</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D4E39267CB8B75FE60D24C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5229423130E8B3E663AE0A6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E635DF40FD042621B453274</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9788A34554D16C3D5586CC86</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -17,6 +17,7 @@
 @interface ButtonDemoVC : UIViewController
 
 @property (nonatomic, weak) id<PassMesageDelegate> delegate;
+@property (nonatomic, copy) void (^passMsgBlock)(NSString *);/* <block传值 */
 
 @end
 

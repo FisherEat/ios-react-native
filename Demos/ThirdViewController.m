@@ -17,7 +17,6 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
 @property(nonatomic, strong) OButton  *myButton;
 @property(nonatomic)         UIColor    *bColor;
 @property(nonatomic, strong) UISlider *mySlider;
-
 @property(nonatomic, strong) PassMesg *aPerson;
 
 @end
