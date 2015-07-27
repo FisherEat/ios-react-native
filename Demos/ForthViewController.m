@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) UIView         *adContainer;
 @property (nonatomic, strong) NSMutableArray *adViewsArray;
-@property (nonatomic, strong)   NSArray      *adList;
+@property (nonatomic, strong) NSArray        *adList;
 @property (nonatomic, strong) UIImageView    *adImageView;
 
 @end
@@ -39,23 +39,25 @@
 {
     self.adViewsArray = [NSMutableArray array];
     
-    __block typeof (&*self) __weak weakSelf = self;
+    //__block typeof (&*self) __weak weakSelf = self;
     
    [[TNTrainTicketManger sharedInstance] fetchAdDataWithCompletion:^(NSArray *adList, NSError *error) {
        if (!error && adList.count > 0) {
            self.adList = adList;
-           
-           TNTrainAd *trainAd = self.adList[0];
-           [NSURL URLWithString:trainAd.image];
-           
-           NSURL *url  = [NSURL URLWithString:@""];
-           NSURLRequest *request = [NSURLRequest requestWithURL:url];
-           NSData *imageData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-           if (imageData) {
-               UIImage *image = [UIImage imageWithData:imageData];
-               [self.view addSubview:[self supplyAdView:image]];
-
-           }
+           NSLog(@"%@", self.adList);
+//           self.adList = adList;
+//           
+//           TNTrainAd *trainAd = self.adList[0];
+//           [NSURL URLWithString:trainAd.image];
+//           
+//           NSURL *url  = [NSURL URLWithString:@"http://dynamic.m.tuniu.com/api/train/product/adList"];
+//           NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//           NSData *imageData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+//           if (imageData) {
+//               UIImage *image = [UIImage imageWithData:imageData];
+//               [self.view addSubview:[self supplyAdView:image]];
+//
+//           }
        }
    }];
     

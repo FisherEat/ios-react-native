@@ -49,22 +49,22 @@ static TNTrainTicketManger *_sharedInstance = nil;
  */
 - (void)fetchAdDataWithCompletion:(dataBlock)dataBlock
 {
-    NSDictionary *params = @{@"cityCode":[[NSUserDefaults standardUserDefaults] objectForKey:self.selectedStartCityCode]};
+    NSDictionary *params = @{@"cityCode":@720011};
     
-    TNBaseHTTPRequest *request = [TNBaseHTTPRequest requestWithServerType:serverTypeDynamicHTTP
-                                                                     path:TRAIN_ADLIST
-                                                               HTTPMethod:HTTPMethodPOST
-                                                                    param:params
-                                                             timeInterval:0.0f];
+//    TNBaseHTTPRequest *request = [TNBaseHTTPRequest requestWithServerType:serverTypeDynamicHTTP
+//                                                                     path:TRAIN_ADLIST
+//                                                               HTTPMethod:HTTPMethodPOST
+//                                                                    param:params
+//                                                             timeInterval:0.0f];
     
     [[GURLRequest sharedInstance] postForPath:nil
                                    withParams:params
                             completionHandler:^(id data, NSError *error)
     {
-        NSURL *url  = [NSURL URLWithString:@"192.168.0.1"];
+       NSURL *url  = [NSURL URLWithString:@"http://dynamic.m.tuniu.com/api/train/product/adList"];
+     //   NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
-       
-        
+    
         NSData *Data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
         
         if (Data) {

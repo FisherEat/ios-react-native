@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */; };
 		657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */ = {isa = PBXBuildFile; fileRef = 657686FE1B5DF1AA00173D56 /* PassMesg.m */; };
+		65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A825821B6601A100E3BAB1 /* TrainStationVC.m */; };
 		65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B31B5C892A00ED4040 /* FifthViewController.m */; };
 		65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */; };
 		65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADA91B6330DC005F22BD /* LayoutSubviews.m */; };
@@ -59,6 +60,8 @@
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		657686FD1B5DF1AA00173D56 /* PassMesg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassMesg.h; sourceTree = "<group>"; };
 		657686FE1B5DF1AA00173D56 /* PassMesg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassMesg.m; sourceTree = "<group>"; };
+		65A825811B6601A100E3BAB1 /* TrainStationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainStationVC.h; sourceTree = "<group>"; };
+		65A825821B6601A100E3BAB1 /* TrainStationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainStationVC.m; sourceTree = "<group>"; };
 		65D9B9B21B5C892A00ED4040 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		65D9B9B31B5C892A00ED4040 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		65D9B9B51B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollingNavbar.h"; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				65D9B9B31B5C892A00ED4040 /* FifthViewController.m */,
 				65ECE8CB1B58CA92003134B2 /* ThirdViewController.h */,
 				65ECE8CC1B58CA92003134B2 /* ThirdViewController.m */,
+				65A825811B6601A100E3BAB1 /* TrainStationVC.h */,
+				65A825821B6601A100E3BAB1 /* TrainStationVC.m */,
 				65ECE8CE1B58CA9C003134B2 /* ForthViewController.h */,
 				65ECE8CF1B58CA9C003134B2 /* ForthViewController.m */,
 				65ECE8A91B589AA9003134B2 /* RootViewController.h */,
@@ -496,6 +501,7 @@
 				65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */,
 				65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */,
 				65EBADB61B637751005F22BD /* GURLRequest.m in Sources */,
+				65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */,
 				65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */,
 				65ECE89F1B5899EC003134B2 /* ScrollDemoVC.m in Sources */,
 				65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */,

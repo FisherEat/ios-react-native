@@ -9,6 +9,7 @@
 #import "ThirdViewController.h"
 #import "OButton.h"
 #import "PassMesg.h"
+#import "TrainStationVC.h"
 
 static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANGED" ;
 
@@ -27,7 +28,8 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.bColor = [UIColor colorWithRed:0.216 green:0.800 blue:0.406 alpha:1.000];
-
+    
+    [self addTimeZone];
     [self addButton];
     [self addSlider];
     [self addPerson];
@@ -38,6 +40,47 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
     
     [self.aPerson setValue:@"xiaobao" forKey:@"name"];
 
+}
+
+#pragma mark -
+#pragma mark - NSDate
+- (void)addTimeZone
+{
+    NSDateComponents *tempComponents = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+    NSDate *today = [[NSCalendar currentCalendar] dateFromComponents:tempComponents];
+    NSDate *another = [[NSDate alloc] init];
+    NSLog(@"another is %@", another);
+    //  NSDateComponents *components = [[NSDateComponents alloc] init];
+    NSLog(@"today is %@", today);
+    
+    
+    NSCalendar *greCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *dateComponet = [greCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit fromDate:[NSDate date]];
+    NSLog(@"year = %li", dateComponet.year);
+    NSLog(@"month = %li", dateComponet.month);
+    NSLog(@"day = %li", dateComponet.day);
+    NSLog(@"hour = %li", dateComponet.hour);
+    
+    UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 60, 60)];
+    UILabel *dateDayLabel = [[UILabel alloc] initWithFrame:CGRectMake(dateLabel.right , dateLabel.y, dateLabel.width, dateLabel.height)];
+    dateLabel.text = [NSString stringWithFormat:@"%@月%@日", @(dateComponet.month), @(dateComponet.day)];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selectdateLabel)];
+    [dateLabel addGestureRecognizer:tapGesture];
+    dateLabel.userInteractionEnabled = YES;
+    
+    [self.view addSubview:dateLabel];
+    [self.view addSubview:dateDayLabel];
+    
+}
+
+- (void)selectdateLabel
+{
+    
+    TrainStationVC *trainStation = [[TrainStationVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:trainStation];
+    [self presentViewController:nav animated:YES completion:NULL];
+    
 }
 
 #pragma mark - person
