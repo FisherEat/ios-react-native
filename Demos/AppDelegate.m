@@ -89,6 +89,14 @@
     
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[self.rootNaVC, self.secondNaVC, self.thirdNaVC, self.forthNaVC, self.fifthNaVC];
+    
+   // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
+}
+
+- (void)getCalendarMsgSuccess:(NSNotification *)aNotification
+{
+    NSString *dateString = [aNotification object];
+    NSLog(@"日期是是是是是 i %@", dateString);
 
 }
 
@@ -96,22 +104,25 @@
 #pragma mark method
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-
+   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
  
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
+  
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
+- (void)applicationWillEnterForeground:(UIApplication *)applicatio
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

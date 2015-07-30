@@ -54,6 +54,16 @@
  
     //test nil NULL
     [self test];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
+}
+
+- (void)getCalendarMsgSuccess:(NSNotification *)aNotification
+{
+   
+   NSString *str = [aNotification object];
+    NSLog(@"打印日期为: %@", str);
+    
 }
 
 #pragma mark some test 

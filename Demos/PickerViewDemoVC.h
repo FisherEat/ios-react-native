@@ -10,4 +10,6 @@
 
 @interface PickerViewDemoVC : UIViewController
 
+@property (nonatomic, strong) UILabel  *myLabel;
+
 @end

@@ -9,13 +9,12 @@
 #import "PickerViewDemoVC.h"
 #import "CNPPopupController.h"
 
-@interface PickerViewDemoVC ()<UIPickerViewDataSource,UIPickerViewDelegate,CNPPopupControllerDelegate>
+@interface PickerViewDemoVC ()<UIPickerViewDataSource,UIPickerViewDelegate,CNPPopupControllerDelegate,UITextFieldDelegate>
 
 @property (nonatomic, strong) UIButton     *myButton;
 @property (nonatomic, strong) UIDatePicker *myDatePicker;
-@property (nonatomic, strong) UILabel      *myLabel;
 @property (nonatomic, strong) CNPPopupController *popupController;
-
+@property (nonatomic, strong) UITextField  *tfRegex;
 @end
 
 @implementation PickerViewDemoVC
@@ -26,12 +25,77 @@
     
     [self addButton];
     [self addLabel];
+    [self setBackButton];
+    [self addTextField];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
+}
+
+#pragma mark 测试正则式子匹配功能
+
+//email
+- (BOOL)testEmailRegexExpression:(NSString *)email
+{
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:email];
     
+}
+
+//telephone
+- (BOOL)validateMobile:(NSString *)mobile
+{
+    //手机号以13， 15，18开头，八个 \d 数字字符
+    NSString *phoneRegex = @"^((13[0-9]|(18[0,0-9]))\\d{8}$)";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneRegex];
+    return [phoneTest evaluateWithObject:mobile];
+}
+
+- (void)test
+{
+    if ([self testEmailRegexExpression:self.tfRegex.text])
+    {
+        NSLog(@"email 正则表达式符合要求 %@", self.tfRegex.text);
+    }else
+    {
+        NSLog(@"email 格式不正确");
+    }
+    
+    if ([self validateMobile:self.tfRegex.text]) {
+        NSLog(@"mobile phone nubmer is right, %@", self.tfRegex.text);
+    }else
+    {
+        NSLog(@"手机号格式不正确");
+    }
+    
+}
+
+#pragma -
+#pragma mark test notification
+- (void)postNotification
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"SelectCalendarFromView" object:self.myLabel.text];
+}
+
+- (void)setBackButton
+{
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(self.myButton.x - 80, self.myButton.y, 40, 40);
+    [backButton setTitle:@"返回" forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(pushBack) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
+    
+}
+
+- (void)pushBack
+{
+    [self postNotification];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)addButton
@@ -46,8 +110,29 @@
     [self.myButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.myButton.layer.cornerRadius    = 30;
     self.myButton.layer.backgroundColor = [UIColor colorWithRed:0.379 green:0.799 blue:0.444 alpha:1.000].CGColor;
-    [self.myButton addTarget:self action:@selector(showPopupView) forControlEvents:UIControlEventTouchUpInside];
+ 
+    //测试正则表达式
+    [self.myButton addTarget:self
+                      action:@selector(test)
+            forControlEvents:UIControlEventTouchUpInside];
+   // [self.myButton addTarget:self action:@selector(showPopupView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.myButton];
+}
+
+- (void)addTextField
+{
+    self.tfRegex = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+    self.tfRegex.centerX = self.view.centerX;
+    self.tfRegex.y = self.myLabel.bottom + 20;
+    self.tfRegex.layer.borderColor = [UIColor greenColor].CGColor;
+    self.tfRegex.layer.borderWidth = 2.0f;
+    self.tfRegex.delegate = self;
+    [self.view addSubview:self.tfRegex];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    return [textField resignFirstResponder];
 }
 
 - (void)showPopupView
@@ -83,8 +168,7 @@
     
     UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 255, 255)];
     customView.backgroundColor = [UIColor lightGrayColor];
-    
-    
+
     /**
      set datapicker view
      
@@ -104,8 +188,6 @@
     [self.popupController presentPopupControllerAnimated:YES];
     
 }
-
-
 
 - (void)showDate
 {
@@ -138,7 +220,6 @@
     
     
 }
-
 
 #pragma mark pickerview datasource
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
