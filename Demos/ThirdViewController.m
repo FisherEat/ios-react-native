@@ -56,10 +56,10 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
     
     NSCalendar *greCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *dateComponet = [greCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit fromDate:[NSDate date]];
-    NSLog(@"year = %li", dateComponet.year);
-    NSLog(@"month = %li", dateComponet.month);
-    NSLog(@"day = %li", dateComponet.day);
-    NSLog(@"hour = %li", dateComponet.hour);
+    NSLog(@"year = %i", dateComponet.year);
+    NSLog(@"month = %i", dateComponet.month);
+    NSLog(@"day = %i", dateComponet.day);
+    NSLog(@"hour = %i", dateComponet.hour);
     
     UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 60, 60)];
     UILabel *dateDayLabel = [[UILabel alloc] initWithFrame:CGRectMake(dateLabel.right , dateLabel.y, dateLabel.width, dateLabel.height)];
