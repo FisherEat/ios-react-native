@@ -96,6 +96,12 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 9
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 1
 
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 6
+#define COCOAPODS_VERSION_PATCH_Masonry 2
+
 // UIView+Positioning
 #define COCOAPODS_POD_AVAILABLE_UIView_Positioning
 #define COCOAPODS_VERSION_MAJOR_UIView_Positioning 1

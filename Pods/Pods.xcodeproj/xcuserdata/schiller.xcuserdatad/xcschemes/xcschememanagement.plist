@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-UIView+Positioning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -41,42 +46,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>06B0B93343A877A528E60C78</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1928E53DACE11301F688FACC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2957650D3B784FA3BAE01519</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4D4E39267CB8B75FE60D24C6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5229423130E8B3E663AE0A6A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E635DF40FD042621B453274</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9788A34554D16C3D5586CC86</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
