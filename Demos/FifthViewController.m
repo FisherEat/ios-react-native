@@ -9,7 +9,9 @@
 #import "FifthViewController.h"
 #import "Masonry.h"
 
-@interface FifthViewController ()
+@interface FifthViewController ()<UITextFieldDelegate>
+
+@property (nonatomic, strong) UITextField *tf;
 
 @end
 
@@ -21,10 +23,52 @@
     self.navigationController.navigationBarHidden = YES;
     //[self setOneViewSize];
     //[self setTwoViewSize];
-    [self setTwoViewSpiltSuperView];
+    //[self setTwoViewSpiltSuperView];
+    [self setTextFieldView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillChangeFrameNotification:)
+                                                 name:UIKeyboardWillChangeFrameNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHideNotification:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+    
    
 }
 
+- (void)keyboardWillChangeFrameNotification:(NSNotification *)notification
+{
+    NSDictionary *userInfo = [notification userInfo];
+    CGRect rect = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGFloat keyboardHeight = CGRectGetHeight(rect);
+    CGFloat keyboardDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [_tf mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-keyboardHeight);
+    }];
+    
+    [UIView animateWithDuration:keyboardDuration animations:^{
+        [self.view layoutIfNeeded];
+    }];
+    
+}
+
+- (void)keyboardWillHideNotification:(NSNotification *)notification
+{
+    NSDictionary *userInfo = [notification userInfo];
+    CGFloat keyboardDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [_tf mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-50);
+    }];
+    [UIView animateWithDuration:keyboardDuration animations:^{
+        [self.view layoutIfNeeded];
+    }];
+    
+}
+
+#pragma mark -
+#pragma mark show views
 - (void)setOneViewSize
 {
     __weak typeof(self) weakSelf = self;
@@ -88,8 +132,36 @@
     }];
 }
 
+#pragma mark -
+#pragma mark test textField
 - (void)setTextFieldView
 {
+    __weak typeof(self) weakSelf = self;
+    _tf = [UITextField new];
+    _tf.backgroundColor = [UIColor colorWithRed:0.356 green:0.650 blue:0.126 alpha:0.850];
+    _tf.delegate = self;
+    [self.view addSubview:_tf];
+    [_tf mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(10);
+        make.bottom.mas_equalTo(-50);
+        make.height.mas_equalTo(40);
+        make.centerX.equalTo(weakSelf.view);
+    }];
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == _tf) {
+        [_tf resignFirstResponder];
+    }
+    return  YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
     
 }
 
@@ -98,4 +170,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end
