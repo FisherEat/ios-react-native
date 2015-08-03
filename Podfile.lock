@@ -36,6 +36,7 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - JGProgressHUD (1.2.7)
+  - LGAlertView (1.0.1)
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
   - pop (1.0.7)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - BlocksKit (~> 2.2.5)
   - JGProgressHUD (~> 1.2.7)
+  - LGAlertView (~> 1.0.0)
   - Masonry (~> 0.6.2)
   - MBProgressHUD (~> 0.9.1)
   - pop (~> 1.0)
@@ -54,6 +56,7 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   JGProgressHUD: a45c1d16adddf7e38092ce3f0d71d3955d2de2ec
+  LGAlertView: 1dafa8bc05f33812d65e0b42ce824463e6c4acdc
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923

@@ -17,6 +17,8 @@
 #import "TNHomeSpecialSaleCell.h"
 #import "TestDemoVC.h"
 #import "config.h"
+#import "LGAlertView.h"
+#import "GLNetWorkDemo.h"
 
 @interface RootViewController ()
 
@@ -49,7 +51,7 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo"]];
     [self setScrollAdvertise];
  
     //test nil NULL
@@ -253,6 +255,21 @@
             testDemoVC.title = [self.demoArray objectAtIndex:indexPath.row];
             [self.navigationController pushViewController:testDemoVC animated:NO];
             
+        }
+            break;
+        case 7:
+        {
+            LGAlertView *alertView = [[LGAlertView alloc] initWithProgressViewStyleWithTitle:@"进度条" message:@"正在加载中" progressLabelText:@"进度条" buttonTitles:@[@"OK"] cancelButtonTitle:@"取消" destructiveButtonTitle:@"停止加载"];
+            [alertView showAnimated:YES completionHandler:nil];
+        }
+            break;
+        case 8:
+        {
+            //通过纯代码向storyboard 跳转，一定要设置storyboardName、storyboard Class ,storyboard ID 三个重要属性。
+            UIStoryboard *netWorkStoryBoard = [UIStoryboard storyboardWithName:@"GLNetWorkDemo" bundle:[NSBundle mainBundle]];
+            GLNetWorkDemo *netWorkDemoVC    = (GLNetWorkDemo *)[netWorkStoryBoard instantiateViewControllerWithIdentifier:@"GLNetWorkDemo"];
+            [self.navigationController pushViewController:netWorkDemoVC animated:YES];
+           
         }
         default:
             break;

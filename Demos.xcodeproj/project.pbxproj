@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */; };
+		6567D94A1B6F02A1004176B9 /* GLNetWorkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567D9491B6F02A1004176B9 /* GLNetWorkDemo.m */; };
+		6567D94C1B6F033A004176B9 /* GLNetWorkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567D94B1B6F033A004176B9 /* GLNetWorkDemo.storyboard */; };
+		6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567D94E1B6F1329004176B9 /* NetWorkCell.m */; };
+		6567D9531B6F3CD3004176B9 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567D9511B6F3CD3004176B9 /* CustomCell.m */; };
+		6567D9541B6F3CD3004176B9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6567D9521B6F3CD3004176B9 /* CustomCell.xib */; };
 		657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */ = {isa = PBXBuildFile; fileRef = 657686FE1B5DF1AA00173D56 /* PassMesg.m */; };
 		65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A825821B6601A100E3BAB1 /* TrainStationVC.m */; };
 		65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B31B5C892A00ED4040 /* FifthViewController.m */; };
@@ -58,6 +63,14 @@
 		650CEF621B5FA2BE00C001F3 /* TestDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemoVC.h; sourceTree = "<group>"; };
 		650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemoVC.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6567D9481B6F02A1004176B9 /* GLNetWorkDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLNetWorkDemo.h; sourceTree = "<group>"; };
+		6567D9491B6F02A1004176B9 /* GLNetWorkDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLNetWorkDemo.m; sourceTree = "<group>"; };
+		6567D94B1B6F033A004176B9 /* GLNetWorkDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GLNetWorkDemo.storyboard; sourceTree = "<group>"; };
+		6567D94D1B6F1329004176B9 /* NetWorkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkCell.h; sourceTree = "<group>"; };
+		6567D94E1B6F1329004176B9 /* NetWorkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkCell.m; sourceTree = "<group>"; };
+		6567D9501B6F3CD3004176B9 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		6567D9511B6F3CD3004176B9 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		6567D9521B6F3CD3004176B9 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		657686FD1B5DF1AA00173D56 /* PassMesg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassMesg.h; sourceTree = "<group>"; };
 		657686FE1B5DF1AA00173D56 /* PassMesg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassMesg.m; sourceTree = "<group>"; };
 		65A825811B6601A100E3BAB1 /* TrainStationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainStationVC.h; sourceTree = "<group>"; };
@@ -189,6 +202,8 @@
 				65ECE8A41B589A4D003134B2 /* TarBarDemoVC.m */,
 				65ECE8A01B589A30003134B2 /* PickerViewDemoVC.h */,
 				65ECE8A11B589A30003134B2 /* PickerViewDemoVC.m */,
+				6567D9481B6F02A1004176B9 /* GLNetWorkDemo.h */,
+				6567D9491B6F02A1004176B9 /* GLNetWorkDemo.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -242,7 +257,6 @@
 				65ECE8AC1B589ACA003134B2 /* AppEngine */,
 				65ECE8AD1B589AEB003134B2 /* lib */,
 				65ECE8AE1B589AF3003134B2 /* Home */,
-				65ECE8781B588AA9003134B2 /* Main.storyboard */,
 				65ECE87B1B588AA9003134B2 /* Images.xcassets */,
 				65ECE87D1B588AA9003134B2 /* LaunchScreen.xib */,
 				65ECE86E1B588AA9003134B2 /* Supporting Files */,
@@ -325,6 +339,8 @@
 		65ECE8B01B589B1A003134B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65ECE8781B588AA9003134B2 /* Main.storyboard */,
+				6567D94B1B6F033A004176B9 /* GLNetWorkDemo.storyboard */,
 				65ECE8BF1B58A9CC003134B2 /* TNHomeSpecialSaleCell.m */,
 				65ECE8C01B58A9CC003134B2 /* TNHomeSpecialSaleCell.h */,
 				65ECE8B81B58A804003134B2 /* TNCycleScrollView.h */,
@@ -335,6 +351,11 @@
 				65F1E21D1B5E449300AFC350 /* OButton.m */,
 				65EBADA81B6330DC005F22BD /* LayoutSubviews.h */,
 				65EBADA91B6330DC005F22BD /* LayoutSubviews.m */,
+				6567D94D1B6F1329004176B9 /* NetWorkCell.h */,
+				6567D94E1B6F1329004176B9 /* NetWorkCell.m */,
+				6567D9501B6F3CD3004176B9 /* CustomCell.h */,
+				6567D9511B6F3CD3004176B9 /* CustomCell.m */,
+				6567D9521B6F3CD3004176B9 /* CustomCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -436,9 +457,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6567D9541B6F3CD3004176B9 /* CustomCell.xib in Resources */,
 				65ECE87A1B588AA9003134B2 /* Main.storyboard in Resources */,
 				65ECE87F1B588AA9003134B2 /* LaunchScreen.xib in Resources */,
 				65ECE87C1B588AA9003134B2 /* Images.xcassets in Resources */,
+				6567D94C1B6F033A004176B9 /* GLNetWorkDemo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +514,7 @@
 			files = (
 				65ECE8CA1B58BF25003134B2 /* SecondViewController.m in Sources */,
 				65EBADAD1B633C12005F22BD /* TNTrainTicketManger.m in Sources */,
+				6567D9531B6F3CD3004176B9 /* CustomCell.m in Sources */,
 				65EBADB01B6364F9005F22BD /* TNBaseHTTPRequest.m in Sources */,
 				65ECE8A21B589A30003134B2 /* PickerViewDemoVC.m in Sources */,
 				65ECE8C41B58AA8F003134B2 /* UIView+Positioning.m in Sources */,
@@ -507,6 +531,7 @@
 				65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */,
 				65F1E21E1B5E449300AFC350 /* OButton.m in Sources */,
 				65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */,
+				6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */,
 				65ECE8A51B589A4D003134B2 /* TarBarDemoVC.m in Sources */,
 				65ECE8C71B58B08B003134B2 /* UITabBarViewController.m in Sources */,
 				65ECE8CD1B58CA92003134B2 /* ThirdViewController.m in Sources */,
@@ -516,6 +541,7 @@
 				65ECE89C1B58985A003134B2 /* ButtonDemoVC.m in Sources */,
 				65ECE8B71B58A79C003134B2 /* TNTableViewCell.m in Sources */,
 				65EBADB91B6382FB005F22BD /* TNTrainAd.m in Sources */,
+				6567D94A1B6F02A1004176B9 /* GLNetWorkDemo.m in Sources */,
 				657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */,
 				65ECE8C11B58A9CC003134B2 /* TNHomeSpecialSaleCell.m in Sources */,
 				650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */,
@@ -660,7 +686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = "'[";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -672,7 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = "'[";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
