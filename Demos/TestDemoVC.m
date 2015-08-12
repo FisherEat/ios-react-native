@@ -7,8 +7,12 @@
 //
 
 #import "TestDemoVC.h"
+#import "PassValueBlockVC.h"
 
 @interface TestDemoVC ()
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) NSInteger age;
 
 @end
 
@@ -17,6 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    PassValueBlockVC *passValueVC = [[PassValueBlockVC alloc] init];
+    
+    __weak typeof(self) weakSelf = self;
+    [passValueVC passValueByBlock:^(NSString *string, NSNumber *num) {
+        weakSelf.name = string;
+        weakSelf.age  = num.integerValue;
+        
+    }];
+    
+    NSLog(@"The name and the age is(test demovc)%@, %ld", self.name, self.age);
     
 }
 

@@ -24,6 +24,14 @@
 @property (nonatomic, strong) UIButton  *rightButton;
 @property (nonatomic, strong) UIButton  *middleButton;
 
+@property (nonatomic, strong) UIWebView *leftWebView;
+@property (nonatomic, strong) UIWebView *middleWebView;
+@property (nonatomic, strong) UIWebView *rightWebView;
+
+@property (nonatomic, strong) UIImageView *leftImgView;
+@property (nonatomic, strong) UIImageView *middleImgView;
+@property (nonatomic, strong) UIImageView *rightImgView;
+
 - (void)bindSpecialInfos:(NSArray *)specialInfoArray withIndex:(NSInteger)leftIndex;
 
 @end

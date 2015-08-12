@@ -19,6 +19,8 @@
 #import "config.h"
 #import "LGAlertView.h"
 #import "GLNetWorkDemo.h"
+#import "PassValueBlockVC.h"
+#import "TextViewController.h"
 
 @interface RootViewController ()
 
@@ -51,7 +53,7 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo"]];
     [self setScrollAdvertise];
  
     //test nil NULL
@@ -190,17 +192,19 @@
     cell.contentView.backgroundColor =[UIColor colorWithRed:0.854 green:0.000 blue:0.000 alpha:0.890];
     
     switch (indexPath.row) {
-            case 0:
+            case CustomDemoCell:
         {
             //
         }
             break;
-        case 1:
+        case ButtonDemoCell:
         {
             ButtonDemoVC *btnDemoVC = [[ButtonDemoVC alloc] init];
             btnDemoVC.title = [self.demoArray objectAtIndex:indexPath.row];
             
             //把delegate的属性在这里设置，奇迹般出现了能够传值。利用委托传值之必需指定delegate的代理方，必需在特定位置指定方能生效。
+            //类似 block传值，需要指定传值方。
+            
             btnDemoVC.delegate = self;
             
             //用block传过来的值
@@ -210,11 +214,12 @@
                 mAlert(@"Block传值", str, @"Cancel", @"OK");
                 
             };
+            //这个导航栏指定了接收值的一方为当前视图的对象。
             [self.navigationController pushViewController:btnDemoVC animated:YES];
         }
             break;
         
-        case 2:
+        case ScrollDemoCell:
         {
             ScrollDemoVC *scrollDemoVC = [[ScrollDemoVC alloc] init];
             scrollDemoVC.title = [self.demoArray objectAtIndex:indexPath.row];
@@ -222,7 +227,7 @@
         }
             break;
         
-        case 3:
+        case PickerViewDemoCell:
         {
             PickerViewDemoVC *pickerDemoVC = [[PickerViewDemoVC alloc] init];
             pickerDemoVC.title = [self.demoArray objectAtIndex:indexPath.row];
@@ -231,7 +236,7 @@
         }
             break;
        
-        case 4:
+        case TarBarDemoCell:
         {
             TarBarDemoVC *tabBarVC = [[TarBarDemoVC alloc]init];
             tabBarVC.title = [self.demoArray objectAtIndex:indexPath.row];
@@ -240,7 +245,7 @@
         }
             break;
         
-        case 5:
+        case AnimationDemoCell:
         {
             AnimationDemoVC *animationVC = [[AnimationDemoVC alloc] init];
             animationVC.title = [self.demoArray objectAtIndex:indexPath.row];
@@ -249,7 +254,7 @@
         }
             break;
         
-        case 6:
+        case TestDemoCell:
         {
             TestDemoVC *testDemoVC = [[TestDemoVC alloc] init];
             testDemoVC.title = [self.demoArray objectAtIndex:indexPath.row];
@@ -257,13 +262,13 @@
             
         }
             break;
-        case 7:
+        case LGALerViewDemoCell:
         {
             LGAlertView *alertView = [[LGAlertView alloc] initWithProgressViewStyleWithTitle:@"进度条" message:@"正在加载中" progressLabelText:@"进度条" buttonTitles:@[@"OK"] cancelButtonTitle:@"取消" destructiveButtonTitle:@"停止加载"];
             [alertView showAnimated:YES completionHandler:nil];
         }
             break;
-        case 8:
+        case NetWorkDemoCell:
         {
             //通过纯代码向storyboard 跳转，一定要设置storyboardName、storyboard Class ,storyboard ID 三个重要属性。
             UIStoryboard *netWorkStoryBoard = [UIStoryboard storyboardWithName:@"GLNetWorkDemo" bundle:[NSBundle mainBundle]];
@@ -271,6 +276,19 @@
             [self.navigationController pushViewController:netWorkDemoVC animated:YES];
            
         }
+            break;
+        case PassValueDemoCell:
+        {
+            PassValueBlockVC *passValueVC = [[PassValueBlockVC alloc] init];
+            [self.navigationController pushViewController:passValueVC animated:YES];
+        }
+            break;
+        case TextViewDemoCell:
+        {
+            TextViewController *textViewVC = [[TextViewController alloc] init];
+            [self.navigationController pushViewController:textViewVC animated:YES];
+        }
+            break;
         default:
             break;
     }

@@ -46,6 +46,8 @@
 		65ECE8D01B58CA9C003134B2 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8CF1B58CA9C003134B2 /* ForthViewController.m */; };
 		65ECE8D31B590359003134B2 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8D21B590359003134B2 /* CNPPopupController.m */; };
 		65F1E21E1B5E449300AFC350 /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F1E21D1B5E449300AFC350 /* OButton.m */; };
+		C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */; };
+		C0A924671B7BA0B9009C3574 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924661B7BA0B9009C3574 /* TextViewController.m */; };
 		D9B4260E6DC676C7B599BB11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24930CC2192A402FFE4E43 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +140,10 @@
 		65F1E21C1B5E449300AFC350 /* OButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OButton.h; sourceTree = "<group>"; };
 		65F1E21D1B5E449300AFC350 /* OButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OButton.m; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C0A924621B7B9A3A009C3574 /* PassValueBlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueBlockVC.h; sourceTree = "<group>"; };
+		C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueBlockVC.m; sourceTree = "<group>"; };
+		C0A924651B7BA0B9009C3574 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		C0A924661B7BA0B9009C3574 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		CA8AB85E7A636C441E328926 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA24930CC2192A402FFE4E43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -204,6 +210,10 @@
 				65ECE8A11B589A30003134B2 /* PickerViewDemoVC.m */,
 				6567D9481B6F02A1004176B9 /* GLNetWorkDemo.h */,
 				6567D9491B6F02A1004176B9 /* GLNetWorkDemo.m */,
+				C0A924621B7B9A3A009C3574 /* PassValueBlockVC.h */,
+				C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */,
+				C0A924651B7BA0B9009C3574 /* TextViewController.h */,
+				C0A924661B7BA0B9009C3574 /* TextViewController.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -542,9 +552,11 @@
 				65ECE8B71B58A79C003134B2 /* TNTableViewCell.m in Sources */,
 				65EBADB91B6382FB005F22BD /* TNTrainAd.m in Sources */,
 				6567D94A1B6F02A1004176B9 /* GLNetWorkDemo.m in Sources */,
+				C0A924671B7BA0B9009C3574 /* TextViewController.m in Sources */,
 				657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */,
 				65ECE8C11B58A9CC003134B2 /* TNHomeSpecialSaleCell.m in Sources */,
 				650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */,
+				C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
