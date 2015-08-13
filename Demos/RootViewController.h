@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, GLTestDemoTypeCell)
     LGALerViewDemoCell = 7,
     NetWorkDemoCell = 8,
     PassValueDemoCell = 9,
-    TextViewDemoCell = 10
+    TextViewDemoCell = 10,
+    AdScrollTimerCell = 11
 };
 
 @interface RootViewController : UIViewController

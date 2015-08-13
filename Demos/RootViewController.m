@@ -21,6 +21,7 @@
 #import "GLNetWorkDemo.h"
 #import "PassValueBlockVC.h"
 #import "TextViewController.h"
+#import "AdScrollTimerViewController.h"
 
 @interface RootViewController ()
 
@@ -53,7 +54,7 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo"]];
     [self setScrollAdvertise];
  
     //test nil NULL
@@ -287,6 +288,13 @@
         {
             TextViewController *textViewVC = [[TextViewController alloc] init];
             [self.navigationController pushViewController:textViewVC animated:YES];
+        }
+            break;
+            
+        case AdScrollTimerCell:
+        {
+            AdScrollTimerViewController *adVC = [[AdScrollTimerViewController alloc] init];
+            [self.navigationController pushViewController:adVC animated:YES];
         }
             break;
         default:

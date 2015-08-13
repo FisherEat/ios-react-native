@@ -49,6 +49,8 @@
 		65F1E21E1B5E449300AFC350 /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F1E21D1B5E449300AFC350 /* OButton.m */; };
 		C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */; };
 		C0A924671B7BA0B9009C3574 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924661B7BA0B9009C3574 /* TextViewController.m */; };
+		C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */; };
+		C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */; };
 		D9B4260E6DC676C7B599BB11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24930CC2192A402FFE4E43 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,10 @@
 		C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueBlockVC.m; sourceTree = "<group>"; };
 		C0A924651B7BA0B9009C3574 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		C0A924661B7BA0B9009C3574 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		C0DA6D421B7CEA4E005F72DF /* AdScrollTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScrollTimerViewController.h; sourceTree = "<group>"; };
+		C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdScrollTimerViewController.m; sourceTree = "<group>"; };
+		C0DA6D451B7CEA6C005F72DF /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
+		C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
 		CA8AB85E7A636C441E328926 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA24930CC2192A402FFE4E43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -219,6 +225,8 @@
 				C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */,
 				C0A924651B7BA0B9009C3574 /* TextViewController.h */,
 				C0A924661B7BA0B9009C3574 /* TextViewController.m */,
+				C0DA6D421B7CEA4E005F72DF /* AdScrollTimerViewController.h */,
+				C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -371,6 +379,8 @@
 				6567D9501B6F3CD3004176B9 /* CustomCell.h */,
 				6567D9511B6F3CD3004176B9 /* CustomCell.m */,
 				6567D9521B6F3CD3004176B9 /* CustomCell.xib */,
+				C0DA6D451B7CEA6C005F72DF /* AdvertiseView.h */,
+				C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -547,12 +557,14 @@
 				65F1E21E1B5E449300AFC350 /* OButton.m in Sources */,
 				65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */,
 				6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */,
+				C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */,
 				65ECE8A51B589A4D003134B2 /* TarBarDemoVC.m in Sources */,
 				65ECE8C71B58B08B003134B2 /* UITabBarViewController.m in Sources */,
 				65ECE8CD1B58CA92003134B2 /* ThirdViewController.m in Sources */,
 				65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */,
 				65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */,
 				65ECE8711B588AA9003134B2 /* main.m in Sources */,
+				C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */,
 				65ECE8D31B590359003134B2 /* CNPPopupController.m in Sources */,
 				65ECE89C1B58985A003134B2 /* ButtonDemoVC.m in Sources */,
 				65ECE8B71B58A79C003134B2 /* TNTableViewCell.m in Sources */,
