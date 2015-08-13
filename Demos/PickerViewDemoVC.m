@@ -10,12 +10,17 @@
 #import "CNPPopupController.h"
 #import "CommonCrypto/CommonDigest.h"
 
+static NSInteger i = 1;
+
 @interface PickerViewDemoVC ()<UIPickerViewDataSource,UIPickerViewDelegate,CNPPopupControllerDelegate,UITextFieldDelegate>
 
 @property (nonatomic, strong) UIButton     *myButton;
 @property (nonatomic, strong) UIDatePicker *myDatePicker;
 @property (nonatomic, strong) CNPPopupController *popupController;
 @property (nonatomic, strong) UITextField  *tfRegex;
+@property (nonatomic, strong) UISlider     *mySlider;
+@property (nonatomic, strong) NSNumber     *sliderValue;
+
 @end
 
 @implementation PickerViewDemoVC
@@ -28,9 +33,10 @@
     [self addLabel];
     [self setBackButton];
     [self addTextField];
-    
+    [self addSlider];
     NSString *str = [self md5:@"1320681113@qq.com"];
     NSLog(@"%@", str);
+    [self testBlock];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +44,60 @@
     
 }
 
+- (void)addSlider
+{
+    self.mySlider = [[UISlider alloc] init];
+    self.mySlider.center = self.view.center;
+    self.mySlider.width = 200;
+    self.mySlider.height = 20;
+    [self.view addSubview:self.mySlider];
+    [self.mySlider addTarget:self action:@selector(testBlock) forControlEvents:UIControlEventValueChanged];
+    
+}
+
+- (void)changeValue:(UISlider *)sender
+{
+    if (self.mySlider == sender) {
+        NSLog(@"%@", @(self.mySlider.value));
+        self.sliderValue = @(sender.value);
+    }
+    
+    __block NSString *infoMgs = @"just want to pass the value of the slider to you.";
+    if (self.passBlock) {
+        
+        self.passBlock(infoMgs, @(sender.value));
+    }
+}
+
+- (void)changeValueSlider:(sliderBlock)aBlock
+{
+    i++;
+    __weak typeof(self) weakSelf = self;
+    __block NSNumber *value = @0;
+    __block NSString *error = @"error is nil";
+    if (aBlock) {
+        weakSelf.sliderValue = @(weakSelf.mySlider.value);
+       // value = weakSelf.sliderValue;
+        value = @(i);
+        aBlock(error, value);
+    }
+    else
+    {
+        NSLog(@"error happened.");
+    }
+    
+}
+
+- (void)testBlock
+{
+    __block NSString *str = @"ok";
+    __block NSNumber *num = @90;
+    if (self.passBlock) {
+        
+        self.passBlock(str, num);
+    }
+    
+}
 #pragma mark 测试正则式子匹配功能
 
 //email

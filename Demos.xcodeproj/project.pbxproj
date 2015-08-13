@@ -17,6 +17,7 @@
 		65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A825821B6601A100E3BAB1 /* TrainStationVC.m */; };
 		65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B31B5C892A00ED4040 /* FifthViewController.m */; };
 		65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */; };
+		65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA43691B7B2B06003A4A23 /* BlockModel.m */; };
 		65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADA91B6330DC005F22BD /* LayoutSubviews.m */; };
 		65EBADAD1B633C12005F22BD /* TNTrainTicketManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADAC1B633C12005F22BD /* TNTrainTicketManger.m */; };
 		65EBADB01B6364F9005F22BD /* TNBaseHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADAF1B6364F9005F22BD /* TNBaseHTTPRequest.m */; };
@@ -81,6 +82,8 @@
 		65D9B9B31B5C892A00ED4040 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		65D9B9B51B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollingNavbar.h"; sourceTree = "<group>"; };
 		65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollingNavbar.m"; sourceTree = "<group>"; };
+		65DA43681B7B2B06003A4A23 /* BlockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
+		65DA43691B7B2B06003A4A23 /* BlockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockModel.m; sourceTree = "<group>"; };
 		65EBADA81B6330DC005F22BD /* LayoutSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSubviews.h; sourceTree = "<group>"; };
 		65EBADA91B6330DC005F22BD /* LayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSubviews.m; sourceTree = "<group>"; };
 		65EBADAB1B633C12005F22BD /* TNTrainTicketManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTrainTicketManger.h; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 				657686FE1B5DF1AA00173D56 /* PassMesg.m */,
 				65EBADB71B6382FB005F22BD /* TNTrainAd.h */,
 				65EBADB81B6382FB005F22BD /* TNTrainAd.m */,
+				65DA43681B7B2B06003A4A23 /* BlockModel.h */,
+				65DA43691B7B2B06003A4A23 /* BlockModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -545,6 +550,7 @@
 				65ECE8A51B589A4D003134B2 /* TarBarDemoVC.m in Sources */,
 				65ECE8C71B58B08B003134B2 /* UITabBarViewController.m in Sources */,
 				65ECE8CD1B58CA92003134B2 /* ThirdViewController.m in Sources */,
+				65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */,
 				65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */,
 				65ECE8711B588AA9003134B2 /* main.m in Sources */,
 				65ECE8D31B590359003134B2 /* CNPPopupController.m in Sources */,

@@ -231,4 +231,31 @@ static NSInteger i = 0;
 {
     i++;
 }
+
+#pragma mark -
+#pragma mark textField 自动适应键盘
+//- (void)textFieldDidBeginEditing:(UITextField *)textField
+//{
+//    if (textField == self.urlTextField) {
+//        CGRect frame = textField.frame;
+//        int offset = frame.origin.y + 32 - (self.view.height - 216.0f);
+//        NSTimeInterval animatioonDuration = 0.3f;
+//        [UIView beginAnimations:@"ResizeForKeyboard" context:NULL];
+//        [UIView setAnimationDuration:animatioonDuration];
+//        
+//        if (offset > 0) {
+//            self.view.frame = CGRectMake(0.0f, -offset - 50, self.view.width, self.view.height);
+//            [UIView commitAnimations];
+//        }
+//    }
+//}
+//
+//- (void)textFieldDidEndEditing:(UITextField *)textField
+//{
+//    if (textField == self.urlTextField)
+//    {
+//        self.view.frame =CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+//    }
+//    
+
 @end

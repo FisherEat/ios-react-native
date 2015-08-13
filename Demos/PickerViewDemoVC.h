@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^sliderBlock)(NSString * , NSNumber *);
 @interface PickerViewDemoVC : UIViewController
 
 @property (nonatomic, strong) UILabel  *myLabel;
+
+@property (nonatomic, copy) sliderBlock passBlock;
+
+- (void)changeValueSlider:(sliderBlock)aBlock;
 
 @end

@@ -13,12 +13,13 @@
 
 static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANGED" ;
 
-@interface ThirdViewController ()
+@interface ThirdViewController ()<UIGestureRecognizerDelegate>
 
 @property(nonatomic, strong) OButton  *myButton;
 @property(nonatomic)         UIColor    *bColor;
 @property(nonatomic, strong) UISlider *mySlider;
 @property(nonatomic, strong) PassMesg *aPerson;
+@property(nonatomic, strong) UIWebView *webView;
 
 @end
 
@@ -40,6 +41,80 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
     
     [self.aPerson setValue:@"xiaobao" forKey:@"name"];
 
+    [self myBlock];
+ //   [self setWebView];
+    
+    [self loadData];
+
+}
+
+#pragma mark block test
+- (void)getSliderValue:(sliderBlock)sliderBlock
+{
+   __block NSNumber *sliderValue = @0;
+    if (sliderBlock) {
+       sliderValue = @(self.mySlider.value);
+    }
+    else
+    {
+        NSLog(@"The block is nil");
+    }
+    
+}
+
+- (void)testBlock:(aBlock)changeNumberBlock
+{
+    NSString *test = @"It is a block";
+    NSUInteger num = 12;
+    NSString *blockString = @"";
+    if (changeNumberBlock) {
+         blockString = changeNumberBlock(test, num);
+    }
+    
+}
+
+- (void)loadData
+{
+   __block NSString *logString = @"";
+  [self testBlock:^NSString *(NSString *str, NSUInteger num) {
+        logString = str;
+       return logString;
+    }];
+    
+    NSLog(@"一堆狗屎%@", logString);
+    
+}
+ - (void)setWebView
+{
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 100, self.view.width, 100)];
+    self.webView.backgroundColor = [UIColor colorWithRed:0.000 green:0.512 blue:0.000 alpha:1.000];
+    UIPinchGestureRecognizer *swipeGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(detailSwipeFromLeft)];
+    swipeGesture.delegate = self;
+    [self.webView addGestureRecognizer:swipeGesture];
+    [self.view addSubview:self.webView];
+}
+
+- (void)detailSwipeFromLeft
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
+}
+
+#pragma mark test block 
+- (void)myBlock
+{
+    NSMutableArray *mutableArray = [NSMutableArray arrayWithObjects:@"One", @"Two", @"Three", nil];
+    int result = ^(int a)
+    {
+        [mutableArray removeLastObject];
+        return a * a;
+    }(5);
+    NSLog(@"test array : %@, %@", mutableArray, @(result));
+    
 }
 
 #pragma mark -
@@ -56,10 +131,10 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
     
     NSCalendar *greCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *dateComponet = [greCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit fromDate:[NSDate date]];
-    NSLog(@"year = %i", dateComponet.year);
-    NSLog(@"month = %i", dateComponet.month);
-    NSLog(@"day = %i", dateComponet.day);
-    NSLog(@"hour = %i", dateComponet.hour);
+    NSLog(@"year = %li", dateComponet.year);
+    NSLog(@"month = %li", dateComponet.month);
+    NSLog(@"day = %li", dateComponet.day);
+    NSLog(@"hour = %li", dateComponet.hour);
     
     UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 60, 60)];
     UILabel *dateDayLabel = [[UILabel alloc] initWithFrame:CGRectMake(dateLabel.right , dateLabel.y, dateLabel.width, dateLabel.height)];
@@ -142,7 +217,7 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
     self.myButton.frame    = CGRectMake(0, 150, self.view.width / 2, 50);
     self.myButton.centerX  = self.view.centerX;
     [self.myButton setTitle:@"Click Me!" forState:UIControlStateNormal];
-    [self.myButton addTarget:self action:@selector(changeBackGroundColor) forControlEvents:UIControlEventTouchUpInside];
+   // [self.myButton addTarget:self action:@selector(changeBackGroundColor) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.myButton];
     
 }

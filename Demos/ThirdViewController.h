@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef  NSString*(^aBlock)(NSString * ,NSUInteger);
+typedef  void*(sliderBlock)(float, NSNumber *);
+
 @interface ThirdViewController : UIViewController
+
+@property (nonatomic, copy) aBlock testBlock;
+
+- (void)testBlock:(aBlock)changeNumberBlock;
+
+- (void)getSliderValue:(sliderBlock) sliderBlock;
 
 @end
