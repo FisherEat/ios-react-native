@@ -27,7 +27,7 @@
 
 @end
 
-@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource, PassMesageDelegate>
+@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource, PassMesageDelegate ,PassValueDelegate>
 
 @property (nonatomic, strong) UITableView       *myTable;
 @property (nonatomic, strong) NSMutableArray    *demoArray;
@@ -35,6 +35,8 @@
 @property (nonatomic, strong) UIPageControl     *pageControl;
 @property (nonatomic, strong) NSMutableArray    *adViewsArray;
 @property (nonatomic, strong) ButtonDemoVC      *btnVC;
+
+@property (nonatomic, strong) PassValueBlockVC  *passValueVC;
 
 @end
 
@@ -61,6 +63,18 @@
     [self test];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
+    
+    //Pass value delegate  from TestDemoViewController
+    self.passValueVC = [[PassValueBlockVC alloc] init];
+    self.passValueVC.delegate = self;
+    
+}
+
+#pragma mark pass value delegate
+- (void)passValueByDelegate:(NSString *)delegate
+{
+    NSLog(@"呵呵哒。The value from pass value block = %@", delegate);
+    
 }
 
 - (void)getCalendarMsgSuccess:(NSNotification *)aNotification
@@ -280,7 +294,10 @@
             break;
         case PassValueDemoCell:
         {
+            //从此处进入的PassValueBlock页面，所以  passValueVC.delegate = self;
+            //所以 viewdidload 中的设定delegate指向没有作用。
             PassValueBlockVC *passValueVC = [[PassValueBlockVC alloc] init];
+            passValueVC.delegate = self;
             [self.navigationController pushViewController:passValueVC animated:YES];
         }
             break;

@@ -8,12 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PassValueDelegate <NSObject>
+
+- (void)passValueByDelegate:(NSString *)delegate;
+
+@end
+
 typedef void(^PassBlock)(NSString *, NSNumber *);
 typedef void(^ModelBlock)();
 
 @interface PassValueBlockVC : UIViewController
 
 @property (nonatomic, copy) PassBlock passBlock;
+
+@property (nonatomic, weak) id<PassValueDelegate> delegate;
 
 - (void)passValueByBlock:(PassBlock)aBlock;
 
