@@ -30,6 +30,7 @@
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource, PassMesageDelegate ,PassValueDelegate>
 
 @property (nonatomic, strong) UITableView       *myTable;
+@property (nonatomic, strong) UIRefreshControl  *refreshTable;
 @property (nonatomic, strong) NSMutableArray    *demoArray;
 @property (nonatomic, strong) TNCycleScrollView *adCycleScrollView;
 @property (nonatomic, strong) UIPageControl     *pageControl;
@@ -52,7 +53,7 @@
     self.myTable.dataSource = self;
     
     self.btnVC = [[ButtonDemoVC alloc] init];
-    self.btnVC.delegate = self;
+    //self.btnVC.delegate = self;
     
     [self.view addSubview:self.myTable];
     
@@ -64,10 +65,33 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
     
-    //Pass value delegate  from TestDemoViewController
-    self.passValueVC = [[PassValueBlockVC alloc] init];
-    self.passValueVC.delegate = self;
+    [self addrefreshTable];
+}
+
+#pragma mark - UI Events
+- (void)addrefreshTable
+{
+    self.refreshTable = [[UIRefreshControl alloc] init];
+    self.refreshTable.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
+    self.refreshTable.tintColor = [UIColor greenColor];
+    [self.refreshTable addTarget:self action:@selector(pullToRefresh) forControlEvents:UIControlEventValueChanged];
+    [self.myTable addSubview:self.refreshTable];
+}
+
+- (void)pullToRefresh
+{
+    //模拟网络访问
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    self.refreshTable.attributedTitle = [[NSAttributedString alloc] initWithString:@"刷新中"];
+    CGFloat delayInSecond = 2.0f;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSecond) * NSEC_PER_MSEC);
     
+    dispatch_after(popTime, dispatch_get_main_queue(), ^{
+        [self.myTable reloadData];
+        [self.refreshTable endRefreshing];
+        self.refreshTable.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    });
 }
 
 #pragma mark pass value delegate
@@ -85,50 +109,6 @@
     
 }
 
-#pragma mark some test 
-/**测试 nil \null \ NULL的区别*/
-- (void)test
-{
-    //nil 定义某一实例对象为空 nil 解释为 NO，可以用 ！判断
-    //Nil 定义某一类为空
-    //NULL 定义基本数据对象为空，如(void *) ,用于C语言各种数据类型的指针为空
-    //NSNull 集合对象无法包含 nil 作为其具体值，如NSArray、NSSet和NSDictionary。
-    //相应地，nil 值用一个特定的对象 NSNull 来表示。NSNull 提供了一个单一实例用于表示对象属性中的的nil值。
-    
-    NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
-    mutableDict[@"aKey"] = [NSNull null];
-    NSLog(@"aKey's value: %@", [mutableDict valueForKey:@"aKey"]);
-//    int  *p = NULL;
-//    char *r = NULL;
-//    " == " 是全等号
-    NSObject *obj = [[NSObject alloc] init];
-    //obj = nil;
-    if (obj == nil) {
-        NSLog(@"obj is nil");
-    }else
-    {
-        NSLog(@"obj is not nil ");
-    }
-    
-//    Class someClass = Nil;
-//    Class anotherClass = [NSString class];
-    
-    //几个有趣的例子
-    NSObject *obj1 = [[NSObject alloc] init];
-    NSObject *obj2 = [NSNull null];
-    NSObject *obj3 = [NSObject new];
-    NSObject *ojb4;
-    NSArray  *arr1 = [NSArray arrayWithObjects:obj1, obj2, obj3, ojb4, nil];
-    NSLog(@"array  count = %lu", [arr1 count]);
-  
-    NSObject *obj8 ;
-    NSObject *obj5 = [[NSObject alloc] init];
-    NSObject *obj6 = [NSNull null];
-    NSObject *obj7 = [NSObject new];
-    NSArray  *arr2 = [NSArray arrayWithObjects:obj8, obj5, obj6 ,obj7, nil];
-    NSLog(@"array count = %lu", [arr2 count]);
-    
-}
 #pragma mark 设置顶部轮播广告栏
 
 - (void)setScrollAdvertise
@@ -150,7 +130,7 @@
         weakSelf.pageControl.currentPage = pageNum % weakSelf.pageControl.numberOfPages;
     }];
     
-    NSArray *imageNameArray = @[@"shang.png", @"hu.png",@"shui.png"];
+    NSArray *imageNameArray = @[@"xianlu.png", @"hu.png",@"shui.png"];
     self.adViewsArray = @[].mutableCopy;
     //添加轮转视图
         for (int i = 0; i < 3; i++) {
@@ -165,11 +145,6 @@
         }
     
     self.pageControl.numberOfPages = 3 ;//[self.adViewsArray count];
-    
-    self.myTable.tableHeaderView = self.adCycleScrollView;
-    
-    [self.adCycleScrollView addSubview:self.pageControl];
-    
     [self.adCycleScrollView reloadScrollViewData];
     self.adCycleScrollView.fetchContentViewAtIndex = ^UIView *(NSInteger pageIndex)
     {
@@ -179,12 +154,37 @@
         return strongSelf.adViewsArray[pageIndex];
         
     };
+    
+    //必须计算totalPagesCount ，否则出现bug
+    self.adCycleScrollView.totalPagesCount = ^NSInteger(void){
+        __strong typeof(&*weakSelf)strongSelf = weakSelf;
+        return [strongSelf.adViewsArray count];
+    };
+    
+    //TODO
+    self.adCycleScrollView.TapActionBlock = ^(NSInteger pageIndex){
+        __strong typeof(&*weakSelf) strongSelf = weakSelf;
+       // [strongSelf add]
+    };
+    
+    self.myTable.tableHeaderView = self.adCycleScrollView;
+    [self.adCycleScrollView addSubview:self.pageControl];
+
 }
 
-- (void)setAcceory
+- (void)addViewTapped:(NSInteger)adIndex
 {
+  //  [self gotoWebView:]
+}
+
+- (void)goToWebView:(NSString *)url title:(NSString *)title
+{
+    NSURL *toUrl = [NSURL URLWithString:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:toUrl];
+    NSURLConnection *connetion = [NSURLConnection connectionWithRequest:request delegate:nil];
     
 }
+
 #pragma mark tableview delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -204,8 +204,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.contentView.backgroundColor =[UIColor colorWithRed:0.854 green:0.000 blue:0.000 alpha:0.890];
-    
+
     switch (indexPath.row) {
             case CustomDemoCell:
         {
@@ -359,9 +358,12 @@
     if (indexPath.row > 0)
     {
         cell.textLabel.text = [NSString stringWithFormat:@"Cell%ld_%@",(long)indexPath.row ,[self.demoArray objectAtIndex:indexPath.row]];
-        cell.contentView.backgroundColor = [UIColor colorWithRed:0.000 green:0.618 blue:0.000 alpha:1.000];
-        
-        cell.accessoryView= [self setButton];
+       //cell.contentView.backgroundColor = [UIColor colorWithRed:0.000 green:0.618 blue:0.000 alpha:1.000];
+            // cell.accessoryView= [self setButton];
+        cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+        cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:0.586 green:0.134 blue:0.668 alpha:0.700];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+       
     }
 
     return cell;
@@ -414,6 +416,51 @@
     mAlert(@"提示", msg, @"Cancel", @"OK");
     
     return msg;
+    
+}
+
+#pragma mark some test
+/**测试 nil \null \ NULL的区别*/
+- (void)test
+{
+    //nil 定义某一实例对象为空 nil 解释为 NO，可以用 ！判断
+    //Nil 定义某一类为空
+    //NULL 定义基本数据对象为空，如(void *) ,用于C语言各种数据类型的指针为空
+    //NSNull 集合对象无法包含 nil 作为其具体值，如NSArray、NSSet和NSDictionary。
+    //相应地，nil 值用一个特定的对象 NSNull 来表示。NSNull 提供了一个单一实例用于表示对象属性中的的nil值。
+    
+    NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
+    mutableDict[@"aKey"] = [NSNull null];
+    NSLog(@"aKey's value: %@", [mutableDict valueForKey:@"aKey"]);
+    //    int  *p = NULL;
+    //    char *r = NULL;
+    //    " == " 是全等号
+    NSObject *obj = [[NSObject alloc] init];
+    //obj = nil;
+    if (obj == nil) {
+        NSLog(@"obj is nil");
+    }else
+    {
+        NSLog(@"obj is not nil ");
+    }
+    
+    //    Class someClass = Nil;
+    //    Class anotherClass = [NSString class];
+    
+    //几个有趣的例子
+    NSObject *obj1 = [[NSObject alloc] init];
+    NSObject *obj2 = [NSNull null];
+    NSObject *obj3 = [NSObject new];
+    NSObject *ojb4;
+    NSArray  *arr1 = [NSArray arrayWithObjects:obj1, obj2, obj3, ojb4, nil];
+    NSLog(@"array  count = %lu", [arr1 count]);
+    
+    NSObject *obj8 ;
+    NSObject *obj5 = [[NSObject alloc] init];
+    NSObject *obj6 = [NSNull null];
+    NSObject *obj7 = [NSObject new];
+    NSArray  *arr2 = [NSArray arrayWithObjects:obj8, obj5, obj6 ,obj7, nil];
+    NSLog(@"array count = %lu", [arr2 count]);
     
 }
 

@@ -119,28 +119,28 @@ static const float contentPaddingMiddle = 6;
     CGFloat imageWidth = (SCREEN_WIDTH - contentPaddingLeft * 2 - contentPaddingMiddle * 2) / 3.0f;
     CGFloat imageHeight = 133;
     
-    _leftView = [[TNHomeSpecialSaleView alloc] initWithFrame:CGRectMake(contentPaddingLeft, 0, imageWidth, imageHeight)];
+    _leftView = [[TNHomeSpecialSaleView alloc] initWithFrame:CGRectMake(contentPaddingLeft, 5, imageWidth, imageHeight)];
     [self.contentView addSubview:_leftView];
     
     _leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _leftButton.frame = CGRectMake(_leftView.x, 0, imageWidth, imageHeight);
-    _leftButton.backgroundColor = [UIColor redColor];
+    _leftButton.frame = CGRectMake(_leftView.x, 5, imageWidth, imageHeight);
+    _leftButton.backgroundColor = [UIColor colorWithRed:0.9 green:0.4 blue:0.8 alpha:0.8];
     [self.contentView addSubview:_leftButton];
     
-    _middleView = [[TNHomeSpecialSaleView alloc] initWithFrame:CGRectMake(contentPaddingLeft + imageWidth +  contentPaddingMiddle, 0, imageWidth, imageHeight)];
+    _middleView = [[TNHomeSpecialSaleView alloc] initWithFrame:CGRectMake(contentPaddingLeft + imageWidth +  contentPaddingMiddle, 5, imageWidth, imageHeight)];
     [self.contentView addSubview:_middleView];
     
     _middleButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _middleButton.frame = CGRectMake(_middleView.x, 0, imageWidth, imageHeight);
-    _middleButton.backgroundColor = [UIColor blackColor];
+    _middleButton.frame = CGRectMake(_middleView.x, 5, imageWidth, imageHeight);
+    _middleButton.backgroundColor = [UIColor colorWithRed:0.7 green:0.8 blue:0.2 alpha:0.8];
     [self.contentView addSubview:_middleButton];
     
-    _rightView = [[TNHomeSpecialSaleView alloc] initWithFrame:CGRectMake(contentPaddingLeft + imageWidth * 2 + contentPaddingMiddle * 2, 0, imageWidth, imageHeight)];
+    _rightView = [[TNHomeSpecialSaleView alloc] initWithFrame:CGRectMake(contentPaddingLeft + imageWidth * 2 + contentPaddingMiddle * 2, 5, imageWidth, imageHeight)];
     [self.contentView addSubview:_rightView];
     
     _rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _rightButton.frame = CGRectMake(_rightView.x, 0, imageWidth, imageHeight);
-    _rightButton.backgroundColor = [UIColor yellowColor];
+    _rightButton.frame = CGRectMake(_rightView.x, 5, imageWidth, imageHeight);
+    _rightButton.backgroundColor = [UIColor colorWithRed:0.620 green:0.702 blue:0.847 alpha:0.800];
     [self.contentView addSubview:_rightButton];
     
     self.clipsToBounds = YES;

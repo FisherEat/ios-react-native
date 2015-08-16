@@ -206,6 +206,8 @@
     }
 }
 
+// 当scroll grind to a halt == 当scroll停止加速，即陷于停顿时，重新设置contentOffset.x 的值
+// 这与本app scroll demo 中的实现方式（在setTimerAction动画中实现，newOffset）略有不同， 但本质是对offset.x 进行构造。
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     [scrollView setContentOffset:CGPointMake(CGRectGetWidth(scrollView.frame), 0) animated:YES];
