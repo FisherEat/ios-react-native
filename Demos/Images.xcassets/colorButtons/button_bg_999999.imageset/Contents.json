@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "button_bg_999999@2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "tool_bar_icon_phone@3x.png"
+      "scale" : "3x"
     }
   ],
   "info" : {

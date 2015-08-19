@@ -22,6 +22,7 @@
 #import "PassValueBlockVC.h"
 #import "TextViewController.h"
 #import "AdScrollTimerViewController.h"
+#import "LoginDemoVC.h"
 
 @interface RootViewController ()
 
@@ -57,7 +58,7 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo"]];
     [self setScrollAdvertise];
  
     //test nil NULL
@@ -311,6 +312,13 @@
         {
             AdScrollTimerViewController *adVC = [[AdScrollTimerViewController alloc] init];
             [self.navigationController pushViewController:adVC animated:YES];
+        }
+            break;
+            
+        case LoginDemoCell:
+        {
+            LoginDemoVC *loginVC = [[LoginDemoVC alloc] init];
+            [self.navigationController pushViewController:loginVC animated:NO];
         }
             break;
         default:
