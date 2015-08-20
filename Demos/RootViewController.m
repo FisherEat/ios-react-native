@@ -23,6 +23,7 @@
 #import "TextViewController.h"
 #import "AdScrollTimerViewController.h"
 #import "LoginDemoVC.h"
+#import "WebViewDemo.h"
 
 @interface RootViewController ()
 
@@ -58,7 +59,7 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo", @"WebViewDemo"]];
     [self setScrollAdvertise];
  
     //test nil NULL
@@ -318,7 +319,13 @@
         case LoginDemoCell:
         {
             LoginDemoVC *loginVC = [[LoginDemoVC alloc] init];
-            [self.navigationController pushViewController:loginVC animated:NO];
+            [self.navigationController pushViewController:loginVC animated:YES];
+        }
+            break;
+        case WebViewDemoCell:
+        {
+            WebViewDemo *webViewVC = [[WebViewDemo alloc] init];
+            [self.navigationController pushViewController:webViewVC animated:YES];
         }
             break;
         default:
