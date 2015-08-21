@@ -13,6 +13,9 @@
 @interface GLNetWorkDemo ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *netWorkTableView;
+@property (weak, nonatomic) IBOutlet UIImageView *leftImage;
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
 
 @end
 
@@ -27,7 +30,7 @@
 
   //[self.netWorkTableView registerNib:[UINib nibWithNibName:@"NetWorkCell" bundle:nil] forCellReuseIdentifier:@"ShitCell"];
 
-    
+      
 }
 
 #pragma mark - 

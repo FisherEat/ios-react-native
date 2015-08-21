@@ -15,6 +15,9 @@
     self= [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)
     {
+        self.movieName.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
+        self.movieTime.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
+
         //initialization code here.
     }
     return self;
