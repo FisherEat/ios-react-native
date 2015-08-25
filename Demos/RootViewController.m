@@ -68,6 +68,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
     
     [self addrefreshTable];
+    
+    NSUInteger isZero = 0;
+    NSLog(@"%ld", isZero);
 }
 
 #pragma mark - UI Events
@@ -477,11 +480,6 @@
     NSArray  *arr2 = [NSArray arrayWithObjects:obj8, obj5, obj6 ,obj7, nil];
     NSLog(@"array count = %lu", [arr2 count]);
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
