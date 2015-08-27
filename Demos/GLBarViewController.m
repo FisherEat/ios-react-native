@@ -15,6 +15,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupTopBarView];
+}
+
+- (void)setupTopBarView
+{
+    [self.view addSubview:self.topBarView];
 }
 
 - (void)setLeftButtonToBackButton
@@ -28,6 +35,16 @@
     self.topBarView.leftButton.imageEdgeInsets = UIEdgeInsetsMake(2, 0, 0, 0);
     self.topBarView.leftButton.frame = CGRectMake(0, 20, 44, 44);
 }
+
+#pragma mark - Overrider getter
+- (TNTopBarView *)topBarView
+{
+    if (!_topBarView) {
+        _topBarView = [TNTopBarView topBarViewWithStyle:TNTopBarStyleTitle delegate:self];
+    }
+    return _topBarView;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

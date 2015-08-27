@@ -23,7 +23,8 @@ typedef NS_ENUM(NSInteger, GLTestDemoTypeCell)
     TextViewDemoCell = 10,
     AdScrollTimerCell = 11,
     LoginDemoCell = 12,
-    WebViewDemoCell = 13
+    WebViewDemoCell = 13,
+    TopBarViewDemoCell = 14,
 };
 
 @interface RootViewController : UIViewController

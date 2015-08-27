@@ -56,6 +56,8 @@
 		65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE33D1B8F207E00340778 /* GLBarViewController.m */; };
 		65F1E21E1B5E449300AFC350 /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F1E21D1B5E449300AFC350 /* OButton.m */; };
 		C04B873A1B8CC0F000A69068 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */; };
+		C053ABF71B8F5AA200BE5F5F /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */; };
+		C053ABFA1B8F728B00BE5F5F /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */; };
 		C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */; };
 		C0A924671B7BA0B9009C3574 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924661B7BA0B9009C3574 /* TextViewController.m */; };
 		C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */; };
@@ -176,6 +178,10 @@
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C04B87381B8CC0F000A69068 /* NSArray+GLStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GLStuff.h"; sourceTree = "<group>"; };
 		C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GLStuff.m"; sourceTree = "<group>"; };
+		C053ABF51B8F5AA200BE5F5F /* GLPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPresentViewController.h; sourceTree = "<group>"; };
+		C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPresentViewController.m; sourceTree = "<group>"; };
+		C053ABF81B8F728B00BE5F5F /* TNTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTopBarView.h; sourceTree = "<group>"; };
+		C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTopBarView.m; sourceTree = "<group>"; };
 		C0A924621B7B9A3A009C3574 /* PassValueBlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueBlockVC.h; sourceTree = "<group>"; };
 		C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueBlockVC.m; sourceTree = "<group>"; };
 		C0A924651B7BA0B9009C3574 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
@@ -270,6 +276,8 @@
 				65D8DF6C1B845CEE007E31BA /* LoginDemoVC.m */,
 				65D52A781B857B37009774EF /* WebViewDemo.h */,
 				65D52A791B857B37009774EF /* WebViewDemo.m */,
+				C053ABF51B8F5AA200BE5F5F /* GLPresentViewController.h */,
+				C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -318,6 +326,8 @@
 		65ECE86D1B588AA9003134B2 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				C053ABF81B8F728B00BE5F5F /* TNTopBarView.h */,
+				C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */,
 				65ECE8731B588AA9003134B2 /* AppDelegate.m */,
 				65ECE8721B588AA9003134B2 /* AppDelegate.h */,
 				65ECE8AC1B589ACA003134B2 /* AppEngine */,
@@ -605,6 +615,7 @@
 				C0DA6D4A1B7CFB0A005F72DF /* OCDataSourceDemo.m in Sources */,
 				65EBADAD1B633C12005F22BD /* TNTrainTicketManger.m in Sources */,
 				6567D9531B6F3CD3004176B9 /* CustomCell.m in Sources */,
+				C053ABFA1B8F728B00BE5F5F /* TNTopBarView.m in Sources */,
 				65EBADB01B6364F9005F22BD /* TNBaseHTTPRequest.m in Sources */,
 				65ECE8A21B589A30003134B2 /* PickerViewDemoVC.m in Sources */,
 				65EEE3371B8EE1C300340778 /* TNNavigationURLHelper.m in Sources */,
@@ -617,6 +628,7 @@
 				65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */,
 				65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */,
 				65EBADB61B637751005F22BD /* GURLRequest.m in Sources */,
+				C053ABF71B8F5AA200BE5F5F /* GLPresentViewController.m in Sources */,
 				65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */,
 				65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */,
 				65EEE33B1B8EFBAF00340778 /* UIColor+TKCategory.m in Sources */,

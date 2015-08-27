@@ -24,6 +24,7 @@
 #import "AdScrollTimerViewController.h"
 #import "LoginDemoVC.h"
 #import "WebViewDemo.h"
+#import "GLPresentViewController.h"
 
 @interface RootViewController ()
 
@@ -59,7 +60,7 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo", @"WebViewDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo", @"WebViewDemo", @"TopBarViewDemo"]];
     [self setScrollAdvertise];
  
     //test nil NULL
@@ -333,6 +334,12 @@
         {
             WebViewDemo *webViewVC = [[WebViewDemo alloc] init];
             [self.navigationController pushViewController:webViewVC animated:YES];
+        }
+            break;
+        case TopBarViewDemoCell:
+        {
+            GLPresentViewController *presentVC = [[GLPresentViewController alloc] init];
+            [self.navigationController pushViewController:presentVC animated:YES];
         }
             break;
         default:
