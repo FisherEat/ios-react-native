@@ -71,6 +71,10 @@
     
     NSUInteger isZero = 0;
     NSLog(@"%ld", isZero);
+    
+    NSDictionary *dict = @{};
+    dict = @{@"1":@"China",@"2":@"UK",};
+    NSLog(@"dictionary is = %@", dict);
 }
 
 #pragma mark - UI Events

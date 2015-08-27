@@ -49,6 +49,9 @@
 		65ECE8CD1B58CA92003134B2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8CC1B58CA92003134B2 /* ThirdViewController.m */; };
 		65ECE8D01B58CA9C003134B2 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8CF1B58CA9C003134B2 /* ForthViewController.m */; };
 		65ECE8D31B590359003134B2 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8D21B590359003134B2 /* CNPPopupController.m */; };
+		65EEE3351B8EE1C300340778 /* TNNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE32E1B8EE1C300340778 /* TNNavigator.m */; };
+		65EEE3361B8EE1C300340778 /* TNNavigationMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE3301B8EE1C300340778 /* TNNavigationMap.m */; };
+		65EEE3371B8EE1C300340778 /* TNNavigationURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE3321B8EE1C300340778 /* TNNavigationURLHelper.m */; };
 		65F1E21E1B5E449300AFC350 /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F1E21D1B5E449300AFC350 /* OButton.m */; };
 		C04B873A1B8CC0F000A69068 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */; };
 		C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */; };
@@ -153,6 +156,15 @@
 		65ECE8CF1B58CA9C003134B2 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
 		65ECE8D11B590359003134B2 /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
 		65ECE8D21B590359003134B2 /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
+		65EEE32D1B8EE1C300340778 /* TNNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNavigator.h; sourceTree = "<group>"; };
+		65EEE32E1B8EE1C300340778 /* TNNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNavigator.m; sourceTree = "<group>"; };
+		65EEE32F1B8EE1C300340778 /* TNNavigationMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNavigationMap.h; sourceTree = "<group>"; };
+		65EEE3301B8EE1C300340778 /* TNNavigationMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNavigationMap.m; sourceTree = "<group>"; };
+		65EEE3311B8EE1C300340778 /* TNNavigationURLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNavigationURLHelper.h; sourceTree = "<group>"; };
+		65EEE3321B8EE1C300340778 /* TNNavigationURLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNNavigationURLHelper.m; sourceTree = "<group>"; };
+		65EEE3331B8EE1C300340778 /* TNNavigationURLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNavigationURLs.h; sourceTree = "<group>"; };
+		65EEE3341B8EE1C300340778 /* TNNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNavigationProtocol.h; sourceTree = "<group>"; };
+		65EEE3381B8EE25700340778 /* SingletonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonDefine.h; sourceTree = "<group>"; };
 		65F1E21C1B5E449300AFC350 /* OButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OButton.h; sourceTree = "<group>"; };
 		65F1E21D1B5E449300AFC350 /* OButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OButton.m; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +215,8 @@
 		657686FC1B5DF15400173D56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65EEE3381B8EE25700340778 /* SingletonDefine.h */,
+				65EEE32C1B8EE1A700340778 /* GLNavigator */,
 				65EBADB41B637751005F22BD /* GURLRequest.h */,
 				65EBADB51B637751005F22BD /* GURLRequest.m */,
 				657686FD1B5DF1AA00173D56 /* PassMesg.h */,
@@ -417,6 +431,21 @@
 			name = Category;
 			sourceTree = "<group>";
 		};
+		65EEE32C1B8EE1A700340778 /* GLNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				65EEE32D1B8EE1C300340778 /* TNNavigator.h */,
+				65EEE32E1B8EE1C300340778 /* TNNavigator.m */,
+				65EEE32F1B8EE1C300340778 /* TNNavigationMap.h */,
+				65EEE3301B8EE1C300340778 /* TNNavigationMap.m */,
+				65EEE3311B8EE1C300340778 /* TNNavigationURLHelper.h */,
+				65EEE3321B8EE1C300340778 /* TNNavigationURLHelper.m */,
+				65EEE3331B8EE1C300340778 /* TNNavigationURLs.h */,
+				65EEE3341B8EE1C300340778 /* TNNavigationProtocol.h */,
+			);
+			name = GLNavigator;
+			sourceTree = "<group>";
+		};
 		D0E5D6E8C2B4078AC4914368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,6 +597,7 @@
 				6567D9531B6F3CD3004176B9 /* CustomCell.m in Sources */,
 				65EBADB01B6364F9005F22BD /* TNBaseHTTPRequest.m in Sources */,
 				65ECE8A21B589A30003134B2 /* PickerViewDemoVC.m in Sources */,
+				65EEE3371B8EE1C300340778 /* TNNavigationURLHelper.m in Sources */,
 				65ECE8C41B58AA8F003134B2 /* UIView+Positioning.m in Sources */,
 				65ECE8D01B58CA9C003134B2 /* ForthViewController.m in Sources */,
 				65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */,
@@ -591,6 +621,8 @@
 				65ECE8CD1B58CA92003134B2 /* ThirdViewController.m in Sources */,
 				65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */,
 				65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */,
+				65EEE3361B8EE1C300340778 /* TNNavigationMap.m in Sources */,
+				65EEE3351B8EE1C300340778 /* TNNavigator.m in Sources */,
 				65D8DF6D1B845CEE007E31BA /* LoginDemoVC.m in Sources */,
 				65ECE8711B588AA9003134B2 /* main.m in Sources */,
 				C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */,
