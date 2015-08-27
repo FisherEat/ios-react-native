@@ -13,7 +13,7 @@
 
 static NSInteger i = 0;
 
-@interface ButtonDemoVC ()<UITextFieldDelegate>
+@interface ButtonDemoVC ()<UITextFieldDelegate, UIActionSheetDelegate>
 
 @property (nonatomic, strong) UIButton      *myButton;
 @property (nonatomic, strong) OButton       *blockButton;
@@ -36,6 +36,7 @@ static NSInteger i = 0;
     [self addLabel];
     [self addButton];
     [self addBlockButton];
+    [self addRightButton];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
@@ -79,7 +80,26 @@ static NSInteger i = 0;
     [backButton setTitle:@"返回" forState:UIControlStateNormal];
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     self.navigationItem.leftBarButtonItem = leftButton;
+}
 
+//设置右导航图标
+- (void)addRightButton
+{
+    UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.width - 44, 0, 44, 44)];
+    [rightBtn setImage:[UIImage imageNamed:@"icon_nav_more"] forState:UIControlStateNormal];
+    [rightBtn addTarget:self action:@selector(moreButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    
+}
+
+- (void)moreButtonClicked:(id)sender
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+                                                             delegate:self
+                                                    cancelButtonTitle:@"取消"
+                                               destructiveButtonTitle:@"解除绑定"                                                                     otherButtonTitles:nil, nil];
+    [actionSheet showInView:self.view];
 }
 
 /** delegate 传值*/

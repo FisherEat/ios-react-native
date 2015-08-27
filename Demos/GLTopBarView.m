@@ -190,6 +190,41 @@
         _leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _leftButton.titleLabel.font = kGLTopBarButtonTitleFont;
         
+        //Default left menu style.
+        if (GLTopBarStyleTitleLeftMenu == self.topBarStytle
+            || GLTopBarStyleTitleLeftButtonRightButton == self.topBarStytle) {
+            [_leftButton setTitleColor:[UIColor colorwithHexString:@"#515567"] forState:UIControlStateNormal];
+            [_leftButton setTitleColor:[UIColor colorwithHexString:@"#505264"] forState:UIControlStateHighlighted];
+            
+            _leftButton.frame = CGRectMake(0.0f, 20.0f, 100.0f, 44.0f);
+            
+            [_leftButton setImage:[UIImage imageNamed:@"icon_left_deck"] forState:UIControlStateNormal];
+            
+            [self.leftButton setTitle:@"左边" forState:UIControlStateNormal];
+            //根据title大小，设置字体
+            NSInteger labelSize = [self.leftButton.titleLabel.text length];
+            if (labelSize <= 3) {
+                self.leftButton.titleLabel.font = [UIFont systemFontOfSize:17.0f];
+            }
+            else
+            {
+                self.leftButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+            }
+            
+            _leftButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+            _leftButton.titleEdgeInsets = UIEdgeInsetsMake(1, 1, -1, -6);
+            [self.leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+        }
+        else {
+            [_leftButton setTitleColor:HEXCOLOR(0x515567) forState:UIControlStateNormal];
+            [_leftButton setTitleColor:HEXCOLOR(0x505264) forState:UIControlStateHighlighted];
+            
+            _leftButton.frame = kGLTopBarLeftButtonRect;
+            [_leftButton setImage:[UIImage imageNamed:@"icon_nav_back"] forState:UIControlStateNormal];
+           // [_leftButton setImageTitleSpace:5.0f];
+        }
+        
+        [_leftButton addTarget:self action:@selector(leftButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _leftButton;
@@ -209,6 +244,45 @@
     }
     
     return _backgroundView;
+}
+
+- (UIButton *)rightButton
+{
+    if (!_rightButton) {
+        _rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _rightButton.titleLabel.font = kGLTopBarButtonTitleFont;
+        [_rightButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+        [_rightButton setTitleColor:[UIColor colorwithHexString:@"#515567"] forState:UIControlStateNormal];
+        [_rightButton setTitleColor:[UIColor colorwithHexString:@"#33bd61"] forState:UIControlStateHighlighted];
+        _rightButton.titleEdgeInsets = UIEdgeInsetsMake(2, 0, 0, 4);
+        _rightButton.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 0, 0);
+        [_rightButton addTarget:self action:@selector(rightButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        
+        if (GLTopBarStyleTitleLeftButtonRightButtonExtendButton == self.topBarStytle) {
+            _rightButton.frame = kGLTopBarRightButtonWithExtendRect;
+        }else{
+            _rightButton.frame = kGLTopBarRightButtonRect;
+        }
+    }
+    
+    return _rightButton;
+}
+
+- (UIButton *)extendButton {
+    if (!_extendButton) {
+        _extendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _extendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _extendButton.frame = kGLTopBarExtendButtonRect;
+        _extendButton.titleLabel.font = kGLTopBarButtonTitleFont;
+        [_extendButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+        [_extendButton setTitleColor:[UIColor colorwithHexString:@"#515567"] forState:UIControlStateNormal];
+        [_extendButton setTitleColor:[UIColor colorwithHexString:@"#33bd61"] forState:UIControlStateHighlighted];
+        _extendButton.titleEdgeInsets = UIEdgeInsetsMake(2, 0, 0, 0);
+        _extendButton.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 0, 0);
+        [_extendButton addTarget:self action:@selector(extendButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _extendButton;
 }
 
 -(void)setRightButtonFromShareButton:(UIButton *)shareButton
@@ -322,6 +396,58 @@
     else {
         _topBarStytle = topBarStyle;
         [self setupTopBarView:_topBarStytle];
+    }
+}
+
+- (void)rightButtonPressed:(UIButton *)button
+{
+    if ([self.delegate respondsToSelector:@selector(rightButtonPressed:)]) {
+        [self.delegate topBarRightButtonPressed:button];
+    }
+}
+
+- (void)leftButtonPressed:(UIButton *)button
+{
+    if ([self.delegate respondsToSelector:@selector(leftButtonPressed:)]) {
+        [self.delegate topBarRightButtonPressed:button];
+    }
+}
+
+- (void)extendButtonPressed:(UIButton *)button
+{
+    if ([self.delegate respondsToSelector:@selector(topBarExtendButtonPressed:)]) {
+        [self.delegate topBarExtendButtonPressed:button];
+    }
+}
+
+#pragma mark - Dock
+
+- (void)addDockButton
+{
+    if (self.dockButton != nil)
+    {
+        return;
+    }
+    
+    self.dockButton = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 44.0f, 20, 44, 44)];
+    
+    [self.dockButton setImage:[UIImage imageNamed:@"icon_nav_dock_entry_close"]
+                     forState:UIControlStateNormal];
+    [self.dockButton setImage:[UIImage imageNamed:@"icon_nav_dock_entry_open"]
+                     forState:UIControlStateSelected];
+    [self.dockButton addTarget:self
+                        action:@selector(dockButtonClicked:)
+              forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:self.dockButton];
+    
+}
+
+- (void)dockButtonClicked:(UIButton *)button
+{
+    if (self.delegate &&
+        [self.delegate respondsToSelector:@selector(topBarDockButtonClicked:)])
+    {
+        [self.delegate topBarDockButtonClicked:button];
     }
 }
 

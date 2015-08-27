@@ -52,6 +52,8 @@
 		65EEE3351B8EE1C300340778 /* TNNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE32E1B8EE1C300340778 /* TNNavigator.m */; };
 		65EEE3361B8EE1C300340778 /* TNNavigationMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE3301B8EE1C300340778 /* TNNavigationMap.m */; };
 		65EEE3371B8EE1C300340778 /* TNNavigationURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE3321B8EE1C300340778 /* TNNavigationURLHelper.m */; };
+		65EEE33B1B8EFBAF00340778 /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE33A1B8EFBAF00340778 /* UIColor+TKCategory.m */; };
+		65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE33D1B8F207E00340778 /* GLBarViewController.m */; };
 		65F1E21E1B5E449300AFC350 /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F1E21D1B5E449300AFC350 /* OButton.m */; };
 		C04B873A1B8CC0F000A69068 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */; };
 		C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */; };
@@ -165,6 +167,10 @@
 		65EEE3331B8EE1C300340778 /* TNNavigationURLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNavigationURLs.h; sourceTree = "<group>"; };
 		65EEE3341B8EE1C300340778 /* TNNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNNavigationProtocol.h; sourceTree = "<group>"; };
 		65EEE3381B8EE25700340778 /* SingletonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonDefine.h; sourceTree = "<group>"; };
+		65EEE3391B8EFBAF00340778 /* UIColor+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TKCategory.h"; sourceTree = "<group>"; };
+		65EEE33A1B8EFBAF00340778 /* UIColor+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TKCategory.m"; sourceTree = "<group>"; };
+		65EEE33C1B8F207E00340778 /* GLBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBarViewController.h; sourceTree = "<group>"; };
+		65EEE33D1B8F207E00340778 /* GLBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBarViewController.m; sourceTree = "<group>"; };
 		65F1E21C1B5E449300AFC350 /* OButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OButton.h; sourceTree = "<group>"; };
 		65F1E21D1B5E449300AFC350 /* OButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OButton.m; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -220,9 +226,9 @@
 				65EBADB41B637751005F22BD /* GURLRequest.h */,
 				65EBADB51B637751005F22BD /* GURLRequest.m */,
 				657686FD1B5DF1AA00173D56 /* PassMesg.h */,
-				65EBADAB1B633C12005F22BD /* TNTrainTicketManger.h */,
 				65EBADAF1B6364F9005F22BD /* TNBaseHTTPRequest.m */,
 				65EBADAE1B6364F9005F22BD /* TNBaseHTTPRequest.h */,
+				65EBADAB1B633C12005F22BD /* TNTrainTicketManger.h */,
 				65EBADAC1B633C12005F22BD /* TNTrainTicketManger.m */,
 				657686FE1B5DF1AA00173D56 /* PassMesg.m */,
 				65EBADB71B6382FB005F22BD /* TNTrainAd.h */,
@@ -362,6 +368,8 @@
 		65ECE8AD1B589AEB003134B2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				65EEE3391B8EFBAF00340778 /* UIColor+TKCategory.h */,
+				65EEE33A1B8EFBAF00340778 /* UIColor+TKCategory.m */,
 				65EBADB11B636CFB005F22BD /* NSString+TNExtends.h */,
 				65EBADB21B636CFB005F22BD /* NSString+TNExtends.m */,
 				65D9B9B51B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.h */,
@@ -394,6 +402,8 @@
 			children = (
 				65E945F21B5C8CA9002CC8BB /* TabBarVC */,
 				65E945F11B5C8C54002CC8BB /* DemoVC */,
+				65EEE33C1B8F207E00340778 /* GLBarViewController.h */,
+				65EEE33D1B8F207E00340778 /* GLBarViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -609,10 +619,12 @@
 				65EBADB61B637751005F22BD /* GURLRequest.m in Sources */,
 				65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */,
 				65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */,
+				65EEE33B1B8EFBAF00340778 /* UIColor+TKCategory.m in Sources */,
 				65ECE89F1B5899EC003134B2 /* ScrollDemoVC.m in Sources */,
 				65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */,
 				65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */,
 				65F1E21E1B5E449300AFC350 /* OButton.m in Sources */,
+				65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */,
 				65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */,
 				6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */,
 				C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */,

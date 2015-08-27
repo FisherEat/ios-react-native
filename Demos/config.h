@@ -33,3 +33,5 @@
 //方法简写
 #define mAlert(title, msg, cancel, other)   [[[UIAlertView alloc] initWithTitle:title \
          message:msg delegate:nil cancelButtonTitle:cancel otherButtonTitles:other, nil] show] 
+
+#define HEXCOLOR(hexColorValue) [UIColor colorWithHex:hexColorValue]
