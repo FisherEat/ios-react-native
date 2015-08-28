@@ -8,6 +8,7 @@
 
 #import "GLTopBarView.h"
 #import "config.h"
+#import "UIButton+Position.h"
 
 #define kGLTopBarRect CGRectMake(0, 0, SCREEN_WIDTH, 64.5)
 #define kGLTopBarLineRect CGRectMake(0, 64, SCREEN_WIDTH, 0.5)
@@ -192,7 +193,7 @@
         
         //Default left menu style.
         if (GLTopBarStyleTitleLeftMenu == self.topBarStytle
-            || GLTopBarStyleTitleLeftButtonRightButton == self.topBarStytle) {
+            || GLTopBarStyleTitleLeftMenuRightButton == self.topBarStytle) {
             [_leftButton setTitleColor:[UIColor colorwithHexString:@"#515567"] forState:UIControlStateNormal];
             [_leftButton setTitleColor:[UIColor colorwithHexString:@"#505264"] forState:UIControlStateHighlighted];
             
@@ -218,10 +219,9 @@
         else {
             [_leftButton setTitleColor:HEXCOLOR(0x515567) forState:UIControlStateNormal];
             [_leftButton setTitleColor:HEXCOLOR(0x505264) forState:UIControlStateHighlighted];
-            [_leftButton setTitle:@"哈哈" forState:UIControlStateNormal];
             _leftButton.frame = kGLTopBarLeftButtonRect;
             [_leftButton setImage:[UIImage imageNamed:@"icon_nav_back"] forState:UIControlStateNormal];
-           // [_leftButton setImageTitleSpace:5.0f];
+            [_leftButton setImageTitleSpace:5.0f];
         }
         
         [_leftButton addTarget:self action:@selector(leftButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -332,10 +332,9 @@
 {
     if ([_leftButtonTitle isEqualToString:leftButtonTitle]) {
         
-    }
-    else {
+    }else {
         _leftButtonTitle = leftButtonTitle;
-        [_leftButton setTitle:@"哈哈" forState:UIControlStateNormal];
+        [_leftButton setTitle:leftButtonTitle forState:UIControlStateNormal];
     }
 }
 
@@ -388,13 +387,16 @@
     [_extendButton setTitle:_extendButtonTitle forState:UIControlStateNormal];
 }
 
-- (void)setTopBarStyle:(GLTopBarStyle)topBarStyle
+/**
+ bug ：重写setTopBarStytle方法出错，导致该属性无法初始化。
+ */
+
+- (void)setTopBarStytle:(GLTopBarStyle)topBarStytle
 {
-    if (_topBarStytle == topBarStyle) {
+    if (_topBarStytle == topBarStytle) {
         
-    }
-    else {
-        _topBarStytle = topBarStyle;
+    }else {
+        _topBarStytle = topBarStytle;
         [self setupTopBarView:_topBarStytle];
     }
 }

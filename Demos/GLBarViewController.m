@@ -37,10 +37,10 @@
 }
 
 #pragma mark - Overrider getter
-- (TNTopBarView *)topBarView
+- (GLTopBarView *)topBarView
 {
     if (!_topBarView) {
-        _topBarView = [TNTopBarView topBarViewWithStyle:TNTopBarStyleTitle delegate:self];
+        _topBarView = [GLTopBarView topBarViewWithStyle:GLTopBarStyleTitle delegate:self];
     }
     return _topBarView;
 }

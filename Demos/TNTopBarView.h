@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIButton+Position.h"
 
 typedef NS_ENUM(NSInteger, TNTopBarStyle) {
     TNTopBarStyleDefault,

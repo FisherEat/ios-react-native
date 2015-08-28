@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */; };
+		6529C3601B8FFA00008E62CF /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6529C35F1B8FFA00008E62CF /* UIButton+Position.m */; };
+		6529C3651B9054BD008E62CF /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6529C3641B9054BD008E62CF /* UIViewController+Analysis.m */; };
+		6529C3681B905560008E62CF /* NSObject+BlackMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6529C3671B905560008E62CF /* NSObject+BlackMagic.m */; };
+		6529C36B1B905670008E62CF /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6529C36A1B905670008E62CF /* Toast+UIView.m */; };
 		6567D94A1B6F02A1004176B9 /* GLNetWorkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567D9491B6F02A1004176B9 /* GLNetWorkDemo.m */; };
 		6567D94C1B6F033A004176B9 /* GLNetWorkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567D94B1B6F033A004176B9 /* GLNetWorkDemo.storyboard */; };
 		6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567D94E1B6F1329004176B9 /* NetWorkCell.m */; };
@@ -80,6 +84,14 @@
 		650CEF621B5FA2BE00C001F3 /* TestDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemoVC.h; sourceTree = "<group>"; };
 		650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemoVC.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6529C35E1B8FFA00008E62CF /* UIButton+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Position.h"; sourceTree = "<group>"; };
+		6529C35F1B8FFA00008E62CF /* UIButton+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Position.m"; sourceTree = "<group>"; };
+		6529C3631B9054BD008E62CF /* UIViewController+Analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Analysis.h"; sourceTree = "<group>"; };
+		6529C3641B9054BD008E62CF /* UIViewController+Analysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Analysis.m"; sourceTree = "<group>"; };
+		6529C3661B905560008E62CF /* NSObject+BlackMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlackMagic.h"; sourceTree = "<group>"; };
+		6529C3671B905560008E62CF /* NSObject+BlackMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlackMagic.m"; sourceTree = "<group>"; };
+		6529C3691B905670008E62CF /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		6529C36A1B905670008E62CF /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		6567D9481B6F02A1004176B9 /* GLNetWorkDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLNetWorkDemo.h; sourceTree = "<group>"; };
 		6567D9491B6F02A1004176B9 /* GLNetWorkDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLNetWorkDemo.m; sourceTree = "<group>"; };
 		6567D94B1B6F033A004176B9 /* GLNetWorkDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GLNetWorkDemo.storyboard; sourceTree = "<group>"; };
@@ -224,6 +236,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6529C35D1B8FEC94008E62CF /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				65ECE8781B588AA9003134B2 /* Main.storyboard */,
+				6567D94B1B6F033A004176B9 /* GLNetWorkDemo.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
 		657686FC1B5DF15400173D56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,8 +262,6 @@
 				65EBADB81B6382FB005F22BD /* TNTrainAd.m */,
 				65DA43681B7B2B06003A4A23 /* BlockModel.h */,
 				65DA43691B7B2B06003A4A23 /* BlockModel.m */,
-				65D9E9EF1B7C3265000CCF21 /* GLTopBarView.h */,
-				65D9E9F01B7C3265000CCF21 /* GLTopBarView.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -391,8 +410,8 @@
 				65ECE8BB1B58A80C003134B2 /* NSTimer+Addition.h */,
 				65ECE8BC1B58A80C003134B2 /* NSTimer+Addition.m */,
 				65ECE8B11B589B39003134B2 /* Category */,
-				C04B87381B8CC0F000A69068 /* NSArray+GLStuff.h */,
-				C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */,
+				6529C3631B9054BD008E62CF /* UIViewController+Analysis.h */,
+				6529C3641B9054BD008E62CF /* UIViewController+Analysis.m */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -400,6 +419,7 @@
 		65ECE8AE1B589AF3003134B2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6529C35D1B8FEC94008E62CF /* StoryBoards */,
 				657686FC1B5DF15400173D56 /* Model */,
 				65ECE8B01B589B1A003134B2 /* Views */,
 				65ECE8AF1B589AFE003134B2 /* Controllers */,
@@ -421,8 +441,10 @@
 		65ECE8B01B589B1A003134B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				65ECE8781B588AA9003134B2 /* Main.storyboard */,
-				6567D94B1B6F033A004176B9 /* GLNetWorkDemo.storyboard */,
+				6529C35E1B8FFA00008E62CF /* UIButton+Position.h */,
+				6529C35F1B8FFA00008E62CF /* UIButton+Position.m */,
+				65D9E9EF1B7C3265000CCF21 /* GLTopBarView.h */,
+				65D9E9F01B7C3265000CCF21 /* GLTopBarView.m */,
 				65ECE8BF1B58A9CC003134B2 /* TNHomeSpecialSaleCell.m */,
 				65ECE8C01B58A9CC003134B2 /* TNHomeSpecialSaleCell.h */,
 				65ECE8B81B58A804003134B2 /* TNCycleScrollView.h */,
@@ -447,6 +469,12 @@
 		65ECE8B11B589B39003134B2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6529C3691B905670008E62CF /* Toast+UIView.h */,
+				6529C36A1B905670008E62CF /* Toast+UIView.m */,
+				6529C3661B905560008E62CF /* NSObject+BlackMagic.h */,
+				6529C3671B905560008E62CF /* NSObject+BlackMagic.m */,
+				C04B87381B8CC0F000A69068 /* NSArray+GLStuff.h */,
+				C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -611,6 +639,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6529C36B1B905670008E62CF /* Toast+UIView.m in Sources */,
 				65ECE8CA1B58BF25003134B2 /* SecondViewController.m in Sources */,
 				C0DA6D4A1B7CFB0A005F72DF /* OCDataSourceDemo.m in Sources */,
 				65EBADAD1B633C12005F22BD /* TNTrainTicketManger.m in Sources */,
@@ -624,7 +653,9 @@
 				65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */,
 				65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */,
 				65ECE8A81B589A5D003134B2 /* AnimationDemoVC.m in Sources */,
+				6529C3681B905560008E62CF /* NSObject+BlackMagic.m in Sources */,
 				C04B873A1B8CC0F000A69068 /* NSArray+GLStuff.m in Sources */,
+				6529C3651B9054BD008E62CF /* UIViewController+Analysis.m in Sources */,
 				65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */,
 				65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */,
 				65EBADB61B637751005F22BD /* GURLRequest.m in Sources */,
@@ -634,6 +665,7 @@
 				65EEE33B1B8EFBAF00340778 /* UIColor+TKCategory.m in Sources */,
 				65ECE89F1B5899EC003134B2 /* ScrollDemoVC.m in Sources */,
 				65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */,
+				6529C3601B8FFA00008E62CF /* UIButton+Position.m in Sources */,
 				65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */,
 				65F1E21E1B5E449300AFC350 /* OButton.m in Sources */,
 				65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */,

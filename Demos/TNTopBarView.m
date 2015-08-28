@@ -258,7 +258,7 @@
             
             _leftButton.frame = kTNTopBarLeftButtonRect;
             [_leftButton setImage:[UIImage imageNamed:@"icon_nav_back"] forState:UIControlStateNormal];
-            //[_leftButton setImageTitleSpace:5.0f];
+            [_leftButton setImageTitleSpace:5.0f];
         }
         
         [_leftButton addTarget:self action:@selector(leftButtonPressed:) forControlEvents:UIControlEventTouchUpInside];

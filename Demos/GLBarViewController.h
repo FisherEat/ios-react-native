@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TNTopBarView.h"
+#import "GLTopBarView.h"
 
-@interface GLBarViewController : UIViewController<TNTopBarViewDelegate>
+@interface GLBarViewController : UIViewController<GLTopBarViewDelegate>
 
-@property(nonatomic, strong) TNTopBarView *topBarView;
+@property(nonatomic, strong) GLTopBarView *topBarView;
 
 //将左侧按钮设置成返回按钮
 - (void)setLeftButtonToBackButton;

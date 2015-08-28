@@ -7,7 +7,18 @@
 //
 
 #import "GLBarViewController.h"
+#import "TNTableViewCell.h"
 
 @interface GLPresentViewController : GLBarViewController
+
+@end
+
+@interface GLPresentInfoCell : TNTableViewCell
+
+@property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UILabel *ageLabel;
+@property (nonatomic, strong) UIImageView *imgView;
+
+- (void)bindModel:(NSDictionary *)cellData;
 
 @end
