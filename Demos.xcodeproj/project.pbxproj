@@ -20,6 +20,10 @@
 		657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */ = {isa = PBXBuildFile; fileRef = 657686FE1B5DF1AA00173D56 /* PassMesg.m */; };
 		65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A825821B6601A100E3BAB1 /* TrainStationVC.m */; };
 		65D52A7A1B857B37009774EF /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D52A791B857B37009774EF /* WebViewDemo.m */; };
+		65D882B41B91879E00B775A0 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D882B21B91879E00B775A0 /* MainCell.m */; };
+		65D882B51B91879E00B775A0 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D882B31B91879E00B775A0 /* MainCell.xib */; };
+		65D882B91B9187B500B775A0 /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D882B71B9187B500B775A0 /* AttachCell.m */; };
+		65D882BA1B9187B500B775A0 /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D882B81B9187B500B775A0 /* AttachCell.xib */; };
 		65D8DF6D1B845CEE007E31BA /* LoginDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8DF6C1B845CEE007E31BA /* LoginDemoVC.m */; };
 		65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B31B5C892A00ED4040 /* FifthViewController.m */; };
 		65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */; };
@@ -106,6 +110,12 @@
 		65A825821B6601A100E3BAB1 /* TrainStationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainStationVC.m; sourceTree = "<group>"; };
 		65D52A781B857B37009774EF /* WebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDemo.h; sourceTree = "<group>"; };
 		65D52A791B857B37009774EF /* WebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDemo.m; sourceTree = "<group>"; };
+		65D882B11B91879E00B775A0 /* MainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
+		65D882B21B91879E00B775A0 /* MainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCell.m; sourceTree = "<group>"; };
+		65D882B31B91879E00B775A0 /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		65D882B61B9187B500B775A0 /* AttachCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachCell.h; sourceTree = "<group>"; };
+		65D882B71B9187B500B775A0 /* AttachCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachCell.m; sourceTree = "<group>"; };
+		65D882B81B9187B500B775A0 /* AttachCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachCell.xib; sourceTree = "<group>"; };
 		65D8DF6B1B845CEE007E31BA /* LoginDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDemoVC.h; sourceTree = "<group>"; };
 		65D8DF6C1B845CEE007E31BA /* LoginDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDemoVC.m; sourceTree = "<group>"; };
 		65D9B9B21B5C892A00ED4040 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
@@ -462,6 +472,12 @@
 				6567D9521B6F3CD3004176B9 /* CustomCell.xib */,
 				C0DA6D451B7CEA6C005F72DF /* AdvertiseView.h */,
 				C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */,
+				65D882B11B91879E00B775A0 /* MainCell.h */,
+				65D882B21B91879E00B775A0 /* MainCell.m */,
+				65D882B31B91879E00B775A0 /* MainCell.xib */,
+				65D882B61B9187B500B775A0 /* AttachCell.h */,
+				65D882B71B9187B500B775A0 /* AttachCell.m */,
+				65D882B81B9187B500B775A0 /* AttachCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -586,6 +602,8 @@
 			files = (
 				6567D9541B6F3CD3004176B9 /* CustomCell.xib in Resources */,
 				65ECE87A1B588AA9003134B2 /* Main.storyboard in Resources */,
+				65D882BA1B9187B500B775A0 /* AttachCell.xib in Resources */,
+				65D882B51B91879E00B775A0 /* MainCell.xib in Resources */,
 				65ECE87F1B588AA9003134B2 /* LaunchScreen.xib in Resources */,
 				65ECE87C1B588AA9003134B2 /* Images.xcassets in Resources */,
 				6567D94C1B6F033A004176B9 /* GLNetWorkDemo.storyboard in Resources */,
@@ -659,6 +677,7 @@
 				65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */,
 				65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */,
 				65EBADB61B637751005F22BD /* GURLRequest.m in Sources */,
+				65D882B91B9187B500B775A0 /* AttachCell.m in Sources */,
 				C053ABF71B8F5AA200BE5F5F /* GLPresentViewController.m in Sources */,
 				65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */,
 				65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */,
@@ -684,6 +703,7 @@
 				C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */,
 				65ECE8D31B590359003134B2 /* CNPPopupController.m in Sources */,
 				65ECE89C1B58985A003134B2 /* ButtonDemoVC.m in Sources */,
+				65D882B41B91879E00B775A0 /* MainCell.m in Sources */,
 				65ECE8B71B58A79C003134B2 /* TNTableViewCell.m in Sources */,
 				65EBADB91B6382FB005F22BD /* TNTrainAd.m in Sources */,
 				6567D94A1B6F02A1004176B9 /* GLNetWorkDemo.m in Sources */,

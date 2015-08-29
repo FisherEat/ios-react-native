@@ -8,6 +8,8 @@
 
 #import "GLPresentViewController.h"
 #import "TNTableViewCell.h"
+#import "MainCell.h"
+#import "AttachCell.h"
 
 @interface GLPresentInfoCell()
 
@@ -27,6 +29,9 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 
+@property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) NSArray *imageArray;
+
 @end
 
 @implementation GLPresentViewController
@@ -34,20 +39,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor =[UIColor whiteColor];
+
+    [self showTopBarView];
+    [self showTableView];
+
+    NSDictionary *dict = @{@"Cell": @"MainCell", @"isAttached":@(NO)};
+    NSArray *array = @[dict ,dict, dict ,dict ,dict];
+    self.dataArray = [NSMutableArray arrayWithArray:array];
+    
+    self.imageArray = @[@"a", @"b", @"c", @"d", @"d"];
+}
+
+#pragma mark - UI Events
+- (void)showTopBarView
+{
     self.topBarView.topBarStytle = GLTopBarStyleTitleLeftButtonRightButton;
     self.topBarView.titleText = @"哈哈";
     self.topBarView.leftButtonTitle = @"返回";
     self.topBarView.rightButtonTitle = @"更多";
     self.topBarView.delegate = self;
-   // [self setLeftButtonToBackButton];
-    [self.view addSubview:self.topBarView];
     
-    [self showTableView];
+    [self.view addSubview:self.topBarView];
 }
 
 - (void)showTableView
 {
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.y = self.topBarView.bottom;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -57,26 +74,79 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TNTableViewCell *cell = nil;
-    cell = (GLPresentInfoCell *)[GLPresentInfoCell cellForTableView:tableView];
-    [(GLPresentInfoCell *)cell bindModel:@{@"personName":@"席勒", @"personAge":@(18)}];
+    if ([[self.dataArray[indexPath.row] objectForKey:@"Cell"] isEqualToString:@"MainCell"]) {
+        static NSString *CellIdentifier = @"MainCell";
+        MainCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (!cell) {
+            cell = [[MainCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            cell.selectionStyle = UITableViewCellSelectionStyleGray;
+        }
+        NSString *imageName = [NSString stringWithFormat:@"%@.png", self.imageArray[indexPath.row]];
+        cell.Headerphoto.image = [UIImage imageNamed:imageName];
+        
+        return cell;
+    }else if ([[self.dataArray[indexPath.row] objectForKey:@"Cell"] isEqualToString:@"AttachedCell"]) {
+        static NSString *CellIdentifier = @"AttachedCell";
+        AttachCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        if (!cell) {
+            cell = [[AttachCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
+        
+        return cell;
+    }
     
-    return cell;
+    return nil ;
 }
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    if ([[self.dataArray[indexPath.row] objectForKey:@"Cell"] isEqualToString:@"MainCell"])
+    {
+        return 80;
+    }else{
+        return 50;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSIndexPath *path = nil;
+    if ([[self.dataArray[path.row] objectForKey:@"Cell"] isEqualToString:@"MainCell"]) {
+        path = [NSIndexPath indexPathForItem:(indexPath.row + 1) inSection:indexPath.section];
+    }else {
+        path = indexPath;
+    }
+    
+    if ([[self.dataArray[indexPath.row] objectForKey:@"isAttached"] boolValue]) {
+        //关闭附加Cell
+        NSDictionary *dict = @{@"Cell": @"MainCell", @"isAttached": @(NO)};
+        self.dataArray[(path.row - 1)] = dict;
+        [self.dataArray removeObjectAtIndex:path.row];
+        
+        [self.tableView beginUpdates];
+        [self.tableView deleteRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
+        [self.tableView endUpdates];
+    }else {
+        //打开附加cell
+        NSDictionary *dict = @{@"Cell": @"MainCell", @"isAttached":@(YES)};
+        self.dataArray[(path.row - 1)] = dict;
+        NSDictionary *addDict = @{@"Cell": @"AttachedCell",@"isAttached":@(YES)};
+        [self.dataArray insertObject:addDict atIndex:path.row];
+        
+        [self.tableView beginUpdates];
+        [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
+        [self.tableView endUpdates];
+    }
 
 }
 

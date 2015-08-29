@@ -36,4 +36,21 @@ typedef NS_ENUM(NSInteger, UIButtonTitleAlignment)
  */
 - (void)setTitleImageVerticalCenter;
 
+/**
+ * @author Edited by schiller, 15-08-29 14:08:12
+ *
+ * @brief  自定义UIButton快捷方式
+ *
+ * @param frame
+ * @param target
+ * @param selector
+ * @param image
+ * @param imagePressed
+ *
+ * @return
+ */
++ (UIButton*) createButtonWithFrame: (CGRect) frame Target:(id)target Selector:(SEL)selector Image:(NSString *)image ImagePressed:(NSString *)imagePressed;
+
++ (UIButton *) createButtonWithFrame:(CGRect)frame Title:(NSString *)title Target:(id)target Selector:(SEL)selector;
+
 @end
