@@ -71,6 +71,8 @@
 		C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */; };
 		C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */; };
 		C0DA6D4A1B7CFB0A005F72DF /* OCDataSourceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D491B7CFB0A005F72DF /* OCDataSourceDemo.m */; };
+		C0E662091B92B1E200F5F5B2 /* AddTBCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */; };
+		C0E6620C1B93442F00F5F5B2 /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */; };
 		D9B4260E6DC676C7B599BB11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24930CC2192A402FFE4E43 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -214,6 +216,10 @@
 		C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
 		C0DA6D481B7CFB0A005F72DF /* OCDataSourceDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDataSourceDemo.h; sourceTree = "<group>"; };
 		C0DA6D491B7CFB0A005F72DF /* OCDataSourceDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDataSourceDemo.m; sourceTree = "<group>"; };
+		C0E662071B92B1E200F5F5B2 /* AddTBCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTBCellViewController.h; sourceTree = "<group>"; };
+		C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTBCellViewController.m; sourceTree = "<group>"; };
+		C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHeaderView.h; sourceTree = "<group>"; };
+		C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHeaderView.m; sourceTree = "<group>"; };
 		CA8AB85E7A636C441E328926 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA24930CC2192A402FFE4E43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -307,6 +313,10 @@
 				65D52A791B857B37009774EF /* WebViewDemo.m */,
 				C053ABF51B8F5AA200BE5F5F /* GLPresentViewController.h */,
 				C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */,
+				C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */,
+				C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */,
+				C0E662071B92B1E200F5F5B2 /* AddTBCellViewController.h */,
+				C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -684,10 +694,12 @@
 				65EEE33B1B8EFBAF00340778 /* UIColor+TKCategory.m in Sources */,
 				65ECE89F1B5899EC003134B2 /* ScrollDemoVC.m in Sources */,
 				65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */,
+				C0E662091B92B1E200F5F5B2 /* AddTBCellViewController.m in Sources */,
 				6529C3601B8FFA00008E62CF /* UIButton+Position.m in Sources */,
 				65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */,
 				65F1E21E1B5E449300AFC350 /* OButton.m in Sources */,
 				65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */,
+				C0E6620C1B93442F00F5F5B2 /* GLHeaderView.m in Sources */,
 				65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */,
 				6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */,
 				C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */,

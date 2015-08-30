@@ -10,6 +10,7 @@
 #import "TNTableViewCell.h"
 #import "MainCell.h"
 #import "AttachCell.h"
+#import "AddTBCellViewController.h"
 
 @interface GLPresentInfoCell()
 
@@ -131,20 +132,23 @@
         //关闭附加Cell
         NSDictionary *dict = @{@"Cell": @"MainCell", @"isAttached": @(NO)};
         self.dataArray[(path.row - 1)] = dict;
+
         [self.dataArray removeObjectAtIndex:path.row];
-        
         [self.tableView beginUpdates];
         [self.tableView deleteRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
         [self.tableView endUpdates];
     }else {
         //打开附加cell
-        NSDictionary *dict = @{@"Cell": @"MainCell", @"isAttached":@(YES)};
+       NSDictionary *dict = @{@"Cell": @"MainCell", @"isAttached":@(YES)};
         self.dataArray[(path.row - 1)] = dict;
         NSDictionary *addDict = @{@"Cell": @"AttachedCell",@"isAttached":@(YES)};
         [self.dataArray insertObject:addDict atIndex:path.row];
-        
+        [self.dataArray insertObject:addDict atIndex:(path.row + 1)];
+        //[self.dataArray insertObject:addDict atIndex:path.row];
         [self.tableView beginUpdates];
         [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
+         path = [NSIndexPath indexPathForItem:(path.row + 1) inSection:indexPath.section];
+         [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
         [self.tableView endUpdates];
     }
 
@@ -167,6 +171,12 @@
 - (void)topBarLeftButtonPressed:(UIButton *)button
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (void)topBarRightButtonPressed:(UIButton *)button
+{
+    AddTBCellViewController *addCellVC = [[AddTBCellViewController alloc] init];
+    [self.navigationController pushViewController:addCellVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

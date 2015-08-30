@@ -53,4 +53,6 @@ typedef NS_ENUM(NSInteger, UIButtonTitleAlignment)
 
 + (UIButton *) createButtonWithFrame:(CGRect)frame Title:(NSString *)title Target:(id)target Selector:(SEL)selector;
 
++ (UIButton *)createButtonWithFrame:(CGRect)frame Target:(id)target  Image:(NSString *)image ImagePressed:(NSString *)imagePressed;
+
 @end
