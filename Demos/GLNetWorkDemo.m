@@ -13,9 +13,6 @@
 @interface GLNetWorkDemo ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *netWorkTableView;
-@property (weak, nonatomic) IBOutlet UIImageView *leftImage;
-@property (weak, nonatomic) IBOutlet UILabel *topLabel;
-@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
 
 @end
 
@@ -23,14 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //self.netWorkTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.view.width, self.view.height - 20) style:UITableViewStylePlain];
+
     self.netWorkTableView.delegate   = self;
     self.netWorkTableView.dataSource = self;
-   // [self.view addSubview:self.netWorkTableView];
-
-  //[self.netWorkTableView registerNib:[UINib nibWithNibName:@"NetWorkCell" bundle:nil] forCellReuseIdentifier:@"ShitCell"];
-
-      
+    
 }
 
 #pragma mark - 
@@ -38,21 +31,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 3;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   
-    NetWorkCell *cell = (NetWorkCell *)[tableView dequeueReusableCellWithIdentifier:@"shit"];
+    NetWorkCell *cell = (NetWorkCell *)[tableView dequeueReusableCellWithIdentifier:@"NetWorkCell"];
     
     if (cell==nil)
     {
-        cell=[[NetWorkCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"shit"];
+        cell=[[NetWorkCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"NetWorkCell"];
     }
     
     return cell;
@@ -60,7 +58,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return  75.f;
+    return  100.f;
 }
 
 - (void)didReceiveMemoryWarning {

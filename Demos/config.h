@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#ifdef DEBUG
+#define GLog(fmt, ...) { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]; [alert show]; }
+#else
+#define ULog(...)
+#endif
+
 //屏幕 rect
 #define SCREEN_RECT ([UIScreen mainScreen].bounds)
 

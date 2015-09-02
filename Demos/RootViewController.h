@@ -25,6 +25,7 @@ typedef NS_ENUM(NSInteger, GLTestDemoTypeCell)
     LoginDemoCell = 12,
     WebViewDemoCell = 13,
     TopBarViewDemoCell = 14,
+    TableViewDemoCell = 15
 };
 
 @interface RootViewController : UIViewController

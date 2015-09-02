@@ -40,6 +40,9 @@ static NSInteger i = 0;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
+    
+    GLog(@"%@", self);
+    
    
 }
 #pragma mark - 

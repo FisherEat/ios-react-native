@@ -17,7 +17,7 @@
     if (self) {
         UIButton *headerButton = [UIButton createButtonWithFrame:CGRectMake(10, 10, 18, 12) Target:self  Image:@"arrow_down" ImagePressed:@"arrow_up"];
         self.headerButton = headerButton;
-        [self.headerButton addTarget:self action:@selector(toggleCell) forControlEvents:UIControlEventTouchUpInside];
+      //  [self.headerButton addTarget:self action:@selector(toggleCell) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:headerButton];
     }
     return self;

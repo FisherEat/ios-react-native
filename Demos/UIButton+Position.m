@@ -81,7 +81,11 @@
 {
     UIButton * button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setFrame:frame];
-   // [button setTitle:title forState:UIControlStateNormal];
+    UIImage *newImage = [UIImage imageNamed:image];
+    [button setBackgroundImage:newImage forState:UIControlStateNormal];
+   // UIImage *newPressedImage = [UIImage imageNamed:imagePressed];
+   // [button setBackgroundImage:newPressedImage forState:UIControlStateSelected];
+
     return button;
 }
 @end

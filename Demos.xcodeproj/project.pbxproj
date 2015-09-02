@@ -63,6 +63,7 @@
 		65EEE33B1B8EFBAF00340778 /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE33A1B8EFBAF00340778 /* UIColor+TKCategory.m */; };
 		65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE33D1B8F207E00340778 /* GLBarViewController.m */; };
 		65F1E21E1B5E449300AFC350 /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F1E21D1B5E449300AFC350 /* OButton.m */; };
+		65F53F1B1B93F5AD00D019B9 /* TableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */; };
 		C04B873A1B8CC0F000A69068 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */; };
 		C053ABF71B8F5AA200BE5F5F /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */; };
 		C053ABFA1B8F728B00BE5F5F /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */; };
@@ -199,6 +200,8 @@
 		65EEE33D1B8F207E00340778 /* GLBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBarViewController.m; sourceTree = "<group>"; };
 		65F1E21C1B5E449300AFC350 /* OButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OButton.h; sourceTree = "<group>"; };
 		65F1E21D1B5E449300AFC350 /* OButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OButton.m; sourceTree = "<group>"; };
+		65F53F191B93F5AD00D019B9 /* TableViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDemoViewController.h; sourceTree = "<group>"; };
+		65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDemoViewController.m; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C04B87381B8CC0F000A69068 /* NSArray+GLStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GLStuff.h"; sourceTree = "<group>"; };
 		C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GLStuff.m"; sourceTree = "<group>"; };
@@ -313,10 +316,10 @@
 				65D52A791B857B37009774EF /* WebViewDemo.m */,
 				C053ABF51B8F5AA200BE5F5F /* GLPresentViewController.h */,
 				C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */,
-				C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */,
-				C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */,
 				C0E662071B92B1E200F5F5B2 /* AddTBCellViewController.h */,
 				C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */,
+				65F53F191B93F5AD00D019B9 /* TableViewDemoViewController.h */,
+				65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -461,6 +464,8 @@
 		65ECE8B01B589B1A003134B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */,
+				C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */,
 				6529C35E1B8FFA00008E62CF /* UIButton+Position.h */,
 				6529C35F1B8FFA00008E62CF /* UIButton+Position.m */,
 				65D9E9EF1B7C3265000CCF21 /* GLTopBarView.h */,
@@ -685,6 +690,7 @@
 				C04B873A1B8CC0F000A69068 /* NSArray+GLStuff.m in Sources */,
 				6529C3651B9054BD008E62CF /* UIViewController+Analysis.m in Sources */,
 				65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */,
+				65F53F1B1B93F5AD00D019B9 /* TableViewDemoViewController.m in Sources */,
 				65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */,
 				65EBADB61B637751005F22BD /* GURLRequest.m in Sources */,
 				65D882B91B9187B500B775A0 /* AttachCell.m in Sources */,

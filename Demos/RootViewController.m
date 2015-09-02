@@ -25,6 +25,7 @@
 #import "LoginDemoVC.h"
 #import "WebViewDemo.h"
 #import "GLPresentViewController.h"
+#import "TableViewDemoViewController.h"
 
 @interface RootViewController ()
 
@@ -60,7 +61,7 @@
     
     [self.view addSubview:self.myTable];
     
-    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo", @"WebViewDemo", @"TopBarViewDemo"]];
+    self.demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo", @"WebViewDemo", @"TopBarViewDemo", @"TableViewTypesDemo"]];
     [self setScrollAdvertise];
  
     //test nil NULL
@@ -340,6 +341,12 @@
         {
             GLPresentViewController *presentVC = [[GLPresentViewController alloc] init];
             [self.navigationController pushViewController:presentVC animated:YES];
+        }
+            break;
+        case TableViewDemoCell:
+        {
+            TableViewDemoViewController *tableVC = [[TableViewDemoViewController alloc] init];
+            [self.navigationController pushViewController:tableVC animated:YES];
         }
             break;
         default:
