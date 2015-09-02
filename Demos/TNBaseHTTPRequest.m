@@ -9,10 +9,17 @@
 #import "TNBaseHTTPRequest.h"
 #import "NSString+TNExtends.h"
 
-NSString *const serverTypeHTTP        = @"HTTP";
+NSString *const serverTypeHTTP = @"HTTP";
 NSString *const serverTypeDynamicHTTP = @"dynamicHTTP";
-NSString *const serverTypeHTTPS       = @"HTTPS";
-NSString *const serverTypeChat        = @"chat";
+NSString *const serverTypeHTTPS = @"HTTPS";
+NSString *const serverTypeChat = @"chat";
+
+// [6.0.4]add by linfeng. 服务端为客服加了这么一个新域名
+NSString *const serverTypeCustomerService = @"customerService";
+
+NSString *const serverTypeJavaHTTP = @"JavaHttp";
+NSString *const serverTypeJavaHTTPS = @"JavaHttps";
+NSString *const serverTypeStatHTTP = @"STAT";//统计的接口，只有崩溃搜集用
 
 NSString *const HTTPMethodGET = @"GET";
 NSString *const HTTPMethodPOST = @"POST";
@@ -28,14 +35,28 @@ NSString *const HTTPMethodPOST = @"POST";
 
 @implementation TNBaseHTTPRequest
 
-+ (instancetype)requstWithPath:(NSString *)path param:(NSDictionary *)params
++ (instancetype)requestWithPath:(NSString *)path params:(NSDictionary *)params
 {
     return [self requestWithServerType:serverTypeHTTP
-                           path:path
-                     HTTPMethod:HTTPMethodGET
-                          params:params
-                   timeInterval:TNCacheIntervalNone];
-    
+                                  path:path
+                            HTTPMethod:HTTPMethodGET
+                                params:params
+                          timeInterval:TNCacheIntervalNone];
+}
+
++ (instancetype)requestWithPath:(NSString *)path HTTPMethod:(NSString *)HTTPMethod params:(NSDictionary *)params
+{
+    return [self requestWithPath:path HTTPMethod:HTTPMethod params:params timeInterval:TNCacheIntervalNone];
+}
+
++ (instancetype)requestWithPath:(NSString *)path HTTPMethod:(NSString *)HTTPMethod params:(NSDictionary *)params timeInterval:(NSTimeInterval)timeInterval
+{
+    TNBaseHTTPRequest *request = [[self alloc] init];
+    request.path = path;
+    request.HTTPMethod = HTTPMethod;
+    request.params = params;
+    request.cacheInterval = timeInterval;
+    return request;
 }
 
 + (instancetype)requestWithServerType:(NSString *)serverType path:(NSString *)path params:(NSDictionary *)params
@@ -43,7 +64,7 @@ NSString *const HTTPMethodPOST = @"POST";
     return [self requestWithServerType:serverType
                                   path:path
                             HTTPMethod:HTTPMethodGET
-                                 params:params
+                                params:params
                           timeInterval:TNCacheIntervalNone];
 }
 
@@ -55,7 +76,7 @@ NSString *const HTTPMethodPOST = @"POST";
     return [self requestWithServerType:serverType
                                   path:path
                             HTTPMethod:HTTPMethod
-                                 params:params
+                                params:params
                           timeInterval:TNCacheIntervalNone];
 }
 
@@ -76,32 +97,19 @@ NSString *const HTTPMethodPOST = @"POST";
 
 - (instancetype)init
 {
-    self = [super init];
-    if (self) {
-        self.modernInterface = YES;
+    if (self = [super init])
+    {
         [self addObserver:self
                forKeyPath:@"params"
                   options:0
                   context:NULL];
     }
     return self;
-    
 }
 
 - (void)dealloc
 {
     [self removeObserver:self forKeyPath:@"params"];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath
-                      ofObject:(id)object
-                        change:(NSDictionary *)change
-                       context:(void *)context
-{
-    if ([keyPath isEqualToString:@"params"]) {
-        self.innerCacheFileName = nil;
-    }
-    
 }
 
 - (NSString *)description
@@ -115,20 +123,28 @@ NSString *const HTTPMethodPOST = @"POST";
             self.responseModelClassString];
 }
 
+- (BOOL)isRestful
+{
+    return YES;
+}
+
 - (NSString *)cacheFileName
 {
-    if (self.innerCacheFileName) {
+    if (self.innerCacheFileName)
+    {
         return self.innerCacheFileName;
     }
     
     NSMutableString *fileName = [NSMutableString string];
     [fileName appendString:self.path];
     
-    if ([self.params count] > 0) {
+    if ([self.params count] > 0)
+    {
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self.params
                                                            options:0
                                                              error:nil];
-        if (jsonData) {
+        if (jsonData)
+        {
             [fileName appendString:[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]];
         }
     }
@@ -136,9 +152,14 @@ NSString *const HTTPMethodPOST = @"POST";
     self.innerCacheFileName = [fileName MD5Hash];
     
     return self.innerCacheFileName;
-    
 }
 
-
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqualToString:@"params"])
+    {
+        self.innerCacheFileName = nil;
+    }
+}
 
 @end

@@ -45,44 +45,10 @@ static TNTrainTicketManger *_sharedInstance = nil;
  *
  * @brief  该方法为获取火车票头部广告页面的方法，用到较多的网络请求知识
  *
- * @param dataBlock <#dataBlock description#>
+ * @param dataBlock
  */
 - (void)fetchAdDataWithCompletion:(dataBlock)dataBlock
 {
-    NSDictionary *params = @{@"cityCode":@720011};
-    
-//    TNBaseHTTPRequest *request = [TNBaseHTTPRequest requestWithServerType:serverTypeDynamicHTTP
-//                                                                     path:TRAIN_ADLIST
-//                                                               HTTPMethod:HTTPMethodPOST
-//                                                                    param:params
-//                                                             timeInterval:0.0f];
-    
-    [[GURLRequest sharedInstance] postForPath:nil
-                                   withParams:params
-                            completionHandler:^(id data, NSError *error)
-    {
-       NSURL *url  = [NSURL URLWithString:@"http://dynamic.m.tuniu.com/api/train/product/adList"];
-     //   NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
-        NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-        NSData *Data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-        
-        if (Data) {
-            
-            NSMutableArray *adList = [NSMutableArray array];
-            
-            for (id obj in data[@"list"]) {
-                [adList addObject:obj];
-                
-            }
-            
-            self.adList = [NSMutableArray arrayWithArray:adList];
-            
-            if (dataBlock) {
-                dataBlock(adList, nil);
-            }
-        }
-    }];
     
 }
 

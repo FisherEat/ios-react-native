@@ -64,6 +64,7 @@
 		65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE33D1B8F207E00340778 /* GLBarViewController.m */; };
 		65F1E21E1B5E449300AFC350 /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F1E21D1B5E449300AFC350 /* OButton.m */; };
 		65F53F1B1B93F5AD00D019B9 /* TableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */; };
+		65F632EF1B96F2E700E62119 /* TNHTTPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F632EE1B96F2E700E62119 /* TNHTTPEngine.m */; };
 		C04B873A1B8CC0F000A69068 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */; };
 		C053ABF71B8F5AA200BE5F5F /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */; };
 		C053ABFA1B8F728B00BE5F5F /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */; };
@@ -202,6 +203,8 @@
 		65F1E21D1B5E449300AFC350 /* OButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OButton.m; sourceTree = "<group>"; };
 		65F53F191B93F5AD00D019B9 /* TableViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDemoViewController.h; sourceTree = "<group>"; };
 		65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDemoViewController.m; sourceTree = "<group>"; };
+		65F632ED1B96F2E700E62119 /* TNHTTPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHTTPEngine.h; sourceTree = "<group>"; };
+		65F632EE1B96F2E700E62119 /* TNHTTPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHTTPEngine.m; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C04B87381B8CC0F000A69068 /* NSArray+GLStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GLStuff.h"; sourceTree = "<group>"; };
 		C04B87391B8CC0F000A69068 /* NSArray+GLStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GLStuff.m"; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				657686FD1B5DF1AA00173D56 /* PassMesg.h */,
 				65EBADAF1B6364F9005F22BD /* TNBaseHTTPRequest.m */,
 				65EBADAE1B6364F9005F22BD /* TNBaseHTTPRequest.h */,
+				65F632ED1B96F2E700E62119 /* TNHTTPEngine.h */,
+				65F632EE1B96F2E700E62119 /* TNHTTPEngine.m */,
 				65EBADAB1B633C12005F22BD /* TNTrainTicketManger.h */,
 				65EBADAC1B633C12005F22BD /* TNTrainTicketManger.m */,
 				657686FE1B5DF1AA00173D56 /* PassMesg.m */,
@@ -701,6 +706,7 @@
 				65ECE89F1B5899EC003134B2 /* ScrollDemoVC.m in Sources */,
 				65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */,
 				C0E662091B92B1E200F5F5B2 /* AddTBCellViewController.m in Sources */,
+				65F632EF1B96F2E700E62119 /* TNHTTPEngine.m in Sources */,
 				6529C3601B8FFA00008E62CF /* UIButton+Position.m in Sources */,
 				65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */,
 				65F1E21E1B5E449300AFC350 /* OButton.m in Sources */,
