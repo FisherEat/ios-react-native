@@ -10,10 +10,11 @@
 #import "OButton.h"
 #import "PassMesg.h"
 #import "TrainStationVC.h"
+#import "TestNet101ViewController.h"
 
 static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANGED" ;
 
-@interface ThirdViewController ()<UIGestureRecognizerDelegate>
+@interface ThirdViewController ()<UIGestureRecognizerDelegate,GLTopBarViewDelegate>
 
 @property(nonatomic, strong) OButton  *myButton;
 @property(nonatomic)         UIColor    *bColor;
@@ -45,7 +46,35 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
  //   [self setWebView];
     
     [self loadData];
+    
+    [self setTopBarView];
 
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)setTopBarView
+{
+    self.topBarView.topBarStytle = GLTopBarStyleTitleLeftButtonRightButton;
+    self.topBarView.titleText = @"网络相关";
+    self.topBarView.rightButtonTitle = @"更多";
+    
+}
+
+- (void)topBarRightButtonPressed:(UIButton *)button
+{
+    TestNet101ViewController *netView = [[TestNet101ViewController alloc] init];
+    [self.navigationController pushViewController:netView animated:YES];
 }
 
 #pragma mark block test

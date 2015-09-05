@@ -8,7 +8,7 @@
 
 #import "GLBarViewController.h"
 
-@interface GLBarViewController ()
+@interface GLBarViewController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 @end
 
 @implementation GLBarViewController
@@ -17,6 +17,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupTopBarView];
+    
+    //UINavigationControllerDelegate
+    self.navigationController.delegate = self;
+    
+    __weak typeof (self) weakSelf = self;
+    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        self.navigationController.interactivePopGestureRecognizer.delegate = weakSelf;
+    }
 }
 
 - (void)setupTopBarView

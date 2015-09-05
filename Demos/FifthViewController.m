@@ -8,7 +8,7 @@
 
 #import "FifthViewController.h"
 #import "Masonry.h"
-#import "AFNetworking.h"
+//#import "AFNetworking.h"
 
 @interface FifthViewController ()<UITextFieldDelegate, NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
@@ -26,11 +26,11 @@
     //[self setOneViewSize];
     //[self setTwoViewSize];
     //[self setTwoViewSpiltSuperView];
-    [self setTextFieldView];
+   // [self setTextFieldView];
     
     self.data = [NSMutableData data];
     //[self startGetConnection];
-    [self testNetWorking];
+    //[self testNetWorking];
     // [self postNetWorking];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -76,75 +76,75 @@
 
 #pragma mark -
 #pragma mark  AFNetworking
-- (void)testNetWorking
-{
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    NSDictionary *param = @{@"name": @"gaolong"};
-  //  NSError *error = nil;
-   
-    [manager POST:@"http://172.30.38.192/test.php"
-      parameters:param
-         success:^(AFHTTPRequestOperation *operation, id responseObject)
-    {
-       NSLog(@"JSON: %@", responseObject);
-        id  jsonString = [NSJSONSerialization JSONObjectWithData:responseObject
-                                                         options:NSJSONReadingAllowFragments
-                                                           error:nil];
-        if (jsonString != nil )
-        {
-            NSLog(@"反序列化成功, %@", jsonString);
-            
-            if ([jsonString isKindOfClass:[NSMutableDictionary class]]) {
-                NSDictionary *dict = (NSDictionary *)jsonString;
-                NSLog(@"dict = %@", dict);
-                NSString *key = dict[@"result"];
-                NSLog(@"the result is %@", key);
-                
-            }else if([jsonString isKindOfClass:[NSMutableArray class]])
-            {
-                NSArray *arr = (NSArray *)jsonString;
-                NSLog(@"arr = %@", arr);
-            }else
-            {
-                NSLog(@"fuck is not dic nor arr");
-                
-            }
-            
-        }else
-        {
-            NSLog(@"shit");
-        }
-        
-    }
-         failure:^(AFHTTPRequestOperation *operation, NSError *error)
-    {
-       NSLog(@"Error: %@", error);
-    }];
-}
+//- (void)testNetWorking
+//{
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    NSDictionary *param = @{@"name": @"gaolong"};
+//  //  NSError *error = nil;
+//   
+//    [manager POST:@"http://172.30.38.192/test.php"
+//      parameters:param
+//         success:^(AFHTTPRequestOperation *operation, id responseObject)
+//    {
+//       NSLog(@"JSON: %@", responseObject);
+//        id  jsonString = [NSJSONSerialization JSONObjectWithData:responseObject
+//                                                         options:NSJSONReadingAllowFragments
+//                                                           error:nil];
+//        if (jsonString != nil )
+//        {
+//            NSLog(@"反序列化成功, %@", jsonString);
+//            
+//            if ([jsonString isKindOfClass:[NSMutableDictionary class]]) {
+//                NSDictionary *dict = (NSDictionary *)jsonString;
+//                NSLog(@"dict = %@", dict);
+//                NSString *key = dict[@"result"];
+//                NSLog(@"the result is %@", key);
+//                
+//            }else if([jsonString isKindOfClass:[NSMutableArray class]])
+//            {
+//                NSArray *arr = (NSArray *)jsonString;
+//                NSLog(@"arr = %@", arr);
+//            }else
+//            {
+//                NSLog(@"fuck is not dic nor arr");
+//                
+//            }
+//            
+//        }else
+//        {
+//            NSLog(@"shit");
+//        }
+//        
+//    }
+//         failure:^(AFHTTPRequestOperation *operation, NSError *error)
+//    {
+//       NSLog(@"Error: %@", error);
+//    }];
+//}
 
 #pragma mark - 
 #pragma mark - shishi
--(void)postNetWorking
-{
-    NSURL *url = [NSURL URLWithString:@"http://172.30.38.192/shit.php"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    NSString *postString = @"firstName=gao&lastName=long";
-    request.HTTPMethod = @"POST";
-    request.HTTPBody = [postString dataUsingEncoding:NSUTF8StringEncoding];
-    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        if (error) {
-            NSLog(@"发生错误啦哥哥");
-        }else
-        {
-            NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"dataString -==== %@", dataString);
-        }
-    }];
-    
-    [task resume];
-}
-
+//-(void)postNetWorking
+//{
+//    NSURL *url = [NSURL URLWithString:@"http://172.30.38.192/shit.php"];
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//    NSString *postString = @"firstName=gao&lastName=long";
+//    request.HTTPMethod = @"POST";
+//    request.HTTPBody = [postString dataUsingEncoding:NSUTF8StringEncoding];
+//    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//        if (error) {
+//            NSLog(@"发生错误啦哥哥");
+//        }else
+//        {
+//            NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//            NSLog(@"dataString -==== %@", dataString);
+//        }
+//    }];
+//    
+//    [task resume];
+//}
+//
 - (void)sendPictureToServer
 {
     NSURL *url = [NSURL URLWithString:@"http://172.30.38.192/shit.php"];
@@ -164,10 +164,9 @@
     
 }
 
+    
 - (void)callBack:(NSString *)resultString
 {
-
-    
     
 }
 

@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GLBarViewController.h"
 
 typedef  NSString*(^aBlock)(NSString * ,NSUInteger);
 typedef  void*(sliderBlock)(float, NSNumber *);
 
-@interface ThirdViewController : UIViewController
+@interface ThirdViewController : GLBarViewController
 
 @property (nonatomic, copy) aBlock testBlock;
 

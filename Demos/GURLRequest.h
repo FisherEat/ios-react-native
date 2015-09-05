@@ -31,7 +31,7 @@
 @interface GURLRequest : NSObject
 
 // 网络交互操作类，所有的操作通过该实例完成。
-@property (nonatomic,strong,readonly) AFHTTPSessionManager *sessionManager ;
+//@property (nonatomic,strong,readonly) AFHTTPSessionManager *sessionManager ;
 
 // 网络交互基站点，可为域名或者IP地址，必须初始化
 @property (nonatomic,strong,readonly) NSURL *baseURL ;
