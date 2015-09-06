@@ -37,7 +37,9 @@
     
    // [self startGETConnection];
     
-    [self startPOSTConnection];
+    //[self startPOSTConnection];
+    
+    [self loadJsonData];
     
 }
 
@@ -47,6 +49,48 @@
     self.webView.y = self.topBarView.bottom;
     self.webView.delegate = self;
     [self.view addSubview:self.webView];
+}
+
+#pragma mark - NSURLSession new api
+- (void)loadJsonData
+{
+    NSString *urlStr = [NSString stringWithFormat:@"http://192.168.31.170/netWork.php?name=%@", @"gaolong"];
+    urlStr = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString:urlStr];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+       
+        if (!error) {
+            NSString *dataStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"DataStr = %@", dataStr);
+        }
+        else {
+            NSLog(@"error is = %@", error.localizedDescription);
+        }
+    }];
+    [dataTask resume];
+    
+    NSURLSessionDownloadTask *downloadTask = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        if (!error) {
+            NSError *saveError = nil;
+            NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+            NSString *fileName = nil;
+            NSString *savePath = [cachePath stringByAppendingPathComponent:fileName];
+            NSLog(@"Path = %@", savePath);
+            NSURL *saveUrl = [NSURL fileURLWithPath:savePath];
+            [[NSFileManager defaultManager] copyItemAtPath:location toPath:savePath error:&saveError];
+            if (!saveError) {
+                NSLog(@"save success");
+            }
+            else {
+                NSLog(@"Error = %@", saveError.localizedDescription);
+            }
+        }
+        else {
+            NSLog(@"Error is %@", error.localizedDescription);
+        }
+    }];
 }
 
 #pragma mark - Request
