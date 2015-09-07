@@ -10,6 +10,33 @@
 #import "ButtonDemoVC.h"
 #import "RootViewController.h"
 #import "OButton.h"
+#import "XTOnePixelLine.h"
+#import "config.h"
+
+@interface GLPerson ()<NSCoding>
+
+@end
+
+@implementation GLPerson
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if (self) {
+        self.firtName = [aDecoder decodeObjectForKey:@"FirstName"];
+        self.lastName = [aDecoder decodeObjectForKey:@"LastName"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.firtName forKey:@"FirstName"];
+    [aCoder encodeObject:self.lastName forKey:@"LastName"];
+}
+
+@end
+
 
 static NSInteger i = 0;
 
@@ -21,6 +48,8 @@ static NSInteger i = 0;
 @property (nonatomic, strong) UIImageView   *myImgView;
 @property (nonatomic, strong) UILabel       *myLabel;
 @property (nonatomic, strong) UIAlertView   *myAlertView;
+
+@property (nonatomic, strong) XTOnePixelLine *onePixelLine;//一像素线
 
 @end
 
@@ -38,6 +67,8 @@ static NSInteger i = 0;
     [self addBlockButton];
     [self addRightButton];
     
+    [self addOnePixelLine];
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
     
@@ -45,34 +76,6 @@ static NSInteger i = 0;
     
    
 }
-#pragma mark - 
-#pragma mark block 传值实现
-/** 传值*/
-- (void)passMessage
-{
-    if (self.passMsgBlock && self.myTextField.text)
-    {
-        self.passMsgBlock(self.myTextField.text);
-    }
-    
-    [self.navigationController popToRootViewControllerAnimated:YES];
-
-}
-
-- (void)addBlockButton
-{
-    self.blockButton = [OButton buttonWithType:UIButtonTypeCustom];
-    self.blockButton.frame = CGRectMake(self.myButton.x - self.myButton.width - 20, self.myButton.y, self.myButton.width, self.myButton.height);
-    [self.blockButton setTitle:@"Block" forState:UIControlStateNormal];
-    [self.blockButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    self.blockButton.layer.backgroundColor = [UIColor whiteColor].CGColor;
-    [self.view addSubview:self.blockButton];
-    [self.blockButton addTarget:self action:@selector(passMessage) forControlEvents:UIControlEventTouchUpInside];
-    
-}
-
-#pragma mark -
-#pragma mark delegate 传值实现
 
 /** 自定义leftBarButtonItem的backButton*/
 - (void)addLeftBackButton
@@ -98,47 +101,29 @@ static NSInteger i = 0;
 
 - (void)moreButtonClicked:(id)sender
 {
+   // [self showActionSheetView];
+    
+    
+}
+
+- (void)setMoreTypeView
+{
+    
+    
+}
+
+- (void)showActionSheetView
+{
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self
                                                     cancelButtonTitle:@"取消"
                                                destructiveButtonTitle:@"解除绑定"                                                                     otherButtonTitles:nil, nil];
     [actionSheet showInView:self.view];
+
 }
 
-/** delegate 传值*/
-- (void)passTextDelegate
-{
-    if ([self.delegate respondsToSelector:@selector(passValues:)])
-    {
-        [self.delegate passValues:self.myTextField.text];
-        //NSLog(@"%@", self.myTextField.text);
-        [self pushToRootVC];
-        
-    }else
-    {
-        mAlert(@"提示", @"请输入文字", @"Cancel", @"OK");
-        
-    }
-    
-}
+#pragma mark UI && Events
 
-/** 随意页面跳转方法*/
-- (void)pushToRootVC
-{
-    for (UIViewController *controller in self.navigationController.viewControllers)
-    {
-        if ([controller isKindOfClass:[RootViewController class]])
-        {
-            [self.navigationController popToViewController:controller animated:YES];
-        }
-    }
-    
-}
-
-#pragma mark - 
-#pragma mark 基本UI
-
-/** 隐藏键盘*/
 - (void)dismissKeyboard
 {
       [self.myTextField resignFirstResponder];
@@ -225,10 +210,72 @@ static NSInteger i = 0;
     [self.view addSubview:self.myLabel];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (void)addOnePixelLine
+{
+    self.onePixelLine = [[XTOnePixelLine alloc] initWithFrame:CGRectMake(50, 100, 100, 1)];
+    self.onePixelLine.lineColor = [UIColor colorwithHexString:@"0x000000"];
+   // self.onePixelLine.y = self.myButton.bottom + 20;
+    self.onePixelLine.transform = CGAffineTransformMakeRotation(M_PI_2);
+    self.onePixelLine.linePosition = GSLinePositionBottom;
+    [self.view addSubview:self.onePixelLine];
     
 }
+
+#pragma mark delegate 传值实现
+- (void)passTextDelegate
+{
+    if ([self.delegate respondsToSelector:@selector(passValues:)])
+    {
+        [self.delegate passValues:self.myTextField.text];
+        //NSLog(@"%@", self.myTextField.text);
+        [self pushToRootVC];
+        
+    }else
+    {
+        mAlert(@"提示", @"请输入文字", @"Cancel", @"OK");
+        
+    }
+    
+}
+
+/** 随意页面跳转方法*/
+- (void)pushToRootVC
+{
+    for (UIViewController *controller in self.navigationController.viewControllers)
+    {
+        if ([controller isKindOfClass:[RootViewController class]])
+        {
+            [self.navigationController popToViewController:controller animated:YES];
+        }
+    }
+    
+}
+
+#pragma mark block 传值实现
+- (void)passMessage
+{
+    if (self.passMsgBlock && self.myTextField.text)
+    {
+        self.passMsgBlock(self.myTextField.text);
+    }
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
+
+- (void)addBlockButton
+{
+    self.blockButton = [OButton buttonWithType:UIButtonTypeCustom];
+    self.blockButton.frame = CGRectMake(self.myButton.x - self.myButton.width - 20, self.myButton.y, self.myButton.width, self.myButton.height);
+    [self.blockButton setTitle:@"Block" forState:UIControlStateNormal];
+    [self.blockButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    self.blockButton.layer.backgroundColor = [UIColor whiteColor].CGColor;
+    [self.view addSubview:self.blockButton];
+    [self.blockButton addTarget:self action:@selector(passMessage) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+
 
 #pragma mark textField delegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -255,7 +302,9 @@ static NSInteger i = 0;
     i++;
 }
 
-#pragma mark -
+#pragma mark - NSArchive
+
+
 #pragma mark textField 自动适应键盘
 //- (void)textFieldDidBeginEditing:(UITextField *)textField
 //{

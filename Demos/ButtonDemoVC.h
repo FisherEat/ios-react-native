@@ -14,6 +14,15 @@
 
 @end
 
+//Person model
+@interface  GLPerson : NSObject
+
+@property (nonatomic, strong) NSString *firtName;
+@property (nonatomic, strong) NSString *lastName;
+
+@end
+
+//buttondemo vc
 @interface ButtonDemoVC : UIViewController
 
 @property (nonatomic, weak) id<PassMesageDelegate> delegate;

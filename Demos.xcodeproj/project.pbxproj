@@ -29,6 +29,11 @@
 		65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */; };
 		65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9E9F01B7C3265000CCF21 /* GLTopBarView.m */; };
 		65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA43691B7B2B06003A4A23 /* BlockModel.m */; };
+		65E3E8551B9D2483002AD494 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3E8521B9D2483002AD494 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		65E3E8561B9D2483002AD494 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3E8541B9D2483002AD494 /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
+		65E3E85F1B9D2A27002AD494 /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3E85E1B9D2A27002AD494 /* GLSearchMoreTypeView.m */; };
+		65E3E8651B9DAE8C002AD494 /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3E8641B9DAE8C002AD494 /* XTOnePixelLine.m */; };
 		65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADA91B6330DC005F22BD /* LayoutSubviews.m */; };
 		65EBADAD1B633C12005F22BD /* TNTrainTicketManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADAC1B633C12005F22BD /* TNTrainTicketManger.m */; };
 		65EBADB01B6364F9005F22BD /* TNBaseHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADAF1B6364F9005F22BD /* TNBaseHTTPRequest.m */; };
@@ -152,6 +157,15 @@
 		65D9E9F01B7C3265000CCF21 /* GLTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTopBarView.m; sourceTree = "<group>"; };
 		65DA43681B7B2B06003A4A23 /* BlockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
 		65DA43691B7B2B06003A4A23 /* BlockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockModel.m; sourceTree = "<group>"; };
+		65E3E8511B9D2483002AD494 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		65E3E8521B9D2483002AD494 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		65E3E8531B9D2483002AD494 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		65E3E8541B9D2483002AD494 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		65E3E8571B9D24E2002AD494 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		65E3E85D1B9D2A27002AD494 /* GLSearchMoreTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSearchMoreTypeView.h; sourceTree = "<group>"; };
+		65E3E85E1B9D2A27002AD494 /* GLSearchMoreTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSearchMoreTypeView.m; sourceTree = "<group>"; };
+		65E3E8631B9DAE8C002AD494 /* XTOnePixelLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTOnePixelLine.h; sourceTree = "<group>"; };
+		65E3E8641B9DAE8C002AD494 /* XTOnePixelLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTOnePixelLine.m; sourceTree = "<group>"; };
 		65EBADA81B6330DC005F22BD /* LayoutSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSubviews.h; sourceTree = "<group>"; };
 		65EBADA91B6330DC005F22BD /* LayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSubviews.m; sourceTree = "<group>"; };
 		65EBADAB1B633C12005F22BD /* TNTrainTicketManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTrainTicketManger.h; sourceTree = "<group>"; };
@@ -303,6 +317,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */,
 				D9B4260E6DC676C7B599BB11 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,13 +377,87 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		65E3E8501B9D2470002AD494 /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				65E3E8511B9D2483002AD494 /* AsyncSocket.h */,
+				65E3E8521B9D2483002AD494 /* AsyncSocket.m */,
+				65E3E8531B9D2483002AD494 /* AsyncUdpSocket.h */,
+				65E3E8541B9D2483002AD494 /* AsyncUdpSocket.m */,
+			);
+			name = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		65E3E8591B9D29D2002AD494 /* ButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				65E3E85C1B9D29FF002AD494 /* Model */,
+				65E3E85B1B9D29F1002AD494 /* Controllers */,
+				65E3E85A1B9D29E6002AD494 /* Views */,
+			);
+			name = ButtonDemo;
+			sourceTree = "<group>";
+		};
+		65E3E85A1B9D29E6002AD494 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65E3E85D1B9D2A27002AD494 /* GLSearchMoreTypeView.h */,
+				65E3E85E1B9D2A27002AD494 /* GLSearchMoreTypeView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		65E3E85B1B9D29F1002AD494 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65ECE89A1B58985A003134B2 /* ButtonDemoVC.h */,
+				65ECE89B1B58985A003134B2 /* ButtonDemoVC.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		65E3E85C1B9D29FF002AD494 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		65E3E8601B9DAE01002AD494 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				65E3E8621B9DAE77002AD494 /* XTOnePixelLine */,
+				65E3E8611B9DAE36002AD494 /* XURLRequest */,
+				C054DA761B988A6F004CD388 /* AFNetWorking */,
+				65E3E8501B9D2470002AD494 /* AsyncSocket */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		65E3E8611B9DAE36002AD494 /* XURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C011DD861B9B461B006AE1F0 /* XTURLRequest.h */,
+				C011DD871B9B461B006AE1F0 /* XTURLRequest.m */,
+			);
+			name = XURLRequest;
+			sourceTree = "<group>";
+		};
+		65E3E8621B9DAE77002AD494 /* XTOnePixelLine */ = {
+			isa = PBXGroup;
+			children = (
+				65E3E8631B9DAE8C002AD494 /* XTOnePixelLine.h */,
+				65E3E8641B9DAE8C002AD494 /* XTOnePixelLine.m */,
+			);
+			name = XTOnePixelLine;
+			sourceTree = "<group>";
+		};
 		65E945F11B5C8C54002CC8BB /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
 				65ECE89D1B5899EC003134B2 /* ScrollDemoVC.h */,
 				65ECE89E1B5899EC003134B2 /* ScrollDemoVC.m */,
-				65ECE89A1B58985A003134B2 /* ButtonDemoVC.h */,
-				65ECE89B1B58985A003134B2 /* ButtonDemoVC.m */,
+				65E3E8591B9D29D2002AD494 /* ButtonDemo */,
 				650CEF621B5FA2BE00C001F3 /* TestDemoVC.h */,
 				650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */,
 				65ECE8A61B589A5D003134B2 /* AnimationDemoVC.h */,
@@ -447,14 +536,10 @@
 		65ECE86D1B588AA9003134B2 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				C011DD861B9B461B006AE1F0 /* XTURLRequest.h */,
-				C011DD871B9B461B006AE1F0 /* XTURLRequest.m */,
-				C054DA761B988A6F004CD388 /* AFNetWorking */,
-				C053ABF81B8F728B00BE5F5F /* TNTopBarView.h */,
-				C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */,
 				65ECE8731B588AA9003134B2 /* AppDelegate.m */,
 				65ECE8721B588AA9003134B2 /* AppDelegate.h */,
 				65ECE8AC1B589ACA003134B2 /* AppEngine */,
+				65E3E8601B9DAE01002AD494 /* Vendor */,
 				65ECE8AD1B589AEB003134B2 /* lib */,
 				65ECE8AE1B589AF3003134B2 /* Home */,
 				65ECE87B1B588AA9003134B2 /* Images.xcassets */,
@@ -558,6 +643,8 @@
 		65ECE8B01B589B1A003134B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C053ABF81B8F728B00BE5F5F /* TNTopBarView.h */,
+				C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */,
 				C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */,
 				C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */,
 				6529C35E1B8FFA00008E62CF /* UIButton+Position.h */,
@@ -655,6 +742,7 @@
 		D0E5D6E8C2B4078AC4914368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65E3E8571B9D24E2002AD494 /* CFNetwork.framework */,
 				FA24930CC2192A402FFE4E43 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -818,6 +906,7 @@
 				65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */,
 				65ECE8A81B589A5D003134B2 /* AnimationDemoVC.m in Sources */,
 				C054DAC31B988B58004CD388 /* AFDownloadRequestOperation.m in Sources */,
+				65E3E85F1B9D2A27002AD494 /* GLSearchMoreTypeView.m in Sources */,
 				C0C73E071B99402B00917AC1 /* TNJSONModel.m in Sources */,
 				6529C3681B905560008E62CF /* NSObject+BlackMagic.m in Sources */,
 				C054DAC61B988B58004CD388 /* AFImageCache.m in Sources */,
@@ -847,6 +936,7 @@
 				C0E6620C1B93442F00F5F5B2 /* GLHeaderView.m in Sources */,
 				65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */,
 				6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */,
+				65E3E8551B9D2483002AD494 /* AsyncSocket.m in Sources */,
 				C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */,
 				65ECE8A51B589A4D003134B2 /* TarBarDemoVC.m in Sources */,
 				65ECE8C71B58B08B003134B2 /* UITabBarViewController.m in Sources */,
@@ -872,6 +962,7 @@
 				65EBADB91B6382FB005F22BD /* TNTrainAd.m in Sources */,
 				C054DACC1B988B58004CD388 /* AFXMLRequestOperation.m in Sources */,
 				C0C73DFD1B98925000917AC1 /* TNBase64JSONRequestOperation.m in Sources */,
+				65E3E8651B9DAE8C002AD494 /* XTOnePixelLine.m in Sources */,
 				C054DACF1B988B58004CD388 /* UIImageView+AFNetworking.m in Sources */,
 				C0C73DFA1B98919B00917AC1 /* base64.m in Sources */,
 				6567D94A1B6F02A1004176B9 /* GLNetWorkDemo.m in Sources */,
@@ -879,6 +970,7 @@
 				C0A924671B7BA0B9009C3574 /* TextViewController.m in Sources */,
 				657686FF1B5DF1AA00173D56 /* PassMesg.m in Sources */,
 				65ECE8C11B58A9CC003134B2 /* TNHomeSpecialSaleCell.m in Sources */,
+				65E3E8561B9D2483002AD494 /* AsyncUdpSocket.m in Sources */,
 				650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */,
 				C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */,
 			);
