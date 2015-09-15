@@ -36,6 +36,25 @@
 #define kTNTopBarLineRect CGRectMake(0, 64, SCREEN_WIDTH, 0.5)
 #define kNavigationBarHeight  64.5
 
+// 常用颜色
+#define GL_COLOR_GREEN HEXCOLOR(0x33bd61)
+#define COLOR_ORANGE HEXCOLOR(0xff7800)
+#define COLOR_RED HEXCOLOR(0xff7c70)
+#define COLOR_TEXT_DARK HEXCOLOR(0x333333)
+#define COLOR_TEXT_GRAY HEXCOLOR(0x666666)
+#define COLOR_TEXT_LIGHT_GRAY HEXCOLOR(0x999999)
+#define COLOR_APP_BACKGROUND HEXCOLOR(0xededed)
+#define COLOR_SEPARATOR HEXCOLOR(0xc6c6c6)
+
+/************************************* Font ****************************************************/
+
+#define APP_FONT(size) [UIFont systemFontOfSize:size]
+#define APP_BOLD_FONT(size) [UIFont boldSystemFontOfSize:size]
+#define APP_FONT_SMALL APP_FONT(12.0f)
+#define APP_FONT_NORMAL APP_FONT(14.0f)
+#define APP_FONT_LARGE APP_FONT(16.0f)
+
+
 //方法简写
 #define mAlert(title, msg, cancel, other)   [[[UIAlertView alloc] initWithTitle:title \
          message:msg delegate:nil cancelButtonTitle:cancel otherButtonTitles:other, nil] show] 

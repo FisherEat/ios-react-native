@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6506943E1BA833F80035D9E5 /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506943D1BA833F80035D9E5 /* GLTrainScrollBarView.m */; };
 		650CEF641B5FA2BE00C001F3 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */; };
 		6529C3601B8FFA00008E62CF /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6529C35F1B8FFA00008E62CF /* UIButton+Position.m */; };
 		6529C3651B9054BD008E62CF /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6529C3641B9054BD008E62CF /* UIViewController+Analysis.m */; };
@@ -116,6 +117,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6506943C1BA833F80035D9E5 /* GLTrainScrollBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTrainScrollBarView.h; sourceTree = "<group>"; };
+		6506943D1BA833F80035D9E5 /* GLTrainScrollBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTrainScrollBarView.m; sourceTree = "<group>"; };
 		650CEF621B5FA2BE00C001F3 /* TestDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemoVC.h; sourceTree = "<group>"; };
 		650CEF631B5FA2BE00C001F3 /* TestDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemoVC.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -341,6 +344,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		650694391BA833900035D9E5 /* ThirdTabDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6506943B1BA833D40035D9E5 /* Views */,
+				6506943A1BA833C70035D9E5 /* Controllers */,
+			);
+			name = ThirdTabDemo;
+			sourceTree = "<group>";
+		};
+		6506943A1BA833C70035D9E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65ECE8CB1B58CA92003134B2 /* ThirdViewController.h */,
+				65ECE8CC1B58CA92003134B2 /* ThirdViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6506943B1BA833D40035D9E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6506943C1BA833F80035D9E5 /* GLTrainScrollBarView.h */,
+				6506943D1BA833F80035D9E5 /* GLTrainScrollBarView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		6529C35D1B8FEC94008E62CF /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,10 +523,9 @@
 		65E945F21B5C8CA9002CC8BB /* TabBarVC */ = {
 			isa = PBXGroup;
 			children = (
+				650694391BA833900035D9E5 /* ThirdTabDemo */,
 				65D9B9B21B5C892A00ED4040 /* FifthViewController.h */,
 				65D9B9B31B5C892A00ED4040 /* FifthViewController.m */,
-				65ECE8CB1B58CA92003134B2 /* ThirdViewController.h */,
-				65ECE8CC1B58CA92003134B2 /* ThirdViewController.m */,
 				C0C73E0C1B9952E700917AC1 /* TestNet101ViewController.h */,
 				C0C73E0D1B9952E700917AC1 /* TestNet101ViewController.m */,
 				65A825811B6601A100E3BAB1 /* TrainStationVC.h */,
@@ -907,6 +936,7 @@
 				65ECE8A81B589A5D003134B2 /* AnimationDemoVC.m in Sources */,
 				C054DAC31B988B58004CD388 /* AFDownloadRequestOperation.m in Sources */,
 				65E3E85F1B9D2A27002AD494 /* GLSearchMoreTypeView.m in Sources */,
+				6506943E1BA833F80035D9E5 /* GLTrainScrollBarView.m in Sources */,
 				C0C73E071B99402B00917AC1 /* TNJSONModel.m in Sources */,
 				6529C3681B905560008E62CF /* NSObject+BlackMagic.m in Sources */,
 				C054DAC61B988B58004CD388 /* AFImageCache.m in Sources */,

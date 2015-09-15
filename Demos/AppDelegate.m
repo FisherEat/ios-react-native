@@ -36,6 +36,7 @@
     [self showViewControllers];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    NSLog(@"我爱你中国");
     return YES;
     
 }
@@ -104,25 +105,23 @@
 #pragma mark method
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
- 
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
+
   
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)applicatio
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
-   
+
+    NSLog(@"我爱你日本");
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -11,8 +11,10 @@
 #import "PassMesg.h"
 #import "TrainStationVC.h"
 #import "TestNet101ViewController.h"
+#import "GLTrainScrollBarView.h"
 
 static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANGED" ;
+static const CGFloat topToolBarHeight = 40.0f;
 
 @interface ThirdViewController ()<UIGestureRecognizerDelegate,GLTopBarViewDelegate>
 
@@ -21,6 +23,9 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
 @property(nonatomic, strong) UISlider *mySlider;
 @property(nonatomic, strong) PassMesg *aPerson;
 @property(nonatomic, strong) UIWebView *webView;
+
+@property (nonatomic, strong) GLTrainScrollBarView *trainScrollbar;
+@property (nonatomic ,strong) NSMutableArray *trainListArray;
 
 @end
 
@@ -48,7 +53,30 @@ static NSString *const KVO_CONTEXT_ADDRESS_CHANGED = @"KVO_CONTEXT_ADDRESS_CHANG
     [self loadData];
     
     [self setTopBarView];
+ 
+    self.trainListArray = [NSMutableArray arrayWithArray:@[@"单程", @"往返"]];
+    [self setUpScrollBarView];
+    
+}
 
+#pragma mark - UI
+- (void)setUpScrollBarView
+{
+    CGFloat width = SCREEN_WIDTH;
+    CGFloat height = topToolBarHeight;
+    self.trainScrollbar = [[GLTrainScrollBarView alloc] initWithFrame:CGRectMake(0, self.topBarView.height, width, height)];
+       __weak __typeof(&*self)weakSelf = self;
+    self.trainScrollbar.switchedBlock = ^(NSInteger selectedIndex)
+    {
+        __strong __typeof(&*weakSelf) strongSelf = weakSelf;
+        [strongSelf.trainListArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            if (idx == selectedIndex) {
+                //
+            }
+        }];
+    };
+    
+    [self.view addSubview:self.trainScrollbar];
 }
 
 - (void)viewWillAppear:(BOOL)animated
