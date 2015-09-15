@@ -66,6 +66,8 @@ static const CGFloat topToolBarHeight = 40.0f;
     CGFloat height = topToolBarHeight;
     self.trainScrollbar = [[GLTrainScrollBarView alloc] initWithFrame:CGRectMake(0, self.topBarView.height, width, height)];
        __weak __typeof(&*self)weakSelf = self;
+    NSArray *infoArray = @[@{@"name" :@"单程", @"selected" :@(YES)},@{@"name" :@"返程", @"selected" :@(NO)}, @{@"name" :@"双程", @"selected" :@(NO)}];
+    [self.trainScrollbar updateWithTrainTicketInfoArray:infoArray];
     self.trainScrollbar.switchedBlock = ^(NSInteger selectedIndex)
     {
         __strong __typeof(&*weakSelf) strongSelf = weakSelf;

@@ -52,6 +52,7 @@ static const CGFloat indicatorMargin = 10.0f;
     [self addSubview:_scrollBarView];
     
     _indicator = [[UIView alloc] initWithFrame:CGRectMake(0, 0, buttonWidth - 2 * indicatorMargin, 2.0f)];
+    _indicator.backgroundColor = _indicatorColor;
     [_scrollBarView addSubview:_indicator];
     
     UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, self.height - 0.5f, self.width, 0.5f)];
@@ -94,6 +95,7 @@ static const CGFloat indicatorMargin = 10.0f;
 
 - (void)updateWithTrainTicketInfoArray:(NSArray *)trainInfoArray
 {
+    _trainInfoArray = trainInfoArray;
     if (_buttonArray.count > 0) {
         [_buttonArray enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
             [button removeFromSuperview];
@@ -105,20 +107,21 @@ static const CGFloat indicatorMargin = 10.0f;
     }
     
     __block NSInteger selectedIndex = 0;
-    [trainInfoArray enumerateObjectsUsingBlock:^(NSArray *productInfo, NSUInteger idx, BOOL *stop) {
+    
+    [_trainInfoArray enumerateObjectsUsingBlock:^(NSDictionary *info, NSUInteger idx, BOOL *stop) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(idx * buttonWidth, 0, buttonWidth, self.height - 2.0f)];
         [button setBackgroundColor:[UIColor clearColor]];
         [button setTitleColor:_titleColor forState:UIControlStateNormal];
         [button setTitleColor:_selectedTitleColor forState:UIControlStateSelected];
         [button.titleLabel setFont:_titleFont];
-      //  [button setTitle:NSSTRING_NOT_NIL(productInfo.productTypeName) forState:UIControlStateNormal];
+        [button setTitle:info[@"name"] forState:UIControlStateNormal];
         button.tag = idx;
         
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         button.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
         
         [button addTarget:self action:@selector(titleButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        if (productInfo.selected == YES) {
+        if ([info[@"selected"] boolValue] == YES) {
             selectedIndex = idx;
         }
         [_scrollBarView addSubview:button];
