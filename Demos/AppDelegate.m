@@ -37,6 +37,12 @@
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     NSLog(@"我爱你中国");
+    
+    NSArray *arr_1 = @[@"hh"];
+    NSArray *arr_2 = [NSArray arrayWithObject:@"hh"];
+    NSArray *arr_3 = arr_2;
+    NSLog(@"----------%d_%d", arr_1 == arr_2, arr_2 == arr_3);
+
     return YES;
     
 }

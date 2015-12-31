@@ -55,7 +55,7 @@
     self.myTable = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.myTable.delegate   = self;
     self.myTable.dataSource = self;
-    
+    self.myTable.contentInset = UIEdgeInsetsMake(0, 0, 50, 0);
     self.btnVC = [[ButtonDemoVC alloc] init];
     //self.btnVC.delegate = self;
     
@@ -77,6 +77,20 @@
     NSDictionary *dict = @{};
     dict = @{@"1":@"China",@"2":@"UK",};
     NSLog(@"dictionary is = %@", dict);
+    
+    
+    
+    NSArray *arr_a = @[@(1), @(5), @(7), @(11)];
+    NSMutableArray *a = [NSMutableArray arrayWithArray:arr_a];
+    NSArray *arr_b = @[@(3), @(4), @(8), @(19), @(56)];
+    NSMutableArray *b = [NSMutableArray arrayWithArray:arr_b];
+    
+    if (a.count < b.count) {
+      //  [self combine:a andArray:b];
+    }else {
+       // [self combine:b andArray:a];
+    }
+    
 }
 
 #pragma mark - UI Events
@@ -498,6 +512,27 @@
     NSArray  *arr2 = [NSArray arrayWithObjects:obj8, obj5, obj6 ,obj7, nil];
     NSLog(@"array count = %lu", [arr2 count]);
     
+}
+
+#pragma mark - Data Struct Practice
+
+- (void)initTwoArray
+{
+    
+}
+
+- (void)combine:(NSMutableArray *)arr_a andArray:(NSMutableArray *)arr_b
+{
+   [arr_a enumerateObjectsUsingBlock:^(id  _Nonnull obj1, NSUInteger idx, BOOL * _Nonnull stop){
+       for (NSInteger i = 0; i < arr_b.count; i ++) {
+           if ([obj1 integerValue] >= [arr_b[i] integerValue]) {
+               [arr_b insertObject:obj1 atIndex:i];
+           }
+       }
+   }];
+   [arr_a enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"arr_a = %ld", [obj integerValue]);
+   }];
 }
 
 @end

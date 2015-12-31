@@ -347,7 +347,6 @@
 		650694391BA833900035D9E5 /* ThirdTabDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6506943B1BA833D40035D9E5 /* Views */,
 				6506943A1BA833C70035D9E5 /* Controllers */,
 			);
 			name = ThirdTabDemo;
@@ -524,12 +523,13 @@
 			isa = PBXGroup;
 			children = (
 				650694391BA833900035D9E5 /* ThirdTabDemo */,
-				65D9B9B21B5C892A00ED4040 /* FifthViewController.h */,
+				6506943B1BA833D40035D9E5 /* Views */,
 				65D9B9B31B5C892A00ED4040 /* FifthViewController.m */,
+				65D9B9B21B5C892A00ED4040 /* FifthViewController.h */,
 				C0C73E0C1B9952E700917AC1 /* TestNet101ViewController.h */,
 				C0C73E0D1B9952E700917AC1 /* TestNet101ViewController.m */,
-				65A825811B6601A100E3BAB1 /* TrainStationVC.h */,
 				65A825821B6601A100E3BAB1 /* TrainStationVC.m */,
+				65A825811B6601A100E3BAB1 /* TrainStationVC.h */,
 				65ECE8CE1B58CA9C003134B2 /* ForthViewController.h */,
 				65ECE8CF1B58CA9C003134B2 /* ForthViewController.m */,
 				65ECE8A91B589AA9003134B2 /* RootViewController.h */,
