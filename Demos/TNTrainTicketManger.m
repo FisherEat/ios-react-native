@@ -7,7 +7,6 @@
 //
 
 #import "TNTrainTicketManger.h"
-#import "TNBaseHTTPRequest.h"
 #import "AFNetworking.h"
 #import "GURLRequest.h"
 

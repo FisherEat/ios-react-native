@@ -193,7 +193,7 @@ LGAlertViewStyle;
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
 
-#pragma mark iOS == 8
+#pragma mark iOS >= 8
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
@@ -989,7 +989,10 @@ LGAlertViewStyle;
     
     UIWindow *window = notification.object;
     
-    if ([NSStringFromClass([window class]) isEqualToString:@"UITextEffectsWindow"]) return;
+    //NSLog(@"%@", NSStringFromClass([window class]));
+    
+    if ([NSStringFromClass([window class]) isEqualToString:@"UITextEffectsWindow"] ||
+        [NSStringFromClass([window class]) isEqualToString:@"UIRemoteKeyboardWindow"]) return;
     
     if (notification.name == UIWindowDidBecomeVisibleNotification)
     {
@@ -1786,18 +1789,19 @@ LGAlertViewStyle;
                 UIButton *firstButton = nil;
                 UIButton *secondButton = nil;
                 
-                if (_destructiveButton)
-                {
-                    [_scrollView addSubview:_destructiveButton];
-                    
-                    firstButton = _destructiveButton;
-                }
-                
                 if (_cancelButton)
                 {
                     [_scrollView addSubview:_cancelButton];
                     
-                    secondButton = _cancelButton;
+                    firstButton = _cancelButton;
+                }
+                
+                if (_destructiveButton)
+                {
+                    [_scrollView addSubview:_destructiveButton];
+                    
+                    if (!firstButton) firstButton = _destructiveButton;
+                    else secondButton = _destructiveButton;
                 }
                 
                 if (_firstButton)
