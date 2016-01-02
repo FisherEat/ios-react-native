@@ -14,6 +14,9 @@
 #define ULog(...)
 #endif
 
+//App Engine
+#define BASE_URL_LOG_IN @"http://192.168.31.170/young/network.php"
+
 //屏幕 rect
 #define SCREEN_RECT ([UIScreen mainScreen].bounds)
 

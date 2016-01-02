@@ -24,9 +24,9 @@
 - (void)tna_viewWillAppear:(BOOL)animated
 {
     [self tna_viewWillAppear:animated];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.view makeToast:[NSString stringWithFormat:@"%@ -> %@",@"当前页面" ,@"下一页面"] duration:4.0f position:@"top"];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.view makeToast:[NSString stringWithFormat:@"%@ -> %@",@"当前页面" ,@"下一页面"] duration:4.0f position:@"top"];
+//    });
 }
 
 - (void)tna_viewDidAppear:(BOOL)animated

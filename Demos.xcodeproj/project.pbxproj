@@ -75,6 +75,9 @@
 		C053ABFA1B8F728B00BE5F5F /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */; };
 		C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */; };
 		C0A924671B7BA0B9009C3574 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924661B7BA0B9009C3574 /* TextViewController.m */; };
+		C0B5AE101C3561260007E1D4 /* GLNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B5AE0F1C3561260007E1D4 /* GLNetwork.m */; };
+		C0B5AE161C3562EA0007E1D4 /* GLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B5AE151C3562EA0007E1D4 /* GLRequest.m */; };
+		C0B5AE191C356A270007E1D4 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B5AE181C356A270007E1D4 /* PersonModel.m */; };
 		C0C73DF31B9890DC00917AC1 /* TNBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C73DF21B9890DC00917AC1 /* TNBase64.m */; };
 		C0C73DF71B98911D00917AC1 /* TNJSONStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C73DF61B98911D00917AC1 /* TNJSONStuff.m */; };
 		C0C73DFA1B98919B00917AC1 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C73DF91B98919B00917AC1 /* base64.m */; };
@@ -86,6 +89,8 @@
 		C0DA6D4A1B7CFB0A005F72DF /* OCDataSourceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D491B7CFB0A005F72DF /* OCDataSourceDemo.m */; };
 		C0E662091B92B1E200F5F5B2 /* AddTBCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */; };
 		C0E6620C1B93442F00F5F5B2 /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */; };
+		C0E9D72D1C36ADA800138BAB /* GLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D72C1C36ADA800138BAB /* GLLoginManager.m */; };
+		C0E9D7301C36B5DF00138BAB /* GLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D72F1C36B5DF00138BAB /* GLLoginView.m */; };
 		D9B4260E6DC676C7B599BB11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24930CC2192A402FFE4E43 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -236,6 +241,12 @@
 		C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueBlockVC.m; sourceTree = "<group>"; };
 		C0A924651B7BA0B9009C3574 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		C0A924661B7BA0B9009C3574 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		C0B5AE0E1C3561260007E1D4 /* GLNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLNetwork.h; sourceTree = "<group>"; };
+		C0B5AE0F1C3561260007E1D4 /* GLNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLNetwork.m; sourceTree = "<group>"; };
+		C0B5AE141C3562EA0007E1D4 /* GLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRequest.h; sourceTree = "<group>"; };
+		C0B5AE151C3562EA0007E1D4 /* GLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRequest.m; sourceTree = "<group>"; };
+		C0B5AE171C356A270007E1D4 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		C0B5AE181C356A270007E1D4 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		C0C73DF21B9890DC00917AC1 /* TNBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNBase64.m; sourceTree = "<group>"; };
 		C0C73DF41B9890E900917AC1 /* TNBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNBase64.h; sourceTree = "<group>"; };
 		C0C73DF51B98911D00917AC1 /* TNJSONStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNJSONStuff.h; sourceTree = "<group>"; };
@@ -260,6 +271,10 @@
 		C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTBCellViewController.m; sourceTree = "<group>"; };
 		C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHeaderView.h; sourceTree = "<group>"; };
 		C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHeaderView.m; sourceTree = "<group>"; };
+		C0E9D72B1C36ADA800138BAB /* GLLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoginManager.h; sourceTree = "<group>"; };
+		C0E9D72C1C36ADA800138BAB /* GLLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLoginManager.m; sourceTree = "<group>"; };
+		C0E9D72E1C36B5DF00138BAB /* GLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoginView.h; sourceTree = "<group>"; };
+		C0E9D72F1C36B5DF00138BAB /* GLLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLoginView.m; sourceTree = "<group>"; };
 		CA8AB85E7A636C441E328926 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA24930CC2192A402FFE4E43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -424,6 +439,7 @@
 		65E945F11B5C8C54002CC8BB /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
+				C0B5AE0A1C3560D10007E1D4 /* Login */,
 				65ECE89D1B5899EC003134B2 /* ScrollDemoVC.h */,
 				65ECE89E1B5899EC003134B2 /* ScrollDemoVC.m */,
 				65E3E8591B9D29D2002AD494 /* ButtonDemo */,
@@ -453,8 +469,6 @@
 				C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */,
 				C0E662071B92B1E200F5F5B2 /* AddTBCellViewController.h */,
 				C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */,
-				65F53F191B93F5AD00D019B9 /* TableViewDemoViewController.h */,
-				65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -675,6 +689,49 @@
 			name = GLNavigator;
 			sourceTree = "<group>";
 		};
+		C0B5AE0A1C3560D10007E1D4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C0B5AE0D1C3560F70007E1D4 /* Models */,
+				C0B5AE0C1C3560EF0007E1D4 /* Views */,
+				C0B5AE0B1C3560E50007E1D4 /* Controllers */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		C0B5AE0B1C3560E50007E1D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65F53F191B93F5AD00D019B9 /* TableViewDemoViewController.h */,
+				65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C0B5AE0C1C3560EF0007E1D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9D72E1C36B5DF00138BAB /* GLLoginView.h */,
+				C0E9D72F1C36B5DF00138BAB /* GLLoginView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C0B5AE0D1C3560F70007E1D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0B5AE141C3562EA0007E1D4 /* GLRequest.h */,
+				C0B5AE151C3562EA0007E1D4 /* GLRequest.m */,
+				C0B5AE0E1C3561260007E1D4 /* GLNetwork.h */,
+				C0B5AE0F1C3561260007E1D4 /* GLNetwork.m */,
+				C0B5AE171C356A270007E1D4 /* PersonModel.h */,
+				C0B5AE181C356A270007E1D4 /* PersonModel.m */,
+				C0E9D72B1C36ADA800138BAB /* GLLoginManager.h */,
+				C0E9D72C1C36ADA800138BAB /* GLLoginManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		D0E5D6E8C2B4078AC4914368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -851,6 +908,7 @@
 				65ECE8C41B58AA8F003134B2 /* UIView+Positioning.m in Sources */,
 				65ECE8D01B58CA9C003134B2 /* ForthViewController.m in Sources */,
 				65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */,
+				C0E9D7301C36B5DF00138BAB /* GLLoginView.m in Sources */,
 				65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */,
 				65ECE8A81B589A5D003134B2 /* AnimationDemoVC.m in Sources */,
 				65E3E85F1B9D2A27002AD494 /* GLSearchMoreTypeView.m in Sources */,
@@ -877,6 +935,7 @@
 				65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */,
 				65F1E21E1B5E449300AFC350 /* OButton.m in Sources */,
 				65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */,
+				C0B5AE161C3562EA0007E1D4 /* GLRequest.m in Sources */,
 				C0E6620C1B93442F00F5F5B2 /* GLHeaderView.m in Sources */,
 				65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */,
 				6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */,
@@ -884,6 +943,7 @@
 				C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */,
 				65ECE8A51B589A4D003134B2 /* TarBarDemoVC.m in Sources */,
 				65ECE8C71B58B08B003134B2 /* UITabBarViewController.m in Sources */,
+				C0B5AE101C3561260007E1D4 /* GLNetwork.m in Sources */,
 				65ECE8CD1B58CA92003134B2 /* ThirdViewController.m in Sources */,
 				65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */,
 				65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */,
@@ -896,6 +956,8 @@
 				C0C73E0E1B9952E700917AC1 /* TestNet101ViewController.m in Sources */,
 				65ECE8D31B590359003134B2 /* CNPPopupController.m in Sources */,
 				65ECE89C1B58985A003134B2 /* ButtonDemoVC.m in Sources */,
+				C0B5AE191C356A270007E1D4 /* PersonModel.m in Sources */,
+				C0E9D72D1C36ADA800138BAB /* GLLoginManager.m in Sources */,
 				65D882B41B91879E00B775A0 /* MainCell.m in Sources */,
 				65ECE8B71B58A79C003134B2 /* TNTableViewCell.m in Sources */,
 				65EBADB91B6382FB005F22BD /* TNTrainAd.m in Sources */,
