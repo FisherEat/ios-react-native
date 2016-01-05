@@ -25,13 +25,11 @@
 		65D8DF6D1B845CEE007E31BA /* LoginDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8DF6C1B845CEE007E31BA /* LoginDemoVC.m */; };
 		65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B31B5C892A00ED4040 /* FifthViewController.m */; };
 		65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */; };
-		65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9E9F01B7C3265000CCF21 /* GLTopBarView.m */; };
 		65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA43691B7B2B06003A4A23 /* BlockModel.m */; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65E3E85F1B9D2A27002AD494 /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3E85E1B9D2A27002AD494 /* GLSearchMoreTypeView.m */; };
 		65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADA91B6330DC005F22BD /* LayoutSubviews.m */; };
 		65EBADAD1B633C12005F22BD /* TNTrainTicketManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADAC1B633C12005F22BD /* TNTrainTicketManger.m */; };
-		65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADB21B636CFB005F22BD /* NSString+TNExtends.m */; };
 		65EBADB91B6382FB005F22BD /* TNTrainAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EBADB81B6382FB005F22BD /* TNTrainAd.m */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
 		65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
@@ -46,8 +44,6 @@
 		65ECE8A81B589A5D003134B2 /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8A71B589A5D003134B2 /* AnimationDemoVC.m */; };
 		65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8AA1B589AA9003134B2 /* RootViewController.m */; };
 		65ECE8B71B58A79C003134B2 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8B61B58A79C003134B2 /* TNTableViewCell.m */; };
-		65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8B91B58A804003134B2 /* TNCycleScrollView.m */; };
-		65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8BC1B58A80C003134B2 /* NSTimer+Addition.m */; };
 		65ECE8C11B58A9CC003134B2 /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8BF1B58A9CC003134B2 /* TNHomeSpecialSaleCell.m */; };
 		65ECE8C71B58B08B003134B2 /* UITabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8C61B58B08B003134B2 /* UITabBarViewController.m */; };
 		65ECE8CA1B58BF25003134B2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8C91B58BF25003134B2 /* SecondViewController.m */; };
@@ -57,18 +53,22 @@
 		65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEE33D1B8F207E00340778 /* GLBarViewController.m */; };
 		65F53F1B1B93F5AD00D019B9 /* TableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F53F1A1B93F5AD00D019B9 /* TableViewDemoViewController.m */; };
 		C053ABF71B8F5AA200BE5F5F /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */; };
-		C053ABFA1B8F728B00BE5F5F /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */; };
 		C0A924641B7B9A3A009C3574 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */; };
 		C0A924671B7BA0B9009C3574 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A924661B7BA0B9009C3574 /* TextViewController.m */; };
 		C0B5AE191C356A270007E1D4 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B5AE181C356A270007E1D4 /* PersonModel.m */; };
 		C0C73DFA1B98919B00917AC1 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C73DF91B98919B00917AC1 /* base64.m */; };
-		C0C73E041B9939AC00917AC1 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C73E031B9939AC00917AC1 /* NSString+URLEncoding.m */; };
 		C0C73E0E1B9952E700917AC1 /* TestNet101ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C73E0D1B9952E700917AC1 /* TestNet101ViewController.m */; };
-		C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */; };
-		C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */; };
+		C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
+		C0CA802D1C3BE88C00ABE564 /* NSString+TNExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */; };
+		C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
+		C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
+		C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80341C3BE8EF00ABE564 /* TNTopBarView.m */; };
+		C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80371C3BE95800ABE564 /* GLTopBarView.m */; };
+		C0CA805E1C3BF35F00ABE564 /* AddTBCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80551C3BF35F00ABE564 /* AddTBCellViewController.m */; };
+		C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80571C3BF35F00ABE564 /* AdScrollTimerViewController.m */; };
+		C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805B1C3BF35F00ABE564 /* AdvertiseView.m */; };
+		C0CA80611C3BF35F00ABE564 /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805D1C3BF35F00ABE564 /* GLHeaderView.m */; };
 		C0DA6D4A1B7CFB0A005F72DF /* OCDataSourceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DA6D491B7CFB0A005F72DF /* OCDataSourceDemo.m */; };
-		C0E662091B92B1E200F5F5B2 /* AddTBCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */; };
-		C0E6620C1B93442F00F5F5B2 /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */; };
 		C0E9D72D1C36ADA800138BAB /* GLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D72C1C36ADA800138BAB /* GLLoginManager.m */; };
 		C0E9D7301C36B5DF00138BAB /* GLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D72F1C36B5DF00138BAB /* GLLoginView.m */; };
 		C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */; };
@@ -136,8 +136,6 @@
 		65D9B9B31B5C892A00ED4040 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		65D9B9B51B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollingNavbar.h"; sourceTree = "<group>"; };
 		65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollingNavbar.m"; sourceTree = "<group>"; };
-		65D9E9EF1B7C3265000CCF21 /* GLTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTopBarView.h; sourceTree = "<group>"; };
-		65D9E9F01B7C3265000CCF21 /* GLTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTopBarView.m; sourceTree = "<group>"; };
 		65DA43681B7B2B06003A4A23 /* BlockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
 		65DA43691B7B2B06003A4A23 /* BlockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockModel.m; sourceTree = "<group>"; };
 		65E3E8571B9D24E2002AD494 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -147,8 +145,6 @@
 		65EBADA91B6330DC005F22BD /* LayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSubviews.m; sourceTree = "<group>"; };
 		65EBADAB1B633C12005F22BD /* TNTrainTicketManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTrainTicketManger.h; sourceTree = "<group>"; };
 		65EBADAC1B633C12005F22BD /* TNTrainTicketManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTrainTicketManger.m; sourceTree = "<group>"; };
-		65EBADB11B636CFB005F22BD /* NSString+TNExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TNExtends.h"; sourceTree = "<group>"; };
-		65EBADB21B636CFB005F22BD /* NSString+TNExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TNExtends.m"; sourceTree = "<group>"; };
 		65EBADB71B6382FB005F22BD /* TNTrainAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTrainAd.h; sourceTree = "<group>"; };
 		65EBADB81B6382FB005F22BD /* TNTrainAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTrainAd.m; sourceTree = "<group>"; };
 		65ECE86B1B588AA9003134B2 /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,11 +172,6 @@
 		65ECE8AA1B589AA9003134B2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		65ECE8B51B58A79C003134B2 /* TNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTableViewCell.h; sourceTree = "<group>"; };
 		65ECE8B61B58A79C003134B2 /* TNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableViewCell.m; sourceTree = "<group>"; };
-		65ECE8B81B58A804003134B2 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
-		65ECE8B91B58A804003134B2 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
-		65ECE8BB1B58A80C003134B2 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
-		65ECE8BC1B58A80C003134B2 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
-		65ECE8BE1B58A8B0003134B2 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		65ECE8BF1B58A9CC003134B2 /* TNHomeSpecialSaleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeSpecialSaleCell.m; sourceTree = "<group>"; };
 		65ECE8C01B58A9CC003134B2 /* TNHomeSpecialSaleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeSpecialSaleCell.h; sourceTree = "<group>"; };
 		65ECE8C51B58B08B003134B2 /* UITabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabBarViewController.h; sourceTree = "<group>"; };
@@ -201,8 +192,6 @@
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C053ABF51B8F5AA200BE5F5F /* GLPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPresentViewController.h; sourceTree = "<group>"; };
 		C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPresentViewController.m; sourceTree = "<group>"; };
-		C053ABF81B8F728B00BE5F5F /* TNTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTopBarView.h; sourceTree = "<group>"; };
-		C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTopBarView.m; sourceTree = "<group>"; };
 		C0A924621B7B9A3A009C3574 /* PassValueBlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueBlockVC.h; sourceTree = "<group>"; };
 		C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueBlockVC.m; sourceTree = "<group>"; };
 		C0A924651B7BA0B9009C3574 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
@@ -211,22 +200,33 @@
 		C0B5AE181C356A270007E1D4 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		C0C73DF81B98919B00917AC1 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		C0C73DF91B98919B00917AC1 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
-		C0C73DFE1B98939B00917AC1 /* DeliveryMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryMacros.h; sourceTree = "<group>"; };
-		C0C73E021B9939AC00917AC1 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
-		C0C73E031B9939AC00917AC1 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		C0C73E081B9940BB00917AC1 /* EnumsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumsMacros.h; sourceTree = "<group>"; };
 		C0C73E0C1B9952E700917AC1 /* TestNet101ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNet101ViewController.h; sourceTree = "<group>"; };
 		C0C73E0D1B9952E700917AC1 /* TestNet101ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNet101ViewController.m; sourceTree = "<group>"; };
-		C0DA6D421B7CEA4E005F72DF /* AdScrollTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScrollTimerViewController.h; sourceTree = "<group>"; };
-		C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdScrollTimerViewController.m; sourceTree = "<group>"; };
-		C0DA6D451B7CEA6C005F72DF /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
-		C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
+		C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
+		C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
+		C0CA80261C3BE78500ABE564 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		C0CA80271C3BE78500ABE564 /* DeliveryMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryMacros.h; sourceTree = "<group>"; };
+		C0CA80281C3BE78500ABE564 /* EnumsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumsMacros.h; sourceTree = "<group>"; };
+		C0CA80291C3BE88C00ABE564 /* NSString+TNExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TNExtends.h"; sourceTree = "<group>"; };
+		C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TNExtends.m"; sourceTree = "<group>"; };
+		C0CA802B1C3BE88C00ABE564 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		C0CA802F1C3BE8AD00ABE564 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		C0CA80331C3BE8EF00ABE564 /* TNTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTopBarView.h; sourceTree = "<group>"; };
+		C0CA80341C3BE8EF00ABE564 /* TNTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTopBarView.m; sourceTree = "<group>"; };
+		C0CA80361C3BE95800ABE564 /* GLTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTopBarView.h; sourceTree = "<group>"; };
+		C0CA80371C3BE95800ABE564 /* GLTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTopBarView.m; sourceTree = "<group>"; };
+		C0CA80541C3BF35F00ABE564 /* AddTBCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTBCellViewController.h; sourceTree = "<group>"; };
+		C0CA80551C3BF35F00ABE564 /* AddTBCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTBCellViewController.m; sourceTree = "<group>"; };
+		C0CA80561C3BF35F00ABE564 /* AdScrollTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScrollTimerViewController.h; sourceTree = "<group>"; };
+		C0CA80571C3BF35F00ABE564 /* AdScrollTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdScrollTimerViewController.m; sourceTree = "<group>"; };
+		C0CA805A1C3BF35F00ABE564 /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
+		C0CA805B1C3BF35F00ABE564 /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
+		C0CA805C1C3BF35F00ABE564 /* GLHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHeaderView.h; sourceTree = "<group>"; };
+		C0CA805D1C3BF35F00ABE564 /* GLHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHeaderView.m; sourceTree = "<group>"; };
 		C0DA6D481B7CFB0A005F72DF /* OCDataSourceDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDataSourceDemo.h; sourceTree = "<group>"; };
 		C0DA6D491B7CFB0A005F72DF /* OCDataSourceDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDataSourceDemo.m; sourceTree = "<group>"; };
-		C0E662071B92B1E200F5F5B2 /* AddTBCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTBCellViewController.h; sourceTree = "<group>"; };
-		C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTBCellViewController.m; sourceTree = "<group>"; };
-		C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHeaderView.h; sourceTree = "<group>"; };
-		C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHeaderView.m; sourceTree = "<group>"; };
 		C0E9D72B1C36ADA800138BAB /* GLLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoginManager.h; sourceTree = "<group>"; };
 		C0E9D72C1C36ADA800138BAB /* GLLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLoginManager.m; sourceTree = "<group>"; };
 		C0E9D72E1C36B5DF00138BAB /* GLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoginView.h; sourceTree = "<group>"; };
@@ -342,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				65EEE3381B8EE25700340778 /* SingletonDefine.h */,
-				65EEE32C1B8EE1A700340778 /* GLNavigator */,
 				657686FD1B5DF1AA00173D56 /* PassMesg.h */,
 				65EBADAB1B633C12005F22BD /* TNTrainTicketManger.h */,
 				65EBADAC1B633C12005F22BD /* TNTrainTicketManger.m */,
@@ -411,8 +410,6 @@
 				C0A924631B7B9A3A009C3574 /* PassValueBlockVC.m */,
 				C0A924651B7BA0B9009C3574 /* TextViewController.h */,
 				C0A924661B7BA0B9009C3574 /* TextViewController.m */,
-				C0DA6D421B7CEA4E005F72DF /* AdScrollTimerViewController.h */,
-				C0DA6D431B7CEA4E005F72DF /* AdScrollTimerViewController.m */,
 				C0DA6D481B7CFB0A005F72DF /* OCDataSourceDemo.h */,
 				C0DA6D491B7CFB0A005F72DF /* OCDataSourceDemo.m */,
 				65D8DF6B1B845CEE007E31BA /* LoginDemoVC.h */,
@@ -421,8 +418,6 @@
 				65D52A791B857B37009774EF /* WebViewDemo.m */,
 				C053ABF51B8F5AA200BE5F5F /* GLPresentViewController.h */,
 				C053ABF61B8F5AA200BE5F5F /* GLPresentViewController.m */,
-				C0E662071B92B1E200F5F5B2 /* AddTBCellViewController.h */,
-				C0E662081B92B1E200F5F5B2 /* AddTBCellViewController.m */,
 			);
 			name = DemoVC;
 			sourceTree = "<group>";
@@ -473,11 +468,11 @@
 		65ECE86D1B588AA9003134B2 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				C0CA80391C3BEA9A00ABE564 /* Home */,
+				C0CA80251C3BE71C00ABE564 /* AppEngine */,
 				C0E9D7391C38172700138BAB /* Vendors */,
-				C0E9D7351C3816B000138BAB /* UI */,
 				65ECE8731B588AA9003134B2 /* AppDelegate.m */,
 				65ECE8721B588AA9003134B2 /* AppDelegate.h */,
-				65ECE8AC1B589ACA003134B2 /* AppEngine */,
 				65ECE8AD1B589AEB003134B2 /* lib */,
 				65ECE8AE1B589AF3003134B2 /* Home */,
 				65ECE87B1B588AA9003134B2 /* Images.xcassets */,
@@ -514,31 +509,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		65ECE8AC1B589ACA003134B2 /* AppEngine */ = {
-			isa = PBXGroup;
-			children = (
-				65ECE8BE1B58A8B0003134B2 /* config.h */,
-				C0C73DFE1B98939B00917AC1 /* DeliveryMacros.h */,
-			);
-			name = AppEngine;
-			sourceTree = "<group>";
-		};
 		65ECE8AD1B589AEB003134B2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				C0C73E081B9940BB00917AC1 /* EnumsMacros.h */,
 				C0C73DF81B98919B00917AC1 /* base64.h */,
 				C0C73DF91B98919B00917AC1 /* base64.m */,
-				C0C73E021B9939AC00917AC1 /* NSString+URLEncoding.h */,
-				C0C73E031B9939AC00917AC1 /* NSString+URLEncoding.m */,
-				65EBADB11B636CFB005F22BD /* NSString+TNExtends.h */,
-				65EBADB21B636CFB005F22BD /* NSString+TNExtends.m */,
 				65D9B9B51B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.h */,
 				65D9B9B61B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m */,
 				65ECE8D11B590359003134B2 /* CNPPopupController.h */,
 				65ECE8D21B590359003134B2 /* CNPPopupController.m */,
-				65ECE8BB1B58A80C003134B2 /* NSTimer+Addition.h */,
-				65ECE8BC1B58A80C003134B2 /* NSTimer+Addition.m */,
 				65ECE8B11B589B39003134B2 /* Category */,
 			);
 			name = lib;
@@ -569,16 +548,8 @@
 		65ECE8B01B589B1A003134B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C053ABF81B8F728B00BE5F5F /* TNTopBarView.h */,
-				C053ABF91B8F728B00BE5F5F /* TNTopBarView.m */,
-				C0E6620A1B93442F00F5F5B2 /* GLHeaderView.h */,
-				C0E6620B1B93442F00F5F5B2 /* GLHeaderView.m */,
-				65D9E9EF1B7C3265000CCF21 /* GLTopBarView.h */,
-				65D9E9F01B7C3265000CCF21 /* GLTopBarView.m */,
 				65ECE8BF1B58A9CC003134B2 /* TNHomeSpecialSaleCell.m */,
 				65ECE8C01B58A9CC003134B2 /* TNHomeSpecialSaleCell.h */,
-				65ECE8B81B58A804003134B2 /* TNCycleScrollView.h */,
-				65ECE8B91B58A804003134B2 /* TNCycleScrollView.m */,
 				65ECE8B51B58A79C003134B2 /* TNTableViewCell.h */,
 				65ECE8B61B58A79C003134B2 /* TNTableViewCell.m */,
 				65EBADA81B6330DC005F22BD /* LayoutSubviews.h */,
@@ -588,8 +559,6 @@
 				6567D9501B6F3CD3004176B9 /* CustomCell.h */,
 				6567D9511B6F3CD3004176B9 /* CustomCell.m */,
 				6567D9521B6F3CD3004176B9 /* CustomCell.xib */,
-				C0DA6D451B7CEA6C005F72DF /* AdvertiseView.h */,
-				C0DA6D461B7CEA6C005F72DF /* AdvertiseView.m */,
 				65D882B11B91879E00B775A0 /* MainCell.h */,
 				65D882B21B91879E00B775A0 /* MainCell.m */,
 				65D882B31B91879E00B775A0 /* MainCell.xib */,
@@ -606,13 +575,6 @@
 				6529C3671B905560008E62CF /* NSObject+BlackMagic.m */,
 			);
 			name = Category;
-			sourceTree = "<group>";
-		};
-		65EEE32C1B8EE1A700340778 /* GLNavigator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = GLNavigator;
 			sourceTree = "<group>";
 		};
 		C0B5AE0A1C3560D10007E1D4 /* Login */ = {
@@ -654,33 +616,79 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		C0E9D7351C3816B000138BAB /* UI */ = {
+		C0CA80211C3BE6DA00ABE564 /* GLScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				C0E9D7361C3816B000138BAB /* Controllers */,
-				C0E9D7371C3816B000138BAB /* Model */,
-				C0E9D7381C3816B000138BAB /* Views */,
+				C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */,
+				C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */,
 			);
-			path = UI;
+			path = GLScrollView;
 			sourceTree = "<group>";
 		};
-		C0E9D7361C3816B000138BAB /* Controllers */ = {
+		C0CA80251C3BE71C00ABE564 /* AppEngine */ = {
 			isa = PBXGroup;
 			children = (
+				C0CA80261C3BE78500ABE564 /* config.h */,
+				C0CA80271C3BE78500ABE564 /* DeliveryMacros.h */,
+				C0CA80281C3BE78500ABE564 /* EnumsMacros.h */,
+			);
+			path = AppEngine;
+			sourceTree = "<group>";
+		};
+		C0CA80321C3BE8EF00ABE564 /* GLTopBarView */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA80361C3BE95800ABE564 /* GLTopBarView.h */,
+				C0CA80371C3BE95800ABE564 /* GLTopBarView.m */,
+				C0CA80331C3BE8EF00ABE564 /* TNTopBarView.h */,
+				C0CA80341C3BE8EF00ABE564 /* TNTopBarView.m */,
+			);
+			path = GLTopBarView;
+			sourceTree = "<group>";
+		};
+		C0CA80391C3BEA9A00ABE564 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA80521C3BF35F00ABE564 /* HeaderAdVertise */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C0CA80521C3BF35F00ABE564 /* HeaderAdVertise */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA80531C3BF35F00ABE564 /* Controllers */,
+				C0CA80581C3BF35F00ABE564 /* Model */,
+				C0CA80591C3BF35F00ABE564 /* Views */,
+			);
+			path = HeaderAdVertise;
+			sourceTree = "<group>";
+		};
+		C0CA80531C3BF35F00ABE564 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA80541C3BF35F00ABE564 /* AddTBCellViewController.h */,
+				C0CA80551C3BF35F00ABE564 /* AddTBCellViewController.m */,
+				C0CA80561C3BF35F00ABE564 /* AdScrollTimerViewController.h */,
+				C0CA80571C3BF35F00ABE564 /* AdScrollTimerViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		C0E9D7371C3816B000138BAB /* Model */ = {
+		C0CA80581C3BF35F00ABE564 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C0E9D7381C3816B000138BAB /* Views */ = {
+		C0CA80591C3BF35F00ABE564 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0CA805A1C3BF35F00ABE564 /* AdvertiseView.h */,
+				C0CA805B1C3BF35F00ABE564 /* AdvertiseView.m */,
+				C0CA805C1C3BF35F00ABE564 /* GLHeaderView.h */,
+				C0CA805D1C3BF35F00ABE564 /* GLHeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -688,6 +696,8 @@
 		C0E9D7391C38172700138BAB /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				C0CA80321C3BE8EF00ABE564 /* GLTopBarView */,
+				C0CA80211C3BE6DA00ABE564 /* GLScrollView */,
 				C0E9D77C1C38205E00138BAB /* lib */,
 				C0E9D76C1C381D8300138BAB /* GLURLRequest */,
 				C0E9D75F1C381C3900138BAB /* Catogeries */,
@@ -719,6 +729,12 @@
 		C0E9D75F1C381C3900138BAB /* Catogeries */ = {
 			isa = PBXGroup;
 			children = (
+				C0CA802F1C3BE8AD00ABE564 /* NSTimer+Addition.h */,
+				C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */,
+				C0CA80291C3BE88C00ABE564 /* NSString+TNExtends.h */,
+				C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */,
+				C0CA802B1C3BE88C00ABE564 /* NSString+URLEncoding.h */,
+				C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */,
 				C0E9D7761C381F1700138BAB /* UIButton+Position.h */,
 				C0E9D7771C381F1700138BAB /* UIButton+Position.m */,
 				C0E9D7781C381F1700138BAB /* UIColor+TKCategory.h */,
@@ -939,9 +955,11 @@
 				C0E9D7751C381E6800138BAB /* GURLRequest.m in Sources */,
 				65ECE8CA1B58BF25003134B2 /* SecondViewController.m in Sources */,
 				C0DA6D4A1B7CFB0A005F72DF /* OCDataSourceDemo.m in Sources */,
+				C0CA80611C3BF35F00ABE564 /* GLHeaderView.m in Sources */,
+				C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */,
+				C0CA805E1C3BF35F00ABE564 /* AddTBCellViewController.m in Sources */,
 				65EBADAD1B633C12005F22BD /* TNTrainTicketManger.m in Sources */,
 				6567D9531B6F3CD3004176B9 /* CustomCell.m in Sources */,
-				C053ABFA1B8F728B00BE5F5F /* TNTopBarView.m in Sources */,
 				C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */,
 				65ECE8A21B589A30003134B2 /* PickerViewDemoVC.m in Sources */,
 				C0E9D76B1C381D2100138BAB /* NSArray+GLStuff.m in Sources */,
@@ -949,49 +967,47 @@
 				C0E9D77A1C381F1700138BAB /* UIButton+Position.m in Sources */,
 				65ECE8D01B58CA9C003134B2 /* ForthViewController.m in Sources */,
 				65D9B9B71B5C8A4000ED4040 /* UIViewController+ScrollingNavbar.m in Sources */,
+				C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */,
 				C0E9D7471C38189C00138BAB /* XTURLRequest.m in Sources */,
 				C0E9D7301C36B5DF00138BAB /* GLLoginView.m in Sources */,
+				C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */,
 				C0E9D77B1C381F1700138BAB /* UIColor+TKCategory.m in Sources */,
 				65D9B9B41B5C892A00ED4040 /* FifthViewController.m in Sources */,
 				65ECE8A81B589A5D003134B2 /* AnimationDemoVC.m in Sources */,
 				65E3E85F1B9D2A27002AD494 /* GLSearchMoreTypeView.m in Sources */,
+				C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */,
 				6506943E1BA833F80035D9E5 /* GLTrainScrollBarView.m in Sources */,
 				6529C3681B905560008E62CF /* NSObject+BlackMagic.m in Sources */,
-				65ECE8BA1B58A804003134B2 /* TNCycleScrollView.m in Sources */,
 				65F53F1B1B93F5AD00D019B9 /* TableViewDemoViewController.m in Sources */,
 				65ECE8AB1B589AA9003134B2 /* RootViewController.m in Sources */,
 				65D882B91B9187B500B775A0 /* AttachCell.m in Sources */,
+				C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */,
 				C053ABF71B8F5AA200BE5F5F /* GLPresentViewController.m in Sources */,
 				65A825831B6601A100E3BAB1 /* TrainStationVC.m in Sources */,
 				C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */,
 				65EBADAA1B6330DC005F22BD /* LayoutSubviews.m in Sources */,
 				65ECE89F1B5899EC003134B2 /* ScrollDemoVC.m in Sources */,
-				65ECE8BD1B58A80C003134B2 /* NSTimer+Addition.m in Sources */,
-				C0E662091B92B1E200F5F5B2 /* AddTBCellViewController.m in Sources */,
-				C0C73E041B9939AC00917AC1 /* NSString+URLEncoding.m in Sources */,
-				65D9E9F11B7C3265000CCF21 /* GLTopBarView.m in Sources */,
+				C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */,
 				65EEE33E1B8F207E00340778 /* GLBarViewController.m in Sources */,
-				C0E6620C1B93442F00F5F5B2 /* GLHeaderView.m in Sources */,
 				C0E9D7741C381E6800138BAB /* GLRequest.m in Sources */,
 				C0E9D78F1C38205E00138BAB /* TNJSONModel.m in Sources */,
-				65EBADB31B636CFB005F22BD /* NSString+TNExtends.m in Sources */,
 				6567D94F1B6F1329004176B9 /* NetWorkCell.m in Sources */,
-				C0DA6D471B7CEA6C005F72DF /* AdvertiseView.m in Sources */,
 				65ECE8A51B589A4D003134B2 /* TarBarDemoVC.m in Sources */,
 				65ECE8C71B58B08B003134B2 /* UITabBarViewController.m in Sources */,
 				C0E9D7931C38205E00138BAB /* TNNavigator.m in Sources */,
 				65ECE8CD1B58CA92003134B2 /* ThirdViewController.m in Sources */,
+				C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */,
 				65DA436A1B7B2B06003A4A23 /* BlockModel.m in Sources */,
 				65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */,
 				C0E9D7911C38205E00138BAB /* TNNavigationMap.m in Sources */,
 				65D8DF6D1B845CEE007E31BA /* LoginDemoVC.m in Sources */,
 				65ECE8711B588AA9003134B2 /* main.m in Sources */,
 				C0E9D7731C381E6800138BAB /* GLNetwork.m in Sources */,
-				C0DA6D441B7CEA4E005F72DF /* AdScrollTimerViewController.m in Sources */,
 				C0C73E0E1B9952E700917AC1 /* TestNet101ViewController.m in Sources */,
 				C0E9D78E1C38205E00138BAB /* TNBase64.m in Sources */,
 				65ECE8D31B590359003134B2 /* CNPPopupController.m in Sources */,
 				65ECE89C1B58985A003134B2 /* ButtonDemoVC.m in Sources */,
+				C0CA802D1C3BE88C00ABE564 /* NSString+TNExtends.m in Sources */,
 				C0E9D78D1C38205E00138BAB /* OButton.m in Sources */,
 				C0B5AE191C356A270007E1D4 /* PersonModel.m in Sources */,
 				C0E9D7651C381C3900138BAB /* UIViewController+Analysis.m in Sources */,
