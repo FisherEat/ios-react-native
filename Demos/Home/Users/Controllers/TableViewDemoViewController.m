@@ -62,17 +62,16 @@ static const CGFloat TopBarHeight = 64.5;
 #pragma mark - login view 
 - (void)setUpLoginView
 {
-    self.loginView = [[GLLoginView alloc] initWithFrame:CGRectMake(0, TopBarHeight, self.view.width, self.view.height - TopBarHeight)];
+    self.loginView = [GLLoginView new];
     self.loginView.delegate = self;
     [self.view addSubview:self.loginView];
+    [self setUpConstraints];
 }
 
-- (void)setUpRegisterView
+- (void)setUpConstraints
 {
-    self.registerView = [GLUserRegisterView new];
-    [self.registerView autoConstrainAttribute:ALAttributeLeft toAttribute:ALAttributeLeft ofView:self.view];
-   // [self.registerView autoConstrainAttribute:al toAttribute:<#(ALAttribute)#> ofView:<#(nonnull UIView *)#>]
-    
+    [self.loginView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0) excludingEdge:ALEdgeTop];
+    [self.loginView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:TopBarHeight];
 }
 
 - (void)loginWithName:(NSString *)name password:(NSString *)password

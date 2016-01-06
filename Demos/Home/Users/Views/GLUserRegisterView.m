@@ -35,16 +35,16 @@
 
 - (void)initViews
 {
-    [self addSubview:self.nameLabel];
-    [self addSubview:self.usernameTF];
-    [self addSubview:self.passwdLabel];
-    [self addSubview:self.passwordTF];
+    [self addSubview:_nameLabel];
+    [self addSubview:_usernameTF];
+    [self addSubview:_passwdLabel];
+    [self addSubview:_passwordTF];
 }
 
-- (UILabel *)setNameLabel
+- (UILabel *)nameLabel
 {
-    if (!_nameLabel) {
-        _nameLabel =[UILabel new];
+    if (_nameLabel) {
+        
     }
     return _nameLabel;
 }
