@@ -17,6 +17,6 @@
 #import "SingletonDefine.h"
 
 #import "GLNetwork.h"
-
+#import "PureLayout.h"
 
 #endif

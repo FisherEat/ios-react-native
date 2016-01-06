@@ -11,12 +11,14 @@
 #import "GLLoginManager.h"
 #import "NSObject+MJKeyValue.h"
 #import "GLLoginView.h"
+#import "GLUserRegisterView.h"
 
 static const CGFloat TopBarHeight = 64.5;
 
 @interface TableViewDemoViewController ()<GLLoginButtonClickedDelegate>
 
 @property (nonatomic, strong) GLLoginView *loginView;
+@property (nonatomic, strong) GLUserRegisterView *registerView;
 @property (nonatomic, strong) PersonModel *person;
 
 @end
@@ -63,6 +65,14 @@ static const CGFloat TopBarHeight = 64.5;
     self.loginView = [[GLLoginView alloc] initWithFrame:CGRectMake(0, TopBarHeight, self.view.width, self.view.height - TopBarHeight)];
     self.loginView.delegate = self;
     [self.view addSubview:self.loginView];
+}
+
+- (void)setUpRegisterView
+{
+    self.registerView = [GLUserRegisterView new];
+    [self.registerView autoConstrainAttribute:ALAttributeLeft toAttribute:ALAttributeLeft ofView:self.view];
+   // [self.registerView autoConstrainAttribute:al toAttribute:<#(ALAttribute)#> ofView:<#(nonnull UIView *)#>]
+    
 }
 
 - (void)loginWithName:(NSString *)name password:(NSString *)password
