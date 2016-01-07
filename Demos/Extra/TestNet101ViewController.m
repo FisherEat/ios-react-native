@@ -78,8 +78,6 @@
             NSString *fileName = nil;
             NSString *savePath = [cachePath stringByAppendingPathComponent:fileName];
             NSLog(@"Path = %@", savePath);
-            NSURL *saveUrl = [NSURL fileURLWithPath:savePath];
-            [[NSFileManager defaultManager] copyItemAtPath:location toPath:savePath error:&saveError];
             if (!saveError) {
                 NSLog(@"save success");
             }
@@ -91,6 +89,7 @@
             NSLog(@"Error is %@", error.localizedDescription);
         }
     }];
+    [downloadTask resume];
 }
 
 #pragma mark - Request

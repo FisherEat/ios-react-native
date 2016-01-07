@@ -23,7 +23,7 @@
 - (NSString *)shortestString;
 
 //获取两个数组的交集
-- (NSArray *)intersectionWithArray:(NSArray *)secondArray;
+//- (NSArray *)intersectionWithArray:(NSArray *)secondArray;
 
 //
 @end

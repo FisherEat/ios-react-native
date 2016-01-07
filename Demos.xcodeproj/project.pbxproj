@@ -47,6 +47,7 @@
 		65F07C181C3E0B0300E13CB7 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE61C3E0B0300E13CB7 /* TextViewController.m */; settings = {ASSET_TAGS = (); }; };
 		65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; settings = {ASSET_TAGS = (); }; };
+		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; settings = {ASSET_TAGS = (); }; };
 		C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
 		C0CA802D1C3BE88C00ABE564 /* NSString+TNExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */; };
 		C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
@@ -178,6 +179,8 @@
 		65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableViewCell.m; sourceTree = "<group>"; };
 		65F07BE91C3E0B0300E13CB7 /* WebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDemo.h; sourceTree = "<group>"; };
 		65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDemo.m; sourceTree = "<group>"; };
+		65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GLExtensions.h"; sourceTree = "<group>"; };
+		65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GLExtensions.m"; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
 		C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
@@ -381,6 +384,8 @@
 		65F07B541C3E002D00E13CB7 /* UIImageView+Extension */ = {
 			isa = PBXGroup;
 			children = (
+				65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */,
+				65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */,
 			);
 			path = "UIImageView+Extension";
 			sourceTree = "<group>";
@@ -878,6 +883,7 @@
 				C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */,
 				65F07C171C3E0B0300E13CB7 /* TestNet101ViewController.m in Sources */,
 				65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */,
+				65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */,
 				C0CA805E1C3BF35F00ABE564 /* AddTBCellViewController.m in Sources */,
 				C0CA80951C3BFD4A00ABE564 /* FifthViewController.m in Sources */,
 				C0CA80A41C3C00AC00ABE564 /* GLUserRegisterView.m in Sources */,

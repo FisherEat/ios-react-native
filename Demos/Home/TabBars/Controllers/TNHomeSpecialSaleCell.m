@@ -77,7 +77,6 @@
 #define IsPortrait ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait || [UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)
 
 //获取屏幕 宽度、高度
-#define SCREEN_WIDTH (IsPortrait ? MIN(([UIScreen mainScreen].bounds.size.width), ([UIScreen mainScreen].bounds.size.height)) : MAX(([UIScreen mainScreen].bounds.size.width), ([UIScreen mainScreen].bounds.size.height)))
 
 #define SCREEN_HEIGHT (IsPortrait ? MAX(([UIScreen mainScreen].bounds.size.width), ([UIScreen mainScreen].bounds.size.height)) : MIN(([UIScreen mainScreen].bounds.size.width), ([UIScreen mainScreen].bounds.size.height)))
 #define SCREEN_4_INCH ((SCREEN_HEIGHT - 568) < FLT_EPSILON)
@@ -148,43 +147,7 @@ static const float contentPaddingMiddle = 6;
 
 - (void)bindSpecialInfos:(NSArray *)specialInfoArray withIndex:(NSInteger)leftIndex
 {
-    if (specialInfoArray && specialInfoArray.count >= leftIndex + 2){
-        
-        NSDictionary *dict = @{NSKernAttributeName:@-2.0,
-                               NSFontAttributeName:APP_FONT_SMALL
-                               };
-        
-//        TNHomeSpecialSale *leftSpecialInfo = [specialInfoArray objectAtIndex:leftIndex];
-//        self.leftView.titleLabel.text = leftSpecialInfo.title;
-//        self.leftView.descLabel.text = leftSpecialInfo.destination;
-//        [self.leftView.imageView setImageWithURL:[NSURL URLWithString:leftSpecialInfo.imageUrl] placeholderImage:[UIImage imageNamed:@"loading_image_100x100"]];
-//        self.leftButton.tag = leftIndex;
-//        
-//        NSMutableAttributedString *leftPrice = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"￥%@", leftSpecialInfo.originalPrice]];
-//        [leftPrice addAttributes:dict range:NSMakeRange(0, 1)];
-//        self.leftView.priceLabel.attributedText = leftPrice;
-//        
-//        TNHomeSpecialSale *middleSpecialInfo = [specialInfoArray objectAtIndex:leftIndex + 1];
-//        self.middleView.titleLabel.text = middleSpecialInfo.title;
-//        self.middleView.descLabel.text = middleSpecialInfo.destination;
-//        [self.middleView.imageView setImageWithURL:[NSURL URLWithString:middleSpecialInfo.imageUrl] placeholderImage:[UIImage imageNamed:@"loading_image_100x100"]];
-//        self.middleButton.tag = leftIndex + 1;
-//        
-//        NSMutableAttributedString *middlePrice = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"￥%@", middleSpecialInfo.originalPrice]];
-//        [middlePrice addAttributes:dict range:NSMakeRange(0, 1)];
-//        self.middleView.priceLabel.attributedText = middlePrice;
-//        
-//        TNHomeSpecialSale *rightSpecialInfo = [specialInfoArray objectAtIndex:leftIndex + 2];
-//        self.rightView.titleLabel.text = rightSpecialInfo.title;
-//        self.rightView.descLabel.text = rightSpecialInfo.destination;
-//        self.rightView.priceLabel.text = [NSString stringWithFormat:@"￥%@", rightSpecialInfo.originalPrice];
-//        [self.rightView.imageView setImageWithURL:[NSURL URLWithString:rightSpecialInfo.imageUrl] placeholderImage:[UIImage imageNamed:@"loading_image_100x100"]];
-//        self.rightButton.tag = leftIndex + 2;
-//        
-//        NSMutableAttributedString *rightPrice = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"￥%@", rightSpecialInfo.originalPrice]];
-//        [rightPrice addAttributes:dict range:NSMakeRange(0, 1)];
-//        self.rightView.priceLabel.attributedText = rightPrice;
-    }
+    
 }
 
 

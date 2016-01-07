@@ -68,6 +68,11 @@ static const CGFloat TopBarHeight = 64.5;
     [self setUpConstraints];
 }
 
+-(void)setUpImageView
+{
+    
+}
+
 - (void)setUpConstraints
 {
     [self.loginView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0) excludingEdge:ALEdgeTop];

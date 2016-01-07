@@ -34,8 +34,7 @@ static const CGFloat topToolBarHeight = 40.0f;
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.bColor = [UIColor colorWithRed:0.216 green:0.800 blue:0.406 alpha:1.000];
-    
-    [self addTimeZone];
+
     [self addButton];
     [self addSlider];
     [self addPerson];
@@ -172,34 +171,6 @@ static const CGFloat topToolBarHeight = 40.0f;
         return a * a;
     }(5);
     NSLog(@"test array : %@, %@", mutableArray, @(result));
-    
-}
-
-#pragma mark -
-#pragma mark - NSDate
-- (void)addTimeZone
-{
-    NSDateComponents *tempComponents = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate dateWithTimeIntervalSinceNow:0]];
-    NSDate *today = [[NSCalendar currentCalendar] dateFromComponents:tempComponents];
-    NSDate *another = [[NSDate alloc] init];
-    NSLog(@"another is %@", another);
-    //  NSDateComponents *components = [[NSDateComponents alloc] init];
-    NSLog(@"today is %@", today);
-    
-    
-    NSCalendar *greCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *dateComponet = [greCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit fromDate:[NSDate date]];
-    NSLog(@"year = %li", dateComponet.year);
-    NSLog(@"month = %li", dateComponet.month);
-    NSLog(@"day = %li", dateComponet.day);
-    NSLog(@"hour = %li", dateComponet.hour);
-    
-    UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 60, 60)];
-    UILabel *dateDayLabel = [[UILabel alloc] initWithFrame:CGRectMake(dateLabel.right , dateLabel.y, dateLabel.width, dateLabel.height)];
-    dateLabel.text = [NSString stringWithFormat:@"%@月%@日", @(dateComponet.month), @(dateComponet.day)];
-
-    [self.view addSubview:dateLabel];
-    [self.view addSubview:dateDayLabel];
     
 }
 
