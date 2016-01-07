@@ -7,7 +7,6 @@
 //
 
 #import "ForthViewController.h"
-#import "TNTrainAd.h"
 
 #define HEAD_AD_VIEW_HEIGHT  (SCREEN_WIDTH/4.0f)
 @interface ForthViewController ()

@@ -23,16 +23,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBarHidden = YES;
-    //[self setOneViewSize];
-    //[self setTwoViewSize];
-    //[self setTwoViewSpiltSuperView];
-   // [self setTextFieldView];
-    
     self.data = [NSMutableData data];
-    //[self startGetConnection];
-    //[self testNetWorking];
-    // [self postNetWorking];
-    
+
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillChangeFrameNotification:)
                                                  name:UIKeyboardWillChangeFrameNotification
@@ -74,77 +66,7 @@
     
 }
 
-#pragma mark -
-#pragma mark  AFNetworking
-//- (void)testNetWorking
-//{
-//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    NSDictionary *param = @{@"name": @"gaolong"};
-//  //  NSError *error = nil;
-//   
-//    [manager POST:@"http://172.30.38.192/test.php"
-//      parameters:param
-//         success:^(AFHTTPRequestOperation *operation, id responseObject)
-//    {
-//       NSLog(@"JSON: %@", responseObject);
-//        id  jsonString = [NSJSONSerialization JSONObjectWithData:responseObject
-//                                                         options:NSJSONReadingAllowFragments
-//                                                           error:nil];
-//        if (jsonString != nil )
-//        {
-//            NSLog(@"反序列化成功, %@", jsonString);
-//            
-//            if ([jsonString isKindOfClass:[NSMutableDictionary class]]) {
-//                NSDictionary *dict = (NSDictionary *)jsonString;
-//                NSLog(@"dict = %@", dict);
-//                NSString *key = dict[@"result"];
-//                NSLog(@"the result is %@", key);
-//                
-//            }else if([jsonString isKindOfClass:[NSMutableArray class]])
-//            {
-//                NSArray *arr = (NSArray *)jsonString;
-//                NSLog(@"arr = %@", arr);
-//            }else
-//            {
-//                NSLog(@"fuck is not dic nor arr");
-//                
-//            }
-//            
-//        }else
-//        {
-//            NSLog(@"shit");
-//        }
-//        
-//    }
-//         failure:^(AFHTTPRequestOperation *operation, NSError *error)
-//    {
-//       NSLog(@"Error: %@", error);
-//    }];
-//}
-
-#pragma mark - 
-#pragma mark - shishi
-//-(void)postNetWorking
-//{
-//    NSURL *url = [NSURL URLWithString:@"http://172.30.38.192/shit.php"];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//    NSString *postString = @"firstName=gao&lastName=long";
-//    request.HTTPMethod = @"POST";
-//    request.HTTPBody = [postString dataUsingEncoding:NSUTF8StringEncoding];
-//    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-//        if (error) {
-//            NSLog(@"发生错误啦哥哥");
-//        }else
-//        {
-//            NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//            NSLog(@"dataString -==== %@", dataString);
-//        }
-//    }];
-//    
-//    [task resume];
-//}
-//
+#pragma mark - AFNetworking
 - (void)sendPictureToServer
 {
     NSURL *url = [NSURL URLWithString:@"http://172.30.38.192/shit.php"];
@@ -154,14 +76,6 @@
     NSString *boundary    = @"----MultipartPostBoundaryTestTestTest";
     NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
     [request setValue:contentType forHTTPHeaderField:@"Content-Type"];
-    
-    NSMutableData *body    = [NSMutableData data];
-    NSMutableData *tempData = [NSMutableData data];
-    NSString *fileName = @"testImg.png";
-    NSString *parameterName = @"imgFile";
-    
-    
-    
 }
 
     
@@ -170,8 +84,7 @@
     
 }
 
-#pragma mark -
-#pragma mark ios networking
+#pragma mark - ios networking
 - (void)startGetConnection
 {
    // static NSString *const baiduUrl = @"http://www.baidu.com/s?wd=nihao&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_sug3=3&rsv_sug=0&rsv_sug1=3&rsv_sug4=36";

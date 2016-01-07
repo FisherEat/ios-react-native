@@ -9,7 +9,6 @@
 #import "ThirdViewController.h"
 #import "OButton.h"
 #import "PassMesg.h"
-#import "TrainStationVC.h"
 #import "TestNet101ViewController.h"
 #import "GLTrainScrollBarView.h"
 
@@ -198,22 +197,9 @@ static const CGFloat topToolBarHeight = 40.0f;
     UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 60, 60)];
     UILabel *dateDayLabel = [[UILabel alloc] initWithFrame:CGRectMake(dateLabel.right , dateLabel.y, dateLabel.width, dateLabel.height)];
     dateLabel.text = [NSString stringWithFormat:@"%@月%@日", @(dateComponet.month), @(dateComponet.day)];
-    
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selectdateLabel)];
-    [dateLabel addGestureRecognizer:tapGesture];
-    dateLabel.userInteractionEnabled = YES;
-    
+
     [self.view addSubview:dateLabel];
     [self.view addSubview:dateDayLabel];
-    
-}
-
-- (void)selectdateLabel
-{
-    
-    TrainStationVC *trainStation = [[TrainStationVC alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:trainStation];
-    [self presentViewController:nav animated:YES completion:NULL];
     
 }
 

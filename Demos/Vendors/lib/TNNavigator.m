@@ -59,8 +59,6 @@ SINGLETON_IMPLEMENTION(TNNavigator, navigator)
     }
     
     if ([viewController isKindOfClass:[UIViewController class]]) {
-        UIViewController *vc = (UIViewController *)viewController;
-       // vc.pa
     }
 }
 @end

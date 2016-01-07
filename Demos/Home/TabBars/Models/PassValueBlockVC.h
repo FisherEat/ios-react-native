@@ -25,6 +25,4 @@ typedef void(^ModelBlock)();
 
 - (void)passValueByBlock:(PassBlock)aBlock;
 
-//- (void)passValueByBlock:(ModelBlock)block;
-
 @end

@@ -16,7 +16,6 @@
 #import "TNTableViewCell.h"
 #import "TNHomeSpecialSaleCell.h"
 #import "TestDemoVC.h"
-#import "config.h"
 #import "LGAlertView.h"
 #import "GLNetWorkDemo.h"
 #import "PassValueBlockVC.h"
@@ -188,8 +187,6 @@
     
     //TODO
     self.adCycleScrollView.TapActionBlock = ^(NSInteger pageIndex){
-        __strong typeof(&*weakSelf) strongSelf = weakSelf;
-       // [strongSelf add]
     };
     
     self.myTable.tableHeaderView = self.adCycleScrollView;
@@ -204,9 +201,6 @@
 
 - (void)goToWebView:(NSString *)url title:(NSString *)title
 {
-    NSURL *toUrl = [NSURL URLWithString:url];
-    NSURLRequest *request = [NSURLRequest requestWithURL:toUrl];
-    NSURLConnection *connetion = [NSURLConnection connectionWithRequest:request delegate:nil];
     
 }
 
