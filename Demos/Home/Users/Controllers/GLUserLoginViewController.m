@@ -1,12 +1,12 @@
 //
-//  TableViewDemoViewController.m
+//  GLUserLoginViewController.m
 //  Demos
 //
 //  Created by schiller on 15/8/31.
 //  Copyright (c) 2015年 schiller. All rights reserved.
 //
 
-#import "TableViewDemoViewController.h"
+#import "GLUserLoginViewController.h"
 #import "PersonModel.h"
 #import "GLLoginManager.h"
 #import "NSObject+MJKeyValue.h"
@@ -15,30 +15,28 @@
 
 static const CGFloat TopBarHeight = 64.5;
 
-@interface TableViewDemoViewController ()<GLLoginButtonClickedDelegate>
+@interface GLUserLoginViewController ()<GLLoginButtonClickedDelegate>
 
 @property (nonatomic, strong) GLLoginView *loginView;
 @property (nonatomic, strong) GLUserRegisterView *registerView;
 @property (nonatomic, strong) PersonModel *person;
+@property (nonatomic, strong) PersonData *resultData;
 
 @end
 
-@implementation TableViewDemoViewController
+@implementation GLUserLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpLoginView];
     [self initInputData];
-    [self fetchData];
 }
 
 #pragma mark - load data
 
 - (void)initInputData
 {
-    self.person = [PersonModel new];
-    self.person.name = @"xiaohua";
-    self.person.age = @"18";
+    self.person = [[PersonModel alloc] init];
 }
 
 - (void)refreshData
@@ -48,11 +46,13 @@ static const CGFloat TopBarHeight = 64.5;
 
 - (void)fetchData
 {
-    [GLLoginManager loginWithInput:self.person completion:^(NSDictionary *callBackDic, NSError *erro) {
+    [GLLoginManager loginWithInput:self.person completion:^(PersonData *results, NSError *erro) {
         if (erro) {
             NSLog(@"callbacks data = %@", erro);
-        }else if (callBackDic) {
-            NSLog(@"callbacks data = %@", callBackDic);
+        }else if (results) {
+            self.resultData = results;
+            [self.loginView bindData:self.resultData];
+            NSLog(@"callbacks data = %@", results);
         }else {
             NSLog(@"callbacks data is nil");
         }
@@ -68,21 +68,17 @@ static const CGFloat TopBarHeight = 64.5;
     [self setUpConstraints];
 }
 
--(void)setUpImageView
-{
-    
-}
-
 - (void)setUpConstraints
 {
     [self.loginView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0) excludingEdge:ALEdgeTop];
     [self.loginView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:TopBarHeight];
 }
 
+#pragma mark - GLLoginButtonClickedDelegate
 - (void)loginWithName:(NSString *)name password:(NSString *)password
 {
-    self.person.name = name;
-    self.person.age = password;
+    self.person.username = name;
+    self.person.password = password;
     [self refreshData];
 }
 

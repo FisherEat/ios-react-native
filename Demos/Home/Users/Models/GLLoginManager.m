@@ -13,22 +13,22 @@
 
 @implementation GLLoginManager
 
-+ (void)loginWithInput:(PersonModel *)input completion:(void (^)(NSDictionary *, NSError *))block
++ (void)loginWithInput:(PersonModel *)input completion:(void (^)(PersonData *results, NSError *))block
 {
     NSDictionary *params = [input mj_keyValues];
-    GLRequest *request = [GLRequest requestWithPath:BASE_URL_LOG_IN params:params];
+    GLRequest *request = [GLRequest requestWithPath:OFFICE_URL_LOG_IN params:params];
     [[GLNetwork sharedInstance] sendHTTPRequest:request callback:^(id responseObject, NSError *error) {
-        NSDictionary *dic = [NSDictionary dictionary];
         if (error) {
-            if (block) {
-                block(@{@"message": @"error happened."}, error);
-            }else{
-                NSString *errorString = [NSString stringWithFormat:@"Error: %@", error];
-                mAlert(@"Error", errorString, @"Cancel", @"OK");
-            }
+            NSString *errorString = [NSString stringWithFormat:@"Error: %@", error];
+            mAlert(@"Error", errorString, @"Cancel", @"OK");
         }else {
-            dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-            block(dic, error);
+            PersonData *result = nil;
+            if (responseObject) {
+                result = [PersonData mj_objectWithKeyValues:responseObject];
+                block(result, nil);
+            }else {
+                block([PersonData new], nil);
+            }
         }
     }];
 }

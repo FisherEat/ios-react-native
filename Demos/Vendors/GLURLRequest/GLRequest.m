@@ -32,7 +32,7 @@ NSString *const HTTPMethodPOST = @"POST";
 
 + (instancetype)requestWithPath:(NSString *)path HTTPMethod:(NSString *)HTTPMethod params:(NSDictionary *)params
 {
-    return [self requestWithPath:path HTTPMethod:HTTPMethodGET params:params timeInterval:0];
+    return [self requestWithPath:path HTTPMethod:HTTPMethod params:params timeInterval:0];
 }
 
 + (instancetype)requestWithPath:(NSString *)path HTTPMethod:(NSString *)HTTPMethod params:(NSDictionary *)params timeInterval:(NSTimeInterval)timeInterval

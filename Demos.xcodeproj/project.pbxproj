@@ -60,7 +60,7 @@
 		C0CA80611C3BF35F00ABE564 /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805D1C3BF35F00ABE564 /* GLHeaderView.m */; };
 		C0CA80641C3BF95000ABE564 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80631C3BF95000ABE564 /* base64.m */; };
 		C0CA80741C3BF9A300ABE564 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80731C3BF9A300ABE564 /* PersonModel.m */; };
-		C0CA807F1C3BFBA800ABE564 /* TableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA807E1C3BFBA800ABE564 /* TableViewDemoViewController.m */; };
+		C0CA807F1C3BFBA800ABE564 /* GLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA807E1C3BFBA800ABE564 /* GLUserLoginViewController.m */; };
 		C0CA80811C3BFBF300ABE564 /* LoginDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80801C3BFBF300ABE564 /* LoginDemoVC.m */; };
 		C0CA80951C3BFD4A00ABE564 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80861C3BFD4A00ABE564 /* FifthViewController.m */; };
 		C0CA80961C3BFD4A00ABE564 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80881C3BFD4A00ABE564 /* ForthViewController.m */; };
@@ -209,8 +209,8 @@
 		C0CA80631C3BF95000ABE564 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
 		C0CA80721C3BF9A300ABE564 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		C0CA80731C3BF9A300ABE564 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
-		C0CA807D1C3BFBA800ABE564 /* TableViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDemoViewController.h; sourceTree = "<group>"; };
-		C0CA807E1C3BFBA800ABE564 /* TableViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDemoViewController.m; sourceTree = "<group>"; };
+		C0CA807D1C3BFBA800ABE564 /* GLUserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUserLoginViewController.h; sourceTree = "<group>"; };
+		C0CA807E1C3BFBA800ABE564 /* GLUserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUserLoginViewController.m; sourceTree = "<group>"; };
 		C0CA80801C3BFBF300ABE564 /* LoginDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDemoVC.m; sourceTree = "<group>"; };
 		C0CA80821C3BFC1500ABE564 /* LoginDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDemoVC.h; sourceTree = "<group>"; };
 		C0CA80851C3BFD4A00ABE564 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
@@ -563,8 +563,8 @@
 			children = (
 				C0CA80821C3BFC1500ABE564 /* LoginDemoVC.h */,
 				C0CA80801C3BFBF300ABE564 /* LoginDemoVC.m */,
-				C0CA807D1C3BFBA800ABE564 /* TableViewDemoViewController.h */,
-				C0CA807E1C3BFBA800ABE564 /* TableViewDemoViewController.m */,
+				C0CA807D1C3BFBA800ABE564 /* GLUserLoginViewController.h */,
+				C0CA807E1C3BFBA800ABE564 /* GLUserLoginViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -925,7 +925,7 @@
 				C0E9D7741C381E6800138BAB /* GLRequest.m in Sources */,
 				C0E9D78F1C38205E00138BAB /* TNJSONModel.m in Sources */,
 				65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */,
-				C0CA807F1C3BFBA800ABE564 /* TableViewDemoViewController.m in Sources */,
+				C0CA807F1C3BFBA800ABE564 /* GLUserLoginViewController.m in Sources */,
 				C0E9D7931C38205E00138BAB /* TNNavigator.m in Sources */,
 				C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */,
 				65F07B651C3E05D200E13CB7 /* OCDataSourceDemo.m in Sources */,

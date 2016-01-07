@@ -7,7 +7,7 @@
 //
 
 #import "GLLoginView.h"
-
+#import "PersonModel.h"
 @interface GLLoginView ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) UILabel *nameLabel;
@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UITextField *passwordTF;
 @property (nonatomic, strong) UIButton *loginBtn;
 @property (nonatomic, strong) UIButton *registerBtn;
+@property (nonatomic, strong) UIImageView *bgImageView;
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic ,copy) NSString *password;
@@ -41,6 +42,7 @@
     [self addSubview:self.passwordTF];
     [self addSubview:self.loginBtn];
     [self addSubview:self.registerBtn];
+    [self addSubview:self.bgImageView];
     [self setUpConstraints];
 }
 
@@ -66,7 +68,6 @@
     
     [self.loginBtn autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:self.passwdLabel];
     [self.loginBtn autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.passwdLabel withOffset:20];
-   // [self.loginBtn autoSetDimension:ALDimensionWidth toSize:120];
     [self.loginBtn autoSetDimension:ALDimensionHeight toSize:40];
     
     [self.registerBtn autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:self.passwordTF];
@@ -75,6 +76,25 @@
     [self.registerBtn autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.loginBtn];
     [self.loginBtn autoSetDimension:ALDimensionWidth toSize:120 relation:NSLayoutRelationLessThanOrEqual];
     [self.loginBtn autoSetDimension:ALDimensionWidth toSize:100 relation:NSLayoutRelationGreaterThanOrEqual];
+    
+    [self.bgImageView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.loginBtn withOffset:20];
+    [self.bgImageView autoAlignAxisToSuperviewAxis:ALAxisVertical];
+    [self.bgImageView autoSetDimensionsToSize:CGSizeMake(100, 100)];
+}
+
+- (void)bindData:(PersonData *)data
+{
+    if (data && data.urlString) {
+        [_bgImageView gl_setImageWithURL:[NSURL URLWithString:data.urlString] option:GLWebImageOptionsRetryFailed placeholderImage:[UIImage imageNamed:@"c"] ompleted:^(UIImage *image, NSError *error, NSURL *imageURL) {
+            if (error) {
+                mAlert(@"Error", @"DownLoad Image Error", @"Cancel", @"OK");
+            }else if (!image) {
+                mAlert(@"Warnings", @"Image is nil", @"Cancel", @"OK");
+            }else {
+                mAlert(@"Success", @"Image downloaded successfully!", @"Cancel", @"OK");
+            }
+        }];
+    }
 }
 
 - (void)loginButtonClicked
@@ -138,6 +158,8 @@
         _usernameTF.layer.borderWidth = 1;
         _usernameTF.layer.cornerRadius = 4;
         _usernameTF.placeholder = @"请输入用户名";
+        _usernameTF.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _usernameTF.delegate = self;
     }
     return _usernameTF;
 }
@@ -151,6 +173,8 @@
         _passwordTF.layer.borderWidth = 1;
         _passwordTF.layer.cornerRadius = 4;
         _passwordTF.placeholder = @"请输入密码";
+        _passwordTF.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _passwordTF.delegate = self;
     }
     return _passwordTF;
 }
@@ -183,4 +207,11 @@
     return _registerBtn;
 }
 
+- (UIImageView *)bgImageView
+{
+    if (!_bgImageView) {
+        _bgImageView = [UIImageView newAutoLayoutView];
+    }
+    return _bgImageView;
+}
 @end

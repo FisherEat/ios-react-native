@@ -15,7 +15,8 @@
 #endif
 
 //App Engine
-#define BASE_URL_LOG_IN @"http://192.168.31.170/young/network2.php"
+#define HOME_URL_LOG_IN @"http://192.168.31.170/young/network2.php"
+#define OFFICE_URL_LOG_IN  @"http://172.30.72.48/userlogin.php"
 
 //屏幕 rect
 #define SCREEN_RECT ([UIScreen mainScreen].bounds)

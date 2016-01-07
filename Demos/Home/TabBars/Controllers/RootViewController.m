@@ -24,7 +24,7 @@
 #import "LoginDemoVC.h"
 #import "WebViewDemo.h"
 #import "GLPresentViewController.h"
-#import "TableViewDemoViewController.h"
+#import "GLUserLoginViewController.h"
 
 @interface RootViewController ()
 
@@ -351,8 +351,8 @@
             break;
         case TableViewDemoCell:
         {
-            TableViewDemoViewController *tableVC = [[TableViewDemoViewController alloc] init];
-            [self.navigationController pushViewController:tableVC animated:YES];
+            GLUserLoginViewController *loginVC = [[GLUserLoginViewController alloc] init];
+            [self.navigationController pushViewController:loginVC animated:YES];
         }
             break;
         default:

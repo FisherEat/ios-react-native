@@ -1,5 +1,5 @@
 //
-//  TableViewDemoViewController.h
+//  GLUserLoginViewController.h
 //  Demos
 //
 //  Created by schiller on 15/8/31.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "GLBarViewController.h"
 
-@interface TableViewDemoViewController : GLBarViewController
+@interface GLUserLoginViewController : GLBarViewController
  
 @end

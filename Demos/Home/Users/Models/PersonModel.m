@@ -11,3 +11,16 @@
 @implementation PersonModel
 
 @end
+
+@implementation PersonData
+
++(NSDictionary *)mj_objectClassInArray
+{
+    return @{@"favorites" :[PersonDetail class]};
+}
+
+@end
+
+@implementation PersonDetail
+
+@end

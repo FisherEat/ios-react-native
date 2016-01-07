@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @class PersonModel;
+@class PersonData;
+@class PersonDetail;
 @interface GLLoginManager : NSObject
 
-+ (void)loginWithInput:(PersonModel *)input completion:(void(^)(NSDictionary *callBackDic, NSError *erro))block;
++ (void)loginWithInput:(PersonModel *)input completion:(void(^)(PersonData *results, NSError *erro))block;
 
 @end
