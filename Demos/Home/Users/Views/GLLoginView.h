@@ -13,6 +13,7 @@
 @protocol GLLoginButtonClickedDelegate <NSObject>
 
 - (void)loginWithName:(NSString *)name password:(NSString *)password;
+- (void)downLoadImage:(UIImage *)image url:(NSURL *)fromUrl error:(NSError *)error;
 
 @end
 

@@ -82,6 +82,17 @@ static const CGFloat TopBarHeight = 64.5;
     [self refreshData];
 }
 
+- (void)downLoadImage:(UIImage *)image url:(NSURL *)fromUrl error:(NSError *)error
+{
+    if (error) {
+        mAlert(@"Error", @"DownLoad Image Error", @"Cancel", @"OK");
+    }else if (!image) {
+        mAlert(@"Warnings", @"Image is nil", @"Cancel", @"OK");
+    }else {
+        mAlert(@"Success", @"Image downloaded successfully!", @"Cancel", @"OK");
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

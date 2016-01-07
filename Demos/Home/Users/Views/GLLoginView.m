@@ -86,14 +86,12 @@
 {
     if (data && data.urlString) {
         [_bgImageView gl_setImageWithURL:[NSURL URLWithString:data.urlString] option:GLWebImageOptionsRetryFailed placeholderImage:[UIImage imageNamed:@"c"] ompleted:^(UIImage *image, NSError *error, NSURL *imageURL) {
-            if (error) {
-                mAlert(@"Error", @"DownLoad Image Error", @"Cancel", @"OK");
-            }else if (!image) {
-                mAlert(@"Warnings", @"Image is nil", @"Cancel", @"OK");
-            }else {
-                mAlert(@"Success", @"Image downloaded successfully!", @"Cancel", @"OK");
+            if (self.delegate && [self.delegate respondsToSelector:@selector(downLoadImage:url:error:)]) {
+                [self.delegate downLoadImage:image url:imageURL error:error];
             }
         }];
+    }else {
+        
     }
 }
 
