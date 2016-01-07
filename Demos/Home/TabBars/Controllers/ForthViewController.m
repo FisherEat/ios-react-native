@@ -7,7 +7,6 @@
 //
 
 #import "ForthViewController.h"
-#import "TNTrainTicketManger.h"
 #import "TNTrainAd.h"
 
 #define HEAD_AD_VIEW_HEIGHT  (SCREEN_WIDTH/4.0f)
@@ -26,41 +25,6 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self customAdViews];
-}
-
-/**
- * @author Edited by schiller, 15-07-25 16:07:29
- *
- * @brief  从远端获取广告图片，然后展示在火车票首页顶部
- */
-- (void)customAdViews
-{
-    self.adViewsArray = [NSMutableArray array];
-    
-    //__block typeof (&*self) __weak weakSelf = self;
-    
-   [[TNTrainTicketManger sharedInstance] fetchAdDataWithCompletion:^(NSArray *adList, NSError *error) {
-       if (!error && adList.count > 0) {
-           self.adList = adList;
-           NSLog(@"%@", self.adList);
-//           self.adList = adList;
-//           
-//           TNTrainAd *trainAd = self.adList[0];
-//           [NSURL URLWithString:trainAd.image];
-//           
-//           NSURL *url  = [NSURL URLWithString:@"http://dynamic.m.tuniu.com/api/train/product/adList"];
-//           NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//           NSData *imageData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-//           if (imageData) {
-//               UIImage *image = [UIImage imageWithData:imageData];
-//               [self.view addSubview:[self supplyAdView:image]];
-//
-//           }
-       }
-   }];
-    
 }
 
 - (UIImageView *)supplyAdView:(UIImage *)imgage
