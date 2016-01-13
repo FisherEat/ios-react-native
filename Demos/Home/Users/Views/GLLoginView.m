@@ -212,4 +212,5 @@
     }
     return _bgImageView;
 }
+
 @end

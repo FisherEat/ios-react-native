@@ -12,42 +12,44 @@
 		65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
 		65ECE87C1B588AA9003134B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ECE87B1B588AA9003134B2 /* Images.xcassets */; };
 		65ECE88B1B588AA9003134B2 /* DemosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE88A1B588AA9003134B2 /* DemosTests.m */; };
-		65F07B4D1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4A1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard */; settings = {ASSET_TAGS = (); }; };
-		65F07B4E1C3DFF1E00E13CB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4B1C3DFF1E00E13CB7 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
-		65F07B4F1C3DFF1E00E13CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4C1C3DFF1E00E13CB7 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		65F07B531C3E002000E13CB7 /* NSObject+BlackMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B521C3E002000E13CB7 /* NSObject+BlackMagic.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B581C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B571C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B5F1C3E019F00E13CB7 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B5E1C3E019F00E13CB7 /* CNPPopupController.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B651C3E05D200E13CB7 /* OCDataSourceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B621C3E05D200E13CB7 /* OCDataSourceDemo.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B661C3E05D200E13CB7 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B691C3E05D700E13CB7 /* MainCell.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; settings = {ASSET_TAGS = (); }; };
-		65F07B6F1C3E062C00E13CB7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B751C3E07E700E13CB7 /* PassMesg.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B741C3E07E700E13CB7 /* PassMesg.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B7B1C3E081E00E13CB7 /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7A1C3E081E00E13CB7 /* TNHomeSpecialSaleCell.m */; settings = {ASSET_TAGS = (); }; };
-		65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BEB1C3E0B0300E13CB7 /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B871C3E0B0300E13CB7 /* AttachCell.xib */; settings = {ASSET_TAGS = (); }; };
-		65F07BEE1C3E0B0300E13CB7 /* ButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B891C3E0B0300E13CB7 /* ButtonDemoVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BF01C3E0B0300E13CB7 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */; settings = {ASSET_TAGS = (); }; };
-		65F07BF11C3E0B0300E13CB7 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8E1C3E0B0300E13CB7 /* GLBarViewController.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BF21C3E0B0300E13CB7 /* GLNetWorkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B901C3E0B0300E13CB7 /* GLNetWorkDemo.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BF31C3E0B0300E13CB7 /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B921C3E0B0300E13CB7 /* GLPresentViewController.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */; settings = {ASSET_TAGS = (); }; };
-		65F07BF51C3E0B0300E13CB7 /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C121C3E0B0300E13CB7 /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C131C3E0B0300E13CB7 /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C141C3E0B0300E13CB7 /* PickerViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDE1C3E0B0300E13CB7 /* PickerViewDemoVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C151C3E0B0300E13CB7 /* SubButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE01C3E0B0300E13CB7 /* SubButtonDemoVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C171C3E0B0300E13CB7 /* TestNet101ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C181C3E0B0300E13CB7 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE61C3E0B0300E13CB7 /* TextViewController.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; settings = {ASSET_TAGS = (); }; };
-		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; settings = {ASSET_TAGS = (); }; };
+		65F07B4D1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4A1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard */; };
+		65F07B4E1C3DFF1E00E13CB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4B1C3DFF1E00E13CB7 /* LaunchScreen.xib */; };
+		65F07B4F1C3DFF1E00E13CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4C1C3DFF1E00E13CB7 /* Main.storyboard */; };
+		65F07B531C3E002000E13CB7 /* NSObject+BlackMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B521C3E002000E13CB7 /* NSObject+BlackMagic.m */; };
+		65F07B581C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B571C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m */; };
+		65F07B5F1C3E019F00E13CB7 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B5E1C3E019F00E13CB7 /* CNPPopupController.m */; };
+		65F07B651C3E05D200E13CB7 /* OCDataSourceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B621C3E05D200E13CB7 /* OCDataSourceDemo.m */; };
+		65F07B661C3E05D200E13CB7 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */; };
+		65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B691C3E05D700E13CB7 /* MainCell.m */; };
+		65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; };
+		65F07B6F1C3E062C00E13CB7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
+		65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */; };
+		65F07B751C3E07E700E13CB7 /* PassMesg.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B741C3E07E700E13CB7 /* PassMesg.m */; };
+		65F07B7B1C3E081E00E13CB7 /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7A1C3E081E00E13CB7 /* TNHomeSpecialSaleCell.m */; };
+		65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
+		65F07BEB1C3E0B0300E13CB7 /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */; };
+		65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; };
+		65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B871C3E0B0300E13CB7 /* AttachCell.xib */; };
+		65F07BEE1C3E0B0300E13CB7 /* ButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B891C3E0B0300E13CB7 /* ButtonDemoVC.m */; };
+		65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; };
+		65F07BF01C3E0B0300E13CB7 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */; };
+		65F07BF11C3E0B0300E13CB7 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8E1C3E0B0300E13CB7 /* GLBarViewController.m */; };
+		65F07BF21C3E0B0300E13CB7 /* GLNetWorkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B901C3E0B0300E13CB7 /* GLNetWorkDemo.m */; };
+		65F07BF31C3E0B0300E13CB7 /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B921C3E0B0300E13CB7 /* GLPresentViewController.m */; };
+		65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */; };
+		65F07BF51C3E0B0300E13CB7 /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */; };
+		65F07C121C3E0B0300E13CB7 /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */; };
+		65F07C131C3E0B0300E13CB7 /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */; };
+		65F07C141C3E0B0300E13CB7 /* PickerViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDE1C3E0B0300E13CB7 /* PickerViewDemoVC.m */; };
+		65F07C151C3E0B0300E13CB7 /* SubButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE01C3E0B0300E13CB7 /* SubButtonDemoVC.m */; };
+		65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */; };
+		65F07C171C3E0B0300E13CB7 /* TestNet101ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */; };
+		65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; };
+		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; };
+		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
+		C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE651C46A6DA00225A21 /* TextViewController.m */; };
+		C059BE6D1C46A72E00225A21 /* TextViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */; };
+		C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
 		C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
 		C0CA802D1C3BE88C00ABE564 /* NSString+TNExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */; };
 		C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
@@ -173,8 +175,6 @@
 		65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemoVC.m; sourceTree = "<group>"; };
 		65F07BE31C3E0B0300E13CB7 /* TestNet101ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNet101ViewController.h; sourceTree = "<group>"; };
 		65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNet101ViewController.m; sourceTree = "<group>"; };
-		65F07BE51C3E0B0300E13CB7 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
-		65F07BE61C3E0B0300E13CB7 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		65F07BE71C3E0B0300E13CB7 /* TNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTableViewCell.h; sourceTree = "<group>"; };
 		65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableViewCell.m; sourceTree = "<group>"; };
 		65F07BE91C3E0B0300E13CB7 /* WebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDemo.h; sourceTree = "<group>"; };
@@ -182,6 +182,12 @@
 		65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GLExtensions.h"; sourceTree = "<group>"; };
 		65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GLExtensions.m"; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C059BE641C46A6DA00225A21 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		C059BE651C46A6DA00225A21 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		C059BE6B1C46A72E00225A21 /* TextViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewDataSource.h; sourceTree = "<group>"; };
+		C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewDataSource.m; sourceTree = "<group>"; };
+		C059BE731C46A77B00225A21 /* TextViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCollectionViewCell.h; sourceTree = "<group>"; };
+		C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCollectionViewCell.m; sourceTree = "<group>"; };
 		C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
 		C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
 		C0CA80261C3BE78500ABE564 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -457,14 +463,49 @@
 				65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */,
 				65F07BE31C3E0B0300E13CB7 /* TestNet101ViewController.h */,
 				65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */,
-				65F07BE51C3E0B0300E13CB7 /* TextViewController.h */,
-				65F07BE61C3E0B0300E13CB7 /* TextViewController.m */,
 				65F07BE71C3E0B0300E13CB7 /* TNTableViewCell.h */,
 				65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */,
 				65F07BE91C3E0B0300E13CB7 /* WebViewDemo.h */,
 				65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */,
 			);
 			path = Extra;
+			sourceTree = "<group>";
+		};
+		C059BE5F1C46A31E00225A21 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				C059BE721C46A77B00225A21 /* View */,
+				C059BE671C46A6EB00225A21 /* Model */,
+				C059BE631C46A6DA00225A21 /* Controller */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		C059BE631C46A6DA00225A21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C059BE641C46A6DA00225A21 /* TextViewController.h */,
+				C059BE651C46A6DA00225A21 /* TextViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C059BE671C46A6EB00225A21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C059BE6B1C46A72E00225A21 /* TextViewDataSource.h */,
+				C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C059BE721C46A77B00225A21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C059BE731C46A77B00225A21 /* TextViewCollectionViewCell.h */,
+				C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C0CA80211C3BE6DA00ABE564 /* GLScrollView */ = {
@@ -501,6 +542,7 @@
 		C0CA80391C3BEA9A00ABE564 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C059BE5F1C46A31E00225A21 /* Lists */,
 				65F07B491C3DFF1E00E13CB7 /* StoryBoards */,
 				C0CA80831C3BFD4A00ABE564 /* TabBars */,
 				C0CA80651C3BF98900ABE564 /* Users */,
@@ -747,6 +789,7 @@
 				65ECE8681B588AA9003134B2 /* Frameworks */,
 				65ECE8691B588AA9003134B2 /* Resources */,
 				5D0388801D50D67FB2EDC849 /* Copy Pods Resources */,
+				36B3DF530532B37D9FC24CEC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -837,6 +880,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		36B3DF530532B37D9FC24CEC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D0388801D50D67FB2EDC849 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -886,10 +944,12 @@
 				65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */,
 				C0CA805E1C3BF35F00ABE564 /* AddTBCellViewController.m in Sources */,
 				C0CA80951C3BFD4A00ABE564 /* FifthViewController.m in Sources */,
+				C059BE6D1C46A72E00225A21 /* TextViewDataSource.m in Sources */,
 				C0CA80A41C3C00AC00ABE564 /* GLUserRegisterView.m in Sources */,
 				65F07B5F1C3E019F00E13CB7 /* CNPPopupController.m in Sources */,
 				65F07BF31C3E0B0300E13CB7 /* GLPresentViewController.m in Sources */,
 				C0CA80971C3BFD4A00ABE564 /* SecondViewController.m in Sources */,
+				C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */,
 				C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */,
 				65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */,
 				65F07BF51C3E0B0300E13CB7 /* GLTrainScrollBarView.m in Sources */,
@@ -906,7 +966,6 @@
 				C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */,
 				C0E9D77B1C381F1700138BAB /* UIColor+TKCategory.m in Sources */,
 				65F07BEB1C3E0B0300E13CB7 /* AnimationDemoVC.m in Sources */,
-				65F07C181C3E0B0300E13CB7 /* TextViewController.m in Sources */,
 				65F07BEE1C3E0B0300E13CB7 /* ButtonDemoVC.m in Sources */,
 				65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */,
 				65F07C131C3E0B0300E13CB7 /* NetWorkCell.m in Sources */,
@@ -914,6 +973,7 @@
 				C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */,
 				65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */,
 				65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */,
+				C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */,
 				C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */,
 				C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */,
 				65F07B7B1C3E081E00E13CB7 /* TNHomeSpecialSaleCell.m in Sources */,
