@@ -193,7 +193,7 @@ LGAlertViewStyle;
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
 
-#pragma mark iOS >= 8
+#pragma mark iOS == 8
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
@@ -989,10 +989,7 @@ LGAlertViewStyle;
     
     UIWindow *window = notification.object;
     
-    //NSLog(@"%@", NSStringFromClass([window class]));
-    
-    if ([NSStringFromClass([window class]) isEqualToString:@"UITextEffectsWindow"] ||
-        [NSStringFromClass([window class]) isEqualToString:@"UIRemoteKeyboardWindow"]) return;
+    if ([NSStringFromClass([window class]) isEqualToString:@"UITextEffectsWindow"]) return;
     
     if (notification.name == UIWindowDidBecomeVisibleNotification)
     {
@@ -1345,7 +1342,7 @@ LGAlertViewStyle;
     
     if (animated)
     {
-        [LGAlertView animateStandardWithAnimations:^(void)
+        [LGAlertView animateStandartWithAnimations:^(void)
          {
              [self showAnimations];
          }
@@ -1410,7 +1407,7 @@ LGAlertViewStyle;
     
     if (animated)
     {
-        [LGAlertView animateStandardWithAnimations:^(void)
+        [LGAlertView animateStandartWithAnimations:^(void)
          {
              [self dismissAnimations];
          }
@@ -1789,19 +1786,18 @@ LGAlertViewStyle;
                 UIButton *firstButton = nil;
                 UIButton *secondButton = nil;
                 
-                if (_cancelButton)
-                {
-                    [_scrollView addSubview:_cancelButton];
-                    
-                    firstButton = _cancelButton;
-                }
-                
                 if (_destructiveButton)
                 {
                     [_scrollView addSubview:_destructiveButton];
                     
-                    if (!firstButton) firstButton = _destructiveButton;
-                    else secondButton = _destructiveButton;
+                    firstButton = _destructiveButton;
+                }
+                
+                if (_cancelButton)
+                {
+                    [_scrollView addSubview:_cancelButton];
+                    
+                    secondButton = _cancelButton;
                 }
                 
                 if (_firstButton)
@@ -2064,7 +2060,7 @@ LGAlertViewStyle;
 
 #pragma mark - Support
 
-+ (void)animateStandardWithAnimations:(void(^)())animations completion:(void(^)(BOOL finished))completion
++ (void)animateStandartWithAnimations:(void(^)())animations completion:(void(^)(BOOL finished))completion
 {
     if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0)
     {
