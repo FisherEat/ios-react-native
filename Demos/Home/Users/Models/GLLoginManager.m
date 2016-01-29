@@ -16,7 +16,7 @@
 + (void)loginWithInput:(PersonModel *)input completion:(void (^)(PersonData *results, NSError *))block
 {
     NSDictionary *params = [input mj_keyValues];
-    GLRequest *request = [GLRequest requestWithPath:OFFICE_URL_LOG_IN params:params];
+    GLRequest *request = [GLRequest requestWithPath:OFFICE_URL_LOG_IN_2 params:params];
     [[GLNetwork sharedInstance] sendHTTPRequest:request callback:^(id responseObject, NSError *error) {
         if (error) {
             NSString *errorString = [NSString stringWithFormat:@"Error: %@", error];
