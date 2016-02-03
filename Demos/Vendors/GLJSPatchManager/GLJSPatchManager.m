@@ -44,7 +44,7 @@ SINGLETON_IMPLEMENTION(GLJSPatchManager, sharedManager)
 - (void)loadJSPatchWithZipUrlString:(NSString *)urlString
 {
     self.urlString = urlString;
-    if (![NSString isNilOrEmpty:self.urlString]) {
+    if (self.urlString) {
         if ([self needDownload]) {
             //先下载
             [self downLoadFileFinish:^(BOOL flag, NSError *error) {
@@ -75,7 +75,7 @@ SINGLETON_IMPLEMENTION(GLJSPatchManager, sharedManager)
 
 - (void)downLoadFileFinish:(BoolBlock)block
 {
-    if ([NSString isNilOrEmpty:self.urlString]) {
+    if (!self.urlString) {
         return;
     }
     NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask,YES) objectAtIndex:0];

@@ -27,6 +27,6 @@
 #import "MBProgressHUD.h"
 #import "MJExtension.h"
 
-#import "NSString+TNExtends.h"
+//#import "NSString+TNExtends.h"
 
 #endif

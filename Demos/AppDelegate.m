@@ -40,7 +40,8 @@
     [self.window makeKeyAndVisible];
     
     [self getAppConfig];
-    
+    //该方法必须在 keywindow 存在的条件下才能使用，因此要放置在makeKeyAndVisible后面
+    [self constructUI];
     return YES;
 }
 
@@ -108,20 +109,26 @@
     self.tabBarController.viewControllers = @[self.rootNaVC, self.secondNaVC, self.thirdNaVC, self.forthNaVC, self.fifthNaVC];
     
    // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
-    
-    [self constructUI];
+
 }
 
 - (void)constructUI
 {
-    UIButton *button = [UIButton newAutoLayoutView];
+//    UIButton *button = [UIButton newAutoLayoutView];
+//    [[UIApplication sharedApplication].keyWindow addSubview:button];
+//    
+//    [button autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:10.0f];
+//    [button autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:- 65.0f];
+//    [button autoSetDimensionsToSize:CGSizeMake(44, 44)];
+
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    button.right = SCREEN_WIDTH - 10.0f;
+    button.bottom = SCREEN_HEIGHT - 100;
+    
     [button setBackgroundImage:[UIImage imageNamed:@"debug_hammer"] forState:UIControlStateNormal];
-    [[UIApplication sharedApplication].keyWindow addSubview:button];
-    [button autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:10.0f];
-    [button autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:65.0f];
-    [button autoSetDimensionsToSize:CGSizeMake(44, 44)];
     button.layer.shadowColor = [UIColor blackColor].CGColor;
     [button addTarget:self action:@selector(debugButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [[UIApplication sharedApplication].keyWindow addSubview:button];
 }
 
 - (void)debugButtonPressed:(id)sender

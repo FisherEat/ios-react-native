@@ -11,7 +11,6 @@
 		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; settings = {ASSET_TAGS = (); }; };
 		6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; settings = {ASSET_TAGS = (); }; };
 		6506F6291C61F22F00A4D747 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */; settings = {ASSET_TAGS = (); }; };
-		6506F62A1C61F22F00A4D747 /* NSString+TNExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6181C61F22F00A4D747 /* NSString+TNExtends.m */; settings = {ASSET_TAGS = (); }; };
 		6506F62B1C61F22F00A4D747 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */; settings = {ASSET_TAGS = (); }; };
 		6506F62C1C61F22F00A4D747 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */; settings = {ASSET_TAGS = (); }; };
 		6506F62D1C61F22F00A4D747 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61E1C61F22F00A4D747 /* Toast+UIView.m */; settings = {ASSET_TAGS = (); }; };
@@ -65,7 +64,6 @@
 		C059BE6D1C46A72E00225A21 /* TextViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */; };
 		C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
 		C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
-		C0CA802D1C3BE88C00ABE564 /* NSString+TNExtends.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */; };
 		C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
 		C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
 		C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80341C3BE8EF00ABE564 /* TNTopBarView.m */; };
@@ -126,8 +124,6 @@
 		6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLJSPatchManager.m; sourceTree = "<group>"; };
 		6506F6151C61F22F00A4D747 /* NSArray+GLStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GLStuff.h"; sourceTree = "<group>"; };
 		6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GLStuff.m"; sourceTree = "<group>"; };
-		6506F6171C61F22F00A4D747 /* NSString+TNExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TNExtends.h"; sourceTree = "<group>"; };
-		6506F6181C61F22F00A4D747 /* NSString+TNExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TNExtends.m"; sourceTree = "<group>"; };
 		6506F6191C61F22F00A4D747 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		6506F61B1C61F22F00A4D747 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
@@ -234,8 +230,6 @@
 		C0CA80261C3BE78500ABE564 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		C0CA80271C3BE78500ABE564 /* DeliveryMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryMacros.h; sourceTree = "<group>"; };
 		C0CA80281C3BE78500ABE564 /* EnumsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumsMacros.h; sourceTree = "<group>"; };
-		C0CA80291C3BE88C00ABE564 /* NSString+TNExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TNExtends.h"; sourceTree = "<group>"; };
-		C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TNExtends.m"; sourceTree = "<group>"; };
 		C0CA802B1C3BE88C00ABE564 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		C0CA802F1C3BE8AD00ABE564 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
@@ -386,8 +380,6 @@
 			children = (
 				6506F6151C61F22F00A4D747 /* NSArray+GLStuff.h */,
 				6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */,
-				6506F6171C61F22F00A4D747 /* NSString+TNExtends.h */,
-				6506F6181C61F22F00A4D747 /* NSString+TNExtends.m */,
 				6506F6191C61F22F00A4D747 /* NSString+URLEncoding.h */,
 				6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */,
 				6506F61B1C61F22F00A4D747 /* NSTimer+Addition.h */,
@@ -825,8 +817,6 @@
 			children = (
 				C0CA802F1C3BE8AD00ABE564 /* NSTimer+Addition.h */,
 				C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */,
-				C0CA80291C3BE88C00ABE564 /* NSString+TNExtends.h */,
-				C0CA802A1C3BE88C00ABE564 /* NSString+TNExtends.m */,
 				C0CA802B1C3BE88C00ABE564 /* NSString+URLEncoding.h */,
 				C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */,
 				C0E9D7761C381F1700138BAB /* UIButton+Position.h */,
@@ -1106,12 +1096,10 @@
 				C0E9D7911C38205E00138BAB /* TNNavigationMap.m in Sources */,
 				65ECE8711B588AA9003134B2 /* main.m in Sources */,
 				C0E9D7731C381E6800138BAB /* GLNetwork.m in Sources */,
-				6506F62A1C61F22F00A4D747 /* NSString+TNExtends.m in Sources */,
 				C0E9D78E1C38205E00138BAB /* TNBase64.m in Sources */,
 				65F07B581C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m in Sources */,
 				65F07C121C3E0B0300E13CB7 /* LayoutSubviews.m in Sources */,
 				6506F6301C61F22F00A4D747 /* UIView+Positioning.m in Sources */,
-				C0CA802D1C3BE88C00ABE564 /* NSString+TNExtends.m in Sources */,
 				C0E9D78D1C38205E00138BAB /* OButton.m in Sources */,
 				C0CA80A11C3BFDB000ABE564 /* GLLoginManager.m in Sources */,
 				C0E9D7651C381C3900138BAB /* UIViewController+Analysis.m in Sources */,
