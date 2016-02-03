@@ -8,9 +8,20 @@
 
 #import "GLJSPatchManager.h"
 #import "SSZipArchive.h"
+#import "JPEngine.h"
 
 typedef void (^BoolBlock) (BOOL flag, NSError *error);
 typedef void (^VoidBlock) (void);
+
+@implementation GLJSPatchLoad
+
++ (NSArray *)fetchScriptsArray
+{
+    return @[];
+}
+
+@end
+
 @interface GLJSPatchManager ()
 
 @property (nonatomic, strong) NSString *urlString;
@@ -42,8 +53,10 @@ SINGLETON_IMPLEMENTION(GLJSPatchManager, sharedManager)
                     [userdefault setObject:[[self.urlString componentsSeparatedByString:@"/"] lastObject] forKey:@"jsPatchZipName"];
                     [userdefault synchronize];
                     [self unzipFileResult:^{
-                        
+                        [self loadJSPatchScript];
                     }];
+                }else {
+                    kAlert(@"下载失败，无法解压！");
                 }
             }];
         }
@@ -67,7 +80,7 @@ SINGLETON_IMPLEMENTION(GLJSPatchManager, sharedManager)
     }
     NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask,YES) objectAtIndex:0];
     NSString *fileName = [[self.urlString componentsSeparatedByString:@"/"] lastObject];
-    doc = [doc stringByAppendingString:fileName];
+    doc = [doc stringByAppendingPathComponent:fileName];
     GLRequest *request = [GLRequest requestWithPath:self.urlString HTTPMethod:@"GET" params:nil];
     
     [[GLNetwork sharedInstance] downLoadHTTPRequest:request success:^(id responseObject) {
@@ -84,12 +97,36 @@ SINGLETON_IMPLEMENTION(GLJSPatchManager, sharedManager)
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         NSString *newName = [[self.urlString componentsSeparatedByString:@"/"] lastObject];
-        NSString *directory = [doc stringByAppendingString:newName];
+        NSString *directory = [doc stringByAppendingPathComponent:newName];
         [SSZipArchive unzipFileAtPath:directory toDestination:doc];
         dispatch_async(dispatch_get_main_queue(), ^{
             block();
         });
     });
+}
+
+/**
+ * @brief  加在js脚本
+ */
+- (void)loadJSPatchScript
+{
+    [JPEngine startEngine];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *directory = [doc stringByAppendingPathComponent:@"js"];
+    NSString *loadFileName = [directory stringByAppendingPathComponent:@"load.js"];
+    if ([fileManager fileExistsAtPath:loadFileName]) {
+        NSString *script = [NSString stringWithContentsOfFile:loadFileName encoding:NSUTF8StringEncoding error:nil];
+        [JPEngine evaluateScript:script];
+    }
+    NSArray *scriptNameArray = [GLJSPatchLoad fetchScriptsArray];
+    [scriptNameArray enumerateObjectsUsingBlock:^(NSString *fileName, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *fullPath = [directory stringByAppendingPathComponent:fileName];
+        if ([fileManager fileExistsAtPath:fullPath] && [[fileName pathExtension] isEqualToString:@"js"]) {
+            NSString *script = [NSString stringWithContentsOfFile:fullPath encoding:NSUTF8StringEncoding error:nil];
+            [JPEngine evaluateScript:script];
+        }
+    }];
 }
 
 @end

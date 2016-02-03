@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GLCommonModel.h"
+#import "GLJSPatchManager.h"
 
 @interface AppDelegate ()
 
@@ -42,13 +43,17 @@
     return YES;
 }
 
+/**
+ * @brief  引入jspatch热修复。本质上是js文件的下载和js文件的解析并执行
+ */
 - (void)getAppConfig
 {
-    [GLCommonModel getAppConfigInfoBlock:^(NSMutableDictionary *infoDict, NSError *error) {
-        if (![NSString isNilOrEmpty:infoDict[@"jsScriptUrl"]]) {
-            
-        }
-    }];
+    NSString *string = @"https://ssl.tuniucdn.com/android/tiyan/jspatch/js014.zip";
+    [JSPatchManager loadJSPatchWithZipUrlString:string];
+//    [GLCommonModel getAppConfigInfoBlock:^(NSMutableDictionary *infoDict, NSError *error) {
+//        NSString *string = @"https://ssl.tuniucdn.com/android/tiyan/jspatch/js014.zip";
+//        [JSPatchManager loadJSPatchWithZipUrlString:string];
+//    }];
 }
 
 #pragma mark -
@@ -126,7 +131,6 @@
 - (void)applicationWillEnterForeground:(UIApplication *)applicatio
 {
 
-    NSLog(@"我爱你日本");
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

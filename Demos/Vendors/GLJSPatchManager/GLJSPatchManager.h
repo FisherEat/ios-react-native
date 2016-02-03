@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@interface GLJSPatchLoad : NSObject
+
+@end
+
 #define JSPatchManager [GLJSPatchManager sharedManager]
 
 @interface GLJSPatchManager : NSObject

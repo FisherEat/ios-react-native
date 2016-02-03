@@ -47,7 +47,7 @@ SINGLETON_IMPLEMENTION(GLNetwork, sharedInstance)
     
     NSMutableURLRequest *newRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:request.httpMethod URLString:request.path parameters:request.params error:nil];
     NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:newRequest progress:nil destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        NSURL *documentDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentationDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        NSURL *documentDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
         return [documentDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         if (!error) {
