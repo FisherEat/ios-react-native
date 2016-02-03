@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "GLCommonModel.h"
 #import "GLJSPatchManager.h"
+#import "FLEXManager.h"
 
 @interface AppDelegate ()
 
@@ -107,6 +108,25 @@
     self.tabBarController.viewControllers = @[self.rootNaVC, self.secondNaVC, self.thirdNaVC, self.forthNaVC, self.fifthNaVC];
     
    // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
+    
+    [self constructUI];
+}
+
+- (void)constructUI
+{
+    UIButton *button = [UIButton newAutoLayoutView];
+    [button setBackgroundImage:[UIImage imageNamed:@"debug_hammer"] forState:UIControlStateNormal];
+    [[UIApplication sharedApplication].keyWindow addSubview:button];
+    [button autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:10.0f];
+    [button autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:65.0f];
+    [button autoSetDimensionsToSize:CGSizeMake(44, 44)];
+    button.layer.shadowColor = [UIColor blackColor].CGColor;
+    [button addTarget:self action:@selector(debugButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)debugButtonPressed:(id)sender
+{
+    [[FLEXManager sharedManager] showExplorer];
 }
 
 - (void)getCalendarMsgSuccess:(NSNotification *)aNotification
