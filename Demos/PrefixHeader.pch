@@ -17,6 +17,8 @@
 #import "SingletonDefine.h"
 
 #import "GLNetwork.h"
+#import "GLRequest.h"
+
 #import "PureLayout.h"
 #import "UIImageView+GLExtensions.h"
 #import "AFNetworking.h"
@@ -24,5 +26,7 @@
 #import "LGAlertView.h"
 #import "MBProgressHUD.h"
 #import "MJExtension.h"
+
+#import "NSString+TNExtends.h"
 
 #endif

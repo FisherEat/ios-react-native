@@ -18,6 +18,7 @@
 #define HOME_URL_LOG_IN @"http://192.168.31.170/young/network2.php"
 #define OFFICE_URL_LOG_IN  @"http://172.30.72.48/userlogin.php"
 #define OFFICE_URL_LOG_IN_2 @"http://172.30.74.51/demos/myphps/p2.php"
+#define OFFICE_URL_APP_CONFIG @"http:///demos/"
 
 //屏幕 rect
 #define SCREEN_RECT ([UIScreen mainScreen].bounds)

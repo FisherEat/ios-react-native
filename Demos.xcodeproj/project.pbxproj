@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; settings = {ASSET_TAGS = (); }; };
+		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; settings = {ASSET_TAGS = (); }; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
 		65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
@@ -105,6 +107,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6506F6021C61897B00A4D747 /* GLCommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCommonModel.h; sourceTree = "<group>"; };
+		6506F6031C61897B00A4D747 /* GLCommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCommonModel.m; sourceTree = "<group>"; };
+		6506F6071C618F8100A4D747 /* AppVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppVersion.plist; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		65E3E8571B9D24E2002AD494 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		65ECE86B1B588AA9003134B2 /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +311,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6506F6011C61896200A4D747 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				6506F6021C61897B00A4D747 /* GLCommonModel.h */,
+				6506F6031C61897B00A4D747 /* GLCommonModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		6506F6051C618EA400A4D747 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6506F6061C618EA400A4D747 /* Documents */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6506F6061C618EA400A4D747 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				6506F6071C618F8100A4D747 /* AppVersion.plist */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
 		65ECE8621B588AA9003134B2 = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +361,8 @@
 			children = (
 				65ECE8721B588AA9003134B2 /* AppDelegate.h */,
 				65ECE8731B588AA9003134B2 /* AppDelegate.m */,
+				6506F6051C618EA400A4D747 /* Resources */,
+				6506F6011C61896200A4D747 /* BaseModel */,
 				C0CA80391C3BEA9A00ABE564 /* Home */,
 				C0CA80251C3BE71C00ABE564 /* AppEngine */,
 				C0E9D7391C38172700138BAB /* Vendors */,
@@ -860,6 +892,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */,
+				6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */,
 				65F07B4D1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard in Resources */,
 				65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */,
 				65F07B4E1C3DFF1E00E13CB7 /* LaunchScreen.xib in Resources */,
@@ -955,6 +988,7 @@
 				65F07C131C3E0B0300E13CB7 /* NetWorkCell.m in Sources */,
 				65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */,
 				C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */,
+				6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */,
 				65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */,
 				65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */,
 				C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */,
