@@ -39,4 +39,28 @@ SINGLETON_IMPLEMENTION(GLNetwork, sharedInstance)
     [dataTask resume];
 }
 
+- (void)downLoadHTTPRequest:(GLRequest *)request success:(void (^)(id))success failure:(void (^)(NSError *))failure
+{
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    NSMutableURLRequest *newRequest = [[AFHTTPRequestSerializer serializer] requestWithMethod:request.httpMethod URLString:request.path parameters:request.params error:nil];
+    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:newRequest progress:nil destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        NSURL *documentDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentationDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        return [documentDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        if (!error) {
+            if (success) {
+                success(filePath);
+            }
+            NSLog(@"file has been downloaded to: %@", filePath);
+        }else {
+            failure(error);
+        }
+    }];
+    
+    [downloadTask resume];
+}
+
 @end

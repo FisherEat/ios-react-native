@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; settings = {ASSET_TAGS = (); }; };
 		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; settings = {ASSET_TAGS = (); }; };
+		6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; settings = {ASSET_TAGS = (); }; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
 		65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
@@ -110,6 +111,8 @@
 		6506F6021C61897B00A4D747 /* GLCommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCommonModel.h; sourceTree = "<group>"; };
 		6506F6031C61897B00A4D747 /* GLCommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCommonModel.m; sourceTree = "<group>"; };
 		6506F6071C618F8100A4D747 /* AppVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppVersion.plist; sourceTree = "<group>"; };
+		6506F6111C61A5F200A4D747 /* GLJSPatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLJSPatchManager.h; sourceTree = "<group>"; };
+		6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLJSPatchManager.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		65E3E8571B9D24E2002AD494 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		65ECE86B1B588AA9003134B2 /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -334,6 +337,15 @@
 				6506F6071C618F8100A4D747 /* AppVersion.plist */,
 			);
 			path = Documents;
+			sourceTree = "<group>";
+		};
+		6506F6101C61A5F200A4D747 /* GLJSPatchManager */ = {
+			isa = PBXGroup;
+			children = (
+				6506F6111C61A5F200A4D747 /* GLJSPatchManager.h */,
+				6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */,
+			);
+			path = GLJSPatchManager;
 			sourceTree = "<group>";
 		};
 		65ECE8621B588AA9003134B2 = {
@@ -703,6 +715,7 @@
 		C0E9D7391C38172700138BAB /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				6506F6101C61A5F200A4D747 /* GLJSPatchManager */,
 				65F07B591C3E015B00E13CB7 /* CNPPopupController */,
 				65F07B541C3E002D00E13CB7 /* UIImageView+Extension */,
 				65F07B501C3E002000E13CB7 /* NSObject+BlackMagic */,
@@ -992,6 +1005,7 @@
 				65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */,
 				65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */,
 				C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */,
+				6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */,
 				C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */,
 				C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */,
 				65F07B7B1C3E081E00E13CB7 /* TNHomeSpecialSaleCell.m in Sources */,
