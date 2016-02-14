@@ -37,7 +37,6 @@
 		65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; };
 		65F07B6F1C3E062C00E13CB7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
 		65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */; };
-		65F07B751C3E07E700E13CB7 /* PassMesg.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B741C3E07E700E13CB7 /* PassMesg.m */; };
 		65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
 		65F07BEB1C3E0B0300E13CB7 /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */; };
 		65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; };
@@ -88,7 +87,6 @@
 		C0CA80961C3BFD4A00ABE564 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80881C3BFD4A00ABE564 /* ForthViewController.m */; };
 		C0CA80971C3BFD4A00ABE564 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808A1C3BFD4A00ABE564 /* SecondViewController.m */; };
 		C0CA80981C3BFD4A00ABE564 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808C1C3BFD4A00ABE564 /* ThirdViewController.m */; };
-		C0CA80991C3BFD4A00ABE564 /* UITabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808E1C3BFD4A00ABE564 /* UITabBarViewController.m */; };
 		C0CA809E1C3BFDA500ABE564 /* GLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA809D1C3BFDA500ABE564 /* GLLoginView.m */; };
 		C0CA80A11C3BFDB000ABE564 /* GLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A01C3BFDB000ABE564 /* GLLoginManager.m */; };
 		C0CA80A41C3C00AC00ABE564 /* GLUserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A31C3C00AC00ABE564 /* GLUserRegisterView.m */; };
@@ -194,8 +192,6 @@
 		65F07B6E1C3E062C00E13CB7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		65F07B701C3E063900E13CB7 /* ScrollDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollDemoVC.h; sourceTree = "<group>"; };
 		65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollDemoVC.m; sourceTree = "<group>"; };
-		65F07B731C3E07E200E13CB7 /* PassMesg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassMesg.h; sourceTree = "<group>"; };
-		65F07B741C3E07E700E13CB7 /* PassMesg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassMesg.m; sourceTree = "<group>"; };
 		65F07B7C1C3E082F00E13CB7 /* TarBarDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TarBarDemoVC.h; sourceTree = "<group>"; };
 		65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TarBarDemoVC.m; sourceTree = "<group>"; };
 		65F07B831C3E0B0300E13CB7 /* AnimationDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemoVC.h; sourceTree = "<group>"; };
@@ -261,8 +257,6 @@
 		C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRootHomeDatas.m; sourceTree = "<group>"; };
 		C0A832901C6AE3F500F802BF /* TNHomeSpecialSaleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeSpecialSaleCell.h; sourceTree = "<group>"; };
 		C0A832911C6AE3F500F802BF /* TNHomeSpecialSaleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeSpecialSaleCell.m; sourceTree = "<group>"; };
-		C0A834821C6C59E500F802BF /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		C0A834841C6C59FE00F802BF /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
 		C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
 		C0CA80261C3BE78500ABE564 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -300,8 +294,6 @@
 		C0CA808A1C3BFD4A00ABE564 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C0CA808B1C3BFD4A00ABE564 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		C0CA808C1C3BFD4A00ABE564 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		C0CA808D1C3BFD4A00ABE564 /* UITabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabBarViewController.h; sourceTree = "<group>"; };
-		C0CA808E1C3BFD4A00ABE564 /* UITabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabBarViewController.m; sourceTree = "<group>"; };
 		C0CA809C1C3BFDA500ABE564 /* GLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoginView.h; sourceTree = "<group>"; };
 		C0CA809D1C3BFDA500ABE564 /* GLLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLoginView.m; sourceTree = "<group>"; };
 		C0CA809F1C3BFDB000ABE564 /* GLLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoginManager.h; sourceTree = "<group>"; };
@@ -584,8 +576,6 @@
 				65F07B621C3E05D200E13CB7 /* OCDataSourceDemo.m */,
 				65F07B631C3E05D200E13CB7 /* PassValueBlockVC.h */,
 				65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */,
-				65F07B731C3E07E200E13CB7 /* PassMesg.h */,
-				65F07B741C3E07E700E13CB7 /* PassMesg.m */,
 				C0A8328D1C6AE18700F802BF /* GLRootHomeDatas.h */,
 				C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */,
 			);
@@ -873,8 +863,6 @@
 				C0CA808A1C3BFD4A00ABE564 /* SecondViewController.m */,
 				C0CA808B1C3BFD4A00ABE564 /* ThirdViewController.h */,
 				C0CA808C1C3BFD4A00ABE564 /* ThirdViewController.m */,
-				C0CA808D1C3BFD4A00ABE564 /* UITabBarViewController.h */,
-				C0CA808E1C3BFD4A00ABE564 /* UITabBarViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1107,8 +1095,6 @@
 			children = (
 				C0FEFA701C6DDA7A00C2345B /* libsqlite3.0.tbd */,
 				C0FEFA711C6DDA7A00C2345B /* libsqlite3.tbd */,
-				C0A834841C6C59FE00F802BF /* libxml2.2.tbd */,
-				C0A834821C6C59E500F802BF /* libxml2.tbd */,
 				65E3E8571B9D24E2002AD494 /* CFNetwork.framework */,
 				FA24930CC2192A402FFE4E43 /* libPods.a */,
 			);
@@ -1336,12 +1322,8 @@
 				6506F62F1C61F22F00A4D747 /* UIColor+TKCategory.m in Sources */,
 				C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */,
 				6506F62D1C61F22F00A4D747 /* Toast+UIView.m in Sources */,
-				65F07B751C3E07E700E13CB7 /* PassMesg.m in Sources */,
-				C0CA80991C3BFD4A00ABE564 /* UITabBarViewController.m in Sources */,
 				C0CA80641C3BF95000ABE564 /* base64.m in Sources */,
 				6506F6291C61F22F00A4D747 /* NSArray+GLStuff.m in Sources */,
-				65F07B751C3E07E700E13CB7 /* PassMesg.m in Sources */,
-				C0CA80991C3BFD4A00ABE564 /* UITabBarViewController.m in Sources */,
 				C0CA80641C3BF95000ABE564 /* base64.m in Sources */,
 				C0F6C5571C67050F00507F3B /* GLCBaseMessageViewController.m in Sources */,
 				C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */,
@@ -1442,7 +1424,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1486,7 +1468,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1502,10 +1484,7 @@
 				INFOPLIST_FILE = Demos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Demos/XMPPFramework/Vendor/libidn",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1518,10 +1497,7 @@
 				INFOPLIST_FILE = Demos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Demos/XMPPFramework/Vendor/libidn",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

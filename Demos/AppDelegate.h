@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RootViewController.h"
-#import "UITabBarViewController.h"
+//#import "UITabBarViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "ForthViewController.h"

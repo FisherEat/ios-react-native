@@ -8,7 +8,7 @@
 
 #import "ThirdViewController.h"
 #import "OButton.h"
-#import "PassMesg.h"
+//#import "PassMesg.h"
 #import "TestNet101ViewController.h"
 #import "GLTrainScrollBarView.h"
 
@@ -20,7 +20,7 @@ static const CGFloat topToolBarHeight = 40.0f;
 @property(nonatomic, strong) OButton  *myButton;
 @property(nonatomic)         UIColor    *bColor;
 @property(nonatomic, strong) UISlider *mySlider;
-@property(nonatomic, strong) PassMesg *aPerson;
+//@property(nonatomic, strong) PassMesg *aPerson;
 @property(nonatomic, strong) UIWebView *webView;
 
 @property (nonatomic, strong) GLTrainScrollBarView *trainScrollbar;
@@ -37,13 +37,12 @@ static const CGFloat topToolBarHeight = 40.0f;
 
     [self addButton];
     [self addSlider];
-    [self addPerson];
     
     //每次只能给一个对象设置一个观察者，否则会出错
     //[self addObserver:self forKeyPath:@"bColor" options:NSKeyValueObservingOptionInitial context:nil];
     [self addObserver:self forKeyPath:@"aPerson.name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:(void *)KVO_CONTEXT_ADDRESS_CHANGED];
     
-    [self.aPerson setValue:@"xiaobao" forKey:@"name"];
+  //  [self.aPerson setValue:@"xiaobao" forKey:@"name"];
 
     [self myBlock];
  //   [self setWebView];
@@ -174,16 +173,6 @@ static const CGFloat topToolBarHeight = 40.0f;
     
 }
 
-#pragma mark - person
-/** change the value of Person*/
-- (void)addPerson
-{
-    self.aPerson = [[PassMesg alloc] init];
-    self.aPerson.name = @"gaolong";
-    //[self.aPerson changeName:self.aPerson withName:@"ga"];
-    [self.aPerson.observerArray addObject:self.aPerson];
-    
-}
 
 #pragma mark - main method
 /** KVO - when the value of the observer changed, this method will detect the changes from the keyPath */
@@ -194,8 +183,6 @@ static const CGFloat topToolBarHeight = 40.0f;
 {
     if ([keyPath isEqualToString:@"aPerson.name"]) {
         
-        NSString *name = [self.aPerson valueForKey:@"name"];
-        NSLog(@"%@, has a new name.", name);
     }else
     {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
@@ -246,18 +233,6 @@ static const CGFloat topToolBarHeight = 40.0f;
     
 }
 
-#pragma mark - dealloc
-/** dealloc the observer*/
-- (void)dealloc
-{
-    for (PassMesg *person in self.aPerson.observerArray) {
-        [person removeObserver:self forKeyPath:@"name"];
-    }
-    self.aPerson.observerArray = nil;
-    
-    [self.bColor removeObserver:self forKeyPath:@"bColor"];
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
