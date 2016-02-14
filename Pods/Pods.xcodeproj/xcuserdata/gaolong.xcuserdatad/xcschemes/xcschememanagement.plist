@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaAsyncSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FLEX.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -40,6 +50,11 @@
 			<false/>
 		</dict>
 		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Magnet-XMPPFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,22 +102,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>172713333741BAE635032E2752F736A2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>299E60360BAFA94FE2E67587E9D256CF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2B45F37F0F64532C06900614F944E6F8</key>
+		<key>2F382E491D2B289695C94822CE0F9C6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>42B54A4CF496154792B92E65BD80F3DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4801BA48974B1EDE7552E6B4854F8E48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>527C695B1720378BD7A5D7FA3A66288A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,12 +147,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C1008DAA0DDB5C8A68E193B757A4AD6D</key>
+		<key>C5ADC5EB4394107060C9679DBF7C12F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFD30BB01AD2A80B19E8B9E07233260C</key>
+		<key>D001BDAFAB4E0B184B4023A17299FFBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D13B057209F4C6F9A191C368917F3B0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,7 +167,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA1B13B44687219B03911D90FE5A2E2F</key>
+		<key>DA56672355EC7C3111107B0CA5EE03BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E52DC04F5655552B21593AB4DF45ACF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECFE0958DDB7FEC79B3AA1C9337BC941</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF905D5C18050EC51DE730210F8B9118</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -158,11 +193,6 @@
 			<true/>
 		</dict>
 		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FFFA46E6C54A0E494B3050E8DD414973</key>
 		<dict>
 			<key>primary</key>
 			<true/>

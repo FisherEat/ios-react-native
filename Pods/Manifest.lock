@@ -29,12 +29,47 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - CocoaAsyncSocket (7.4.2)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
   - FLEX (2.0.0)
   - JGProgressHUD (1.2.7)
   - JSPatch (0.1.5):
     - JSPatch/Core (= 0.1.5)
   - JSPatch/Core (0.1.5)
   - LGAlertView (1.0.0)
+  - Magnet-XMPPFramework (3.6.10):
+    - Magnet-XMPPFramework/Core (= 3.6.10)
+    - Magnet-XMPPFramework/CoreDataStorage (= 3.6.10)
+    - Magnet-XMPPFramework/Reconnect (= 3.6.10)
+    - Magnet-XMPPFramework/Roster (= 3.6.10)
+    - Magnet-XMPPFramework/XEP-0060 (= 3.6.10)
+    - Magnet-XMPPFramework/XEP-0082 (= 3.6.10)
+    - Magnet-XMPPFramework/XEP-0106 (= 3.6.10)
+    - Magnet-XMPPFramework/XEP-0203 (= 3.6.10)
+  - Magnet-XMPPFramework/Core (3.6.10):
+    - CocoaAsyncSocket (~> 7.4.1)
+    - CocoaLumberjack (~> 1.9)
+  - Magnet-XMPPFramework/CoreDataStorage (3.6.10):
+    - Magnet-XMPPFramework/Core
+  - Magnet-XMPPFramework/Reconnect (3.6.10):
+    - Magnet-XMPPFramework/Core
+  - Magnet-XMPPFramework/Roster (3.6.10):
+    - Magnet-XMPPFramework/Core
+    - Magnet-XMPPFramework/CoreDataStorage
+    - Magnet-XMPPFramework/XEP-0203
+  - Magnet-XMPPFramework/XEP-0060 (3.6.10):
+    - Magnet-XMPPFramework/Core
+  - Magnet-XMPPFramework/XEP-0082 (3.6.10):
+    - Magnet-XMPPFramework/Core
+  - Magnet-XMPPFramework/XEP-0106 (3.6.10):
+    - Magnet-XMPPFramework/Core
+  - Magnet-XMPPFramework/XEP-0203 (3.6.10):
+    - Magnet-XMPPFramework/Core
+    - Magnet-XMPPFramework/XEP-0082
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
   - MJExtension (3.0.8)
@@ -54,6 +89,7 @@ DEPENDENCIES:
   - JGProgressHUD (= 1.2.7)
   - JSPatch (= 0.1.5)
   - LGAlertView (= 1.0.0)
+  - Magnet-XMPPFramework (= 3.6.10)
   - Masonry (= 0.6.2)
   - MBProgressHUD (= 0.9.1)
   - MJExtension (= 3.0.8)
@@ -67,10 +103,13 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
   FLEX: 9b3d0800d0c06887a00ad8d2b514fb69256ebd1b
   JGProgressHUD: a45c1d16adddf7e38092ce3f0d71d3955d2de2ec
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   LGAlertView: 1d44becef2159b99741c0634216234cb8553c705
+  Magnet-XMPPFramework: 004ab3dbc139338e97a5012a796485b0fcff6891
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 12d2875959b4a0f936ae86b22a1eb6b0251c50ba
