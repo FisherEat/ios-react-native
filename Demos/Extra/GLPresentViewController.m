@@ -11,6 +11,7 @@
 #import "MainCell.h"
 #import "AttachCell.h"
 #import "AddTBCellViewController.h"
+#import "GLActivityIndictorView.h"
 
 @interface GLPresentInfoCell()
 
@@ -55,7 +56,7 @@
 - (void)showTopBarView
 {
     self.topBarView.topBarStytle = GLTopBarStyleTitleLeftButtonRightButton;
-    self.topBarView.titleText = @"哈哈";
+    self.topBarView.titleText = @"列表页";
     self.topBarView.leftButtonTitle = @"返回";
     self.topBarView.rightButtonTitle = @"更多";
     self.topBarView.delegate = self;
@@ -175,8 +176,16 @@
 
 - (void)topBarRightButtonPressed:(UIButton *)button
 {
-    AddTBCellViewController *addCellVC = [[AddTBCellViewController alloc] init];
-    [self.navigationController pushViewController:addCellVC animated:YES];
+    GLActivityIndictorView *indicator = [[GLActivityIndictorView alloc] init];
+    indicator.hidesWhenStopped = YES;
+    [indicator startAnimating];
+    [self.view addSubview:indicator];
+    [indicator autoSetDimensionsToSize:CGSizeMake(40, 40)];
+    [indicator autoCenterInSuperview];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        AddTBCellViewController *addCellVC = [[AddTBCellViewController alloc] init];
+        [UIManager showViewController:addCellVC];
+    });
 }
 
 - (void)didReceiveMemoryWarning {

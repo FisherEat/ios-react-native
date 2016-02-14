@@ -8,26 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, GLTestDemoTypeCell)
-{
-    CustomDemoCell = 0,
-    ButtonDemoCell = 1,
-    ScrollDemoCell = 2,
-    PickerViewDemoCell = 3,
-    TarBarDemoCell = 4,
-    AnimationDemoCell = 5,
-    TestDemoCell = 6,
-    LGALerViewDemoCell = 7,
-    NetWorkDemoCell = 8,
-    PassValueDemoCell = 9,
-    TextViewDemoCell = 10,
-    AdScrollTimerCell = 11,
-    LoginDemoCell = 12,
-    WebViewDemoCell = 13,
-    TopBarViewDemoCell = 14,
-    TableViewDemoCell = 15
-};
-
 @interface RootViewController : UIViewController
 
 @end

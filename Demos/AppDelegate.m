@@ -10,6 +10,8 @@
 #import "GLCommonModel.h"
 #import "GLJSPatchManager.h"
 #import "FLEXManager.h"
+#import "GLUIManager.h"
+#import "GLNavigationURLHelper.h"
 
 @interface AppDelegate ()
 
@@ -34,14 +36,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window   = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    [self showViewControllers];
-    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
     [self getAppConfig];
     //该方法必须在 keywindow 存在的条件下才能使用，因此要放置在makeKeyAndVisible后面
     [self constructUI];
+    [[GLUIManager sharedManager] showRootViewController];
+    
+    [GLNavigationURLHelper registerAllURLs];
     return YES;
 }
 

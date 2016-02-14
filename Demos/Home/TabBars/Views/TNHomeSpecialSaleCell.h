@@ -7,6 +7,7 @@
 //
 
 #import "TNTableViewCell.h"
+#import "UIRootBaseTableViewCell.h"
 
 @interface TNHomeSpecialSaleView : UIView
 
@@ -18,7 +19,7 @@
 
 @end
 
-@interface TNHomeSpecialSaleCell : TNTableViewCell
+@interface TNHomeSpecialSaleCell :UIRootBaseTableViewCell
 
 @property (nonatomic, strong) UIButton  *leftButton;
 @property (nonatomic, strong) UIButton  *rightButton;

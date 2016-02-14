@@ -9,6 +9,7 @@
 #import "AddTBCellViewController.h"
 #import "MainCell.h"
 #import "GLHeaderView.h"
+#import "GLNavigator.h"
 
 @interface AddTBCellViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -17,6 +18,7 @@
 @property (nonatomic, assign) NSInteger cellNumber;
 @property (nonatomic, assign) BOOL isOpen;
 @property (nonatomic, assign) NSInteger selectSection;
+@property (nonatomic, strong) UIButton *rightButton;
 
 @end
 
@@ -31,12 +33,34 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleCell)];
-//    [self.headerView addGestureRecognizer:tap];
-    
+
+    [self setUpRightButton];
     self.isOpen = NO;
-    
+}
+
+- (void)setUpRightButton
+{
+    [self.view addSubview:self.rightButton];
+    [self.rightButton autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:100.0f];
+    [self.rightButton autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:20];
+    [self.rightButton autoSetDimensionsToSize:CGSizeMake(80, 35)];
+}
+
+- (UIButton *)rightButton
+{
+    if (!_rightButton) {
+        _rightButton = [UIButton newAutoLayoutView];
+        [_rightButton setTitle:@"返回首页" forState:UIControlStateNormal];
+        [_rightButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_rightButton addTarget:self action:@selector(backHome) forControlEvents:UIControlEventTouchUpInside];
+        _rightButton.titleLabel.font = APP_FONT_NORMAL;
+    }
+    return _rightButton;
+}
+
+- (void)backHome
+{
+    [[GLNavigator navigator] to:@"demoapp://demo/third"];
 }
 
 #pragma mark - TableView Delegate 、TableViewDataSource
@@ -98,9 +122,9 @@
     return cell;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
