@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; settings = {ASSET_TAGS = (); }; };
-		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; settings = {ASSET_TAGS = (); }; };
-		6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; settings = {ASSET_TAGS = (); }; };
-		6506F6291C61F22F00A4D747 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */; settings = {ASSET_TAGS = (); }; };
-		6506F62B1C61F22F00A4D747 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */; settings = {ASSET_TAGS = (); }; };
-		6506F62C1C61F22F00A4D747 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */; settings = {ASSET_TAGS = (); }; };
-		6506F62D1C61F22F00A4D747 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61E1C61F22F00A4D747 /* Toast+UIView.m */; settings = {ASSET_TAGS = (); }; };
-		6506F62E1C61F22F00A4D747 /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6201C61F22F00A4D747 /* UIButton+Position.m */; settings = {ASSET_TAGS = (); }; };
-		6506F62F1C61F22F00A4D747 /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
-		6506F6301C61F22F00A4D747 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6241C61F22F00A4D747 /* UIView+Positioning.m */; settings = {ASSET_TAGS = (); }; };
-		6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; settings = {ASSET_TAGS = (); }; };
-		6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; settings = {ASSET_TAGS = (); }; };
-		6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; settings = {ASSET_TAGS = (); }; };
+		6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
+		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; };
+		6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; };
+		6506F6291C61F22F00A4D747 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */; };
+		6506F62B1C61F22F00A4D747 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */; };
+		6506F62C1C61F22F00A4D747 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */; };
+		6506F62D1C61F22F00A4D747 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61E1C61F22F00A4D747 /* Toast+UIView.m */; };
+		6506F62E1C61F22F00A4D747 /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6201C61F22F00A4D747 /* UIButton+Position.m */; };
+		6506F62F1C61F22F00A4D747 /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */; };
+		6506F6301C61F22F00A4D747 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6241C61F22F00A4D747 /* UIView+Positioning.m */; };
+		6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
+		6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
+		6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
 		65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
@@ -1127,6 +1127,7 @@
 				65ECE8681B588AA9003134B2 /* Frameworks */,
 				65ECE8691B588AA9003134B2 /* Resources */,
 				5D0388801D50D67FB2EDC849 /* Copy Pods Resources */,
+				DA651676F32A5A8CF1725FF4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1233,6 +1234,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA651676F32A5A8CF1725FF4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FE11EFC719E88BA702C76773 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1320,7 +1336,6 @@
 				6506F62F1C61F22F00A4D747 /* UIColor+TKCategory.m in Sources */,
 				C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */,
 				6506F62D1C61F22F00A4D747 /* Toast+UIView.m in Sources */,
-				65F07B7B1C3E081E00E13CB7 /* TNHomeSpecialSaleCell.m in Sources */,
 				65F07B751C3E07E700E13CB7 /* PassMesg.m in Sources */,
 				C0CA80991C3BFD4A00ABE564 /* UITabBarViewController.m in Sources */,
 				C0CA80641C3BF95000ABE564 /* base64.m in Sources */,
@@ -1427,7 +1442,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1471,7 +1486,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

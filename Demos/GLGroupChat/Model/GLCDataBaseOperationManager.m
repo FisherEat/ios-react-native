@@ -50,7 +50,7 @@ static GLCDataBaseOperationManager *g_staticDBOperation;
 - (void)closeDB
 {
     self.isLoadedDB = NO;
-    [self.queue close];
+   // [self.queue close];
 }
 
 @end

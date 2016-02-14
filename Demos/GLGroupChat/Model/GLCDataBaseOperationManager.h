@@ -46,6 +46,6 @@
 
 - (void)updateBatchWithTableName:(DBTableName)tableName dataArray:(NSArray *)dataArray;
 
-- (NSMutableArray *)selectFromTableName:(DBTableName) orderByName:(NSString *)orderByName orderType:()
+//- (NSMutableArray *)selectFromTableName:(DBTableName) orderByName:(NSString *)orderByName orderType:()
 
 @end
