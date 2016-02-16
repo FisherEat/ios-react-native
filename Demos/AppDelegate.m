@@ -41,7 +41,7 @@
     [self getAppConfig];
     [[GLUIManager sharedManager] showRootViewController];
     //该方法必须在 keywindow 存在的条件下才能使用，因此要放置在makeKeyAndVisible后面
-    //同时，hammerbutton的显示也是有顺序的。必须放置在rootviewcontroller之后，加载在rootvc上面
+    //同时，hammerbutton的显示也是有顺序的。必须放置在rootviewcontroller之后，加载在rootvc上面 
     [self constructUI];
     
     [GLNavigationURLHelper registerAllURLs];
