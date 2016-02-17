@@ -12,10 +12,14 @@ _Store
 
 xcuserdata
 xcuserdatad
-*.xcodeproj/xcuserdata/*.xcuserdatad
 
 profile
 *.moved-aside
+
+*.xcuserdata
+*.xcuserdatad
+*.xcodeproj/xcuserdata/*.xcuserdatad
+
 DerivedData
 .idea/
 *.hmap
