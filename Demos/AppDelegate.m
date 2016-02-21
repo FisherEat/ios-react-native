@@ -45,6 +45,20 @@
     [self constructUI];
     
     [GLNavigationURLHelper registerAllURLs];
+    
+#if Pro
+    NSLog(@"1");
+#else
+    NSLog(@"0");
+#endif
+    
+#ifdef Lite
+    
+    NSLog(@"Lite");
+    
+#endif
+
+    
     return YES;
 }
 

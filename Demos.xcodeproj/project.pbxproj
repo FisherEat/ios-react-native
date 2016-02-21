@@ -57,6 +57,128 @@
 		65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; };
 		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; };
 		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
+		C0273AF41C79C09B00CC364B /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
+		C0273AF51C79C09B00CC364B /* GLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA809D1C3BFDA500ABE564 /* GLLoginView.m */; };
+		C0273AF61C79C09B00CC364B /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80731C3BF9A300ABE564 /* PersonModel.m */; };
+		C0273AF71C79C09B00CC364B /* GLNetWorkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B901C3E0B0300E13CB7 /* GLNetWorkDemo.m */; };
+		C0273AF81C79C09B00CC364B /* TNJSONStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7851C38205E00138BAB /* TNJSONStuff.m */; };
+		C0273AF91C79C09B00CC364B /* GLButtonCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B31C683E72006E5490 /* GLButtonCardView.m */; };
+		C0273AFA1C79C09B00CC364B /* GURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7721C381E6800138BAB /* GURLRequest.m */; };
+		C0273AFB1C79C09B00CC364B /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805D1C3BF35F00ABE564 /* GLHeaderView.m */; };
+		C0273AFC1C79C09B00CC364B /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80341C3BE8EF00ABE564 /* TNTopBarView.m */; };
+		C0273AFD1C79C09B00CC364B /* TestNet101ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */; };
+		C0273AFE1C79C09B00CC364B /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */; };
+		C0273AFF1C79C09B00CC364B /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6201C61F22F00A4D747 /* UIButton+Position.m */; };
+		C0273B001C79C09B00CC364B /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
+		C0273B011C79C09B00CC364B /* GLCDataBaseOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA751C6DDB2D00C2345B /* GLCDataBaseOperationManager.m */; };
+		C0273B021C79C09B00CC364B /* AddTBCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80551C3BF35F00ABE564 /* AddTBCellViewController.m */; };
+		C0273B031C79C09B00CC364B /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80861C3BFD4A00ABE564 /* FifthViewController.m */; };
+		C0273B041C79C09B00CC364B /* GLButtonCardScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B91C68C850006E5490 /* GLButtonCardScrollView.m */; };
+		C0273B051C79C09B00CC364B /* UIRootHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328B1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m */; };
+		C0273B061C79C09B00CC364B /* TextViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */; };
+		C0273B071C79C09B00CC364B /* GLActivityIndictorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C56C1C671FB000507F3B /* GLActivityIndictorView.m */; };
+		C0273B081C79C09B00CC364B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA671C6DD94000C2345B /* FMDatabaseQueue.m */; };
+		C0273B091C79C09B00CC364B /* GLUserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A31C3C00AC00ABE564 /* GLUserRegisterView.m */; };
+		C0273B0A1C79C09B00CC364B /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B5E1C3E019F00E13CB7 /* CNPPopupController.m */; };
+		C0273B0B1C79C09B00CC364B /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B921C3E0B0300E13CB7 /* GLPresentViewController.m */; };
+		C0273B0C1C79C09B00CC364B /* GLUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C54F1C65B6DB00507F3B /* GLUIManager.m */; };
+		C0273B0D1C79C09B00CC364B /* UIRootBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832851C6AD8A600F802BF /* UIRootBaseTableViewCell.m */; };
+		C0273B0E1C79C09B00CC364B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808A1C3BFD4A00ABE564 /* SecondViewController.m */; };
+		C0273B0F1C79C09B00CC364B /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
+		C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */; };
+		C0273B111C79C09B00CC364B /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; };
+		C0273B121C79C09B00CC364B /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */; };
+		C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80801C3BFBF300ABE564 /* LoginDemoVC.m */; };
+		C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D76A1C381D2100138BAB /* NSArray+GLStuff.m */; };
+		C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
+		C0273B161C79C09B00CC364B /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; };
+		C0273B171C79C09B00CC364B /* GLRootHomeDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */; };
+		C0273B181C79C09B00CC364B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA611C6DD94000C2345B /* FMDatabase.m */; };
+		C0273B191C79C09B00CC364B /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7771C381F1700138BAB /* UIButton+Position.m */; };
+		C0273B1A1C79C09B00CC364B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808C1C3BFD4A00ABE564 /* ThirdViewController.m */; };
+		C0273B1B1C79C09B00CC364B /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80881C3BFD4A00ABE564 /* ForthViewController.m */; };
+		C0273B1C1C79C09B00CC364B /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */; };
+		C0273B1D1C79C09B00CC364B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
+		C0273B1E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */; };
+		C0273B1F1C79C09B00CC364B /* XTURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7461C38189C00138BAB /* XTURLRequest.m */; };
+		C0273B201C79C09B00CC364B /* GLTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80371C3BE95800ABE564 /* GLTopBarView.m */; };
+		C0273B211C79C09B00CC364B /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832911C6AE3F500F802BF /* TNHomeSpecialSaleCell.m */; };
+		C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7791C381F1700138BAB /* UIColor+TKCategory.m */; };
+		C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C5481C645F7400507F3B /* GLNavigationURLHelper.m */; };
+		C0273B241C79C09B00CC364B /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */; };
+		C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
+		C0273B261C79C09B00CC364B /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */; };
+		C0273B271C79C09B00CC364B /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; };
+		C0273B281C79C09B00CC364B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */; };
+		C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805B1C3BF35F00ABE564 /* AdvertiseView.m */; };
+		C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
+		C0273B2B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
+		C0273B2C1C79C09B00CC364B /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; };
+		C0273B2D1C79C09B00CC364B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA631C6DD94000C2345B /* FMDatabaseAdditions.m */; };
+		C0273B2E1C79C09B00CC364B /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */; };
+		C0273B2F1C79C09B00CC364B /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE651C46A6DA00225A21 /* TextViewController.m */; };
+		C0273B301C79C09B00CC364B /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; };
+		C0273B311C79C09B00CC364B /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80571C3BF35F00ABE564 /* AdScrollTimerViewController.m */; };
+		C0273B321C79C09B00CC364B /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */; };
+		C0273B331C79C09B00CC364B /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7611C381C3900138BAB /* UIView+Positioning.m */; };
+		C0273B341C79C09B00CC364B /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61E1C61F22F00A4D747 /* Toast+UIView.m */; };
+		C0273B351C79C09B00CC364B /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80631C3BF95000ABE564 /* base64.m */; };
+		C0273B361C79C09B00CC364B /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */; };
+		C0273B371C79C09B00CC364B /* GLCBaseMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C5561C67050F00507F3B /* GLCBaseMessageViewController.m */; };
+		C0273B381C79C09B00CC364B /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
+		C0273B391C79C09B00CC364B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
+		C0273B3A1C79C09B00CC364B /* GLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7701C381E6800138BAB /* GLRequest.m */; };
+		C0273B3B1C79C09B00CC364B /* TNJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7831C38205E00138BAB /* TNJSONModel.m */; };
+		C0273B3C1C79C09B00CC364B /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */; };
+		C0273B3D1C79C09B00CC364B /* GLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA807E1C3BFBA800ABE564 /* GLUserLoginViewController.m */; };
+		C0273B3E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
+		C0273B3F1C79C09B00CC364B /* GLNavigationMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C54B1C64AC3900507F3B /* GLNavigationMap.m */; };
+		C0273B401C79C09B00CC364B /* OCDataSourceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B621C3E05D200E13CB7 /* OCDataSourceDemo.m */; };
+		C0273B411C79C09B00CC364B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
+		C0273B421C79C09B00CC364B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA651C6DD94000C2345B /* FMDatabasePool.m */; };
+		C0273B431C79C09B00CC364B /* GLNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C5451C645E9500507F3B /* GLNavigator.m */; };
+		C0273B441C79C09B00CC364B /* SubButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE01C3E0B0300E13CB7 /* SubButtonDemoVC.m */; };
+		C0273B451C79C09B00CC364B /* UIRootButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832881C6AD8F100F802BF /* UIRootButtonTableViewCell.m */; };
+		C0273B461C79C09B00CC364B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
+		C0273B471C79C09B00CC364B /* GLButtonDemoViewController101.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14AD1C683DD7006E5490 /* GLButtonDemoViewController101.m */; };
+		C0273B481C79C09B00CC364B /* GLNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D76E1C381E6800138BAB /* GLNetwork.m */; };
+		C0273B491C79C09B00CC364B /* GLTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C55D1C671C2500507F3B /* GLTCollectionViewController.m */; };
+		C0273B4A1C79C09B00CC364B /* TNBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7811C38205E00138BAB /* TNBase64.m */; };
+		C0273B4B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B571C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m */; };
+		C0273B4C1C79C09B00CC364B /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */; };
+		C0273B4D1C79C09B00CC364B /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6241C61F22F00A4D747 /* UIView+Positioning.m */; };
+		C0273B4E1C79C09B00CC364B /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D77F1C38205E00138BAB /* OButton.m */; };
+		C0273B4F1C79C09B00CC364B /* GLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A01C3BFDB000ABE564 /* GLLoginManager.m */; };
+		C0273B501C79C09B00CC364B /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7631C381C3900138BAB /* UIViewController+Analysis.m */; };
+		C0273B511C79C09B00CC364B /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D74C1C3818EE00138BAB /* Toast+UIView.m */; };
+		C0273B521C79C09B00CC364B /* NSObject+BlackMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B521C3E002000E13CB7 /* NSObject+BlackMagic.m */; };
+		C0273B531C79C09B00CC364B /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B691C3E05D700E13CB7 /* MainCell.m */; };
+		C0273B541C79C09B00CC364B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA6A1C6DD94000C2345B /* FMResultSet.m */; };
+		C0273B551C79C09B00CC364B /* PickerViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDE1C3E0B0300E13CB7 /* PickerViewDemoVC.m */; };
+		C0273B561C79C09B00CC364B /* GLButtonCardDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B61C68485A006E5490 /* GLButtonCardDatas.m */; };
+		C0273B571C79C09B00CC364B /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8E1C3E0B0300E13CB7 /* GLBarViewController.m */; };
+		C0273B581C79C09B00CC364B /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7671C381C9B00138BAB /* Toast+UIView.m */; };
+		C0273B591C79C09B00CC364B /* GLButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14AB1C683DD7006E5490 /* GLButtonDemoViewController.m */; };
+		C0273B5B1C79C09B00CC364B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FEFA701C6DDA7A00C2345B /* libsqlite3.0.tbd */; };
+		C0273B5C1C79C09B00CC364B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FEFA711C6DDA7A00C2345B /* libsqlite3.tbd */; };
+		C0273B5D1C79C09B00CC364B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
+		C0273B5E1C79C09B00CC364B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24930CC2192A402FFE4E43 /* libPods.a */; };
+		C0273B601C79C09B00CC364B /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; };
+		C0273B611C79C09B00CC364B /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; };
+		C0273B621C79C09B00CC364B /* GLNetWorkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4A1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard */; };
+		C0273B631C79C09B00CC364B /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B871C3E0B0300E13CB7 /* AttachCell.xib */; };
+		C0273B641C79C09B00CC364B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4B1C3DFF1E00E13CB7 /* LaunchScreen.xib */; };
+		C0273B651C79C09B00CC364B /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */; };
+		C0273B661C79C09B00CC364B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4C1C3DFF1E00E13CB7 /* Main.storyboard */; };
+		C0273B671C79C09B00CC364B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ECE87B1B588AA9003134B2 /* Images.xcassets */; };
+		C0273BF31C79C9BA00CC364B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0273BF11C79C9BA00CC364B /* Interface.storyboard */; };
+		C0273BF51C79C9BA00CC364B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0273BF41C79C9BA00CC364B /* Assets.xcassets */; };
+		C0273BFC1C79C9BA00CC364B /* Demo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0273BFB1C79C9BA00CC364B /* Demo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0273C041C79C9BB00CC364B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0273C031C79C9BB00CC364B /* InterfaceController.m */; };
+		C0273C071C79C9BB00CC364B /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0273C061C79C9BB00CC364B /* ExtensionDelegate.m */; };
+		C0273C0A1C79C9BB00CC364B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0273C091C79C9BB00CC364B /* NotificationController.m */; };
+		C0273C0C1C79C9BB00CC364B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0273C0B1C79C9BB00CC364B /* Assets.xcassets */; };
+		C0273C101C79C9BB00CC364B /* Demo WatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C0273BEF1C79C9BA00CC364B /* Demo WatchKit.app */; };
 		C04D14AE1C683DD7006E5490 /* GLButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14AB1C683DD7006E5490 /* GLButtonDemoViewController.m */; };
 		C04D14AF1C683DD7006E5490 /* GLButtonDemoViewController101.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14AD1C683DD7006E5490 /* GLButtonDemoViewController101.m */; };
 		C04D14B41C683E72006E5490 /* GLButtonCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B31C683E72006E5490 /* GLButtonCardView.m */; };
@@ -132,7 +254,46 @@
 			remoteGlobalIDString = 65ECE86A1B588AA9003134B2;
 			remoteInfo = Demos;
 		};
+		C0273BFD1C79C9BA00CC364B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65ECE8631B588AA9003134B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0273BFA1C79C9BA00CC364B;
+			remoteInfo = "Demo WatchKit Extension";
+		};
+		C0273C0E1C79C9BB00CC364B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65ECE8631B588AA9003134B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0273BEE1C79C9BA00CC364B;
+			remoteInfo = "Demo WatchKit";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0273C141C79C9BB00CC364B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0273BFC1C79C9BA00CC364B /* Demo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0273C181C79C9BB00CC364B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C0273C101C79C9BB00CC364B /* Demo WatchKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6506F6021C61897B00A4D747 /* GLCommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCommonModel.h; sourceTree = "<group>"; };
@@ -231,6 +392,23 @@
 		65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GLExtensions.h"; sourceTree = "<group>"; };
 		65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GLExtensions.m"; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C0273B6D1C79C09B00CC364B /* Demos Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demos Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0273B6E1C79C09B00CC364B /* Demos copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demos copy-Info.plist"; path = "/ios/GLDemos-/Demos copy-Info.plist"; sourceTree = "<absolute>"; };
+		C0273BEC1C79C89900CC364B /* Demos copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demos copy2-Info.plist"; path = "/ios/GLDemos-/Demos copy2-Info.plist"; sourceTree = "<absolute>"; };
+		C0273BEF1C79C9BA00CC364B /* Demo WatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo WatchKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0273BF21C79C9BA00CC364B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C0273BF41C79C9BA00CC364B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0273BF61C79C9BA00CC364B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0273BFB1C79C9BA00CC364B /* Demo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Demo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0273C011C79C9BA00CC364B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C0273C021C79C9BA00CC364B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		C0273C031C79C9BB00CC364B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		C0273C051C79C9BB00CC364B /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		C0273C061C79C9BB00CC364B /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		C0273C081C79C9BB00CC364B /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		C0273C091C79C9BB00CC364B /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		C0273C0B1C79C9BB00CC364B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0273C0D1C79C9BB00CC364B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C04D14AA1C683DD7006E5490 /* GLButtonDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLButtonDemoViewController.h; sourceTree = "<group>"; };
 		C04D14AB1C683DD7006E5490 /* GLButtonDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLButtonDemoViewController.m; sourceTree = "<group>"; };
 		C04D14AC1C683DD7006E5490 /* GLButtonDemoViewController101.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLButtonDemoViewController101.h; sourceTree = "<group>"; };
@@ -384,6 +562,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0273B5A1C79C09B00CC364B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0273B5B1C79C09B00CC364B /* libsqlite3.0.tbd in Frameworks */,
+				C0273B5C1C79C09B00CC364B /* libsqlite3.tbd in Frameworks */,
+				C0273B5D1C79C09B00CC364B /* CFNetwork.framework in Frameworks */,
+				C0273B5E1C79C09B00CC364B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0273BF81C79C9BA00CC364B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -469,9 +665,13 @@
 			children = (
 				65ECE86D1B588AA9003134B2 /* Demos */,
 				65ECE8871B588AA9003134B2 /* DemosTests */,
+				C0273BF01C79C9BA00CC364B /* Demo WatchKit */,
+				C0273BFF1C79C9BA00CC364B /* Demo WatchKit Extension */,
 				65ECE86C1B588AA9003134B2 /* Products */,
 				0FA79A2481540D0FCE88CF2E /* Pods */,
 				D0E5D6E8C2B4078AC4914368 /* Frameworks */,
+				C0273B6E1C79C09B00CC364B /* Demos copy-Info.plist */,
+				C0273BEC1C79C89900CC364B /* Demos copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -480,6 +680,9 @@
 			children = (
 				65ECE86B1B588AA9003134B2 /* Demos.app */,
 				65ECE8841B588AA9003134B2 /* DemosTests.xctest */,
+				C0273B6D1C79C09B00CC364B /* Demos Lite.app */,
+				C0273BEF1C79C9BA00CC364B /* Demo WatchKit.app */,
+				C0273BFB1C79C9BA00CC364B /* Demo WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -639,6 +842,40 @@
 				65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */,
 			);
 			path = Extra;
+			sourceTree = "<group>";
+		};
+		C0273BF01C79C9BA00CC364B /* Demo WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				C0273BF11C79C9BA00CC364B /* Interface.storyboard */,
+				C0273BF41C79C9BA00CC364B /* Assets.xcassets */,
+				C0273BF61C79C9BA00CC364B /* Info.plist */,
+			);
+			path = "Demo WatchKit";
+			sourceTree = "<group>";
+		};
+		C0273BFF1C79C9BA00CC364B /* Demo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0273C021C79C9BA00CC364B /* InterfaceController.h */,
+				C0273C031C79C9BB00CC364B /* InterfaceController.m */,
+				C0273C051C79C9BB00CC364B /* ExtensionDelegate.h */,
+				C0273C061C79C9BB00CC364B /* ExtensionDelegate.m */,
+				C0273C081C79C9BB00CC364B /* NotificationController.h */,
+				C0273C091C79C9BB00CC364B /* NotificationController.m */,
+				C0273C0B1C79C9BB00CC364B /* Assets.xcassets */,
+				C0273C0D1C79C9BB00CC364B /* Info.plist */,
+				C0273C001C79C9BA00CC364B /* Supporting Files */,
+			);
+			path = "Demo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C0273C001C79C9BA00CC364B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0273C011C79C9BA00CC364B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C04D14A91C683DD7006E5490 /* Controllers */ = {
@@ -1114,10 +1351,12 @@
 				65ECE8691B588AA9003134B2 /* Resources */,
 				5D0388801D50D67FB2EDC849 /* Copy Pods Resources */,
 				DA651676F32A5A8CF1725FF4 /* Embed Pods Frameworks */,
+				C0273C181C79C9BB00CC364B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C0273C0F1C79C9BB00CC364B /* PBXTargetDependency */,
 			);
 			name = Demos;
 			productName = Demos;
@@ -1142,6 +1381,60 @@
 			productReference = 65ECE8841B588AA9003134B2 /* DemosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C0273AF11C79C09B00CC364B /* Demos Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0273B6A1C79C09B00CC364B /* Build configuration list for PBXNativeTarget "Demos Lite" */;
+			buildPhases = (
+				C0273AF21C79C09B00CC364B /* Check Pods Manifest.lock */,
+				C0273AF31C79C09B00CC364B /* Sources */,
+				C0273B5A1C79C09B00CC364B /* Frameworks */,
+				C0273B5F1C79C09B00CC364B /* Resources */,
+				C0273B681C79C09B00CC364B /* Copy Pods Resources */,
+				C0273B691C79C09B00CC364B /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demos Lite";
+			productName = Demos;
+			productReference = C0273B6D1C79C09B00CC364B /* Demos Lite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0273BEE1C79C9BA00CC364B /* Demo WatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0273C151C79C9BB00CC364B /* Build configuration list for PBXNativeTarget "Demo WatchKit" */;
+			buildPhases = (
+				C0273BED1C79C9BA00CC364B /* Resources */,
+				C0273C141C79C9BB00CC364B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0273BFE1C79C9BA00CC364B /* PBXTargetDependency */,
+			);
+			name = "Demo WatchKit";
+			productName = "Demo WatchKit";
+			productReference = C0273BEF1C79C9BA00CC364B /* Demo WatchKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C0273BFA1C79C9BA00CC364B /* Demo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0273C111C79C9BB00CC364B /* Build configuration list for PBXNativeTarget "Demo WatchKit Extension" */;
+			buildPhases = (
+				C0273BF71C79C9BA00CC364B /* Sources */,
+				C0273BF81C79C9BA00CC364B /* Frameworks */,
+				C0273BF91C79C9BA00CC364B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo WatchKit Extension";
+			productName = "Demo WatchKit Extension";
+			productReference = C0273BFB1C79C9BA00CC364B /* Demo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1157,6 +1450,12 @@
 					65ECE8831B588AA9003134B2 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 65ECE86A1B588AA9003134B2;
+					};
+					C0273BEE1C79C9BA00CC364B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C0273BFA1C79C9BA00CC364B = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
@@ -1175,6 +1474,9 @@
 			targets = (
 				65ECE86A1B588AA9003134B2 /* Demos */,
 				65ECE8831B588AA9003134B2 /* DemosTests */,
+				C0273AF11C79C09B00CC364B /* Demos Lite */,
+				C0273BEE1C79C9BA00CC364B /* Demo WatchKit */,
+				C0273BFA1C79C9BA00CC364B /* Demo WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1202,6 +1504,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0273B5F1C79C09B00CC364B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0273B601C79C09B00CC364B /* MainCell.xib in Resources */,
+				C0273B611C79C09B00CC364B /* AppVersion.plist in Resources */,
+				C0273B621C79C09B00CC364B /* GLNetWorkDemo.storyboard in Resources */,
+				C0273B631C79C09B00CC364B /* AttachCell.xib in Resources */,
+				C0273B641C79C09B00CC364B /* LaunchScreen.xib in Resources */,
+				C0273B651C79C09B00CC364B /* CustomCell.xib in Resources */,
+				C0273B661C79C09B00CC364B /* Main.storyboard in Resources */,
+				C0273B671C79C09B00CC364B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0273BED1C79C9BA00CC364B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0273BF51C79C9BA00CC364B /* Assets.xcassets in Resources */,
+				C0273BF31C79C9BA00CC364B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0273BF91C79C9BA00CC364B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0273C0C1C79C9BB00CC364B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1218,6 +1552,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0273AF21C79C09B00CC364B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0273B681C79C09B00CC364B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0273B691C79C09B00CC364B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DA651676F32A5A8CF1725FF4 /* Embed Pods Frameworks */ = {
@@ -1371,6 +1750,126 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0273AF31C79C09B00CC364B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0273AF41C79C09B00CC364B /* GLCacheToolKit.m in Sources */,
+				C0273AF51C79C09B00CC364B /* GLLoginView.m in Sources */,
+				C0273AF61C79C09B00CC364B /* PersonModel.m in Sources */,
+				C0273AF71C79C09B00CC364B /* GLNetWorkDemo.m in Sources */,
+				C0273AF81C79C09B00CC364B /* TNJSONStuff.m in Sources */,
+				C0273AF91C79C09B00CC364B /* GLButtonCardView.m in Sources */,
+				C0273AFA1C79C09B00CC364B /* GURLRequest.m in Sources */,
+				C0273AFB1C79C09B00CC364B /* GLHeaderView.m in Sources */,
+				C0273AFC1C79C09B00CC364B /* TNTopBarView.m in Sources */,
+				C0273AFD1C79C09B00CC364B /* TestNet101ViewController.m in Sources */,
+				C0273AFE1C79C09B00CC364B /* ScrollDemoVC.m in Sources */,
+				C0273AFF1C79C09B00CC364B /* UIButton+Position.m in Sources */,
+				C0273B001C79C09B00CC364B /* UIImageView+GLExtensions.m in Sources */,
+				C0273B011C79C09B00CC364B /* GLCDataBaseOperationManager.m in Sources */,
+				C0273B021C79C09B00CC364B /* AddTBCellViewController.m in Sources */,
+				C0273B031C79C09B00CC364B /* FifthViewController.m in Sources */,
+				C0273B041C79C09B00CC364B /* GLButtonCardScrollView.m in Sources */,
+				C0273B051C79C09B00CC364B /* UIRootHeaderTableViewCell.m in Sources */,
+				C0273B061C79C09B00CC364B /* TextViewDataSource.m in Sources */,
+				C0273B071C79C09B00CC364B /* GLActivityIndictorView.m in Sources */,
+				C0273B081C79C09B00CC364B /* FMDatabaseQueue.m in Sources */,
+				C0273B091C79C09B00CC364B /* GLUserRegisterView.m in Sources */,
+				C0273B0A1C79C09B00CC364B /* CNPPopupController.m in Sources */,
+				C0273B0B1C79C09B00CC364B /* GLPresentViewController.m in Sources */,
+				C0273B0C1C79C09B00CC364B /* GLUIManager.m in Sources */,
+				C0273B0D1C79C09B00CC364B /* UIRootBaseTableViewCell.m in Sources */,
+				C0273B0E1C79C09B00CC364B /* SecondViewController.m in Sources */,
+				C0273B0F1C79C09B00CC364B /* TextViewCollectionViewCell.m in Sources */,
+				C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */,
+				C0273B111C79C09B00CC364B /* CustomCell.m in Sources */,
+				C0273B121C79C09B00CC364B /* GLTrainScrollBarView.m in Sources */,
+				C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */,
+				C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */,
+				C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */,
+				C0273B161C79C09B00CC364B /* WebViewDemo.m in Sources */,
+				C0273B171C79C09B00CC364B /* GLRootHomeDatas.m in Sources */,
+				C0273B181C79C09B00CC364B /* FMDatabase.m in Sources */,
+				C0273B191C79C09B00CC364B /* UIButton+Position.m in Sources */,
+				C0273B1A1C79C09B00CC364B /* ThirdViewController.m in Sources */,
+				C0273B1B1C79C09B00CC364B /* ForthViewController.m in Sources */,
+				C0273B1C1C79C09B00CC364B /* PassValueBlockVC.m in Sources */,
+				C0273B1D1C79C09B00CC364B /* NSTimer+Addition.m in Sources */,
+				C0273B1E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */,
+				C0273B1F1C79C09B00CC364B /* XTURLRequest.m in Sources */,
+				C0273B201C79C09B00CC364B /* GLTopBarView.m in Sources */,
+				C0273B211C79C09B00CC364B /* TNHomeSpecialSaleCell.m in Sources */,
+				C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */,
+				C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */,
+				C0273B241C79C09B00CC364B /* AnimationDemoVC.m in Sources */,
+				C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */,
+				C0273B261C79C09B00CC364B /* NetWorkCell.m in Sources */,
+				C0273B271C79C09B00CC364B /* AttachCell.m in Sources */,
+				C0273B281C79C09B00CC364B /* NSTimer+Addition.m in Sources */,
+				C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */,
+				C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */,
+				C0273B2B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */,
+				C0273B2C1C79C09B00CC364B /* TNTableViewCell.m in Sources */,
+				C0273B2D1C79C09B00CC364B /* FMDatabaseAdditions.m in Sources */,
+				C0273B2E1C79C09B00CC364B /* TestDemoVC.m in Sources */,
+				C0273B2F1C79C09B00CC364B /* TextViewController.m in Sources */,
+				C0273B301C79C09B00CC364B /* GLJSPatchManager.m in Sources */,
+				C0273B311C79C09B00CC364B /* AdScrollTimerViewController.m in Sources */,
+				C0273B321C79C09B00CC364B /* UIColor+TKCategory.m in Sources */,
+				C0273B331C79C09B00CC364B /* UIView+Positioning.m in Sources */,
+				C0273B341C79C09B00CC364B /* Toast+UIView.m in Sources */,
+				C0273B351C79C09B00CC364B /* base64.m in Sources */,
+				C0273B361C79C09B00CC364B /* NSArray+GLStuff.m in Sources */,
+				C0273B351C79C09B00CC364B /* base64.m in Sources */,
+				C0273B371C79C09B00CC364B /* GLCBaseMessageViewController.m in Sources */,
+				C0273B381C79C09B00CC364B /* TNCycleScrollView.m in Sources */,
+				C0273B391C79C09B00CC364B /* RootViewController.m in Sources */,
+				C0273B3A1C79C09B00CC364B /* GLRequest.m in Sources */,
+				C0273B3B1C79C09B00CC364B /* TNJSONModel.m in Sources */,
+				C0273B3C1C79C09B00CC364B /* GLSearchMoreTypeView.m in Sources */,
+				C0273B3D1C79C09B00CC364B /* GLUserLoginViewController.m in Sources */,
+				C0273B3E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */,
+				C0273B3F1C79C09B00CC364B /* GLNavigationMap.m in Sources */,
+				C0273B401C79C09B00CC364B /* OCDataSourceDemo.m in Sources */,
+				C0273B411C79C09B00CC364B /* AppDelegate.m in Sources */,
+				C0273B421C79C09B00CC364B /* FMDatabasePool.m in Sources */,
+				C0273B431C79C09B00CC364B /* GLNavigator.m in Sources */,
+				C0273B441C79C09B00CC364B /* SubButtonDemoVC.m in Sources */,
+				C0273B451C79C09B00CC364B /* UIRootButtonTableViewCell.m in Sources */,
+				C0273B461C79C09B00CC364B /* main.m in Sources */,
+				C0273B471C79C09B00CC364B /* GLButtonDemoViewController101.m in Sources */,
+				C0273B481C79C09B00CC364B /* GLNetwork.m in Sources */,
+				C0273B491C79C09B00CC364B /* GLTCollectionViewController.m in Sources */,
+				C0273B4A1C79C09B00CC364B /* TNBase64.m in Sources */,
+				C0273B4B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */,
+				C0273B4C1C79C09B00CC364B /* LayoutSubviews.m in Sources */,
+				C0273B4D1C79C09B00CC364B /* UIView+Positioning.m in Sources */,
+				C0273B4E1C79C09B00CC364B /* OButton.m in Sources */,
+				C0273B4F1C79C09B00CC364B /* GLLoginManager.m in Sources */,
+				C0273B501C79C09B00CC364B /* UIViewController+Analysis.m in Sources */,
+				C0273B511C79C09B00CC364B /* Toast+UIView.m in Sources */,
+				C0273B521C79C09B00CC364B /* NSObject+BlackMagic.m in Sources */,
+				C0273B531C79C09B00CC364B /* MainCell.m in Sources */,
+				C0273B541C79C09B00CC364B /* FMResultSet.m in Sources */,
+				C0273B551C79C09B00CC364B /* PickerViewDemoVC.m in Sources */,
+				C0273B561C79C09B00CC364B /* GLButtonCardDatas.m in Sources */,
+				C0273B571C79C09B00CC364B /* GLBarViewController.m in Sources */,
+				C0273B581C79C09B00CC364B /* Toast+UIView.m in Sources */,
+				C0273B591C79C09B00CC364B /* GLButtonDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0273BF71C79C9BA00CC364B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0273C071C79C9BB00CC364B /* ExtensionDelegate.m in Sources */,
+				C0273C041C79C9BB00CC364B /* InterfaceController.m in Sources */,
+				C0273C0A1C79C9BB00CC364B /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1379,7 +1878,28 @@
 			target = 65ECE86A1B588AA9003134B2 /* Demos */;
 			targetProxy = 65ECE8851B588AA9003134B2 /* PBXContainerItemProxy */;
 		};
+		C0273BFE1C79C9BA00CC364B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0273BFA1C79C9BA00CC364B /* Demo WatchKit Extension */;
+			targetProxy = C0273BFD1C79C9BA00CC364B /* PBXContainerItemProxy */;
+		};
+		C0273C0F1C79C9BB00CC364B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0273BEE1C79C9BA00CC364B /* Demo WatchKit */;
+			targetProxy = C0273C0E1C79C9BB00CC364B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0273BF11C79C9BA00CC364B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0273BF21C79C9BA00CC364B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		65ECE88C1B588AA9003134B2 /* Debug */ = {
@@ -1481,6 +2001,11 @@
 			baseConfigurationReference = A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"Pro=1",
+				);
 				INFOPLIST_FILE = Demos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1494,6 +2019,11 @@
 			baseConfigurationReference = CA8AB85E7A636C441E328926 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"Pro=1",
+				);
 				INFOPLIST_FILE = Demos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1536,6 +2066,108 @@
 			};
 			name = Release;
 		};
+		C0273B6B1C79C09B00CC364B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"Lite=1",
+				);
+				INFOPLIST_FILE = "Demos copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0273B6C1C79C09B00CC364B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8AB85E7A636C441E328926 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"Lite=1",
+				);
+				INFOPLIST_FILE = "Demos copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C0273C121C79C9BB00CC364B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "Demo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tumoiu.Demos.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C0273C131C79C9BB00CC364B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				INFOPLIST_FILE = "Demo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tumoiu.Demos.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		C0273C161C79C9BB00CC364B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				IBSC_MODULE = Demo_WatchKit_Extension;
+				INFOPLIST_FILE = "Demo WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = tumoiu.Demos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C0273C171C79C9BB00CC364B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Demo_WatchKit_Extension;
+				INFOPLIST_FILE = "Demo WatchKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = tumoiu.Demos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1565,6 +2197,31 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C0273B6A1C79C09B00CC364B /* Build configuration list for PBXNativeTarget "Demos Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0273B6B1C79C09B00CC364B /* Debug */,
+				C0273B6C1C79C09B00CC364B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0273C111C79C9BB00CC364B /* Build configuration list for PBXNativeTarget "Demo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0273C121C79C9BB00CC364B /* Debug */,
+				C0273C131C79C9BB00CC364B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0273C151C79C9BB00CC364B /* Build configuration list for PBXNativeTarget "Demo WatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0273C161C79C9BB00CC364B /* Debug */,
+				C0273C171C79C9BB00CC364B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
