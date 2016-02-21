@@ -161,10 +161,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[AFHTTPRequestSerializer multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:error:]"
-                  moduleName = "Demos Lite"
+                  moduleName = "Demos"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/GLDemos-/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m"
-                  timestampString = "477745072.397394"
+                  timestampString = "477747596.836976"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "379"
@@ -176,10 +176,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[AFHTTPRequestSerializer multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:error:]"
-                  moduleName = "Demos Lite"
+                  moduleName = "Demos"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/GLDemos-/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m"
-                  timestampString = "477745072.397811"
+                  timestampString = "477747596.837481"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "379"
@@ -202,22 +202,6 @@
             startingLineNumber = "181"
             endingLineNumber = "181"
             landmarkName = "-topBarRightButtonPressed:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Demos/AppDelegate.m"
-            timestampString = "477745076.530109"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
