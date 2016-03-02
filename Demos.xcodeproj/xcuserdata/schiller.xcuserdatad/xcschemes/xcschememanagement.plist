@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Demos Lite.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>Demos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>65ECE8831B588AA9003134B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0273AF11C79C09B00CC364B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
