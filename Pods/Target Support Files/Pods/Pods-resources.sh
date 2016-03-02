@@ -71,6 +71,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "Magnet-XMPPFramework/Extensions/XEP-0136/CoreDataStorage/XMPPMessageArchiving.xcdatamodeld"
   install_resource "Magnet-XMPPFramework/Extensions/XEP-0136/CoreDataStorage/XMPPMessageArchiving.xcdatamodeld/XMPPMessageArchiving.xcdatamodel"
   install_resource "Magnet-XMPPFramework/Xcode/ServerlessDemo/ServerlessDemo.xcdatamodel"
+  install_resource "${BUILT_PRODUCTS_DIR}/podTestLibrary.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle"
@@ -86,6 +87,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "Magnet-XMPPFramework/Extensions/XEP-0136/CoreDataStorage/XMPPMessageArchiving.xcdatamodeld"
   install_resource "Magnet-XMPPFramework/Extensions/XEP-0136/CoreDataStorage/XMPPMessageArchiving.xcdatamodeld/XMPPMessageArchiving.xcdatamodel"
   install_resource "Magnet-XMPPFramework/Xcode/ServerlessDemo/ServerlessDemo.xcdatamodel"
+  install_resource "${BUILT_PRODUCTS_DIR}/podTestLibrary.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

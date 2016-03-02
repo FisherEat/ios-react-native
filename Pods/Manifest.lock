@@ -73,6 +73,8 @@ PODS:
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
   - MJExtension (3.0.8)
+  - podTestLibrary (1.0.0):
+    - AFNetworking (= 3.0.4)
   - pop (1.0.8)
   - PureLayout (3.0.1)
   - SDWebImage (3.7.3):
@@ -93,6 +95,7 @@ DEPENDENCIES:
   - Masonry (= 0.6.2)
   - MBProgressHUD (= 0.9.1)
   - MJExtension (= 3.0.8)
+  - podTestLibrary (~> 1.0.0)
   - pop (= 1.0.8)
   - PureLayout (= 3.0.1)
   - SDWebImage (= 3.7.3)
@@ -113,6 +116,7 @@ SPEC CHECKSUMS:
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 12d2875959b4a0f936ae86b22a1eb6b0251c50ba
+  podTestLibrary: c55ea510add446f92b7114c2069ee9feb8e96539
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
