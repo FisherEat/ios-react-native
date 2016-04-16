@@ -7,6 +7,7 @@
 //
 
 #import "ForthViewController.h"
+#import "RCTRootView.h"
 
 #define HEAD_AD_VIEW_HEIGHT  (SCREEN_WIDTH/4.0f)
 @interface ForthViewController ()
@@ -24,6 +25,17 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
+    //jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.116:8081/index.ios.bundle?platform=ios&dev=false"];
+    //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+    
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                        moduleName:@"Demos"
+                                                 initialProperties:nil
+                                                     launchOptions:nil];
+    rootView.frame = self.view.bounds;
+    
+    [self.view addSubview:rootView];
 }
 
 - (UIImageView *)supplyAdView:(UIImage *)imgage
@@ -39,6 +51,5 @@
     [super didReceiveMemoryWarning];
 
 }
-
 
 @end

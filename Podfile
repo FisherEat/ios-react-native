@@ -25,3 +25,18 @@ pod 'Magnet-XMPPFramework', '3.6.10'
 source 'https://git.coding.net/schiller/GLSpecs.git'
 
 pod 'podTestLibrary', '~> 1.0.0'
+
+pod 'React', :path => './node_modules/react-native', :subspecs => [
+  'Core',
+  'RCTImage',
+  'RCTNetwork',
+  'RCTText',
+  'RCTWebSocket',
+  'ART',
+  'RCTActionSheet',
+  'RCTGeolocation',
+  'RCTPushNotification',
+  'RCTSettings',
+  'RCTVibration',
+  'RCTLinkingIOS',
+]
