@@ -181,6 +181,7 @@
 		C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE651C46A6DA00225A21 /* TextViewController.m */; };
 		C059BE6D1C46A72E00225A21 /* TextViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */; };
 		C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
+		C0917F5E1CC50A0E003A9D63 /* GLSpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = C0917F5D1CC50A0E003A9D63 /* GLSpringBoard.m */; };
 		C0A832861C6AD8A600F802BF /* UIRootBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832851C6AD8A600F802BF /* UIRootBaseTableViewCell.m */; };
 		C0A832891C6AD8F100F802BF /* UIRootButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832881C6AD8F100F802BF /* UIRootButtonTableViewCell.m */; };
 		C0A8328C1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328B1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m */; };
@@ -390,6 +391,8 @@
 		C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewDataSource.m; sourceTree = "<group>"; };
 		C059BE731C46A77B00225A21 /* TextViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCollectionViewCell.h; sourceTree = "<group>"; };
 		C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCollectionViewCell.m; sourceTree = "<group>"; };
+		C0917F5C1CC50A0E003A9D63 /* GLSpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSpringBoard.h; sourceTree = "<group>"; };
+		C0917F5D1CC50A0E003A9D63 /* GLSpringBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSpringBoard.m; sourceTree = "<group>"; };
 		C0A832841C6AD8A600F802BF /* UIRootBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRootBaseTableViewCell.h; sourceTree = "<group>"; };
 		C0A832851C6AD8A600F802BF /* UIRootBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRootBaseTableViewCell.m; sourceTree = "<group>"; };
 		C0A832871C6AD8F100F802BF /* UIRootButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRootButtonTableViewCell.h; sourceTree = "<group>"; };
@@ -1158,6 +1161,8 @@
 				C0F6C5451C645E9500507F3B /* GLNavigator.m */,
 				C0F6C5471C645F7400507F3B /* GLNavigationURLHelper.h */,
 				C0F6C5481C645F7400507F3B /* GLNavigationURLHelper.m */,
+				C0917F5C1CC50A0E003A9D63 /* GLSpringBoard.h */,
+				C0917F5D1CC50A0E003A9D63 /* GLSpringBoard.m */,
 			);
 			path = GLNavigator;
 			sourceTree = "<group>";
@@ -1609,6 +1614,7 @@
 				6506F62C1C61F22F00A4D747 /* NSTimer+Addition.m in Sources */,
 				C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */,
 				6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */,
+				C0917F5E1CC50A0E003A9D63 /* GLSpringBoard.m in Sources */,
 				6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */,
 				65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */,
 				C0FEFA6C1C6DD94000C2345B /* FMDatabaseAdditions.m in Sources */,
