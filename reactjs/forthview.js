@@ -52,7 +52,7 @@ import AppConfig from './common/AppConfig'
                     prams: {id: '', data: rowData}
                 })
               }}>
-              <View style={styles.}>
+              <View>
               </View>
            </TouchableHighlight>
        )
