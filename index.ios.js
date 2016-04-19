@@ -10,8 +10,8 @@ import React, {
   Navigator,
 } from 'react-native';
 
-import ForthReactView from './reactjs/forthview'
-import SuperHome from './reactjs/superhome'
+import ForthReactView from './reactjs/forth/forthview'
+import SuperHome from './reactjs/super/superhome'
 
 class Demos extends Component {
   render() {
