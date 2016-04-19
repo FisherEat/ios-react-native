@@ -17,6 +17,8 @@ import AppConfig from '../common/AppConfig'
 import NavBar from '../common/NavBar'
 import PhotoWall from './photowall'
 import Settings from './settings'
+import URLRequest from '../common/URLRequest'
+
 const {
   NavigationBar,
   NavBarImageButton,
@@ -36,6 +38,15 @@ const {
        this.setState({
            dataSource: this.state.dataSource.cloneWithRows(data)
        })
+       this.requestData();
+   }
+   requestData() {
+     let params = {c:{"cc":"3415","ct":10,"p":14588,"dt":0,"v":"8.0.5"} , d:{}}
+     URLRequest.normalGet(params,URLRequest.SUPER_HOME_BASE).then((response) => {
+       console.log(response)
+     }).catch((error) => {
+       console.log(error)
+     })
    }
    render() {
      return (
