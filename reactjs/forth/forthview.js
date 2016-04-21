@@ -11,8 +11,10 @@
    View,
    ListView,
    TouchableHighlight,
+   NativeModules,
  } from 'react-native';
 
+var NativeBoard = NativeModules.GLSpringBoard
 import AppConfig from '../common/AppConfig'
 import NavBar from '../common/NavBar'
 import PhotoWall from './photowall'
@@ -47,6 +49,13 @@ const {
      }).catch((error) => {
        console.log(error)
      })
+   }
+   pushToNative() {
+       var params = {code: 10000, msg: 'success'}
+       callback = () => {}
+       NativeBoard.showNativeView(params, function(callback){
+           console.log(callback)
+       })
    }
    render() {
      return (
@@ -83,11 +92,9 @@ const {
                   textStyle={{color:'black'}}
                   image={require('../resources/navbar/navbar-qr-scan-normal.png')}
                   onPress={() => {
-                    this.props.navigator.push({
-                      component: '',
-                      title: '选择城市',
-                      params: {id: ''}
-                    })
+                     this.props.navigator.push(
+                      this.pushToNative()
+                    )
                   }}
                   />)}
             >

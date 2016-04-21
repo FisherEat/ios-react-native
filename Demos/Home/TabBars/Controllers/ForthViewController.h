@@ -10,4 +10,5 @@
 
 @interface ForthViewController : UIViewController
 
++ (void)push;
 @end

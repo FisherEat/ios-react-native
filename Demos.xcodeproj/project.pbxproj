@@ -57,6 +57,7 @@
 		65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; };
 		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; };
 		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
+		C017E8311CC9198B001BF11B /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C017E8301CC9198B001BF11B /* RCTMapManager.m */; };
 		C0273AF41C79C09B00CC364B /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
 		C0273AF51C79C09B00CC364B /* GLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA809D1C3BFDA500ABE564 /* GLLoginView.m */; };
 		C0273AF61C79C09B00CC364B /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80731C3BF9A300ABE564 /* PersonModel.m */; };
@@ -359,6 +360,8 @@
 		65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GLExtensions.h"; sourceTree = "<group>"; };
 		65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GLExtensions.m"; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C017E82F1CC9198B001BF11B /* RCTMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMapManager.h; sourceTree = "<group>"; };
+		C017E8301CC9198B001BF11B /* RCTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMapManager.m; sourceTree = "<group>"; };
 		C0273B6D1C79C09B00CC364B /* Demos Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demos Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0273B6E1C79C09B00CC364B /* Demos copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demos copy-Info.plist"; path = "/ios/GLDemos-/Demos copy-Info.plist"; sourceTree = "<absolute>"; };
 		C0273BEC1C79C89900CC364B /* Demos copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demos copy2-Info.plist"; path = "/ios/GLDemos-/Demos copy2-Info.plist"; sourceTree = "<absolute>"; };
@@ -655,7 +658,6 @@
 			isa = PBXGroup;
 			children = (
 				C0FEFA5F1C6DD94000C2345B /* FMDB */,
-				C0F6C5511C6704ED00507F3B /* GLGroupChat */,
 				C0F6C54D1C65B6B700507F3B /* UIManager */,
 				C0F6C5431C645E4500507F3B /* GLNavigator */,
 				65ECE8721B588AA9003134B2 /* AppDelegate.h */,
@@ -808,6 +810,15 @@
 			path = Extra;
 			sourceTree = "<group>";
 		};
+		C017E82E1CC91962001BF11B /* ReactNativeViews */ = {
+			isa = PBXGroup;
+			children = (
+				C017E82F1CC9198B001BF11B /* RCTMapManager.h */,
+				C017E8301CC9198B001BF11B /* RCTMapManager.m */,
+			);
+			path = ReactNativeViews;
+			sourceTree = "<group>";
+		};
 		C0273BF01C79C9BA00CC364B /* Demo WatchKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -944,6 +955,7 @@
 		C0CA80391C3BEA9A00ABE564 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C017E82E1CC91962001BF11B /* ReactNativeViews */,
 				C0F6C56E1C675E0A00507F3B /* ButtonDemos */,
 				C0F6C5581C671BFD00507F3B /* CollectionViews */,
 				C059BE5F1C46A31E00225A21 /* Lists */,
@@ -1155,6 +1167,7 @@
 		C0F6C5431C645E4500507F3B /* GLNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				C0F6C5511C6704ED00507F3B /* GLGroupChat */,
 				C0F6C54A1C64AC3900507F3B /* GLNavigationMap.h */,
 				C0F6C54B1C64AC3900507F3B /* GLNavigationMap.m */,
 				C0F6C5441C645E9500507F3B /* GLNavigator.h */,
@@ -1183,7 +1196,8 @@
 				C0F6C5531C6704ED00507F3B /* ViewControllers */,
 				C0F6C5541C6704ED00507F3B /* Views */,
 			);
-			path = GLGroupChat;
+			name = GLGroupChat;
+			path = ../GLGroupChat;
 			sourceTree = "<group>";
 		};
 		C0F6C5521C6704ED00507F3B /* Model */ = {
@@ -1598,6 +1612,7 @@
 				C0A8328F1C6AE18700F802BF /* GLRootHomeDatas.m in Sources */,
 				C0FEFA6B1C6DD94000C2345B /* FMDatabase.m in Sources */,
 				C0E9D77A1C381F1700138BAB /* UIButton+Position.m in Sources */,
+				C017E8311CC9198B001BF11B /* RCTMapManager.m in Sources */,
 				C0CA80981C3BFD4A00ABE564 /* ThirdViewController.m in Sources */,
 				C0CA80961C3BFD4A00ABE564 /* ForthViewController.m in Sources */,
 				65F07B661C3E05D200E13CB7 /* PassValueBlockVC.m in Sources */,

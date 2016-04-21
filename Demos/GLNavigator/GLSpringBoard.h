@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "RCTBridgeModule.h"
 @class RCTRootView;
 @class RCTBridge;
-@interface GLSpringBoard : NSObject
 
-+ (RCTRootView *)rctRootViewWithClassName:(NSString *)className bridge:(RCTBridge *)bridge;
+@interface GLSpringBoard : NSObject<RCTBridgeModule>
+
++ (RCTRootView *)rctRootViewWithClassName:(NSString *)className bridge:(RCTBridge *)bridge params:(NSDictionary *)params;
 
 @end

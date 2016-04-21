@@ -10,6 +10,7 @@
 #import "RCTRootView.h"
 #import "RCTBridge.h"
 #import "GLSpringBoard.h"
+#import "GLButtonDemoViewController.h"
 
 #define HEAD_AD_VIEW_HEIGHT  (SCREEN_WIDTH/4.0f)
 @interface ForthViewController ()<RCTBridgeDelegate>
@@ -34,7 +35,7 @@
 - (void)showReactViewInForthViewController
 {
     _bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
-    RCTRootView *rootView = [GLSpringBoard rctRootViewWithClassName:@"ForthReactView" bridge:_bridge];
+    RCTRootView *rootView = [GLSpringBoard rctRootViewWithClassName:@"ForthReactView" bridge:_bridge params:nil];
     rootView.frame = self.view.bounds;
     [self.view addSubview:rootView];
 }
@@ -45,6 +46,11 @@
     //jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.116:8081/index.ios.bundle?platform=ios&dev=false"];
     //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
     return jsCodeLocation;
+}
+
++ (void)push
+{
+    [[GLUIManager sharedManager] showViewControllerWithName:@"GLButtonDemoViewController" params:nil];
 }
 
 - (void)didReceiveMemoryWarning {
