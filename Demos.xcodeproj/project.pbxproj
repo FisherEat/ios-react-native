@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6500EFC91CC9B54D00B845EC /* RCTViewManager.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6500EFC71CC9B54D00B845EC /* RCTViewManager.h */; };
+		6500EFCA1CC9B54D00B845EC /* RCTViewManager.m in Frameworks */ = {isa = PBXBuildFile; fileRef = 6500EFC81CC9B54D00B845EC /* RCTViewManager.m */; };
 		6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
 		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; };
 		6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; };
@@ -57,7 +59,6 @@
 		65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; };
 		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; };
 		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
-		C017E8311CC9198B001BF11B /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C017E8301CC9198B001BF11B /* RCTMapManager.m */; };
 		C0273AF41C79C09B00CC364B /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
 		C0273AF51C79C09B00CC364B /* GLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA809D1C3BFDA500ABE564 /* GLLoginView.m */; };
 		C0273AF61C79C09B00CC364B /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80731C3BF9A300ABE564 /* PersonModel.m */; };
@@ -264,6 +265,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6500EFC71CC9B54D00B845EC /* RCTViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTViewManager.h; path = "node_modules/react-native/React/Views/RCTViewManager.h"; sourceTree = "<group>"; };
+		6500EFC81CC9B54D00B845EC /* RCTViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTViewManager.m; path = "node_modules/react-native/React/Views/RCTViewManager.m"; sourceTree = "<group>"; };
 		6506F6021C61897B00A4D747 /* GLCommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCommonModel.h; sourceTree = "<group>"; };
 		6506F6031C61897B00A4D747 /* GLCommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCommonModel.m; sourceTree = "<group>"; };
 		6506F6071C618F8100A4D747 /* AppVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppVersion.plist; sourceTree = "<group>"; };
@@ -360,8 +363,6 @@
 		65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GLExtensions.h"; sourceTree = "<group>"; };
 		65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GLExtensions.m"; sourceTree = "<group>"; };
 		A6792D75E9C3A86AC56556AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C017E82F1CC9198B001BF11B /* RCTMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMapManager.h; sourceTree = "<group>"; };
-		C017E8301CC9198B001BF11B /* RCTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMapManager.m; sourceTree = "<group>"; };
 		C0273B6D1C79C09B00CC364B /* Demos Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demos Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0273B6E1C79C09B00CC364B /* Demos copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demos copy-Info.plist"; path = "/ios/GLDemos-/Demos copy-Info.plist"; sourceTree = "<absolute>"; };
 		C0273BEC1C79C89900CC364B /* Demos copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Demos copy2-Info.plist"; path = "/ios/GLDemos-/Demos copy2-Info.plist"; sourceTree = "<absolute>"; };
@@ -516,6 +517,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6500EFC91CC9B54D00B845EC /* RCTViewManager.h in Frameworks */,
+				6500EFCA1CC9B54D00B845EC /* RCTViewManager.m in Frameworks */,
 				C0FEFA721C6DDA7A00C2345B /* libsqlite3.0.tbd in Frameworks */,
 				C0FEFA731C6DDA7A00C2345B /* libsqlite3.tbd in Frameworks */,
 				65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */,
@@ -813,8 +816,6 @@
 		C017E82E1CC91962001BF11B /* ReactNativeViews */ = {
 			isa = PBXGroup;
 			children = (
-				C017E82F1CC9198B001BF11B /* RCTMapManager.h */,
-				C017E8301CC9198B001BF11B /* RCTMapManager.m */,
 			);
 			path = ReactNativeViews;
 			sourceTree = "<group>";
@@ -1299,6 +1300,8 @@
 		D0E5D6E8C2B4078AC4914368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6500EFC71CC9B54D00B845EC /* RCTViewManager.h */,
+				6500EFC81CC9B54D00B845EC /* RCTViewManager.m */,
 				C0FEFA701C6DDA7A00C2345B /* libsqlite3.0.tbd */,
 				C0FEFA711C6DDA7A00C2345B /* libsqlite3.tbd */,
 				65E3E8571B9D24E2002AD494 /* CFNetwork.framework */,
@@ -1612,7 +1615,6 @@
 				C0A8328F1C6AE18700F802BF /* GLRootHomeDatas.m in Sources */,
 				C0FEFA6B1C6DD94000C2345B /* FMDatabase.m in Sources */,
 				C0E9D77A1C381F1700138BAB /* UIButton+Position.m in Sources */,
-				C017E8311CC9198B001BF11B /* RCTMapManager.m in Sources */,
 				C0CA80981C3BFD4A00ABE564 /* ThirdViewController.m in Sources */,
 				C0CA80961C3BFD4A00ABE564 /* ForthViewController.m in Sources */,
 				65F07B661C3E05D200E13CB7 /* PassValueBlockVC.m in Sources */,
@@ -1875,6 +1877,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../react-native/React";
 			};
 			name = Debug;
 		};
@@ -1918,6 +1921,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../react-native/React";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1937,6 +1941,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1955,6 +1960,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
