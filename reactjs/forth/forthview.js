@@ -20,6 +20,7 @@ import NavBar from '../common/NavBar'
 import PhotoWall from './photowall'
 import Settings from './settings'
 import URLRequest from '../common/URLRequest'
+import ES6Test from '../common/es6test'
 
 const {
   NavigationBar,
@@ -41,6 +42,8 @@ const {
            dataSource: this.state.dataSource.cloneWithRows(data)
        })
        this.requestData();
+       console.log(ES6Test.push([1,2,3], 5,6,7));
+       console.log(ES6Test.handler);
    }
    requestData() {
      let params = {c:{"cc":"3415","ct":10,"p":14588,"dt":0,"v":"8.0.5"} , d:{}}
