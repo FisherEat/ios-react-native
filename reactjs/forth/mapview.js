@@ -9,8 +9,11 @@
      Image,
      StyleSheet,
      View,
+     NativeModules,
+     TouchableHighlight,
  } from 'react-native'
 
+ var CreateBoard = NativeModules.GLSpringBoard;
  class MapViewList extends Component {
      constructor(props) {
          super(props)
@@ -27,6 +30,13 @@
              latitudeDelta: 0,
              longitudeDelta: 0,
          }
+     }
+     componentDidMount() {
+         let queryData = "imimimim"
+         successCallback = () => {}
+         CreateBoard.query(queryData, function(successCallback){
+             console.log(successCallback);
+         })
      }
      componentWillReceiveProps(nextProps) {
          this.setState(nextProps.region);

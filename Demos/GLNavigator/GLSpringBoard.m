@@ -32,6 +32,12 @@ RCT_EXPORT_METHOD(showNativeView:(NSDictionary*)params callback:(RCTResponseSend
     [ForthViewController push];
 }
 
+RCT_EXPORT_METHOD(query:(NSString *)queryData successCallback:(RCTResponseSenderBlock)responseSender)
+{
+    NSString *ret = @"ret";
+    responseSender(@[ret]);
+}
+
 - (dispatch_queue_t)methodQueue
 {
     return dispatch_get_main_queue();
