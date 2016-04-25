@@ -16,6 +16,8 @@
 
  import AppConfig from '../common/AppConfig'
  import NavBar from '../common/NavBar'
+ import SectionList from './sectionlist'
+
  const {
    NavigationBar,
    NavBarImageButton,
@@ -28,6 +30,9 @@
      this.state={
        dataSource: new ListView.DataSource({rowHasChanged: (r1, r2) => r1 != r2}),
      }
+   }
+   pressToListView() {
+
    }
    componentDidMount() {
      let data = [{
@@ -75,7 +80,11 @@
          rightButton={(<NavBarImageButton
             image={require('../resources/navbar/share.png')}
             onPress={() => {
-              alert('我要分享')
+              this.props.navigator.push({
+                component: SectionList,
+                title:'悬浮列表',
+                params: {id: 4},
+              });
             }}
            />)}
        >
