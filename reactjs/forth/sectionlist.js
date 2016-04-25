@@ -40,14 +40,7 @@ var mockData = [
 class SectionList extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      dataSource: new ListView.DataSource({
-        getSectionData:null,
-        getRowData:null,
-        rowHasChanged: (row1, row2) => row1 !== row2,
-        sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
-      })
-    }
+    this.state = {dataSource: this.initData()}
   }
   convertToObject(array) {
     var dataBlob = {},
@@ -69,15 +62,29 @@ class SectionList extends Component {
       rowIDs: rowIDs
     }
   }
+
+  initDatasource() {
+       var {dataBlob, sectionIDs, rowIDs} = this.convertToObject(mockData);
+       return {dataBlob, sectionIDs, rowIDs};
+  }
+  initData() {
+      var {dataBlob, sectionIDs, rowIDs} = this.initDatasource();
+      var getSectionData = (dataBlob, sectionID) => {
+        return dataBlob[secitonID];
+      }
+      var getRowData = (dataBlob, sectionID, rowID) => {
+        return dataBlob[rowID];
+      }
+      var dataSource = new ListView.DataSource({
+        getSectionData          : getSectionData,
+        getRowData              : getRowData,
+        rowHasChanged: (row1, row2) => row1 !== row2,
+        sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
+      })
+      return dataSource;
+  }
   componentDidMount() {
-    let data = [];
-    var {dataBlob, sectionIDs, rowIDs} = this.convertToObject(mockData);
-    var getSectionData = (dataBlob, sectionID) => {
-      return dataBlob[secitonID];
-    }
-    var getRowData = (dataBlob, sectionID, rowID) => {
-      return dataBlob[rowID];
-    }
+    var {dataBlob, sectionIDs, rowIDs} = this.initDatasource();
     this.setState({dataSource: this.state.dataSource.cloneWithRowsAndSections(dataBlob, sectionIDs, rowIDs)})
   }
 

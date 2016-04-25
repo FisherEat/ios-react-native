@@ -17,6 +17,8 @@
  import AppConfig from '../common/AppConfig'
  import NavBar from '../common/NavBar'
  import SectionList from './sectionlist'
+ import SectionRowList from './sectionrow'
+ import MapViewList from './mapview'
 
  const {
    NavigationBar,
@@ -81,7 +83,7 @@
             image={require('../resources/navbar/share.png')}
             onPress={() => {
               this.props.navigator.push({
-                component: SectionList,
+                component: MapViewList,
                 title:'悬浮列表',
                 params: {id: 4},
               });
