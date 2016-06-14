@@ -41,16 +41,10 @@ static const CGFloat topToolBarHeight = 40.0f;
     //每次只能给一个对象设置一个观察者，否则会出错
     //[self addObserver:self forKeyPath:@"bColor" options:NSKeyValueObservingOptionInitial context:nil];
     [self addObserver:self forKeyPath:@"aPerson.name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:(void *)KVO_CONTEXT_ADDRESS_CHANGED];
-    
-  //  [self.aPerson setValue:@"xiaobao" forKey:@"name"];
 
     [self myBlock];
- //   [self setWebView];
-    
     [self loadData];
-    
     [self setTopBarView];
- 
     self.trainListArray = [NSMutableArray arrayWithArray:@[@"单程", @"往返"]];
     [self setUpScrollBarView];
     
@@ -220,7 +214,6 @@ static const CGFloat topToolBarHeight = 40.0f;
     self.myButton.frame    = CGRectMake(0, 150, self.view.width / 2, 50);
     self.myButton.centerX  = self.view.centerX;
     [self.myButton setTitle:@"Click Me!" forState:UIControlStateNormal];
-   // [self.myButton addTarget:self action:@selector(changeBackGroundColor) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.myButton];
     
 }

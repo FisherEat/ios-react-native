@@ -10,5 +10,4 @@
 
 @interface FifthViewController : UIViewController
 
-//+ (void)fetchSearchResultListWithInput:()
 @end

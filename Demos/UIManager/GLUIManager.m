@@ -12,6 +12,7 @@
 #import "ThirdViewController.h"
 #import "ForthViewController.h"
 #import "FifthViewController.h"
+#import "GLReactBaseViewController.h"
 
 @interface GLUIManager () <UITabBarControllerDelegate>
 
@@ -71,19 +72,29 @@ SINGLETON_IMPLEMENTION(GLUIManager, sharedManager)
     UIImage *selectImage_4 = [UIImage imageNamed:@"9"];
     forthVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"更多" image:image_4 selectedImage:selectImage_4];
     
-    FifthViewController *fifthVC  = [[FifthViewController alloc] init];
-    fifthVC.title = @"分享";
-    fifthVC.hidesBottomBarWhenPushed = NO;
+//    FifthViewController *fifthVC  = [[FifthViewController alloc] init];
+//    fifthVC.title = @"分享";
+//    fifthVC.hidesBottomBarWhenPushed = NO;
+//    UIImage *image_5 = [UIImage imageNamed:@"5"];
+//    UIImage *selectImage_5 = [UIImage imageNamed:@"10"];
+//    
+//    fifthVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分享" image:image_5 selectedImage:selectImage_5];
+    
+    GLReactBaseViewController *reactVC = [[GLReactBaseViewController alloc] init];
+    reactVC = [[GLReactBaseViewController alloc] init];
+    reactVC.title = @"RN测试页面";
+    reactVC.hidesBottomBarWhenPushed = NO;
     UIImage *image_5 = [UIImage imageNamed:@"5"];
     UIImage *selectImage_5 = [UIImage imageNamed:@"10"];
-    
-    fifthVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分享" image:image_5 selectedImage:selectImage_5];
+    reactVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分享" image:image_5 selectedImage:selectImage_5];
+    reactVC.moduleName = @"Demos";
+    reactVC.className = @"ForthReactView";
     
     self.tabBarController.viewControllers = @[[self navControllerWithRoot:rootVC],
                                               [self navControllerWithRoot:secondVC],
                                               [self navControllerWithRoot:thirdVC],
                                               [self navControllerWithRoot:forthVC],
-                                              [self navControllerWithRoot:fifthVC]];
+                                              [self navControllerWithRoot:reactVC]];
     NSArray *imageNames = @[@"1",@"2", @"3", @"4", @"5"];
     NSArray *selectedImageNames = @[@"6", @"7", @"8", @"9", @"10"];
     [self.tabBarController.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {

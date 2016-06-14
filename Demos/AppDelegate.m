@@ -12,6 +12,7 @@
 #import "FLEXManager.h"
 #import "GLUIManager.h"
 #import "GLNavigationURLHelper.h"
+#import "GLReactBaseViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,7 @@
 @property (strong, nonatomic) ThirdViewController    *thirdVC;
 @property (strong, nonatomic) ForthViewController    *forthVC;
 @property (strong, nonatomic) FifthViewController    *fifthVC;
+@property (strong, nonatomic) GLReactBaseViewController *reactVC;
 
 @end
 
@@ -40,8 +42,6 @@
     
     [self getAppConfig];
     [[GLUIManager sharedManager] showRootViewController];
-    //该方法必须在 keywindow 存在的条件下才能使用，因此要放置在makeKeyAndVisible后面
-    //同时，hammerbutton的显示也是有顺序的。必须放置在rootviewcontroller之后，加载在rootvc上面 
     [self constructUI];
     
     [GLNavigationURLHelper registerAllURLs];
@@ -69,75 +69,13 @@
 {
     NSString *string = @"https://ssl.tuniucdn.com/android/tiyan/jspatch/js014.zip";
     [JSPatchManager loadJSPatchWithZipUrlString:string];
-//    [GLCommonModel getAppConfigInfoBlock:^(NSMutableDictionary *infoDict, NSError *error) {
-//        NSString *string = @"https://ssl.tuniucdn.com/android/tiyan/jspatch/js014.zip";
-//        [JSPatchManager loadJSPatchWithZipUrlString:string];
-//    }];
 }
 
 #pragma mark -
-- (void)showViewControllers
-{
 
-    self.rootVC   = [[RootViewController alloc] init];
-    self.rootVC.title = @"Demos";
-    self.rootVC.hidesBottomBarWhenPushed = NO;
-    UIImage *image_1 = [UIImage imageNamed:@"1"];
-    UIImage *selectImage_1 = [UIImage imageNamed:@"6"];
-    self.rootVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:image_1 selectedImage:selectImage_1];
-
-    self.secondVC = [[SecondViewController alloc] init];
-    self.secondVC.title = @"Second";
-    self.secondVC.hidesBottomBarWhenPushed = NO;
-    UIImage *image_2 = [UIImage imageNamed:@"2"];
-    UIImage *selectImage_2 = [UIImage imageNamed:@"7"];
-    self.secondVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"个人" image:image_2 selectedImage:selectImage_2];
-
-    
-    self.thirdVC  = [[ThirdViewController alloc] init];
-    self.thirdVC.title = @"Third";
-    self.thirdVC.hidesBottomBarWhenPushed = NO;
-    UIImage *image_3 = [UIImage imageNamed:@"3"];
-    UIImage *selectImage_3 = [UIImage imageNamed:@"8"];
-    self.thirdVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"消息" image:image_3 selectedImage:selectImage_3];
-    
-    self.forthVC  = [[ForthViewController alloc] init];
-    self.forthVC.title = @"Forth";
-    self.forthVC.hidesBottomBarWhenPushed = NO;
-    UIImage *image_4 = [UIImage imageNamed:@"4"];
-    UIImage *selectImage_4 = [UIImage imageNamed:@"9"];
-    self.forthVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"更多" image:image_4 selectedImage:selectImage_4];
-    
-    self.fifthVC  = [[FifthViewController alloc] init];
-    self.fifthVC.title = @"分享";
-    self.fifthVC.hidesBottomBarWhenPushed = NO;
-    UIImage *image_5 = [UIImage imageNamed:@"5"];
-    UIImage *selectImage_5 = [UIImage imageNamed:@"10"];
-    
-    self.fifthVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分享" image:image_5 selectedImage:selectImage_5];
-    
-    self.rootNaVC   = [[UINavigationController alloc] initWithRootViewController:self.rootVC];
-    self.secondNaVC = [[UINavigationController alloc] initWithRootViewController:self.secondVC];
-    self.thirdNaVC  = [[UINavigationController alloc] initWithRootViewController:self.thirdVC];
-    self.forthNaVC  = [[UINavigationController alloc] initWithRootViewController:self.forthVC];
-    self.fifthNaVC  = [[UINavigationController alloc] initWithRootViewController:self.fifthVC];
-    
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[self.rootNaVC, self.secondNaVC, self.thirdNaVC, self.forthNaVC, self.fifthNaVC];
-    
-   // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
-
-}
 
 - (void)constructUI
 {
-//    UIButton *button = [UIButton newAutoLayoutView];
-//    [[UIApplication sharedApplication].keyWindow addSubview:button];
-//    
-//    [button autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:10.0f];
-//    [button autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:- 65.0f];
-//    [button autoSetDimensionsToSize:CGSizeMake(44, 44)];
-
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
     button.right = SCREEN_WIDTH - 10.0f;
     button.bottom = SCREEN_HEIGHT - 100;
@@ -160,7 +98,6 @@
 
 }
 
-#pragma mark - 
 #pragma mark method
 - (void)applicationWillResignActive:(UIApplication *)application
 {

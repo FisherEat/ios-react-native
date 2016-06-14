@@ -17,18 +17,22 @@
 @implementation GLSpringBoard
 RCT_EXPORT_MODULE();
 
-+ (RCTRootView *)rctRootViewWithClassName:(NSString *)className bridge:(RCTBridge *)bridge params:(NSDictionary *)params
++ (RCTRootView *)rctRootViewWithClassName:(NSString *)className
+                               moduleName:(NSString *)modelName
+                                    bridge:(RCTBridge *)bridge
+                                   params:(NSDictionary *)params
 {
     if (!params) {
         params = [NSDictionary dictionary];
     }
-    RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"Demos" initialProperties:@{@"className" :className, @"params": params}];
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
+                                                     moduleName:modelName
+                                              initialProperties:@{@"className" :className, @"params": params}];
     rootView.frame = [UIScreen mainScreen].bounds;
     return rootView;
 }
 
 RCT_EXPORT_METHOD(showNativeView:(NSDictionary*)params callback:(RCTResponseSenderBlock)callback) {
-    //[[GLUIManager sharedManager] showViewControllerWithName:NSStringFromClass([GLButtonDemoViewController class]) params:@{@"className": @""}];
     [ForthViewController push];
 }
 

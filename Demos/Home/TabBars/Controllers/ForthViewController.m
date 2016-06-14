@@ -10,16 +10,15 @@
 #import "RCTRootView.h"
 #import "RCTBridge.h"
 #import "GLSpringBoard.h"
+#import "Param-local.h"
 #import "GLButtonDemoViewController.h"
 
-#define HEAD_AD_VIEW_HEIGHT  (SCREEN_WIDTH/4.0f)
 @interface ForthViewController ()<RCTBridgeDelegate>
 
-@property (nonatomic, strong) UIView         *adContainer;
-@property (nonatomic, strong) NSMutableArray *adViewsArray;
-@property (nonatomic, strong) NSArray        *adList;
-@property (nonatomic, strong) UIImageView    *adImageView;
 @property (nonatomic, strong) RCTBridge *bridge;
+@property (nonatomic, copy) NSString *moduleName;
+@property (nonatomic, copy) NSString *className;
+@property (nonatomic, copy) NSString *params;
 
 @end
 
@@ -35,17 +34,17 @@
 - (void)showReactViewInForthViewController
 {
     _bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
-    RCTRootView *rootView = [GLSpringBoard rctRootViewWithClassName:@"ForthReactView" bridge:_bridge params:nil];
+    RCTRootView *rootView = [GLSpringBoard rctRootViewWithClassName:@"ForthReactView"
+                                                         moduleName:@"Demos"
+                                                             bridge:_bridge
+                                                             params:nil];
     rootView.frame = self.view.bounds;
     [self.view addSubview:rootView];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
-    //jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.116:8081/index.ios.bundle?platform=ios&dev=false"];
-    //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-    return jsCodeLocation;
+    return kJSCodeLocationURL;
 }
 
 + (void)push

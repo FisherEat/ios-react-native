@@ -13,6 +13,9 @@
 
 @interface GLSpringBoard : NSObject<RCTBridgeModule>
 
-+ (RCTRootView *)rctRootViewWithClassName:(NSString *)className bridge:(RCTBridge *)bridge params:(NSDictionary *)params;
++ (RCTRootView *)rctRootViewWithClassName:(NSString *)className
+                               moduleName:(NSString *)modelName
+                                   bridge:(RCTBridge *)bridge
+                                   params:(NSDictionary *)params;
 
 @end

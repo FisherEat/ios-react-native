@@ -22,6 +22,7 @@
 		6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
 		6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
 		6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
+		65B86E751D0FAFCC004E6235 /* GLReactBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
 		65ECE8741B588AA9003134B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8731B588AA9003134B2 /* AppDelegate.m */; };
@@ -293,6 +294,9 @@
 		6506F6341C61F2E900A4D747 /* GLCacheToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCacheToolKit.h; sourceTree = "<group>"; };
 		6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCacheToolKit.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		65B86E641D0FAB78004E6235 /* Param-local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Param-local.h"; sourceTree = "<group>"; };
+		65B86E731D0FAFCC004E6235 /* GLReactBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLReactBaseViewController.h; sourceTree = "<group>"; };
+		65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLReactBaseViewController.m; sourceTree = "<group>"; };
 		65E3E8571B9D24E2002AD494 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		65ECE86B1B588AA9003134B2 /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ECE86F1B588AA9003134B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -938,6 +942,7 @@
 				C0CA80271C3BE78500ABE564 /* DeliveryMacros.h */,
 				C0CA80281C3BE78500ABE564 /* EnumsMacros.h */,
 				65F07B551C3E00CB00E13CB7 /* SingletonDefine.h */,
+				65B86E641D0FAB78004E6235 /* Param-local.h */,
 			);
 			path = AppEngine;
 			sourceTree = "<group>";
@@ -1177,6 +1182,8 @@
 				C0F6C5481C645F7400507F3B /* GLNavigationURLHelper.m */,
 				C0917F5C1CC50A0E003A9D63 /* GLSpringBoard.h */,
 				C0917F5D1CC50A0E003A9D63 /* GLSpringBoard.m */,
+				65B86E731D0FAFCC004E6235 /* GLReactBaseViewController.h */,
+				65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */,
 			);
 			path = GLNavigator;
 			sourceTree = "<group>";
@@ -1600,6 +1607,7 @@
 				C0FEFA6E1C6DD94000C2345B /* FMDatabaseQueue.m in Sources */,
 				C0CA80A41C3C00AC00ABE564 /* GLUserRegisterView.m in Sources */,
 				65F07B5F1C3E019F00E13CB7 /* CNPPopupController.m in Sources */,
+				65B86E751D0FAFCC004E6235 /* GLReactBaseViewController.m in Sources */,
 				65F07BF31C3E0B0300E13CB7 /* GLPresentViewController.m in Sources */,
 				C0F6C5501C65B6DB00507F3B /* GLUIManager.m in Sources */,
 				C0A832861C6AD8A600F802BF /* UIRootBaseTableViewCell.m in Sources */,
