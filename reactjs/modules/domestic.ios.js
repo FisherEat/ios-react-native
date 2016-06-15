@@ -33,7 +33,7 @@ class Domestic extends Component {
     let url = "http://m.tuniu.com/event/admin/getCmsChannelAjax?pageId=1209&cityCode=";
 
     fetch(url+cityInfo.code).then((response) => {
-      response.json();
+        return response.json();
      }).then((json) => {
       _.setState({
         pageStatus: json.data
@@ -42,7 +42,8 @@ class Domestic extends Component {
   }
 
   componentDidMount() {
-
+      let cityInfo = {code: 2500, name: '上海'};
+      this.getData(cityInfo);
   }
 
   renderPage() {
@@ -50,6 +51,36 @@ class Domestic extends Component {
     var _ = this;
     var tabs = [];
     var sectionCount = 0;
+//data数据结构
+    var sections = data.map((d, index) => {
+        sectionCount ++;
+        if (d.gGroupId != 0) {
+            tabs.push(d);
+        }
+        return (
+            <View key={"react_group" + index}>
+              {
+                  d.gItems.map((dd, index) => {
+                      if (dd.mTplId == 1537) {//展示标题栏
+                          return <View></View>
+                      }
+                      if (dd.mTplId == 1152) {//展示分页滚动条
+                          return <View></View>
+                      }
+                      if (dd.mTplId == 1539) {//展示特卖产品
+                          return <View></View>
+                      }
+                      if (dd.mTplId == 1531) {//展示热门目的地
+                          return <View></View>
+                      }
+                      if (dd.mTplId == 1532) {//展示目的地
+                          return <View></View>
+                      }
+                  })
+              }
+            </View>
+        )
+    });
   return (
     <View style={styles.container}>
       <Text style={styles.welcomeTip}>拿到线上数据了...</Text>
