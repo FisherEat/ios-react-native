@@ -87,7 +87,7 @@ SINGLETON_IMPLEMENTION(GLUIManager, sharedManager)
     UIImage *image_5 = [UIImage imageNamed:@"5"];
     UIImage *selectImage_5 = [UIImage imageNamed:@"10"];
     reactVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分享" image:image_5 selectedImage:selectImage_5];
-    reactVC.moduleName = @"Demos";
+    reactVC.moduleName = @"domestic";
     reactVC.className = @"ForthReactView";
     
     self.tabBarController.viewControllers = @[[self navControllerWithRoot:rootVC],
