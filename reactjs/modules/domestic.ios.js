@@ -25,7 +25,8 @@ class Domestic extends Component {
     super(props);
     this.scrollListen = [];
     this.state = {
-      pageStatus: null
+      pageStatus: null,
+      bannerData: null,
     }
   }
 
@@ -57,49 +58,67 @@ class Domestic extends Component {
       console.log('fuck'+this.state.pageStatus);
   }
 
-  renderPage() {
-    var data = this.state.pageStatus;
-    var _ = this;
-    var tabs = [];
-    var sectionCount = 0;
-//data数据结构
-    var sections = data.map(function (d, index) {
-        sectionCount ++;
-        if (d.gGroupId != 0) {
-            tabs.push(d);
+  banner(data) {
+    var bannberItems = [];
+    for (let d of data.values()) {
+      for (let dd of d.gItems.values()) {
+        if (dd.mTplId == 1152) {
+          bannberItems = dd.mItems;
         }
-        return (
-            <View key={"react_group" + index}>
-              {
-                  d.gItems.map(function (dd, index) {
-                      // if (dd.mTplId == 1537) {//展示标题栏
-                      //     return <View key={"Title"+index}></View>
-                      // }
-                      console.log(dd.mItems);
-                      if (dd.mTplId == 1152) {//展示分页滚动条
-                          return <SectionBanner key={"SectionBanner"+index}
-                          mItems={dd.mItems}></SectionBanner>
-                      }
-                      // if (dd.mTplId == 1539) {//展示特卖产品
-                      //     return <View key={"SpecialProduct"+index}>
-                      //              <Text>展示特卖产品</Text>
-                      //            </View>
-                      // }
-                      // if (dd.mTplId == 1531) {//展示热门目的地
-                      //     return <View key={"HotDest" + index}>
-                      //              <Text>展示热门目的地</Text>
-                      //            </View>
-                      // }
-                      // if (dd.mTplId == 1532) {//展示目的地
-                      //     return <View key={"SectionServer"+index}>
-                      //               <Text>展示目的地</Text>
-                      //            </View>
-                      // }
-                  })
-              }
-            </View>
-        )
-    });
+      }
+    }
+  //  this.setState({bannerData: bannberItems});
+    return bannberItems;
+  }
+
+  renderPage() {
+//     var data = this.state.pageStatus;
+//     var _ = this;
+//     var tabs = [];
+//     var sectionCount = 0;
+//
+// //data数据结构
+//     var sections = data.map(function (d, index) {
+//         sectionCount ++;
+//         if (d.gGroupId != 0) {
+//             tabs.push(d);
+//         }
+//         return (
+//             <View key={"react_group" + index}>
+//               {
+//                   d.gItems.map(function (dd, index) {
+//                       // if (dd.mTplId == 1537) {//展示标题栏
+//                       //     return <View key={"Title"+index}></View>
+//                       // }
+//                       console.log(dd.mItems);
+//                       var myItems;
+//                       if (dd.mTplId == 1152) {
+//                         myItems = dd.mItems;
+//                       }
+//                       if (dd.mTplId == 1152) {//展示分页滚动条
+//                           return <SectionBanner key={"SectionBanner"+index}
+//                           mItems={dd.mItems}></SectionBanner>
+//                       }
+//                       // if (dd.mTplId == 1539) {//展示特卖产品
+//                       //     return <View key={"SpecialProduct"+index}>
+//                       //              <Text>展示特卖产品</Text>
+//                       //            </View>
+//                       // }
+//                       // if (dd.mTplId == 1531) {//展示热门目的地
+//                       //     return <View key={"HotDest" + index}>
+//                       //              <Text>展示热门目的地</Text>
+//                       //            </View>
+//                       // }
+//                       // if (dd.mTplId == 1532) {//展示目的地
+//                       //     return <View key={"SectionServer"+index}>
+//                       //               <Text>展示目的地</Text>
+//                       //            </View>
+//                       // }
+//                   })
+//               }
+//             </View>
+//         )
+//     });
   return (<View style={styles.container} key="react_loaded">
         <ScrollView
          ref="rootView"
@@ -107,12 +126,14 @@ class Domestic extends Component {
          onScroll={_.onScroll.bind(_)}
          style={styles.container}
          key="react_abroad">
-            <Text>mabi</Text>
+            <SectionBanner mItems={this.banner(this.state.pageStatus)} style={{width: ScreenWidth, height: 100}}></SectionBanner>
         </ScrollView>
     </View>
     )
   }
   render() {
+    var _ = this;
+
     if (!this.state.pageStatus) {
       return (
         <View style={styles.container}>
@@ -120,7 +141,13 @@ class Domestic extends Component {
         </View>
       )
     }
-    return this.renderPage();
+
+   return  <View style={styles.container} key="react_loaded">
+              <SectionBanner
+                  mItems={_.banner(this.state.pageStatus)}
+                  style={{width: ScreenWidth, height: 100}}>
+              </SectionBanner>
+         </View>;
   }
 }
 
