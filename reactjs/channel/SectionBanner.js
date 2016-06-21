@@ -31,63 +31,32 @@ class SectionBanner extends Component {
   render() {
     var self = this;
     var items = this.props.mItems;//从外部传来的参数
-    var scrollTimer = null;
     var _ = this;
-    var scrollEnd = function (x) {
-      var index = x / ScreenWidth;
-      if (index - Math.floor(x) > 0.5) {
-        index = Math.ceil(index);
-      }else {
-        index = Math.floor(index);
-      }
-      _.setState({
-        dotIndex: index
-      });
-    }
-    var scroll = function (event) {
-      clearTimeout(scrollTimer);
-      var x = event.nativeEvent.contentOffset.x;
-      var index = x / ScreenWidth;
-      if (index - Math.floor(index) > 0.5) {
-        index = Math.ceil(index);
-      }else {
-        index = Math.floor(index);
-      }
-      _.setState({
-        dotIndex: index
-      });
-    }
-
     return (
       <View>
         <ScrollView
-           onScroll={scroll}
-           scrollEventThrottle={16}
            contentOffset={{x: 0, y: 0}}
-           pagingEnable={true}
+           pagingEnabled={true}
            horizontal={true}
            contentContainerStyle={styles.slide}
            showsHorizontalScrollIndicator={false}
            directionalLockEnabled={false}
            key="slideBox">
            {
-             items.map((item, index) => {
+             items.map(function(item, index) {
                return (
-                 <TouchableHighlight
-                   onPress={()=>{}}
-                   key={"slide_pic" + index}>
+                 <TouchableHighlight>
                    <Image source={{uri: item.adImgUrl}}
                           style={styles.slideImage}
-                          resizeMode="cover"/>
-                 </TouchableHighlight>
-               )
+                          />
+                 </TouchableHighlight>)
              })
            }
         </ScrollView>
         <View style={styles.dotContainer}
               key="slideDotBox">
               {
-                items.map((item, index) => {
+                items.map(function(item, index){
                   return (
                     <View style={index==_.state.dotIndex ? sytles.slideDotActive : styles.slideDot}
                           key={"slideDot"+index}>
@@ -138,4 +107,4 @@ const styles = StyleSheet.create({
    }
 });
 
-export default SectionBanner;
+module.exports = SectionBanner;

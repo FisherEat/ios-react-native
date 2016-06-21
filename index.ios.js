@@ -10,4 +10,3 @@ var Demos = require("./reactjs/demos");
 
 AppRegistry.registerComponent('Demos', ()=> Demos);
 AppRegistry.registerComponent('domestic', ()=> domestic);
-//AppRegistry.registerComponent('abroad', ()=> abroad);
