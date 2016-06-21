@@ -77,20 +77,26 @@ class Domestic extends Component {
     alert(items);
       return (<View style={styles.container}>
             <Text>fuckkkkkkkkkkkk</Text>
-              <ScrollView style={{width:ScreenWidth, height: 100, flexDirection: 'row'}}>
-                {
-                    items.map(function(item, index) {
-                        return (<TouchableHighlight>
-                            <Image
-                               source={{uri: item.adImgUrl}}
-                               style={{width: ScreenWidth, height: ScreenWidth / 750 * 230}}/>
-                        </TouchableHighlight>)
-                    })
-                }
-              </ScrollView>
+            <SectionBanner
+               mItems={items}
+               key="SectionBanner"
+               style={{width: ScreenWidth, height: 200, backgroundColor: 'red'}}>
+            </SectionBanner>
         </View>
       )
   }
+
+  // <ScrollView style={{width:ScreenWidth, height: 100, flexDirection: 'row'}}>
+  //   {
+  //       items.map(function(item, index) {
+  //           return (<TouchableHighlight>
+  //               <Image
+  //                  source={{uri: item.adImgUrl}}
+  //                  style={{width: ScreenWidth, height: ScreenWidth / 750 * 230}}/>
+  //           </TouchableHighlight>)
+  //       })
+  //   }
+  // </ScrollView>
 
   render() {
     if (!this.state.pageStatus) {

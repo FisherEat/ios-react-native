@@ -32,16 +32,10 @@ class SectionBanner extends Component {
     var self = this;
     var items = this.props.mItems;//从外部传来的参数
     var _ = this;
+    alert(items);
     return (
       <View>
-        <ScrollView
-           contentOffset={{x: 0, y: 0}}
-           pagingEnabled={true}
-           horizontal={true}
-           contentContainerStyle={styles.slide}
-           showsHorizontalScrollIndicator={false}
-           directionalLockEnabled={false}
-           key="slideBox">
+        <ScrollView>
            {
              items.map(function(item, index) {
                return (
@@ -53,22 +47,29 @@ class SectionBanner extends Component {
              })
            }
         </ScrollView>
-        <View style={styles.dotContainer}
-              key="slideDotBox">
-              {
-                items.map(function(item, index){
-                  return (
-                    <View style={index==_.state.dotIndex ? sytles.slideDotActive : styles.slideDot}
-                          key={"slideDot"+index}>
-                    </View>
-                  )
-                })
-              }
-        </View>
       </View>
     )
   }
 }
+
+// onScroll={scroll} scrollEventThrottle={16} contentOffset={{x:0,y:0}} pagingEnabled={true}
+//                             horizontal={true} contentContainerStyle={styles.slide} showsHorizontalScrollIndicator={false}
+//                             automaticallyAdjustContentInsets={false}
+//                             directionalLockEnabled={false} key="slideBox"
+
+// <View style={styles.dotContainer}
+//       key="slideDotBox">
+//       {
+//         items.map(function(item, index){
+//           return (
+//             <View style={index==_.state.dotIndex ? sytles.slideDotActive : styles.slideDot}
+//                   key={"slideDot"+index}>
+//             </View>
+//           )
+//         })
+//       }
+// </View>
+
 
 const styles = StyleSheet.create({
   slide: {
