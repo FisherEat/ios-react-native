@@ -60,7 +60,7 @@
     CGFloat offset = 0.0f;
     NSArray *attrsArray = [super layoutAttributesForElementsInRect:rect];
     for (UICollectionViewLayoutAttributes *attr in attrsArray) {
-        if (attr.center.x - centerX > MinValue || | centerX - attr.center.x > MinValue) {
+        if (attr.center.x - centerX > 10 || centerX - attr.center.x > 10) {
             offset = attr.center.x - centerX;
             // 此刻，cell的center的x和此刻CollectionView的中心点的距离
         }
