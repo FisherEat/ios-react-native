@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, GLThirdCellType)
 @property (nonatomic, strong) NSString *imgName;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *subTitle;
+@property (nonatomic, strong) NSString *urlViewController;
 
 @end
 

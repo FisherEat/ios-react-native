@@ -67,11 +67,13 @@
                            @"研究音频视频技术、图像处理技术等",
                            @"研究即时通讯、XMPP等技术、蓝牙通讯等",
                            @"研究架构、类别、底层控件、运行时等技术"];
+    NSArray *urlViewControllers = @[@"GLPhotoCollectionViewController"];
     for (NSInteger i = 0; i< titles.count; i++) {
         GLThirdModel *model = [GLThirdModel new];
         model.title = titles[i];
         model.subTitle = subTitles[i];
         model.imgName = @"a";
+        model.urlViewController = (urlViewControllers.count > i) ? urlViewControllers[i]:@"GLBarViewController";
         [ds addObject:model];
     }
     NSArray *array = [NSArray arrayWithArray:ds];
@@ -84,6 +86,13 @@
     GLThirdDataModel *item = self.dataSource.collectionDataSourceArray[indexPath.row];
     [listCell bindModel:item.model];
     return listCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GLThirdDataModel *model = self.dataSource.collectionDataSourceArray[indexPath.row];
+    GLThirdModel *data = model.model;
+    [UIManager showViewControllerWithName:data.urlViewController];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
