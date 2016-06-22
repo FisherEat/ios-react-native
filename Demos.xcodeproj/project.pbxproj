@@ -190,6 +190,7 @@
 		C0A73B6E1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B6D1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m */; };
 		C0A73B711D1AB9670098A7F5 /* GLThirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B701D1AB9670098A7F5 /* GLThirdTableViewCell.m */; };
 		C0A73B741D1AC83B0098A7F5 /* GLThirdDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B731D1AC83B0098A7F5 /* GLThirdDataSource.m */; };
+		C0A73B7A1D1ADFA50098A7F5 /* GLPhotoFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B791D1ADFA50098A7F5 /* GLPhotoFlowLayout.m */; };
 		C0A832861C6AD8A600F802BF /* UIRootBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832851C6AD8A600F802BF /* UIRootBaseTableViewCell.m */; };
 		C0A832891C6AD8F100F802BF /* UIRootButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832881C6AD8F100F802BF /* UIRootButtonTableViewCell.m */; };
 		C0A8328C1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328B1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m */; };
@@ -416,6 +417,8 @@
 		C0A73B701D1AB9670098A7F5 /* GLThirdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLThirdTableViewCell.m; sourceTree = "<group>"; };
 		C0A73B721D1AC83B0098A7F5 /* GLThirdDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLThirdDataSource.h; sourceTree = "<group>"; };
 		C0A73B731D1AC83B0098A7F5 /* GLThirdDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLThirdDataSource.m; sourceTree = "<group>"; };
+		C0A73B781D1ADFA50098A7F5 /* GLPhotoFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPhotoFlowLayout.h; sourceTree = "<group>"; };
+		C0A73B791D1ADFA50098A7F5 /* GLPhotoFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPhotoFlowLayout.m; sourceTree = "<group>"; };
 		C0A832841C6AD8A600F802BF /* UIRootBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRootBaseTableViewCell.h; sourceTree = "<group>"; };
 		C0A832851C6AD8A600F802BF /* UIRootBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRootBaseTableViewCell.m; sourceTree = "<group>"; };
 		C0A832871C6AD8F100F802BF /* UIRootButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRootButtonTableViewCell.h; sourceTree = "<group>"; };
@@ -1002,6 +1005,8 @@
 			children = (
 				C0A73B6C1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.h */,
 				C0A73B6D1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m */,
+				C0A73B781D1ADFA50098A7F5 /* GLPhotoFlowLayout.h */,
+				C0A73B791D1ADFA50098A7F5 /* GLPhotoFlowLayout.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1729,6 +1734,7 @@
 				C0FEFA6C1C6DD94000C2345B /* FMDatabaseAdditions.m in Sources */,
 				65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */,
 				C0A73B741D1AC83B0098A7F5 /* GLThirdDataSource.m in Sources */,
+				C0A73B7A1D1ADFA50098A7F5 /* GLPhotoFlowLayout.m in Sources */,
 				C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */,
 				6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */,
 				C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */,

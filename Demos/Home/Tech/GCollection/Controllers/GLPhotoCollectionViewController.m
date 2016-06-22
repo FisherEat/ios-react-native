@@ -10,6 +10,8 @@
 
 @interface GLPhotoCollectionViewController ()
 
+@property (nonatomic, strong) UICollectionView *collectionView;
+
 @end
 
 @implementation GLPhotoCollectionViewController
@@ -21,6 +23,17 @@
     self.topBarView.titleText = @"CollectionViewLayout";
 }
 
+- (void)setUpViews
+{
+    
+}
+
+- (UICollectionView *)collectionView
+{
+    if (!_collectionView) {
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:nil];
+    }
+}
 - (void)topBarLeftButtonPressed:(UIButton *)button
 {
     [UIManager backHome];
