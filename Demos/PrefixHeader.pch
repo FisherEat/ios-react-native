@@ -28,7 +28,7 @@
 #import "MBProgressHUD.h"
 #import "MJExtension.h"
 
-//#import "NSString+TNExtends.h"
+#import "PureLayout.h"
 
 #import "GLUIManager.h"
 #import "GLNavigator.h"

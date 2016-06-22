@@ -185,6 +185,11 @@
 		C059BE6D1C46A72E00225A21 /* TextViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */; };
 		C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
 		C0917F5E1CC50A0E003A9D63 /* GLSpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = C0917F5D1CC50A0E003A9D63 /* GLSpringBoard.m */; };
+		C0A73B681D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B671D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m */; };
+		C0A73B6B1D1AB6870098A7F5 /* GLPhotoCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B6A1D1AB6870098A7F5 /* GLPhotoCollectionModel.m */; };
+		C0A73B6E1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B6D1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m */; };
+		C0A73B711D1AB9670098A7F5 /* GLThirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B701D1AB9670098A7F5 /* GLThirdTableViewCell.m */; };
+		C0A73B741D1AC83B0098A7F5 /* GLThirdDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A73B731D1AC83B0098A7F5 /* GLThirdDataSource.m */; };
 		C0A832861C6AD8A600F802BF /* UIRootBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832851C6AD8A600F802BF /* UIRootBaseTableViewCell.m */; };
 		C0A832891C6AD8F100F802BF /* UIRootButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832881C6AD8F100F802BF /* UIRootButtonTableViewCell.m */; };
 		C0A8328C1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328B1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m */; };
@@ -401,6 +406,16 @@
 		C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCollectionViewCell.m; sourceTree = "<group>"; };
 		C0917F5C1CC50A0E003A9D63 /* GLSpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSpringBoard.h; sourceTree = "<group>"; };
 		C0917F5D1CC50A0E003A9D63 /* GLSpringBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSpringBoard.m; sourceTree = "<group>"; };
+		C0A73B661D1AB66D0098A7F5 /* GLPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		C0A73B671D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		C0A73B691D1AB6870098A7F5 /* GLPhotoCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPhotoCollectionModel.h; sourceTree = "<group>"; };
+		C0A73B6A1D1AB6870098A7F5 /* GLPhotoCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPhotoCollectionModel.m; sourceTree = "<group>"; };
+		C0A73B6C1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		C0A73B6D1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		C0A73B6F1D1AB9670098A7F5 /* GLThirdTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLThirdTableViewCell.h; sourceTree = "<group>"; };
+		C0A73B701D1AB9670098A7F5 /* GLThirdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLThirdTableViewCell.m; sourceTree = "<group>"; };
+		C0A73B721D1AC83B0098A7F5 /* GLThirdDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLThirdDataSource.h; sourceTree = "<group>"; };
+		C0A73B731D1AC83B0098A7F5 /* GLThirdDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLThirdDataSource.m; sourceTree = "<group>"; };
 		C0A832841C6AD8A600F802BF /* UIRootBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRootBaseTableViewCell.h; sourceTree = "<group>"; };
 		C0A832851C6AD8A600F802BF /* UIRootBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRootBaseTableViewCell.m; sourceTree = "<group>"; };
 		C0A832871C6AD8F100F802BF /* UIRootButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRootButtonTableViewCell.h; sourceTree = "<group>"; };
@@ -754,6 +769,8 @@
 				65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */,
 				C0A8328D1C6AE18700F802BF /* GLRootHomeDatas.h */,
 				C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */,
+				C0A73B721D1AC83B0098A7F5 /* GLThirdDataSource.h */,
+				C0A73B731D1AC83B0098A7F5 /* GLThirdDataSource.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -772,6 +789,8 @@
 				C0A832881C6AD8F100F802BF /* UIRootButtonTableViewCell.m */,
 				C0A8328A1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.h */,
 				C0A8328B1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m */,
+				C0A73B6F1D1AB9670098A7F5 /* GLThirdTableViewCell.h */,
+				C0A73B701D1AB9670098A7F5 /* GLThirdTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -926,6 +945,67 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C0A73B5F1D1AB5680098A7F5 /* Tech */ = {
+			isa = PBXGroup;
+			children = (
+				C0A73B621D1AB5CE0098A7F5 /* GContext */,
+				C0A73B611D1AB5B20098A7F5 /* GXMPP */,
+				C0A73B601D1AB59B0098A7F5 /* GCollection */,
+			);
+			path = Tech;
+			sourceTree = "<group>";
+		};
+		C0A73B601D1AB59B0098A7F5 /* GCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C0A73B651D1AB6140098A7F5 /* Views */,
+				C0A73B641D1AB60C0098A7F5 /* Models */,
+				C0A73B631D1AB6050098A7F5 /* Controllers */,
+			);
+			path = GCollection;
+			sourceTree = "<group>";
+		};
+		C0A73B611D1AB5B20098A7F5 /* GXMPP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GXMPP;
+			sourceTree = "<group>";
+		};
+		C0A73B621D1AB5CE0098A7F5 /* GContext */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GContext;
+			sourceTree = "<group>";
+		};
+		C0A73B631D1AB6050098A7F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0A73B661D1AB66D0098A7F5 /* GLPhotoCollectionViewController.h */,
+				C0A73B671D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C0A73B641D1AB60C0098A7F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0A73B691D1AB6870098A7F5 /* GLPhotoCollectionModel.h */,
+				C0A73B6A1D1AB6870098A7F5 /* GLPhotoCollectionModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0A73B651D1AB6140098A7F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0A73B6C1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.h */,
+				C0A73B6D1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C0CA80211C3BE6DA00ABE564 /* GLScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -961,6 +1041,7 @@
 		C0CA80391C3BEA9A00ABE564 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C0A73B5F1D1AB5680098A7F5 /* Tech */,
 				C017E82E1CC91962001BF11B /* ReactNativeViews */,
 				C0F6C56E1C675E0A00507F3B /* ButtonDemos */,
 				C0F6C5581C671BFD00507F3B /* CollectionViews */,
@@ -1595,6 +1676,7 @@
 				C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */,
 				65F07C171C3E0B0300E13CB7 /* TestNet101ViewController.m in Sources */,
 				65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */,
+				C0A73B711D1AB9670098A7F5 /* GLThirdTableViewCell.m in Sources */,
 				6506F62E1C61F22F00A4D747 /* UIButton+Position.m in Sources */,
 				65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */,
 				C0FEFA761C6DDB2D00C2345B /* GLCDataBaseOperationManager.m in Sources */,
@@ -1628,6 +1710,8 @@
 				65F07B661C3E05D200E13CB7 /* PassValueBlockVC.m in Sources */,
 				C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */,
 				6506F62B1C61F22F00A4D747 /* NSString+URLEncoding.m in Sources */,
+				C0A73B6B1D1AB6870098A7F5 /* GLPhotoCollectionModel.m in Sources */,
+				C0A73B681D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m in Sources */,
 				C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */,
 				C0A832921C6AE3F500F802BF /* TNHomeSpecialSaleCell.m in Sources */,
 				C0E9D77B1C381F1700138BAB /* UIColor+TKCategory.m in Sources */,
@@ -1644,6 +1728,7 @@
 				65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */,
 				C0FEFA6C1C6DD94000C2345B /* FMDatabaseAdditions.m in Sources */,
 				65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */,
+				C0A73B741D1AC83B0098A7F5 /* GLThirdDataSource.m in Sources */,
 				C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */,
 				6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */,
 				C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */,
@@ -1680,6 +1765,7 @@
 				C0CA80A11C3BFDB000ABE564 /* GLLoginManager.m in Sources */,
 				C0E9D7651C381C3900138BAB /* UIViewController+Analysis.m in Sources */,
 				65F07B531C3E002000E13CB7 /* NSObject+BlackMagic.m in Sources */,
+				C0A73B6E1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m in Sources */,
 				65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */,
 				C0FEFA6F1C6DD94000C2345B /* FMResultSet.m in Sources */,
 				65F07C141C3E0B0300E13CB7 /* PickerViewDemoVC.m in Sources */,

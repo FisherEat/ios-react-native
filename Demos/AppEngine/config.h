@@ -60,6 +60,9 @@
 #define APP_FONT_NORMAL APP_FONT(14.0f)
 #define APP_FONT_LARGE APP_FONT(16.0f)
 
+//常用高度、宽度宏
+#define TOP_BAR_HEIGHT 64.5f
+#define BOTTOM_BAR_HEIGHT 64.5F
 
 //方法简写
 #define mAlert(title, msg, cancel, other)   [[[UIAlertView alloc] initWithTitle:title \
