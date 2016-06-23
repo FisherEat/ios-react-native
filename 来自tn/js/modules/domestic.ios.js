@@ -93,7 +93,6 @@ class Domestic extends Component {
             }, 100)
         }
 
-
         var sections = data.map(function (d, index) {
             sectionCount++;
             if (d.gGroupId != 0) {

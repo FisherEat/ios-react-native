@@ -14,6 +14,7 @@ import React, {
   TouchableHighlight
 } from 'react-native';
 import SectionBanner from '../channel/SectionBanner'
+import SectionTitle from '../channel/SectionTitle'
 import AppConfig from '../common/AppConfig'
 
 class Domestic extends Component {
@@ -68,15 +69,55 @@ class Domestic extends Component {
   }
 
   renderPage() {
-    var items = this.getItemDatas();
-      return (<View style={styles.container}>
-            <SectionBanner
-               mItems={items}
-               key="SectionBanner"
-               style={{width: AppConfig.ScreenWidth, height: 200, backgroundColor: 'red'}}>
-            </SectionBanner>
+    var data = this.state.pageStatus;
+    var _ = this;
+    var tabs = [];
+    var sectionCount = 0;
+
+    var sections = data.map(function (d, index) {
+        sectionCount ++;
+        if (d.gGroupId != 0) {
+            tabs.push(d);
+        }
+        return (
+            <View>
+               {
+                   d.gItems.map(function(dd, index) {
+                    //    if (dd.mTplId == 1537) {
+                    //        return <SectionTitle        mItems={dd.mItems}></SectionTitle>;
+                    //    }
+                       if (dd.mTplId == 1152) {
+                           return <SectionBanner mItems={dd.mItems}></SectionBanner>
+                       }
+                   })
+               }
+            </View>
+        )
+    });
+
+    return (
+        <View style={styles.container}>
+            {
+                <ScrollView style={styles.container}>
+                    {
+                        [...sections]
+                    }
+                </ScrollView>
+            }
         </View>
-      )
+    )
+
+
+
+    // var items = this.getItemDatas();
+    //   return (<View style={styles.container}>
+    //         <SectionBanner
+    //            mItems={items}
+    //            key="SectionBanner"
+    //            style={{width: AppConfig.ScreenWidth, height: 200, backgroundColor: 'red'}}>
+    //         </SectionBanner>
+    //     </View>
+    //   )
   }
 
   render() {
