@@ -67,7 +67,7 @@
                            @"研究音频视频技术、图像处理技术等",
                            @"研究即时通讯、XMPP等技术、蓝牙通讯等",
                            @"研究架构、类别、底层控件、运行时等技术"];
-    NSArray *urlViewControllers = @[@"GLPhotoCollectionViewController"];
+    NSArray *urlViewControllers = @[@"GLPhotoCollectionViewController", @"GLWeiboComposeViewController"];
     for (NSInteger i = 0; i< titles.count; i++) {
         GLThirdModel *model = [GLThirdModel new];
         model.title = titles[i];

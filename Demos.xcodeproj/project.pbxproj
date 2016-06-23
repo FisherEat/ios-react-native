@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6500EFC91CC9B54D00B845EC /* RCTViewManager.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 6500EFC71CC9B54D00B845EC /* RCTViewManager.h */; };
 		6500EFCA1CC9B54D00B845EC /* RCTViewManager.m in Frameworks */ = {isa = PBXBuildFile; fileRef = 6500EFC81CC9B54D00B845EC /* RCTViewManager.m */; };
+		6504DB361D1BBE0A0072CE0F /* GLWeiboListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6504DB351D1BBE0A0072CE0F /* GLWeiboListViewController.m */; };
 		6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
 		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; };
 		6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; };
@@ -22,6 +23,7 @@
 		6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
 		6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
 		6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
+		653EDABE1D1BC21300BF8005 /* GLWeiboComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653EDABD1D1BC21300BF8005 /* GLWeiboComposeViewController.m */; };
 		65B86E751D0FAFCC004E6235 /* GLReactBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
@@ -274,6 +276,8 @@
 /* Begin PBXFileReference section */
 		6500EFC71CC9B54D00B845EC /* RCTViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTViewManager.h; path = "node_modules/react-native/React/Views/RCTViewManager.h"; sourceTree = "<group>"; };
 		6500EFC81CC9B54D00B845EC /* RCTViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTViewManager.m; path = "node_modules/react-native/React/Views/RCTViewManager.m"; sourceTree = "<group>"; };
+		6504DB341D1BBE0A0072CE0F /* GLWeiboListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWeiboListViewController.h; sourceTree = "<group>"; };
+		6504DB351D1BBE0A0072CE0F /* GLWeiboListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWeiboListViewController.m; sourceTree = "<group>"; };
 		6506F6021C61897B00A4D747 /* GLCommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCommonModel.h; sourceTree = "<group>"; };
 		6506F6031C61897B00A4D747 /* GLCommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCommonModel.m; sourceTree = "<group>"; };
 		6506F6071C618F8100A4D747 /* AppVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppVersion.plist; sourceTree = "<group>"; };
@@ -300,6 +304,8 @@
 		6506F6341C61F2E900A4D747 /* GLCacheToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCacheToolKit.h; sourceTree = "<group>"; };
 		6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCacheToolKit.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		653EDABC1D1BC21300BF8005 /* GLWeiboComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWeiboComposeViewController.h; sourceTree = "<group>"; };
+		653EDABD1D1BC21300BF8005 /* GLWeiboComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWeiboComposeViewController.m; sourceTree = "<group>"; };
 		65B86E641D0FAB78004E6235 /* Param-local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Param-local.h"; sourceTree = "<group>"; };
 		65B86E731D0FAFCC004E6235 /* GLReactBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLReactBaseViewController.h; sourceTree = "<group>"; };
 		65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLReactBaseViewController.m; sourceTree = "<group>"; };
@@ -583,6 +589,41 @@
 				CA8AB85E7A636C441E328926 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6504DB2F1D1BBD9C0072CE0F /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				6504DB331D1BBDEB0072CE0F /* Models */,
+				6504DB321D1BBDE80072CE0F /* Views */,
+				6504DB311D1BBDE10072CE0F /* Controllers */,
+			);
+			path = Weibo;
+			sourceTree = "<group>";
+		};
+		6504DB311D1BBDE10072CE0F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6504DB341D1BBE0A0072CE0F /* GLWeiboListViewController.h */,
+				6504DB351D1BBE0A0072CE0F /* GLWeiboListViewController.m */,
+				653EDABC1D1BC21300BF8005 /* GLWeiboComposeViewController.h */,
+				653EDABD1D1BC21300BF8005 /* GLWeiboComposeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6504DB321D1BBDE80072CE0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6504DB331D1BBDEB0072CE0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6506F6011C61896200A4D747 /* BaseModel */ = {
@@ -951,6 +992,7 @@
 		C0A73B5F1D1AB5680098A7F5 /* Tech */ = {
 			isa = PBXGroup;
 			children = (
+				6504DB2F1D1BBD9C0072CE0F /* Weibo */,
 				C0A73B621D1AB5CE0098A7F5 /* GContext */,
 				C0A73B611D1AB5B20098A7F5 /* GXMPP */,
 				C0A73B601D1AB59B0098A7F5 /* GCollection */,
@@ -1686,6 +1728,7 @@
 				65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */,
 				C0FEFA761C6DDB2D00C2345B /* GLCDataBaseOperationManager.m in Sources */,
 				C0CA805E1C3BF35F00ABE564 /* AddTBCellViewController.m in Sources */,
+				653EDABE1D1BC21300BF8005 /* GLWeiboComposeViewController.m in Sources */,
 				C0CA80951C3BFD4A00ABE564 /* FifthViewController.m in Sources */,
 				C04D14BA1C68C850006E5490 /* GLButtonCardScrollView.m in Sources */,
 				C0A8328C1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m in Sources */,
@@ -1720,6 +1763,7 @@
 				C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */,
 				C0A832921C6AE3F500F802BF /* TNHomeSpecialSaleCell.m in Sources */,
 				C0E9D77B1C381F1700138BAB /* UIColor+TKCategory.m in Sources */,
+				6504DB361D1BBE0A0072CE0F /* GLWeiboListViewController.m in Sources */,
 				C0F6C5491C645F7400507F3B /* GLNavigationURLHelper.m in Sources */,
 				65F07BEB1C3E0B0300E13CB7 /* AnimationDemoVC.m in Sources */,
 				65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */,

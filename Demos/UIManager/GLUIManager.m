@@ -110,7 +110,7 @@ SINGLETON_IMPLEMENTION(GLUIManager, sharedManager)
 - (UINavigationController *)navControllerWithRoot:(UIViewController *)controller
 {
     UINavigationController *aNav = [[UINavigationController alloc] initWithRootViewController:controller];
-    aNav.navigationBarHidden = YES;
+    aNav.navigationController.toolbarHidden = YES;
     return aNav;
 }
 
