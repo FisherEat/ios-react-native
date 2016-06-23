@@ -16,9 +16,10 @@ import React, {
   Dimensions,
   ScrollView,
   ListView,
-  TouchableHighlight
+  TouchableHighlight,
+  NativeModules,
 } from 'react-native';
-var ScreenWidth = Dimensions.get("window").width;
+import AppConfig from '../common/AppConfig'
 
 class SectionBanner extends Component {
   constructor(props) {
@@ -29,47 +30,58 @@ class SectionBanner extends Component {
   }
 
   render() {
-    var self = this;
-    var items = this.props.mItems;//从外部传来的参数
     var _ = this;
-    alert(items);
+    var items = this.props.mItems;//从外部传来的参数
+    var lastItem = items[items.length - 1];
+    lastItem.adImgUrl = "http://m.tuniucdn.com/fb2/t1/G1/M00/B6/BD/Cii9EFcxgKeIWTHcAAEXPp9X3UIAAFXJQMgNaEAARdW25.jpeg";
+
+//Math.round()是四舍五入的。。。Math.ceil()是向上取整。。Math.floor()是向下取整
+    var scrollTimer = null;
+    var scroll = function (event) {
+        clearTimeout(scrollTimer);
+        var x = event.nativeEvent.contentOffset.x;
+        var index = x / AppConfig.ScreenWidth;
+        index = Math.round(index);
+        _.setState({
+            dotIndex: index
+        });
+    }
+
     return (
       <View>
-        <ScrollView>
+        <ScrollView onScroll={scroll}
+                    scrollEventThrottle={20}
+                    horizontal={true}
+                    contentOffset={{x:0, y:0}}
+                    contentContainerStyle={styles.slide}
+                    automaticallyAdjustContentInsets={false}
+                    pagingEnabled={true}
+                    showsHorizontalScrollIndicator={false}>
            {
              items.map(function(item, index) {
                return (
-                 <TouchableHighlight>
+                 <TouchableHighlight onPress={() => {}}>
                    <Image source={{uri: item.adImgUrl}}
                           style={styles.slideImage}
-                          />
+                          resizeMode="cover"/>
                  </TouchableHighlight>)
              })
            }
         </ScrollView>
+        <View style={styles.dotContainer} key="slideDotBox">
+           {
+               items.map(function(item, index) {
+                   return (
+                       <View style={index == _.state.dotIndex ? styles.slideDotActive : styles.slideDot }>
+                       </View>
+                   )
+               })
+           }
+        </View>
       </View>
     )
   }
 }
-
-// onScroll={scroll} scrollEventThrottle={16} contentOffset={{x:0,y:0}} pagingEnabled={true}
-//                             horizontal={true} contentContainerStyle={styles.slide} showsHorizontalScrollIndicator={false}
-//                             automaticallyAdjustContentInsets={false}
-//                             directionalLockEnabled={false} key="slideBox"
-
-// <View style={styles.dotContainer}
-//       key="slideDotBox">
-//       {
-//         items.map(function(item, index){
-//           return (
-//             <View style={index==_.state.dotIndex ? sytles.slideDotActive : styles.slideDot}
-//                   key={"slideDot"+index}>
-//             </View>
-//           )
-//         })
-//       }
-// </View>
-
 
 const styles = StyleSheet.create({
   slide: {
@@ -79,22 +91,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   slideDot: {
-    width: 4,
-    height: 4,
-    borderRadius: 4,
+    width: 8,
+    height: 8,
+    borderRadius: 8,
     backgroundColor: '#fff',
     margin: 4,
   },
   slideDotActive: {
-    width: 4,
-    height: 4,
-    borderRadius: 4,
+    width: 8,
+    height: 8,
+    borderRadius: 8,
     backgroundColor: "#ff8a00",
     margin: 4
   },
   dotContainer: {
        height: 4,
-       width: ScreenWidth,
+       width: AppConfig.ScreenWidth,
        top: -10,
        left: 0,
        flex: 1,
@@ -103,8 +115,8 @@ const styles = StyleSheet.create({
        flexDirection: "row"
    },
    slideImage: {
-       width: ScreenWidth,
-       height: ScreenWidth / 750 * 230,
+       width: AppConfig.ScreenWidth,
+       height: AppConfig.ScreenWidth / 750 * 230,
    }
 });
 

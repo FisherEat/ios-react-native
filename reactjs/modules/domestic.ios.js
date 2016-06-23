@@ -9,17 +9,12 @@ import React, {
   Text,
   View,
   Image,
-  Linking,
   Dimensions,
   ScrollView,
-  ListView,
-  NativeModules,
   TouchableHighlight
 } from 'react-native';
 import SectionBanner from '../channel/SectionBanner'
-
-let ScreenWidth = Dimensions.get("window").width;
-let ScreenHeight = Dimensions.get("window").height;
+import AppConfig from '../common/AppConfig'
 
 class Domestic extends Component {
   constructor(props) {
@@ -74,29 +69,15 @@ class Domestic extends Component {
 
   renderPage() {
     var items = this.getItemDatas();
-    alert(items);
       return (<View style={styles.container}>
-            <Text>fuckkkkkkkkkkkk</Text>
             <SectionBanner
                mItems={items}
                key="SectionBanner"
-               style={{width: ScreenWidth, height: 200, backgroundColor: 'red'}}>
+               style={{width: AppConfig.ScreenWidth, height: 200, backgroundColor: 'red'}}>
             </SectionBanner>
         </View>
       )
   }
-
-  // <ScrollView style={{width:ScreenWidth, height: 100, flexDirection: 'row'}}>
-  //   {
-  //       items.map(function(item, index) {
-  //           return (<TouchableHighlight>
-  //               <Image
-  //                  source={{uri: item.adImgUrl}}
-  //                  style={{width: ScreenWidth, height: ScreenWidth / 750 * 230}}/>
-  //           </TouchableHighlight>)
-  //       })
-  //   }
-  // </ScrollView>
 
   render() {
     if (!this.state.pageStatus) {
@@ -113,8 +94,9 @@ class Domestic extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    height: ScreenHeight,
+    height: AppConfig.ScreenHeight,
     backgroundColor: '#f0f0f0',
+    marginTop: 64.5,
   },
   welcomeTip: {
     fontSize: 20,

@@ -8,6 +8,8 @@ const {
 
 const ScreenWidth = Dimensions.get('window').width
 const ScreenHeight = Dimensions.get('window').height
+const TOP_BAR_HEIGHT = 64.5
+const BOTTOM_BAR_HEIGHT = 64.5
 
 // 定义设备像素密度和设计稿的像素密度, 以及具体使用时的缩放因子
 const PR = PixelRatio.get() //设备的像素密度
@@ -57,6 +59,8 @@ export default {
     ENV,
     ScreenWidth,
     ScreenHeight,
+    TOP_BAR_HEIGHT,
+    BOTTOM_BAR_HEIGHT,
     NavHeight,
     NavBarHeight,
     StatusBarHeight,
@@ -79,5 +83,3 @@ export default {
     TabBarTintColor,
     NavBarTintColor,
 }
-
-
