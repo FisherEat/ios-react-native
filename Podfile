@@ -4,6 +4,7 @@ inhibit_all_warnings!
 #公有库
 source 'https://github.com/CocoaPods/Specs.git'
 
+pod 'YYKit', '~> 1.0.3'
 pod 'MBProgressHUD', '0.9.1'
 pod 'BlocksKit', '2.2.5'
 pod 'pop', '1.0.8'

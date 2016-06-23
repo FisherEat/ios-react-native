@@ -60,7 +60,7 @@ SINGLETON_IMPLEMENTION(GLUIManager, sharedManager)
     
     ThirdViewController *thirdVC  = [[ThirdViewController alloc] init];
     thirdVC.title = @"Third";
-    thirdVC.hidesBottomBarWhenPushed = NO;
+    thirdVC.hidesBottomBarWhenPushed = YES;
     UIImage *image_3 = [UIImage imageNamed:@"3"];
     UIImage *selectImage_3 = [UIImage imageNamed:@"8"];
     thirdVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"消息" image:image_3 selectedImage:selectImage_3];

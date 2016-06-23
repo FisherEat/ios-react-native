@@ -24,6 +24,10 @@
 		6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
 		6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
 		653EDABE1D1BC21300BF8005 /* GLWeiboComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653EDABD1D1BC21300BF8005 /* GLWeiboComposeViewController.m */; };
+		653EDAC11D1BD5E300BF8005 /* GLWeiboStatusHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 653EDAC01D1BD5E300BF8005 /* GLWeiboStatusHelper.m */; };
+		653EDAC41D1BD63C00BF8005 /* GLWeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 653EDAC31D1BD63C00BF8005 /* GLWeiboModel.m */; };
+		653EDAC71D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 653EDAC61D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m */; };
+		653EDAC91D1BDA2200BF8005 /* ResourceWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 653EDAC81D1BDA2200BF8005 /* ResourceWeibo.bundle */; };
 		65B86E751D0FAFCC004E6235 /* GLReactBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
@@ -306,6 +310,13 @@
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		653EDABC1D1BC21300BF8005 /* GLWeiboComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWeiboComposeViewController.h; sourceTree = "<group>"; };
 		653EDABD1D1BC21300BF8005 /* GLWeiboComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWeiboComposeViewController.m; sourceTree = "<group>"; };
+		653EDABF1D1BD5E300BF8005 /* GLWeiboStatusHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWeiboStatusHelper.h; sourceTree = "<group>"; };
+		653EDAC01D1BD5E300BF8005 /* GLWeiboStatusHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWeiboStatusHelper.m; sourceTree = "<group>"; };
+		653EDAC21D1BD63C00BF8005 /* GLWeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWeiboModel.h; sourceTree = "<group>"; };
+		653EDAC31D1BD63C00BF8005 /* GLWeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWeiboModel.m; sourceTree = "<group>"; };
+		653EDAC51D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWeiboStatusXComposeTextParser.h; sourceTree = "<group>"; };
+		653EDAC61D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWeiboStatusXComposeTextParser.m; sourceTree = "<group>"; };
+		653EDAC81D1BDA2200BF8005 /* ResourceWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceWeibo.bundle; sourceTree = "<group>"; };
 		65B86E641D0FAB78004E6235 /* Param-local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Param-local.h"; sourceTree = "<group>"; };
 		65B86E731D0FAFCC004E6235 /* GLReactBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLReactBaseViewController.h; sourceTree = "<group>"; };
 		65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLReactBaseViewController.m; sourceTree = "<group>"; };
@@ -622,6 +633,12 @@
 		6504DB331D1BBDEB0072CE0F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				653EDABF1D1BD5E300BF8005 /* GLWeiboStatusHelper.h */,
+				653EDAC01D1BD5E300BF8005 /* GLWeiboStatusHelper.m */,
+				653EDAC21D1BD63C00BF8005 /* GLWeiboModel.h */,
+				653EDAC31D1BD63C00BF8005 /* GLWeiboModel.m */,
+				653EDAC51D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.h */,
+				653EDAC61D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -638,6 +655,7 @@
 		6506F6051C618EA400A4D747 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				653EDAC81D1BDA2200BF8005 /* ResourceWeibo.bundle */,
 				6506F6061C618EA400A4D747 /* Documents */,
 			);
 			path = Resources;
@@ -1577,6 +1595,7 @@
 				65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */,
 				65F07B4E1C3DFF1E00E13CB7 /* LaunchScreen.xib in Resources */,
 				65F07BF01C3E0B0300E13CB7 /* CustomCell.xib in Resources */,
+				653EDAC91D1BDA2200BF8005 /* ResourceWeibo.bundle in Resources */,
 				65F07B4F1C3DFF1E00E13CB7 /* Main.storyboard in Resources */,
 				65ECE87C1B588AA9003134B2 /* Images.xcassets in Resources */,
 			);
@@ -1761,6 +1780,7 @@
 				C0A73B6B1D1AB6870098A7F5 /* GLPhotoCollectionModel.m in Sources */,
 				C0A73B681D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m in Sources */,
 				C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */,
+				653EDAC41D1BD63C00BF8005 /* GLWeiboModel.m in Sources */,
 				C0A832921C6AE3F500F802BF /* TNHomeSpecialSaleCell.m in Sources */,
 				C0E9D77B1C381F1700138BAB /* UIColor+TKCategory.m in Sources */,
 				6504DB361D1BBE0A0072CE0F /* GLWeiboListViewController.m in Sources */,
@@ -1773,6 +1793,7 @@
 				C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */,
 				6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */,
 				C0917F5E1CC50A0E003A9D63 /* GLSpringBoard.m in Sources */,
+				653EDAC11D1BD5E300BF8005 /* GLWeiboStatusHelper.m in Sources */,
 				6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */,
 				65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */,
 				C0FEFA6C1C6DD94000C2345B /* FMDatabaseAdditions.m in Sources */,
@@ -1817,6 +1838,7 @@
 				65F07B531C3E002000E13CB7 /* NSObject+BlackMagic.m in Sources */,
 				C0A73B6E1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m in Sources */,
 				65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */,
+				653EDAC71D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m in Sources */,
 				C0FEFA6F1C6DD94000C2345B /* FMResultSet.m in Sources */,
 				65F07C141C3E0B0300E13CB7 /* PickerViewDemoVC.m in Sources */,
 				C04D14B71C68485A006E5490 /* GLButtonCardDatas.m in Sources */,
