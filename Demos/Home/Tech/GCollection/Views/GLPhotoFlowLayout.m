@@ -10,7 +10,7 @@
 
 @implementation GLPhotoFlowLayout
 
-- (instancetype)init
+- (id)init
 {
     if (self = [super init]) {
         

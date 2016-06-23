@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GLPhotoFlowLayout : UICollectionViewLayout
+@interface GLPhotoFlowLayout : UICollectionViewFlowLayout
 
 @end
