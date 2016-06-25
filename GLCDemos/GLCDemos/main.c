@@ -13,6 +13,7 @@ void swap(int *, int *);
 void testStruct();
 void getNumer ();
 void getFile();
+void structType();
 
 int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
@@ -31,7 +32,8 @@ int main(int argc, const char * argv[]) {
 
 //    getNumer();
     
-    getFile();
+//    getFile();
+    structType();
     return 0;
 }
 
@@ -77,4 +79,26 @@ void getFile() {
     }else {
         printf("ooooooo");
     }
+}
+
+void structType() {
+    typedef struct Test {
+        int x ;
+        int y;
+        char *name;
+    }test, *myTest;
+    
+    test aStruct;
+    aStruct.x = 8;
+    aStruct.y = 0;
+    aStruct.name = "shitshi";
+    printf("......%s", aStruct.name);
+    
+    printf("\n");
+    
+    myTest aaa;
+    aaa = (struct Test*)malloc(sizeof(struct Test*));
+    aaa->name = (char *)malloc(sizeof(char));
+    aaa->name = "s000000000000hit";
+    printf("%s.....", aaa->name);
 }
