@@ -73,6 +73,19 @@ class Domestic extends Component {
     var _ = this;
     var tabs = [];
     var sectionCount = 0;
+    // var indexTag = function* titleCountGenerator() {
+    //     let i = 0;
+    //     while(true) {
+    //         yield i++;
+    //     }
+    // }();
+
+    var tcg = function* titleCountGenerator() {
+            let i = 0;
+            while (true) {
+                yield i++;
+            }
+        }();
 
     var sections = data.map(function (d, index) {
         sectionCount ++;
@@ -83,9 +96,10 @@ class Domestic extends Component {
             <View>
                {
                    d.gItems.map(function(dd, index) {
-                    //    if (dd.mTplId == 1537) {
-                    //        return <SectionTitle        mItems={dd.mItems}></SectionTitle>;
-                    //    }
+                       if (dd.mTplId == 1537) {
+                        return <SectionTitle mItems={dd.mItems} index={tcg.next().value}></SectionTitle>
+
+                       }
                        if (dd.mTplId == 1152) {
                            return <SectionBanner mItems={dd.mItems}></SectionBanner>
                        }
