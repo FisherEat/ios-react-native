@@ -12,3 +12,9 @@
 #include <stdio.h>
 
 #endif /* GLStringfile_h */
+
+extern void bubbleSort(void);
+
+extern void testAverage(void);
+
+extern void testPointer(void);

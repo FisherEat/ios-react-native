@@ -9,50 +9,72 @@
 #include <stdio.h>
 #include "GLStringfile.h"
 
-void bubbleSort() {
-    int array[6] = {4, 0, 5, 6, 8, 2};
-    int sum = 0;
-    for (int i =0; i<6; i++) {
-        int flag = 0;
-        for (int j =0; j < 6-i-1; j++) {
-            if (array[j] > array[j+1]) {
-                flag = 1;
-                int temp = array[i];
-                array[j] = array[j+1];
-                array[j+1] = temp;
-            }
-            sum ++;
-        }
-        if (flag ==0) {
+void swap(int *, int *);
+void testStruct();
+void getNumer ();
+void getFile();
+
+int main(int argc, const char * argv[]) {
+    printf("Hello, World!\n");
+    
+//    testAverage();
+//
+//    bubbleSort();
+//    
+//    testPointer();
+//    
+//    int first = 90;
+//    int second = 89;
+//    swap(&first, &second);
+
+//    testStruct();
+
+//    getNumer();
+    
+    getFile();
+    return 0;
+}
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void testStruct() {
+    struct Student {
+        char studentId;
+        char name;
+        int age;
+        double score;
+    };
+    
+    struct Student stuA, stuB;
+    stuA.age = 10;
+    stuA.name = 'c';
+    stuA.score = 900.0;
+    stuA.studentId = 't';
+    printf("%d\n", (stuA.studentId));
+    return;
+}
+
+void getNumer () {
+    int number = 7;
+    while (1) {
+        if (number % 2 == 1 && number % 3 == 2 && number % 5 == 4 && number % 6 == 5 && number % 7 == 0) {
+            printf("阶梯一共有%d阶", number);
             break;
         }
-    }
-    
-    for (int i = 0; i< 5; i ++) {
-        printf("%d", array[i]);
+        number++;
     }
     return;
 }
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    
-    for (int i =1; i <= 9; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("%d * %d = %d\t", j, i, i * j);
-        }
-        printf("\n");
+void getFile() {
+    FILE *fp;
+    if ((fp = fopen("/Users/schiller/Desktop/test", "at+")) == NULL) {
+        printf("fuck, failed");
+    }else {
+        printf("ooooooo");
     }
-    
-    int scores[6] = {1, 3, 4, 5, 6, 7};
-    int sum = 0;
-    for (int i = 0; i < 6; i++) {
-        sum += scores[i];
-    }
-    printf("总分 = %d , 平均分=%lf", sum, sum / 6.0);
-    
-    bubbleSort();
-    
-    return 0;
 }
