@@ -15,6 +15,7 @@ import React, {
 } from 'react-native';
 import SectionBanner from '../channel/SectionBanner'
 import SectionTitle from '../channel/SectionTitle'
+import SectionSpecial from '../channel/SectionSpecial'
 import AppConfig from '../common/AppConfig'
 
 class Domestic extends Component {
@@ -73,12 +74,6 @@ class Domestic extends Component {
     var _ = this;
     var tabs = [];
     var sectionCount = 0;
-    // var indexTag = function* titleCountGenerator() {
-    //     let i = 0;
-    //     while(true) {
-    //         yield i++;
-    //     }
-    // }();
 
     var tcg = function* titleCountGenerator() {
             let i = 0;
@@ -98,7 +93,9 @@ class Domestic extends Component {
                    d.gItems.map(function(dd, index) {
                        if (dd.mTplId == 1537) {
                         return <SectionTitle mItems={dd.mItems} index={tcg.next().value}></SectionTitle>
-
+                       }
+                       if (dd.mTplId == 1539) {
+                           return <SectionSpecial  mItems={dd.mItems} ></SectionSpecial>
                        }
                        if (dd.mTplId == 1152) {
                            return <SectionBanner mItems={dd.mItems}></SectionBanner>
