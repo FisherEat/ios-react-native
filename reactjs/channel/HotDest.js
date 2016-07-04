@@ -36,7 +36,12 @@ export default class HotDest extends Component {
         var self = this;
         var items = this.props.mItems;
 
-        return (<View>
+        return (<View style={styles.HotDest}>
+              {
+                  items.map(function(item, index) {
+                      
+                  })
+              }
             </View>)
     }
 }
@@ -55,6 +60,6 @@ const styles = StyleSheet.create({
 
     },
     tdImg: {
-        
+
     }
 })

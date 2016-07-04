@@ -222,6 +222,7 @@
 		C0CA809E1C3BFDA500ABE564 /* GLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA809D1C3BFDA500ABE564 /* GLLoginView.m */; };
 		C0CA80A11C3BFDB000ABE564 /* GLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A01C3BFDB000ABE564 /* GLLoginManager.m */; };
 		C0CA80A41C3C00AC00ABE564 /* GLUserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A31C3C00AC00ABE564 /* GLUserRegisterView.m */; };
+		C0E69F0D1D2AA9E4002C2FBE /* GLThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E69F0C1D2AA9E4002C2FBE /* GLThreadViewController.m */; };
 		C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */; };
 		C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7611C381C3900138BAB /* UIView+Positioning.m */; };
 		C0E9D7651C381C3900138BAB /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7631C381C3900138BAB /* UIViewController+Analysis.m */; };
@@ -489,6 +490,8 @@
 		C0CA80A01C3BFDB000ABE564 /* GLLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLoginManager.m; sourceTree = "<group>"; };
 		C0CA80A21C3C00AC00ABE564 /* GLUserRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUserRegisterView.h; sourceTree = "<group>"; };
 		C0CA80A31C3C00AC00ABE564 /* GLUserRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUserRegisterView.m; sourceTree = "<group>"; };
+		C0E69F0B1D2AA9E4002C2FBE /* GLThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLThreadViewController.h; sourceTree = "<group>"; };
+		C0E69F0C1D2AA9E4002C2FBE /* GLThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLThreadViewController.m; sourceTree = "<group>"; };
 		C0E9D73B1C38174A00138BAB /* XTOnePixelLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTOnePixelLine.h; sourceTree = "<group>"; };
 		C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTOnePixelLine.m; sourceTree = "<group>"; };
 		C0E9D7601C381C3900138BAB /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
@@ -1010,6 +1013,7 @@
 		C0A73B5F1D1AB5680098A7F5 /* Tech */ = {
 			isa = PBXGroup;
 			children = (
+				C0E69F071D2AA976002C2FBE /* GLThread */,
 				6504DB2F1D1BBD9C0072CE0F /* Weibo */,
 				C0A73B621D1AB5CE0098A7F5 /* GContext */,
 				C0A73B611D1AB5B20098A7F5 /* GXMPP */,
@@ -1228,6 +1232,39 @@
 				C0CA808A1C3BFD4A00ABE564 /* SecondViewController.m */,
 				C0CA808B1C3BFD4A00ABE564 /* ThirdViewController.h */,
 				C0CA808C1C3BFD4A00ABE564 /* ThirdViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C0E69F071D2AA976002C2FBE /* GLThread */ = {
+			isa = PBXGroup;
+			children = (
+				C0E69F0A1D2AA9B2002C2FBE /* Controllers */,
+				C0E69F091D2AA9AD002C2FBE /* Views */,
+				C0E69F081D2AA9A8002C2FBE /* Models */,
+			);
+			path = GLThread;
+			sourceTree = "<group>";
+		};
+		C0E69F081D2AA9A8002C2FBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0E69F091D2AA9AD002C2FBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0E69F0A1D2AA9B2002C2FBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0E69F0B1D2AA9E4002C2FBE /* GLThreadViewController.h */,
+				C0E69F0C1D2AA9E4002C2FBE /* GLThreadViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1837,6 +1874,7 @@
 				C0E9D7651C381C3900138BAB /* UIViewController+Analysis.m in Sources */,
 				65F07B531C3E002000E13CB7 /* NSObject+BlackMagic.m in Sources */,
 				C0A73B6E1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m in Sources */,
+				C0E69F0D1D2AA9E4002C2FBE /* GLThreadViewController.m in Sources */,
 				65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */,
 				653EDAC71D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m in Sources */,
 				C0FEFA6F1C6DD94000C2345B /* FMResultSet.m in Sources */,

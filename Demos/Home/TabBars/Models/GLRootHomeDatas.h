@@ -32,12 +32,9 @@ typedef NS_ENUM(NSInteger, GLTestDemoTypeCell)
     LoginDemoCell ,
     WebViewDemoCell ,
     TopBarViewDemoCell ,
-    TableViewDemoCell 
+    TableViewDemoCell,
+    ThreadViewDemoCell,
 };
-
-@interface GLRootHomeDatas : NSObject
-
-@end
 
 @interface GLRootHomeData : NSObject
 

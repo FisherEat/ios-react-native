@@ -8,7 +8,7 @@
 
 #import "GLRootHomeDatas.h"
 
-@implementation GLRootHomeDatas
+@interface GLRootHomeData ()
 
 @end
 
@@ -20,50 +20,48 @@
     NSMutableArray *dataSourceArray = [NSMutableArray array];
     NSMutableDictionary *dataSourceDic = [NSMutableDictionary dictionary];
     
-    GLRootHomeCellModel *cellModel0 = [[GLRootHomeCellModel alloc] init];
-    cellModel0.cellType = GLRootHomeCellTypeHeader;
-    cellModel0.cellHeight = 143.0f;
-    cellModel0.model = nil;
-    [dataSourceArray addObject:cellModel0];
-    
-    for (NSInteger i = 1; i < demoArray.count; i++) {
+    [demoArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (idx == 0) {
+            GLRootHomeCellModel *cellModel0 = [[GLRootHomeCellModel alloc] init];
+            cellModel0.cellType = GLRootHomeCellTypeHeader;
+            cellModel0.cellHeight = 143.0f;
+            cellModel0.model = nil;
+            [dataSourceArray addObject:cellModel0];
+        }
         GLRootHomeCellModel *cellModel = [[GLRootHomeCellModel alloc] init];
         cellModel.cellType = GLRootHomeCellTypeSingle;
         cellModel.cellHeight = 50.0f;
         GLRootSingelCellModel *model = [[GLRootSingelCellModel alloc] init];
-        model.titleName = demoArray[i-1];
-        model.cellId = [GLRootHomeData cellId:i - 1];
-        model.toUrlString = urlsArray[i - 1];
+        model.cellId = idx;
+        model.titleName = demoArray[idx];
+        model.toUrlString = urlsArray[idx];
         cellModel.model = model;
         [dataSourceArray addObject:cellModel];
-    }
+    }];
+    
     dataSourceDic[@(0)] = dataSourceArray;
 
     return dataSourceDic;
 }
 
-+ (NSArray *)getToUrlString
++ (NSMutableArray *)getToUrlString
 {
     NSString *defaultURL = @"defualtURL";
-    NSMutableArray *urls = [NSMutableArray arrayWithArray:@[defaultURL,GLURLDemoButtonCell,GLURLDemoScrollCell,GLURLDemoPickerViewCell,
-        GLURLDemoTabBarCell,
-        GLURLDemoAnimationCell,
-        GLURLDemoTestCell,
-        defaultURL,
-        GLURLDemoNetWorkCell,
-        GLURLDemoPassValueCell,
-        GLURLDemoTextViewCell,
-        GLURLDemoAdScrollTimerCell,
-        GLURLDemoLoginCell,
-        GLURLDemoWebViewCell,
-        GLURLDemoTopBarCell,
-        GLURLDemoTableViewCell]];
+    NSMutableArray *urls = [NSMutableArray arrayWithArray:@[
+                                GLURLDemoButtonCell, GLURLDemoScrollCell, GLURLDemoPickerViewCell,
+                                GLURLDemoTabBarCell, GLURLDemoAnimationCell, GLURLDemoTestCell,
+                                defaultURL, GLURLDemoNetWorkCell, GLURLDemoPassValueCell,
+                                GLURLDemoTextViewCell, GLURLDemoAdScrollTimerCell, GLURLDemoLoginCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoTableViewCell,        GLURLDemoThreadViewCell]];
     return urls;
 }
 
 + (NSMutableArray *)getDemoArray
 {
-     NSMutableArray *demoArray = [NSMutableArray arrayWithArray:@[@"customDemo", @"ButtonDemo", @"ScrollDemo", @"PickerViewDemo", @"TarBarDemo", @"AnimationDemo", @"TestDemo", @"LGALerViewDemo", @"NetWorkDemo", @"PassValueBlock", @"TextViewDemo", @"AdScrollTimerDemo", @"LoginDemo", @"WebViewDemo", @"TopBarViewDemo", @"TableViewTypesDemo"]];
+     NSMutableArray *demoArray = [NSMutableArray arrayWithArray:@[
+                                        @"简单按钮", @"ScrollView滚动", @"PickerView滚动", @"底部TabBar",
+                                        @"动画Demo", @"委托传值", @"自定义AlertView", @"网络框架",
+                                        @"传值", @"测试TextView", @"滚动动画计时器", @"登录",
+                                        @"微博H5跳转", @"自定义TopBarView", @"自定义TabelView", @"多线程Demo"]];
     return demoArray;
 }
 

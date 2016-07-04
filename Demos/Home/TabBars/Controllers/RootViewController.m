@@ -46,43 +46,15 @@ static NSString *const defaultCellIdentifer = @"defaultCellIdentifer";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Demos";
+    self.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self setUpTableView];
     [self initDataSource];
     
     [self setScrollAdvertise];
- 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCalendarMsgSuccess:) name:@"SelectCalendarFromView" object:nil];
     
     [self addrefreshTable];
-
-    [self test];
-}
-
-#pragma mark - runtime
-- (void)test
-{
-    Class newClass = objc_allocateClassPair([UIView class], "GaolongCustomView", 0);
-    class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:");
-    objc_registerClassPair(newClass);
-    id instanceOfNewClass = [[newClass alloc] init];
-    [instanceOfNewClass performSelector:@selector(report)];
-}
-
-void ReportFunction(id self, SEL _cmd)
-{
-    NSLog(@"This object is %p", self);
-    NSLog(@"Class is %@ , and super is %@",[self class], [self superclass]);
-    Class currentClass = [self class];
-    for (int i = 1; i < 5; i++) {
-        NSLog(@"Following the isa poiter %d times gives %p", i, currentClass);
-        currentClass = object_getClass(currentClass);
-    }
-    
-    NSLog(@"NSObject's class is %p", [NSObject class]);
-    NSLog(@"NSObject's meta class is %p", object_getClass([NSObject class]));
 }
 
 #pragma mark - UI Events
@@ -140,11 +112,6 @@ void ReportFunction(id self, SEL _cmd)
 - (void)passValueByDelegate:(NSString *)delegate
 {
    
-}
-
-- (void)getCalendarMsgSuccess:(NSNotification *)aNotification
-{
-    
 }
 
 #pragma mark 设置顶部轮播广告栏
@@ -295,7 +262,6 @@ void ReportFunction(id self, SEL _cmd)
     mAlert(@"提示", msg, @"Cancel", @"OK");
     
     return msg;
-    
 }
 
 - (void)report
