@@ -7,6 +7,7 @@
 //
 
 #import "GLThreadViewController.h"
+#import "GLThreadDataSource.h"
 
 @interface GLThreadViewController ()
 
@@ -16,8 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+//    [GLThreadDataSource runInSyncThread];
+    
+//    [GLThreadDataSource blockInSyncThread];
+    
+    [GLThreadDataSource groupThreads];
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

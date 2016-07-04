@@ -223,6 +223,7 @@
 		C0CA80A11C3BFDB000ABE564 /* GLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A01C3BFDB000ABE564 /* GLLoginManager.m */; };
 		C0CA80A41C3C00AC00ABE564 /* GLUserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A31C3C00AC00ABE564 /* GLUserRegisterView.m */; };
 		C0E69F0D1D2AA9E4002C2FBE /* GLThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E69F0C1D2AA9E4002C2FBE /* GLThreadViewController.m */; };
+		C0E69F101D2AB53F002C2FBE /* GLThreadDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E69F0F1D2AB53F002C2FBE /* GLThreadDataSource.m */; };
 		C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */; };
 		C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7611C381C3900138BAB /* UIView+Positioning.m */; };
 		C0E9D7651C381C3900138BAB /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7631C381C3900138BAB /* UIViewController+Analysis.m */; };
@@ -492,6 +493,8 @@
 		C0CA80A31C3C00AC00ABE564 /* GLUserRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUserRegisterView.m; sourceTree = "<group>"; };
 		C0E69F0B1D2AA9E4002C2FBE /* GLThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLThreadViewController.h; sourceTree = "<group>"; };
 		C0E69F0C1D2AA9E4002C2FBE /* GLThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLThreadViewController.m; sourceTree = "<group>"; };
+		C0E69F0E1D2AB53F002C2FBE /* GLThreadDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLThreadDataSource.h; sourceTree = "<group>"; };
+		C0E69F0F1D2AB53F002C2FBE /* GLThreadDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLThreadDataSource.m; sourceTree = "<group>"; };
 		C0E9D73B1C38174A00138BAB /* XTOnePixelLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTOnePixelLine.h; sourceTree = "<group>"; };
 		C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTOnePixelLine.m; sourceTree = "<group>"; };
 		C0E9D7601C381C3900138BAB /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
@@ -1249,6 +1252,8 @@
 		C0E69F081D2AA9A8002C2FBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C0E69F0E1D2AB53F002C2FBE /* GLThreadDataSource.h */,
+				C0E69F0F1D2AB53F002C2FBE /* GLThreadDataSource.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1817,6 +1822,7 @@
 				C0A73B6B1D1AB6870098A7F5 /* GLPhotoCollectionModel.m in Sources */,
 				C0A73B681D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m in Sources */,
 				C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */,
+				C0E69F101D2AB53F002C2FBE /* GLThreadDataSource.m in Sources */,
 				653EDAC41D1BD63C00BF8005 /* GLWeiboModel.m in Sources */,
 				C0A832921C6AE3F500F802BF /* TNHomeSpecialSaleCell.m in Sources */,
 				C0E9D77B1C381F1700138BAB /* UIColor+TKCategory.m in Sources */,
