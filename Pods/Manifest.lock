@@ -70,6 +70,9 @@ PODS:
   - Magnet-XMPPFramework/XEP-0203 (3.6.10):
     - Magnet-XMPPFramework/Core
     - Magnet-XMPPFramework/XEP-0082
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
   - MJExtension (3.0.8)
@@ -117,6 +120,7 @@ DEPENDENCIES:
   - JSPatch (= 0.1.5)
   - LGAlertView (= 1.0.0)
   - Magnet-XMPPFramework (= 3.6.10)
+  - Mantle (~> 2.0.7)
   - Masonry (= 0.6.2)
   - MBProgressHUD (= 0.9.1)
   - MJExtension (= 3.0.8)
@@ -154,6 +158,7 @@ SPEC CHECKSUMS:
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   LGAlertView: 1d44becef2159b99741c0634216234cb8553c705
   Magnet-XMPPFramework: 004ab3dbc139338e97a5012a796485b0fcff6891
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 12d2875959b4a0f936ae86b22a1eb6b0251c50ba
@@ -166,6 +171,6 @@ SPEC CHECKSUMS:
   UIView+Positioning: e93fe9e3186d1ed7d60e344aa12787911e902056
   YYKit: fa66d61240458f14562c33c85c91d11131e43261
 
-PODFILE CHECKSUM: cb7dd4352e4de5c8327f871a679ac822128a80e0
+PODFILE CHECKSUM: f9601da7608f43c54b6cc873a06ba714e37ed82c
 
 COCOAPODS: 1.0.1
