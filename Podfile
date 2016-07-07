@@ -2,6 +2,7 @@ platform :ios, '7.0'
 inhibit_all_warnings!
 
 #公有库
+target "Demos" do
 source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'YYKit', '~> 1.0.3'
@@ -23,9 +24,6 @@ pod 'FLEX', '2.0.0'
 pod 'Magnet-XMPPFramework', '3.6.10'
 
 #私有库
-source 'https://git.coding.net/schiller/GLSpecs.git'
-
-pod 'podTestLibrary', '~> 1.0.0'
 
 pod 'React', :path => './node_modules/react-native', :subspecs => [
   'Core',
@@ -41,3 +39,5 @@ pod 'React', :path => './node_modules/react-native', :subspecs => [
   'RCTVibration',
   'RCTLinkingIOS',
 ]
+
+end

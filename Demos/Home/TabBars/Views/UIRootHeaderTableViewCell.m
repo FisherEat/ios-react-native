@@ -46,13 +46,14 @@
 
 - (void)setUpConstraints
 {
-    [self.titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeRight];
-    [self.titleLabel autoSetDimension:ALDimensionHeight toSize:self.contentView.height];
+    [self.titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeLeft];
     [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:10.0f];
+   
     [self.accessoryImg autoPinEdgeToSuperviewEdge:ALEdgeTop];
     [self.accessoryImg autoPinEdgeToSuperviewEdge:ALEdgeBottom];
     [self.accessoryImg autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:10.0f];
     [self.accessoryImg autoSetDimension:ALDimensionWidth toSize:50.0f];
+    
     [self.bottomLine autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:1.0f];
     [self.bottomLine autoPinEdgeToSuperviewEdge:ALEdgeLeft];
     [self.bottomLine autoPinEdgeToSuperviewEdge:ALEdgeRight];
