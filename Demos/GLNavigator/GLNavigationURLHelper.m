@@ -30,6 +30,7 @@ NSString *const GLURLDemoWebViewCell = @"demoapp://demo/home/webviewcell";
 NSString *const GLURLDemoTableViewCell = @"demoapp://demo/home/tableviewcell";
 NSString *const GLURLDemoThreadViewCell = @"demoapp://demo/home/threadviewcell";
 NSString *const GLURLDemoMantleViewCell = @"demoapp://demo/home/mantleviewcell";
+NSString *const GLURLDemoReactViewCell = @"demoapp://demo/home/reactviewcell";
 
 @implementation GLNavigationURLHelper
 
@@ -57,7 +58,8 @@ NSString *const GLURLDemoMantleViewCell = @"demoapp://demo/home/mantleviewcell";
                         GLURLDemoWebViewCell :@"WebViewDemo",
                         GLURLDemoTableViewCell :@"GLUserLoginViewController",
                         GLURLDemoThreadViewCell :@"GLThreadViewController",
-                        GLURLDemoMantleViewCell :@"GLMantleViewController"
+                        GLURLDemoMantleViewCell :@"GLMantleViewController",
+                        GLURLDemoReactViewCell: @"GLReactBaseViewController",
                         };
     });
     

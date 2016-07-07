@@ -25,6 +25,10 @@
 
 - (void)initReactView
 {
+    if (self.moduleName == nil || [self.moduleName isEqualToString:@""]) {
+        self.moduleName = @"TuniuChannel";
+        self.className = @"GLReactBaseViewController";
+    }
     _bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
     RCTRootView *rootView = [GLSpringBoard rctRootViewWithClassName:self.className
                                                          moduleName:self.moduleName

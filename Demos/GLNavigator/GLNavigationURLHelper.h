@@ -24,7 +24,7 @@ FOUNDATION_EXTERN NSString *const GLURLDemoWebViewCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoTableViewCell;
 FOUNDATION_EXPORT NSString *const GLURLDemoThreadViewCell;
 FOUNDATION_EXPORT NSString *const GLURLDemoMantleViewCell;
-
+FOUNDATION_EXPORT NSString *const GLURLDemoReactViewCell;
 @interface GLNavigationURLHelper : NSObject
 
 + (void)registerAllURLs;

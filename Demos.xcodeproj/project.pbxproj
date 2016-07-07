@@ -948,13 +948,6 @@
 			path = Extra;
 			sourceTree = "<group>";
 		};
-		C017E82E1CC91962001BF11B /* ReactNativeViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReactNativeViews;
-			sourceTree = "<group>";
-		};
 		C0273BF01C79C9BA00CC364B /* Demo WatchKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -987,6 +980,37 @@
 				C0273C011C79C9BA00CC364B /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C037D9531D2E9249005DEE93 /* GLReact */ = {
+			isa = PBXGroup;
+			children = (
+				C037D9541D2E9249005DEE93 /*  Models */,
+				C037D9551D2E9249005DEE93 /* Controllers */,
+				C037D9561D2E9249005DEE93 /* Views */,
+			);
+			path = GLReact;
+			sourceTree = "<group>";
+		};
+		C037D9541D2E9249005DEE93 /*  Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = " Models";
+			sourceTree = "<group>";
+		};
+		C037D9551D2E9249005DEE93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C037D9561D2E9249005DEE93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C04D14A91C683DD7006E5490 /* Controllers */ = {
@@ -1060,6 +1084,7 @@
 		C0A73B5F1D1AB5680098A7F5 /* Tech */ = {
 			isa = PBXGroup;
 			children = (
+				C037D9531D2E9249005DEE93 /* GLReact */,
 				6530E4E91D2DF50700BCF3C1 /* GLMantle */,
 				C0E69F071D2AA976002C2FBE /* GLThread */,
 				6504DB2F1D1BBD9C0072CE0F /* Weibo */,
@@ -1159,7 +1184,6 @@
 			isa = PBXGroup;
 			children = (
 				C0A73B5F1D1AB5680098A7F5 /* Tech */,
-				C017E82E1CC91962001BF11B /* ReactNativeViews */,
 				C0F6C56E1C675E0A00507F3B /* ButtonDemos */,
 				C0F6C5581C671BFD00507F3B /* CollectionViews */,
 				C059BE5F1C46A31E00225A21 /* Lists */,
