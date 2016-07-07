@@ -27,6 +27,7 @@
 #import "LGAlertView.h"
 #import "MBProgressHUD.h"
 #import "MJExtension.h"
+#import "Mantle.h"
 
 #import "PureLayout.h"
 

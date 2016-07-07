@@ -51,7 +51,7 @@
                                 GLURLDemoButtonCell, GLURLDemoScrollCell, GLURLDemoPickerViewCell,
                                 GLURLDemoTabBarCell, GLURLDemoAnimationCell, GLURLDemoTestCell,
                                 defaultURL, GLURLDemoNetWorkCell, GLURLDemoPassValueCell,
-                                GLURLDemoTextViewCell, GLURLDemoAdScrollTimerCell, GLURLDemoLoginCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoTableViewCell,        GLURLDemoThreadViewCell]];
+                                GLURLDemoTextViewCell, GLURLDemoAdScrollTimerCell, GLURLDemoLoginCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoTableViewCell,        GLURLDemoThreadViewCell, GLURLDemoMantleViewCell]];
     return urls;
 }
 
@@ -61,7 +61,7 @@
                                         @"简单按钮", @"ScrollView滚动", @"PickerView滚动", @"底部TabBar",
                                         @"动画Demo", @"委托传值", @"自定义AlertView", @"网络框架",
                                         @"传值", @"测试TextView", @"滚动动画计时器", @"登录",
-                                        @"微博H5跳转", @"自定义TopBarView", @"自定义TabelView", @"多线程Demo"]];
+                                        @"微博H5跳转", @"自定义TopBarView", @"自定义TabelView", @"多线程Demo", @"测试Mantle框架"]];
     return demoArray;
 }
 
