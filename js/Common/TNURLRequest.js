@@ -8,20 +8,20 @@
    success: 71000, //请求成功
  }
 
- function get(path,params={}) {
-  // let fetchUrl = `${host}?`
-  var url = 'http://m.tuniu.com';
+ function get(path,params={}, host=HostSite) {
+  let fetchUrl = `${host}/${path}?`
    for (let key in params) {
-    url += key + '=' + params[key] + '&'
+    fetchUrl += key + '=' + params[key] + '&'
    }
 
+   alert(fetchUrl);
    const requestParams = {
      method: 'GET',
      header: {
        'Content-Type': 'application/x-www-form-urlencoded'
      }
    }
-     return fetch(url, requestParams)
+     return fetch(fetchUrl, requestParams)
             .then((response) => response.json())
             .catch((error) => {console.log(error)})
  }

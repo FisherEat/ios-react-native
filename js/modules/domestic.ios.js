@@ -46,25 +46,20 @@ class Domestic extends Component {
 
     getData(cityInfo) {
         var _ = this;
-        //cityInfo.code
         var params = {pageId: 1209, cityCode:cityInfo.code};
         var path = "event/admin/getCmsChannelAjax";
+
         TNURLRequest.get(path, params).then((response) => {
             _.setState({
-                pageStatus: json.data
+                pageStatus: response.data
             });
         }).catch((error) => {
             console.log('Error happened ....:' + error);
         });
-        // fetch("http://m.tuniu.com/event/admin/getCmsChannelAjax?pageId=1209&cityCode=" + cityInfo.code).then((response)=>response.json()).then(function (json) {
-        //     _.setState({
-        //         pageStatus: json.data
-        //     });
-        // })
     }
 
     componentDidMount() {
-        let cityData = {cityCode: 2500};
+        let cityData = {code: 2500};
         this.getData(cityData);
         // NativeModules.TNReactNativeUtil.rn_loadCitycallBack((cityData) => {
         //     this.getData(cityData);
