@@ -1,0 +1,16 @@
+{
+  "name": "swiper",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "15.0.2",
+    "react-native": "^0.26.0",
+    "react-timer-mixin": "^0.13.3"
+  },
+  "devDependencies": {
+    "rnpm-plugin-upgrade": "^0.26.0"
+  }
+}
