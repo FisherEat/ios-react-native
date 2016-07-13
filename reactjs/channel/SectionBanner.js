@@ -30,6 +30,7 @@ class SectionBanner extends Component {
   }
 
   render() {
+  	alert('shit');
     var _ = this;
     var items = this.props.mItems;//从外部传来的参数
     var lastItem = items[items.length - 1];

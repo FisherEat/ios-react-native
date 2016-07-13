@@ -18,6 +18,9 @@ import SectionTitle from '../channel/SectionTitle'
 import SectionSpecial from '../channel/SectionSpecial'
 import AppConfig from '../common/AppConfig'
 
+//滑动图片组件测试
+import ScrollImage from '../channel/ScrollImage'
+
 class Domestic extends Component {
   constructor(props) {
     super(props);

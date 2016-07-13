@@ -13,7 +13,7 @@ import React, {
     TouchableOpacity,
     ScrollView,
     ListView,
-    NativeModules
+    NativeModules,
 } from 'react-native';
 import appHre from '../appUtils/appHref'
 
