@@ -19,6 +19,7 @@ profile
 *.xcuserdata
 *.xcuserdatad
 *.xcodeproj/xcuserdata/*.xcuserdatad
+*.xcworkspace/xcuserdata/*.xcuserdatad
 
 DerivedData
 .idea/
