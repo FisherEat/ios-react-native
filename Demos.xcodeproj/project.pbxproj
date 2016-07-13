@@ -55,7 +55,6 @@
 		65F07BF21C3E0B0300E13CB7 /* GLNetWorkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B901C3E0B0300E13CB7 /* GLNetWorkDemo.m */; };
 		65F07BF31C3E0B0300E13CB7 /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B921C3E0B0300E13CB7 /* GLPresentViewController.m */; };
 		65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */; };
-		65F07BF51C3E0B0300E13CB7 /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */; };
 		65F07C121C3E0B0300E13CB7 /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */; };
 		65F07C131C3E0B0300E13CB7 /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */; };
 		65F07C151C3E0B0300E13CB7 /* SubButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE01C3E0B0300E13CB7 /* SubButtonDemoVC.m */; };
@@ -91,7 +90,6 @@
 		C0273B0F1C79C09B00CC364B /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
 		C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */; };
 		C0273B111C79C09B00CC364B /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; };
-		C0273B121C79C09B00CC364B /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */; };
 		C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80801C3BFBF300ABE564 /* LoginDemoVC.m */; };
 		C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D76A1C381D2100138BAB /* NSArray+GLStuff.m */; };
 		C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
@@ -191,7 +189,8 @@
 		C0C92E5A1D36717D00A9124E /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E591D36717D00A9124E /* TNTableViewCell.m */; };
 		C0C92E5E1D3671D200A9124E /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E5D1D3671D200A9124E /* GLBarViewController.m */; };
 		C0C92E711D36781E00A9124E /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E701D36781E00A9124E /* AnimationDemoVC.m */; };
-		C0C92E751D36786B00A9124E /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E741D36786B00A9124E /* ScrollDemoVC.m */; };
+		C0C92E7A1D36791100A9124E /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E791D36791100A9124E /* ScrollDemoVC.m */; };
+		C0C92E7D1D36793F00A9124E /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E7C1D36793F00A9124E /* GLTrainScrollBarView.m */; };
 		C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
 		C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
 		C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
@@ -360,8 +359,6 @@
 		65F07B921C3E0B0300E13CB7 /* GLPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPresentViewController.m; sourceTree = "<group>"; };
 		65F07B931C3E0B0300E13CB7 /* GLSearchMoreTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSearchMoreTypeView.h; sourceTree = "<group>"; };
 		65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSearchMoreTypeView.m; sourceTree = "<group>"; };
-		65F07B951C3E0B0300E13CB7 /* GLTrainScrollBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTrainScrollBarView.h; sourceTree = "<group>"; };
-		65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTrainScrollBarView.m; sourceTree = "<group>"; };
 		65F07BD91C3E0B0300E13CB7 /* LayoutSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSubviews.h; sourceTree = "<group>"; };
 		65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSubviews.m; sourceTree = "<group>"; };
 		65F07BDB1C3E0B0300E13CB7 /* NetWorkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkCell.h; sourceTree = "<group>"; };
@@ -436,8 +433,10 @@
 		C0C92E5D1D3671D200A9124E /* GLBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBarViewController.m; sourceTree = "<group>"; };
 		C0C92E6F1D36781E00A9124E /* AnimationDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemoVC.h; sourceTree = "<group>"; };
 		C0C92E701D36781E00A9124E /* AnimationDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoVC.m; sourceTree = "<group>"; };
-		C0C92E731D36786B00A9124E /* ScrollDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollDemoVC.h; sourceTree = "<group>"; };
-		C0C92E741D36786B00A9124E /* ScrollDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollDemoVC.m; sourceTree = "<group>"; };
+		C0C92E781D36791100A9124E /* ScrollDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollDemoVC.h; sourceTree = "<group>"; };
+		C0C92E791D36791100A9124E /* ScrollDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollDemoVC.m; sourceTree = "<group>"; };
+		C0C92E7B1D36793F00A9124E /* GLTrainScrollBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTrainScrollBarView.h; sourceTree = "<group>"; };
+		C0C92E7C1D36793F00A9124E /* GLTrainScrollBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTrainScrollBarView.m; sourceTree = "<group>"; };
 		C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
 		C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
 		C0CA80261C3BE78500ABE564 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -900,8 +899,6 @@
 				65F07B921C3E0B0300E13CB7 /* GLPresentViewController.m */,
 				65F07B931C3E0B0300E13CB7 /* GLSearchMoreTypeView.h */,
 				65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */,
-				65F07B951C3E0B0300E13CB7 /* GLTrainScrollBarView.h */,
-				65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */,
 				65F07BD91C3E0B0300E13CB7 /* LayoutSubviews.h */,
 				65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */,
 				65F07BDB1C3E0B0300E13CB7 /* NetWorkCell.h */,
@@ -1144,10 +1141,28 @@
 		C0C92E721D36784300A9124E /* ScrollViews */ = {
 			isa = PBXGroup;
 			children = (
-				C0C92E731D36786B00A9124E /* ScrollDemoVC.h */,
-				C0C92E741D36786B00A9124E /* ScrollDemoVC.m */,
+				C0C92E771D3678FD00A9124E /* Controllers */,
+				C0C92E761D3678F900A9124E /* Views */,
 			);
 			path = ScrollViews;
+			sourceTree = "<group>";
+		};
+		C0C92E761D3678F900A9124E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0C92E7B1D36793F00A9124E /* GLTrainScrollBarView.h */,
+				C0C92E7C1D36793F00A9124E /* GLTrainScrollBarView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0C92E771D3678FD00A9124E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0C92E781D36791100A9124E /* ScrollDemoVC.h */,
+				C0C92E791D36791100A9124E /* ScrollDemoVC.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C0CA80211C3BE6DA00ABE564 /* GLScrollView */ = {
@@ -1815,7 +1830,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */,
-				C0C92E751D36786B00A9124E /* ScrollDemoVC.m in Sources */,
+				C0C92E7A1D36791100A9124E /* ScrollDemoVC.m in Sources */,
 				C0CA809E1C3BFDA500ABE564 /* GLLoginView.m in Sources */,
 				C0CA80741C3BF9A300ABE564 /* PersonModel.m in Sources */,
 				65F07BF21C3E0B0300E13CB7 /* GLNetWorkDemo.m in Sources */,
@@ -1849,7 +1864,6 @@
 				C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */,
 				C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */,
 				65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */,
-				65F07BF51C3E0B0300E13CB7 /* GLTrainScrollBarView.m in Sources */,
 				C0CA80811C3BFBF300ABE564 /* LoginDemoVC.m in Sources */,
 				C0E9D76B1C381D2100138BAB /* NSArray+GLStuff.m in Sources */,
 				6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */,
@@ -1922,6 +1936,7 @@
 				C0E9D7651C381C3900138BAB /* UIViewController+Analysis.m in Sources */,
 				65F07B531C3E002000E13CB7 /* NSObject+BlackMagic.m in Sources */,
 				C0A73B6E1D1AB6A90098A7F5 /* GLPhotoCollectionViewCell.m in Sources */,
+				C0C92E7D1D36793F00A9124E /* GLTrainScrollBarView.m in Sources */,
 				C0E69F0D1D2AA9E4002C2FBE /* GLThreadViewController.m in Sources */,
 				65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */,
 				653EDAC71D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m in Sources */,
@@ -1973,7 +1988,6 @@
 				C0273B0F1C79C09B00CC364B /* TextViewCollectionViewCell.m in Sources */,
 				C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */,
 				C0273B111C79C09B00CC364B /* CustomCell.m in Sources */,
-				C0273B121C79C09B00CC364B /* GLTrainScrollBarView.m in Sources */,
 				C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */,
 				C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */,
 				C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */,
