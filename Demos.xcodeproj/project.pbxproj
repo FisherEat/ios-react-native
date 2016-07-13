@@ -47,9 +47,7 @@
 		65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B691C3E05D700E13CB7 /* MainCell.m */; };
 		65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; };
 		65F07B6F1C3E062C00E13CB7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
-		65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */; };
 		65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
-		65F07BEB1C3E0B0300E13CB7 /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */; };
 		65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; };
 		65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B871C3E0B0300E13CB7 /* AttachCell.xib */; };
 		65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; };
@@ -74,7 +72,6 @@
 		C0273AFB1C79C09B00CC364B /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805D1C3BF35F00ABE564 /* GLHeaderView.m */; };
 		C0273AFC1C79C09B00CC364B /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80341C3BE8EF00ABE564 /* TNTopBarView.m */; };
 		C0273AFD1C79C09B00CC364B /* TestNet101ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */; };
-		C0273AFE1C79C09B00CC364B /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */; };
 		C0273AFF1C79C09B00CC364B /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6201C61F22F00A4D747 /* UIButton+Position.m */; };
 		C0273B001C79C09B00CC364B /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
 		C0273B011C79C09B00CC364B /* GLCDataBaseOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA751C6DDB2D00C2345B /* GLCDataBaseOperationManager.m */; };
@@ -110,7 +107,6 @@
 		C0273B211C79C09B00CC364B /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832911C6AE3F500F802BF /* TNHomeSpecialSaleCell.m */; };
 		C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7791C381F1700138BAB /* UIColor+TKCategory.m */; };
 		C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C5481C645F7400507F3B /* GLNavigationURLHelper.m */; };
-		C0273B241C79C09B00CC364B /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */; };
 		C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
 		C0273B261C79C09B00CC364B /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */; };
 		C0273B271C79C09B00CC364B /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; };
@@ -194,6 +190,8 @@
 		C0A832921C6AE3F500F802BF /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832911C6AE3F500F802BF /* TNHomeSpecialSaleCell.m */; };
 		C0C92E5A1D36717D00A9124E /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E591D36717D00A9124E /* TNTableViewCell.m */; };
 		C0C92E5E1D3671D200A9124E /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E5D1D3671D200A9124E /* GLBarViewController.m */; };
+		C0C92E711D36781E00A9124E /* AnimationDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E701D36781E00A9124E /* AnimationDemoVC.m */; };
+		C0C92E751D36786B00A9124E /* ScrollDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E741D36786B00A9124E /* ScrollDemoVC.m */; };
 		C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
 		C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
 		C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
@@ -348,12 +346,8 @@
 		65F07B6A1C3E05D700E13CB7 /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
 		65F07B6D1C3E062600E13CB7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		65F07B6E1C3E062C00E13CB7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		65F07B701C3E063900E13CB7 /* ScrollDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollDemoVC.h; sourceTree = "<group>"; };
-		65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollDemoVC.m; sourceTree = "<group>"; };
 		65F07B7C1C3E082F00E13CB7 /* TarBarDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TarBarDemoVC.h; sourceTree = "<group>"; };
 		65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TarBarDemoVC.m; sourceTree = "<group>"; };
-		65F07B831C3E0B0300E13CB7 /* AnimationDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemoVC.h; sourceTree = "<group>"; };
-		65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoVC.m; sourceTree = "<group>"; };
 		65F07B851C3E0B0300E13CB7 /* AttachCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachCell.h; sourceTree = "<group>"; };
 		65F07B861C3E0B0300E13CB7 /* AttachCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachCell.m; sourceTree = "<group>"; };
 		65F07B871C3E0B0300E13CB7 /* AttachCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachCell.xib; sourceTree = "<group>"; };
@@ -440,6 +434,10 @@
 		C0C92E591D36717D00A9124E /* TNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableViewCell.m; sourceTree = "<group>"; };
 		C0C92E5C1D3671D200A9124E /* GLBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBarViewController.h; sourceTree = "<group>"; };
 		C0C92E5D1D3671D200A9124E /* GLBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBarViewController.m; sourceTree = "<group>"; };
+		C0C92E6F1D36781E00A9124E /* AnimationDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemoVC.h; sourceTree = "<group>"; };
+		C0C92E701D36781E00A9124E /* AnimationDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoVC.m; sourceTree = "<group>"; };
+		C0C92E731D36786B00A9124E /* ScrollDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollDemoVC.h; sourceTree = "<group>"; };
+		C0C92E741D36786B00A9124E /* ScrollDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollDemoVC.m; sourceTree = "<group>"; };
 		C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
 		C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
 		C0CA80261C3BE78500ABE564 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -890,8 +888,6 @@
 		65F07B821C3E0AD800E13CB7 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				65F07B831C3E0B0300E13CB7 /* AnimationDemoVC.h */,
-				65F07B841C3E0B0300E13CB7 /* AnimationDemoVC.m */,
 				65F07B851C3E0B0300E13CB7 /* AttachCell.h */,
 				65F07B861C3E0B0300E13CB7 /* AttachCell.m */,
 				65F07B871C3E0B0300E13CB7 /* AttachCell.xib */,
@@ -1136,6 +1132,24 @@
 			path = BaseViewControllers;
 			sourceTree = "<group>";
 		};
+		C0C92E6E1D36780C00A9124E /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				C0C92E6F1D36781E00A9124E /* AnimationDemoVC.h */,
+				C0C92E701D36781E00A9124E /* AnimationDemoVC.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		C0C92E721D36784300A9124E /* ScrollViews */ = {
+			isa = PBXGroup;
+			children = (
+				C0C92E731D36786B00A9124E /* ScrollDemoVC.h */,
+				C0C92E741D36786B00A9124E /* ScrollDemoVC.m */,
+			);
+			path = ScrollViews;
+			sourceTree = "<group>";
+		};
 		C0CA80211C3BE6DA00ABE564 /* GLScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1171,6 +1185,8 @@
 		C0CA80391C3BEA9A00ABE564 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C0C92E721D36784300A9124E /* ScrollViews */,
+				C0C92E6E1D36780C00A9124E /* Animations */,
 				C0A73B5F1D1AB5680098A7F5 /* Tech */,
 				C0F6C56E1C675E0A00507F3B /* ButtonDemos */,
 				C0F6C5581C671BFD00507F3B /* CollectionViews */,
@@ -1280,8 +1296,6 @@
 			children = (
 				65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */,
 				65F07B7C1C3E082F00E13CB7 /* TarBarDemoVC.h */,
-				65F07B701C3E063900E13CB7 /* ScrollDemoVC.h */,
-				65F07B711C3E063E00E13CB7 /* ScrollDemoVC.m */,
 				65F07B6D1C3E062600E13CB7 /* RootViewController.h */,
 				65F07B6E1C3E062C00E13CB7 /* RootViewController.m */,
 				C0CA80851C3BFD4A00ABE564 /* FifthViewController.h */,
@@ -1801,6 +1815,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */,
+				C0C92E751D36786B00A9124E /* ScrollDemoVC.m in Sources */,
 				C0CA809E1C3BFDA500ABE564 /* GLLoginView.m in Sources */,
 				C0CA80741C3BF9A300ABE564 /* PersonModel.m in Sources */,
 				65F07BF21C3E0B0300E13CB7 /* GLNetWorkDemo.m in Sources */,
@@ -1811,7 +1826,6 @@
 				C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */,
 				C0C92E5A1D36717D00A9124E /* TNTableViewCell.m in Sources */,
 				65F07C171C3E0B0300E13CB7 /* TestNet101ViewController.m in Sources */,
-				65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */,
 				C0A73B711D1AB9670098A7F5 /* GLThirdTableViewCell.m in Sources */,
 				6506F62E1C61F22F00A4D747 /* UIButton+Position.m in Sources */,
 				65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */,
@@ -1858,7 +1872,6 @@
 				6504DB361D1BBE0A0072CE0F /* GLWeiboListViewController.m in Sources */,
 				6530E4EF1D2DF55100BCF3C1 /* GLMantleViewController.m in Sources */,
 				C0F6C5491C645F7400507F3B /* GLNavigationURLHelper.m in Sources */,
-				65F07BEB1C3E0B0300E13CB7 /* AnimationDemoVC.m in Sources */,
 				65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */,
 				65F07C131C3E0B0300E13CB7 /* NetWorkCell.m in Sources */,
 				65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */,
@@ -1886,6 +1899,7 @@
 				C0E9D7741C381E6800138BAB /* GLRequest.m in Sources */,
 				C0E9D78F1C38205E00138BAB /* TNJSONModel.m in Sources */,
 				65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */,
+				C0C92E711D36781E00A9124E /* AnimationDemoVC.m in Sources */,
 				C0CA807F1C3BFBA800ABE564 /* GLUserLoginViewController.m in Sources */,
 				C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */,
 				C0F6C54C1C64AC3900507F3B /* GLNavigationMap.m in Sources */,
@@ -1940,7 +1954,6 @@
 				C0273AFB1C79C09B00CC364B /* GLHeaderView.m in Sources */,
 				C0273AFC1C79C09B00CC364B /* TNTopBarView.m in Sources */,
 				C0273AFD1C79C09B00CC364B /* TestNet101ViewController.m in Sources */,
-				C0273AFE1C79C09B00CC364B /* ScrollDemoVC.m in Sources */,
 				C0273AFF1C79C09B00CC364B /* UIButton+Position.m in Sources */,
 				C0273B001C79C09B00CC364B /* UIImageView+GLExtensions.m in Sources */,
 				C0273B011C79C09B00CC364B /* GLCDataBaseOperationManager.m in Sources */,
@@ -1976,7 +1989,6 @@
 				C0273B211C79C09B00CC364B /* TNHomeSpecialSaleCell.m in Sources */,
 				C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */,
 				C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */,
-				C0273B241C79C09B00CC364B /* AnimationDemoVC.m in Sources */,
 				C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */,
 				C0273B261C79C09B00CC364B /* NetWorkCell.m in Sources */,
 				C0273B271C79C09B00CC364B /* AttachCell.m in Sources */,
