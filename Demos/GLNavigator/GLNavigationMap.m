@@ -67,9 +67,8 @@ NSString *const targetControllerParams = @"targetControllerParams";
         return nil;
     }
     NSDictionary *params = [self URLParams:URLString];
-    Class cls = NSClassFromString(info[targetControllerClass]);
+   // Class cls = NSClassFromString(info[targetControllerClass]);
     if (params) {
-        NSDictionary *paramKeysMap = nil;
 //        if ([cls respondsToSelector:@selector(paramsKeyMap)]) {
 //            [paramKeysMap enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
 //               

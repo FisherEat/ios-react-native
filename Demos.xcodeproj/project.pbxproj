@@ -44,7 +44,6 @@
 		65F07B581C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B571C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m */; };
 		65F07B5F1C3E019F00E13CB7 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B5E1C3E019F00E13CB7 /* CNPPopupController.m */; };
 		65F07B651C3E05D200E13CB7 /* OCDataSourceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B621C3E05D200E13CB7 /* OCDataSourceDemo.m */; };
-		65F07B661C3E05D200E13CB7 /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */; };
 		65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B691C3E05D700E13CB7 /* MainCell.m */; };
 		65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; };
 		65F07B6F1C3E062C00E13CB7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
@@ -55,18 +54,14 @@
 		65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B871C3E0B0300E13CB7 /* AttachCell.xib */; };
 		65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; };
 		65F07BF01C3E0B0300E13CB7 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */; };
-		65F07BF11C3E0B0300E13CB7 /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8E1C3E0B0300E13CB7 /* GLBarViewController.m */; };
 		65F07BF21C3E0B0300E13CB7 /* GLNetWorkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B901C3E0B0300E13CB7 /* GLNetWorkDemo.m */; };
 		65F07BF31C3E0B0300E13CB7 /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B921C3E0B0300E13CB7 /* GLPresentViewController.m */; };
 		65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */; };
 		65F07BF51C3E0B0300E13CB7 /* GLTrainScrollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B961C3E0B0300E13CB7 /* GLTrainScrollBarView.m */; };
 		65F07C121C3E0B0300E13CB7 /* LayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */; };
 		65F07C131C3E0B0300E13CB7 /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */; };
-		65F07C141C3E0B0300E13CB7 /* PickerViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDE1C3E0B0300E13CB7 /* PickerViewDemoVC.m */; };
 		65F07C151C3E0B0300E13CB7 /* SubButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE01C3E0B0300E13CB7 /* SubButtonDemoVC.m */; };
-		65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */; };
 		65F07C171C3E0B0300E13CB7 /* TestNet101ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */; };
-		65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; };
 		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; };
 		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
 		C0273AF41C79C09B00CC364B /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
@@ -109,7 +104,6 @@
 		C0273B191C79C09B00CC364B /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7771C381F1700138BAB /* UIButton+Position.m */; };
 		C0273B1A1C79C09B00CC364B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808C1C3BFD4A00ABE564 /* ThirdViewController.m */; };
 		C0273B1B1C79C09B00CC364B /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80881C3BFD4A00ABE564 /* ForthViewController.m */; };
-		C0273B1C1C79C09B00CC364B /* PassValueBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */; };
 		C0273B1D1C79C09B00CC364B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
 		C0273B1E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */; };
 		C0273B201C79C09B00CC364B /* GLTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80371C3BE95800ABE564 /* GLTopBarView.m */; };
@@ -124,10 +118,7 @@
 		C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805B1C3BF35F00ABE564 /* AdvertiseView.m */; };
 		C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
 		C0273B2B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
-		C0273B2C1C79C09B00CC364B /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */; };
 		C0273B2D1C79C09B00CC364B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA631C6DD94000C2345B /* FMDatabaseAdditions.m */; };
-		C0273B2E1C79C09B00CC364B /* TestDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */; };
-		C0273B2F1C79C09B00CC364B /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE651C46A6DA00225A21 /* TextViewController.m */; };
 		C0273B301C79C09B00CC364B /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; };
 		C0273B311C79C09B00CC364B /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80571C3BF35F00ABE564 /* AdScrollTimerViewController.m */; };
 		C0273B321C79C09B00CC364B /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */; };
@@ -164,9 +155,7 @@
 		C0273B521C79C09B00CC364B /* NSObject+BlackMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B521C3E002000E13CB7 /* NSObject+BlackMagic.m */; };
 		C0273B531C79C09B00CC364B /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B691C3E05D700E13CB7 /* MainCell.m */; };
 		C0273B541C79C09B00CC364B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA6A1C6DD94000C2345B /* FMResultSet.m */; };
-		C0273B551C79C09B00CC364B /* PickerViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BDE1C3E0B0300E13CB7 /* PickerViewDemoVC.m */; };
 		C0273B561C79C09B00CC364B /* GLButtonCardDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B61C68485A006E5490 /* GLButtonCardDatas.m */; };
-		C0273B571C79C09B00CC364B /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8E1C3E0B0300E13CB7 /* GLBarViewController.m */; };
 		C0273B581C79C09B00CC364B /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7671C381C9B00138BAB /* Toast+UIView.m */; };
 		C0273B591C79C09B00CC364B /* GLButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14AB1C683DD7006E5490 /* GLButtonDemoViewController.m */; };
 		C0273B5B1C79C09B00CC364B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FEFA701C6DDA7A00C2345B /* libsqlite3.0.tbd */; };
@@ -189,7 +178,6 @@
 		C04D14B41C683E72006E5490 /* GLButtonCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B31C683E72006E5490 /* GLButtonCardView.m */; };
 		C04D14B71C68485A006E5490 /* GLButtonCardDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B61C68485A006E5490 /* GLButtonCardDatas.m */; };
 		C04D14BA1C68C850006E5490 /* GLButtonCardScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D14B91C68C850006E5490 /* GLButtonCardScrollView.m */; };
-		C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE651C46A6DA00225A21 /* TextViewController.m */; };
 		C059BE6D1C46A72E00225A21 /* TextViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */; };
 		C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
 		C0917F5E1CC50A0E003A9D63 /* GLSpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = C0917F5D1CC50A0E003A9D63 /* GLSpringBoard.m */; };
@@ -204,6 +192,8 @@
 		C0A8328C1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328B1C6AD8FF00F802BF /* UIRootHeaderTableViewCell.m */; };
 		C0A8328F1C6AE18700F802BF /* GLRootHomeDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */; };
 		C0A832921C6AE3F500F802BF /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832911C6AE3F500F802BF /* TNHomeSpecialSaleCell.m */; };
+		C0C92E5A1D36717D00A9124E /* TNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E591D36717D00A9124E /* TNTableViewCell.m */; };
+		C0C92E5E1D3671D200A9124E /* GLBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C92E5D1D3671D200A9124E /* GLBarViewController.m */; };
 		C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
 		C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
 		C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
@@ -353,8 +343,6 @@
 		65F07B5E1C3E019F00E13CB7 /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
 		65F07B611C3E05D200E13CB7 /* OCDataSourceDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDataSourceDemo.h; sourceTree = "<group>"; };
 		65F07B621C3E05D200E13CB7 /* OCDataSourceDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDataSourceDemo.m; sourceTree = "<group>"; };
-		65F07B631C3E05D200E13CB7 /* PassValueBlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueBlockVC.h; sourceTree = "<group>"; };
-		65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueBlockVC.m; sourceTree = "<group>"; };
 		65F07B681C3E05D700E13CB7 /* MainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
 		65F07B691C3E05D700E13CB7 /* MainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCell.m; sourceTree = "<group>"; };
 		65F07B6A1C3E05D700E13CB7 /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
@@ -372,8 +360,6 @@
 		65F07B8A1C3E0B0300E13CB7 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
-		65F07B8D1C3E0B0300E13CB7 /* GLBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBarViewController.h; sourceTree = "<group>"; };
-		65F07B8E1C3E0B0300E13CB7 /* GLBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBarViewController.m; sourceTree = "<group>"; };
 		65F07B8F1C3E0B0300E13CB7 /* GLNetWorkDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLNetWorkDemo.h; sourceTree = "<group>"; };
 		65F07B901C3E0B0300E13CB7 /* GLNetWorkDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLNetWorkDemo.m; sourceTree = "<group>"; };
 		65F07B911C3E0B0300E13CB7 /* GLPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPresentViewController.h; sourceTree = "<group>"; };
@@ -386,16 +372,10 @@
 		65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSubviews.m; sourceTree = "<group>"; };
 		65F07BDB1C3E0B0300E13CB7 /* NetWorkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkCell.h; sourceTree = "<group>"; };
 		65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkCell.m; sourceTree = "<group>"; };
-		65F07BDD1C3E0B0300E13CB7 /* PickerViewDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewDemoVC.h; sourceTree = "<group>"; };
-		65F07BDE1C3E0B0300E13CB7 /* PickerViewDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewDemoVC.m; sourceTree = "<group>"; };
 		65F07BDF1C3E0B0300E13CB7 /* SubButtonDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubButtonDemoVC.h; sourceTree = "<group>"; };
 		65F07BE01C3E0B0300E13CB7 /* SubButtonDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubButtonDemoVC.m; sourceTree = "<group>"; };
-		65F07BE11C3E0B0300E13CB7 /* TestDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemoVC.h; sourceTree = "<group>"; };
-		65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemoVC.m; sourceTree = "<group>"; };
 		65F07BE31C3E0B0300E13CB7 /* TestNet101ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNet101ViewController.h; sourceTree = "<group>"; };
 		65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNet101ViewController.m; sourceTree = "<group>"; };
-		65F07BE71C3E0B0300E13CB7 /* TNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTableViewCell.h; sourceTree = "<group>"; };
-		65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableViewCell.m; sourceTree = "<group>"; };
 		65F07BE91C3E0B0300E13CB7 /* WebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDemo.h; sourceTree = "<group>"; };
 		65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDemo.m; sourceTree = "<group>"; };
 		65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GLExtensions.h"; sourceTree = "<group>"; };
@@ -428,8 +408,6 @@
 		C04D14B61C68485A006E5490 /* GLButtonCardDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLButtonCardDatas.m; sourceTree = "<group>"; };
 		C04D14B81C68C850006E5490 /* GLButtonCardScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLButtonCardScrollView.h; sourceTree = "<group>"; };
 		C04D14B91C68C850006E5490 /* GLButtonCardScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLButtonCardScrollView.m; sourceTree = "<group>"; };
-		C059BE641C46A6DA00225A21 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
-		C059BE651C46A6DA00225A21 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		C059BE6B1C46A72E00225A21 /* TextViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewDataSource.h; sourceTree = "<group>"; };
 		C059BE6C1C46A72E00225A21 /* TextViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewDataSource.m; sourceTree = "<group>"; };
 		C059BE731C46A77B00225A21 /* TextViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCollectionViewCell.h; sourceTree = "<group>"; };
@@ -458,6 +436,10 @@
 		C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRootHomeDatas.m; sourceTree = "<group>"; };
 		C0A832901C6AE3F500F802BF /* TNHomeSpecialSaleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNHomeSpecialSaleCell.h; sourceTree = "<group>"; };
 		C0A832911C6AE3F500F802BF /* TNHomeSpecialSaleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNHomeSpecialSaleCell.m; sourceTree = "<group>"; };
+		C0C92E581D36717D00A9124E /* TNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTableViewCell.h; sourceTree = "<group>"; };
+		C0C92E591D36717D00A9124E /* TNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTableViewCell.m; sourceTree = "<group>"; };
+		C0C92E5C1D3671D200A9124E /* GLBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBarViewController.h; sourceTree = "<group>"; };
+		C0C92E5D1D3671D200A9124E /* GLBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBarViewController.m; sourceTree = "<group>"; };
 		C0CA80221C3BE6DA00ABE564 /* TNCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCycleScrollView.h; sourceTree = "<group>"; };
 		C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCycleScrollView.m; sourceTree = "<group>"; };
 		C0CA80261C3BE78500ABE564 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -877,8 +859,6 @@
 			children = (
 				65F07B611C3E05D200E13CB7 /* OCDataSourceDemo.h */,
 				65F07B621C3E05D200E13CB7 /* OCDataSourceDemo.m */,
-				65F07B631C3E05D200E13CB7 /* PassValueBlockVC.h */,
-				65F07B641C3E05D200E13CB7 /* PassValueBlockVC.m */,
 				C0A8328D1C6AE18700F802BF /* GLRootHomeDatas.h */,
 				C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */,
 				C0A73B721D1AC83B0098A7F5 /* GLThirdDataSource.h */,
@@ -918,8 +898,6 @@
 				65F07B8A1C3E0B0300E13CB7 /* CustomCell.h */,
 				65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */,
 				65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */,
-				65F07B8D1C3E0B0300E13CB7 /* GLBarViewController.h */,
-				65F07B8E1C3E0B0300E13CB7 /* GLBarViewController.m */,
 				65F07B8F1C3E0B0300E13CB7 /* GLNetWorkDemo.h */,
 				65F07B901C3E0B0300E13CB7 /* GLNetWorkDemo.m */,
 				65F07B911C3E0B0300E13CB7 /* GLPresentViewController.h */,
@@ -932,16 +910,10 @@
 				65F07BDA1C3E0B0300E13CB7 /* LayoutSubviews.m */,
 				65F07BDB1C3E0B0300E13CB7 /* NetWorkCell.h */,
 				65F07BDC1C3E0B0300E13CB7 /* NetWorkCell.m */,
-				65F07BDD1C3E0B0300E13CB7 /* PickerViewDemoVC.h */,
-				65F07BDE1C3E0B0300E13CB7 /* PickerViewDemoVC.m */,
 				65F07BDF1C3E0B0300E13CB7 /* SubButtonDemoVC.h */,
 				65F07BE01C3E0B0300E13CB7 /* SubButtonDemoVC.m */,
-				65F07BE11C3E0B0300E13CB7 /* TestDemoVC.h */,
-				65F07BE21C3E0B0300E13CB7 /* TestDemoVC.m */,
 				65F07BE31C3E0B0300E13CB7 /* TestNet101ViewController.h */,
 				65F07BE41C3E0B0300E13CB7 /* TestNet101ViewController.m */,
-				65F07BE71C3E0B0300E13CB7 /* TNTableViewCell.h */,
-				65F07BE81C3E0B0300E13CB7 /* TNTableViewCell.m */,
 				65F07BE91C3E0B0300E13CB7 /* WebViewDemo.h */,
 				65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */,
 			);
@@ -1057,8 +1029,6 @@
 		C059BE631C46A6DA00225A21 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C059BE641C46A6DA00225A21 /* TextViewController.h */,
-				C059BE651C46A6DA00225A21 /* TextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1146,6 +1116,24 @@
 				C0A73B791D1ADFA50098A7F5 /* GLPhotoFlowLayout.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C0C92E571D36717300A9124E /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				C0C92E581D36717D00A9124E /* TNTableViewCell.h */,
+				C0C92E591D36717D00A9124E /* TNTableViewCell.m */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		C0C92E5B1D3671AD00A9124E /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0C92E5C1D3671D200A9124E /* GLBarViewController.h */,
+				C0C92E5D1D3671D200A9124E /* GLBarViewController.m */,
+			);
+			path = BaseViewControllers;
 			sourceTree = "<group>";
 		};
 		C0CA80211C3BE6DA00ABE564 /* GLScrollView */ = {
@@ -1346,6 +1334,8 @@
 		C0E9D7391C38172700138BAB /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				C0C92E5B1D3671AD00A9124E /* BaseViewControllers */,
+				C0C92E571D36717300A9124E /* BaseViews */,
 				6506F6331C61F29500A4D747 /* GLCache */,
 				6506F6141C61F22F00A4D747 /* Catogeries */,
 				6506F6101C61A5F200A4D747 /* GLJSPatchManager */,
@@ -1803,6 +1793,7 @@
 				C0E9D7751C381E6800138BAB /* GURLRequest.m in Sources */,
 				C0CA80611C3BF35F00ABE564 /* GLHeaderView.m in Sources */,
 				C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */,
+				C0C92E5A1D36717D00A9124E /* TNTableViewCell.m in Sources */,
 				65F07C171C3E0B0300E13CB7 /* TestNet101ViewController.m in Sources */,
 				65F07B721C3E063E00E13CB7 /* ScrollDemoVC.m in Sources */,
 				C0A73B711D1AB9670098A7F5 /* GLThirdTableViewCell.m in Sources */,
@@ -1820,6 +1811,7 @@
 				C0CA80A41C3C00AC00ABE564 /* GLUserRegisterView.m in Sources */,
 				65F07B5F1C3E019F00E13CB7 /* CNPPopupController.m in Sources */,
 				65B86E751D0FAFCC004E6235 /* GLReactBaseViewController.m in Sources */,
+				C0C92E5E1D3671D200A9124E /* GLBarViewController.m in Sources */,
 				65F07BF31C3E0B0300E13CB7 /* GLPresentViewController.m in Sources */,
 				C0F6C5501C65B6DB00507F3B /* GLUIManager.m in Sources */,
 				C0A832861C6AD8A600F802BF /* UIRootBaseTableViewCell.m in Sources */,
@@ -1838,7 +1830,6 @@
 				C0E9D77A1C381F1700138BAB /* UIButton+Position.m in Sources */,
 				C0CA80981C3BFD4A00ABE564 /* ThirdViewController.m in Sources */,
 				C0CA80961C3BFD4A00ABE564 /* ForthViewController.m in Sources */,
-				65F07B661C3E05D200E13CB7 /* PassValueBlockVC.m in Sources */,
 				C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */,
 				6506F62B1C61F22F00A4D747 /* NSString+URLEncoding.m in Sources */,
 				C0A73B6B1D1AB6870098A7F5 /* GLPhotoCollectionModel.m in Sources */,
@@ -1861,12 +1852,9 @@
 				C0917F5E1CC50A0E003A9D63 /* GLSpringBoard.m in Sources */,
 				653EDAC11D1BD5E300BF8005 /* GLWeiboStatusHelper.m in Sources */,
 				6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */,
-				65F07C191C3E0B0300E13CB7 /* TNTableViewCell.m in Sources */,
 				C0FEFA6C1C6DD94000C2345B /* FMDatabaseAdditions.m in Sources */,
-				65F07C161C3E0B0300E13CB7 /* TestDemoVC.m in Sources */,
 				C0A73B741D1AC83B0098A7F5 /* GLThirdDataSource.m in Sources */,
 				C0A73B7A1D1ADFA50098A7F5 /* GLPhotoFlowLayout.m in Sources */,
-				C059BE661C46A6DA00225A21 /* TextViewController.m in Sources */,
 				6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */,
 				6530E4F21D2DF56600BCF3C1 /* GLMantleModel.m in Sources */,
 				C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */,
@@ -1908,9 +1896,7 @@
 				65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */,
 				653EDAC71D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m in Sources */,
 				C0FEFA6F1C6DD94000C2345B /* FMResultSet.m in Sources */,
-				65F07C141C3E0B0300E13CB7 /* PickerViewDemoVC.m in Sources */,
 				C04D14B71C68485A006E5490 /* GLButtonCardDatas.m in Sources */,
-				65F07BF11C3E0B0300E13CB7 /* GLBarViewController.m in Sources */,
 				C0E9D7681C381C9B00138BAB /* Toast+UIView.m in Sources */,
 				C04D14AE1C683DD7006E5490 /* GLButtonDemoViewController.m in Sources */,
 			);
@@ -1968,7 +1954,6 @@
 				C0273B191C79C09B00CC364B /* UIButton+Position.m in Sources */,
 				C0273B1A1C79C09B00CC364B /* ThirdViewController.m in Sources */,
 				C0273B1B1C79C09B00CC364B /* ForthViewController.m in Sources */,
-				C0273B1C1C79C09B00CC364B /* PassValueBlockVC.m in Sources */,
 				C0273B1D1C79C09B00CC364B /* NSTimer+Addition.m in Sources */,
 				C0273B1E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */,
 				C0273B201C79C09B00CC364B /* GLTopBarView.m in Sources */,
@@ -1983,10 +1968,7 @@
 				C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */,
 				C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */,
 				C0273B2B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */,
-				C0273B2C1C79C09B00CC364B /* TNTableViewCell.m in Sources */,
 				C0273B2D1C79C09B00CC364B /* FMDatabaseAdditions.m in Sources */,
-				C0273B2E1C79C09B00CC364B /* TestDemoVC.m in Sources */,
-				C0273B2F1C79C09B00CC364B /* TextViewController.m in Sources */,
 				C0273B301C79C09B00CC364B /* GLJSPatchManager.m in Sources */,
 				C0273B311C79C09B00CC364B /* AdScrollTimerViewController.m in Sources */,
 				C0273B321C79C09B00CC364B /* UIColor+TKCategory.m in Sources */,
@@ -2024,9 +2006,7 @@
 				C0273B521C79C09B00CC364B /* NSObject+BlackMagic.m in Sources */,
 				C0273B531C79C09B00CC364B /* MainCell.m in Sources */,
 				C0273B541C79C09B00CC364B /* FMResultSet.m in Sources */,
-				C0273B551C79C09B00CC364B /* PickerViewDemoVC.m in Sources */,
 				C0273B561C79C09B00CC364B /* GLButtonCardDatas.m in Sources */,
-				C0273B571C79C09B00CC364B /* GLBarViewController.m in Sources */,
 				C0273B581C79C09B00CC364B /* Toast+UIView.m in Sources */,
 				C0273B591C79C09B00CC364B /* GLButtonDemoViewController.m in Sources */,
 			);

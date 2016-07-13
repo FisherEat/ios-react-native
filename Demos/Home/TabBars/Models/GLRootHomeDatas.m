@@ -48,10 +48,9 @@
 {
     NSString *defaultURL = @"defualtURL";
     NSMutableArray *urls = [NSMutableArray arrayWithArray:@[
-                                GLURLDemoButtonCell, GLURLDemoScrollCell, GLURLDemoPickerViewCell,
+                                GLURLDemoButtonCell, GLURLDemoScrollCell,
                                 GLURLDemoTabBarCell, GLURLDemoAnimationCell, GLURLDemoTestCell,
-                                defaultURL, GLURLDemoNetWorkCell, GLURLDemoPassValueCell,
-                                GLURLDemoTextViewCell, GLURLDemoAdScrollTimerCell, GLURLDemoLoginCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoTableViewCell,        GLURLDemoThreadViewCell, GLURLDemoMantleViewCell,
+                                defaultURL, GLURLDemoNetWorkCell,GLURLDemoAdScrollTimerCell, GLURLDemoLoginCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoTableViewCell,        GLURLDemoThreadViewCell, GLURLDemoMantleViewCell,
                                 GLURLDemoReactViewCell
                                 ]];
     return urls;
@@ -60,9 +59,9 @@
 + (NSMutableArray *)getDemoArray
 {
      NSMutableArray *demoArray = [NSMutableArray arrayWithArray:@[
-                                        @"简单按钮", @"ScrollView滚动", @"PickerView滚动", @"底部TabBar",
-                                        @"动画Demo", @"委托传值", @"自定义AlertView", @"网络框架",
-                                        @"传值", @"测试TextView", @"滚动动画计时器", @"登录",
+                                        @"简单按钮", @"ScrollView滚动", @"底部TabBar",
+                                        @"动画Demo", @"自定义AlertView", @"网络框架",
+                                          @"滚动动画计时器", @"登录",
                                         @"微博H5跳转", @"自定义TopBarView", @"自定义TabelView", @"多线程Demo", @"测试Mantle框架", @"ReactNative入口"]];
     return demoArray;
 }

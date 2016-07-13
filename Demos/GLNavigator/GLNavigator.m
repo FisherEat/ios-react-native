@@ -56,5 +56,4 @@ SINGLETON_IMPLEMENTION(GLNavigator, navigator)
     return YES;
 }
 
-
 @end

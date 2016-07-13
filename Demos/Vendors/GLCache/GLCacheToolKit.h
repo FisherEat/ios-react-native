@@ -18,14 +18,14 @@ typedef NS_ENUM(NSInteger, GLCacheContentType)
 
 @interface GLCacheToolKit : NSObject
 
-+ (id)sharedCache;
-
-- (id)cacheContentForKey:(NSString *)key withCacheType:(GLCacheContentType)type;
-
-- (void)setCacheContent:(id <NSCopying>)content forKey:(NSString *)key withCacheType:(GLCacheContentType)type;
-
-- (void)removeCacheContentForKey:(NSString *)key withCacheType:(GLCacheContentType)type;
-
-- (void)removeAllCacheContentWithCacheType:(GLCacheContentType)type;
-
+//+ (id)sharedCache;
+//
+//- (id)cacheContentForKey:(NSString *)key withCacheType:(GLCacheContentType)type;
+//
+//- (void)setCacheContent:(id <NSCopying>)content forKey:(NSString *)key withCacheType:(GLCacheContentType)type;
+//
+//- (void)removeCacheContentForKey:(NSString *)key withCacheType:(GLCacheContentType)type;
+//
+//- (void)removeAllCacheContentWithCacheType:(GLCacheContentType)type;
+//
 @end

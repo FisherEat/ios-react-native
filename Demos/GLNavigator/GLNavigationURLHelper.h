@@ -10,13 +10,10 @@
 
 FOUNDATION_EXTERN NSString *const GLURLDemoButtonCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoScrollCell;
-FOUNDATION_EXTERN NSString *const GLURLDemoPickerViewCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoTabBarCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoAnimationCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoTestCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoNetWorkCell;
-FOUNDATION_EXTERN NSString *const GLURLDemoPassValueCell;
-FOUNDATION_EXTERN NSString *const GLURLDemoTextViewCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoAdScrollTimerCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoLoginCell;
 FOUNDATION_EXTERN NSString *const GLURLDemoTopBarCell;

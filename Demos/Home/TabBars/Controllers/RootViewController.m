@@ -12,7 +12,6 @@
 #import "TNHomeSpecialSaleCell.h"
 #import "LGAlertView.h"
 #import "GLNetWorkDemo.h"
-#import "PassValueBlockVC.h"
 
 #import "UIRootHeaderTableViewCell.h"
 #import "GLRootHomeDatas.h"
@@ -26,7 +25,7 @@ static NSString *const defaultCellIdentifer = @"defaultCellIdentifer";
 
 @end
 
-@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource,  PassValueDelegate, GLRootSingleViewCellDelegate>
+@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource, GLRootSingleViewCellDelegate>
 
 @property (nonatomic, strong) UITableView       *tableView;
 @property (nonatomic, strong) UIRefreshControl  *refreshTable;
@@ -34,8 +33,6 @@ static NSString *const defaultCellIdentifer = @"defaultCellIdentifer";
 @property (nonatomic, strong) TNCycleScrollView *adCycleScrollView;
 @property (nonatomic, strong) UIPageControl     *pageControl;
 @property (nonatomic, strong) NSMutableArray    *adViewsArray;
-
-@property (nonatomic, strong) PassValueBlockVC  *passValueVC;
 
 @property (nonatomic, strong) NSDictionary *cellClassNameDic;
 @property (nonatomic, strong) NSMutableDictionary *dataSourceDic;
@@ -243,12 +240,8 @@ static NSString *const defaultCellIdentifer = @"defaultCellIdentifer";
             GLNetWorkDemo *netWorkDemoVC    = (GLNetWorkDemo *)[netWorkStoryBoard instantiateViewControllerWithIdentifier:@"GLNetWorkDemo"];
             [self.navigationController pushViewController:netWorkDemoVC animated:YES];
 
-        }else if (cellModel.cellId == PassValueDemoCell) {
-            //从此处进入的PassValueBlock页面，所以  passValueVC.delegate = self;
-            //所以 viewdidload 中的设定delegate指向没有作用。
-            PassValueBlockVC *passValueVC = [[PassValueBlockVC alloc] init];
-            passValueVC.delegate = self;
-            [UIManager showViewController:passValueVC];
+        }else {
+            
         }
     }
 }

@@ -16,13 +16,10 @@ NSString *const GLURLDemoForth = @"demoapp://demo/forth";
 NSString *const GLURLDemoFifth = @"demoapp://demo/fifth";
 NSString *const GLURLDemoButtonCell = @"demoapp://demo/home/buttoncell";
 NSString *const GLURLDemoScrollCell = @"demoapp://demo/home/scrollcell";
-NSString *const GLURLDemoPickerViewCell = @"demoapp://demo/home/pickerviewcell";
 NSString *const GLURLDemoTabBarCell = @"demoapp://demo/home/tabbarcell";
 NSString *const GLURLDemoAnimationCell = @"demoapp://demo/home/animationcell";
 NSString *const GLURLDemoTestCell = @"demoapp://demo/home/testcell";
 NSString *const GLURLDemoNetWorkCell = @"demoapp://demo/home/networkcell";
-NSString *const GLURLDemoPassValueCell = @"demoapp://demo/home/passvaluecell";
-NSString *const GLURLDemoTextViewCell = @"demoapp://demo/home/textviewcell";
 NSString *const GLURLDemoAdScrollTimerCell = @"demoapp://demo/home/adscrolltimercell";
 NSString *const GLURLDemoLoginCell = @"demoapp://demo/home/logincell";
 NSString *const GLURLDemoTopBarCell = @"demoapp://demo/home/presentcell";
@@ -46,13 +43,9 @@ NSString *const GLURLDemoReactViewCell = @"demoapp://demo/home/reactviewcell";
                         GLURLDemoFifth :@"FifthViewController",
                         GLURLDemoButtonCell :@"GLButtonDemoViewController",
                         GLURLDemoScrollCell :@"ScrollDemoVC",
-                        GLURLDemoPickerViewCell :@"PickerViewDemoVC",
                         GLURLDemoTabBarCell :@"TarBarDemoVC",
                         GLURLDemoAnimationCell :@"AnimationDemoVC",
-                        GLURLDemoTestCell :@"TestDemoVC",
-                        GLURLDemoPassValueCell :@"PassValueBlockVC",
-                        GLURLDemoTextViewCell :@"TextViewController",
-                        GLURLDemoAdScrollTimerCell :@"AdScrollTimerViewController",
+                        GLURLDemoTestCell :@"TestDemoVC",GLURLDemoAdScrollTimerCell :@"AdScrollTimerViewController",
                         GLURLDemoLoginCell :@"LoginDemoVC",
                         GLURLDemoTopBarCell :@"GLPresentViewController",
                         GLURLDemoWebViewCell :@"WebViewDemo",
