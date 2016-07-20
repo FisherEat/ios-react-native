@@ -36,6 +36,10 @@
 		65ACB7771D3F1DCC009C755C /* GLPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACB7761D3F1DCC009C755C /* GLPresentViewController.m */; };
 		65ACB77A1D3F1E11009C755C /* NetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACB7791D3F1E11009C755C /* NetWorkCell.m */; };
 		65ACB77D1D3F1E55009C755C /* TestNet101ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACB77C1D3F1E55009C755C /* TestNet101ViewController.m */; };
+		65ACB7801D3F1F71009C755C /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACB77F1D3F1F71009C755C /* CustomCell.m */; };
+		65ACB7821D3F1F77009C755C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ACB7811D3F1F77009C755C /* CustomCell.xib */; };
+		65ACB7861D3F1FC6009C755C /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACB7841D3F1FC6009C755C /* AttachCell.m */; };
+		65ACB7871D3F1FC6009C755C /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ACB7851D3F1FC6009C755C /* AttachCell.xib */; };
 		65B86E751D0FAFCC004E6235 /* GLReactBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */; };
 		65E3E8581B9D24E2002AD494 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3E8571B9D24E2002AD494 /* CFNetwork.framework */; };
 		65ECE8711B588AA9003134B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE8701B588AA9003134B2 /* main.m */; };
@@ -53,11 +57,6 @@
 		65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; };
 		65F07B6F1C3E062C00E13CB7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
 		65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
-		65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; };
-		65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B871C3E0B0300E13CB7 /* AttachCell.xib */; };
-		65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; };
-		65F07BF01C3E0B0300E13CB7 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */; };
-		65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */; };
 		65F07C1A1C3E0B0300E13CB7 /* WebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */; };
 		65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
 		C0273AF41C79C09B00CC364B /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
@@ -85,7 +84,6 @@
 		C0273B0E1C79C09B00CC364B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808A1C3BFD4A00ABE564 /* SecondViewController.m */; };
 		C0273B0F1C79C09B00CC364B /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C059BE741C46A77B00225A21 /* TextViewCollectionViewCell.m */; };
 		C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */; };
-		C0273B111C79C09B00CC364B /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */; };
 		C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80801C3BFBF300ABE564 /* LoginDemoVC.m */; };
 		C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D76A1C381D2100138BAB /* NSArray+GLStuff.m */; };
 		C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
@@ -102,7 +100,6 @@
 		C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7791C381F1700138BAB /* UIColor+TKCategory.m */; };
 		C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C5481C645F7400507F3B /* GLNavigationURLHelper.m */; };
 		C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
-		C0273B271C79C09B00CC364B /* AttachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B861C3E0B0300E13CB7 /* AttachCell.m */; };
 		C0273B281C79C09B00CC364B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */; };
 		C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805B1C3BF35F00ABE564 /* AdvertiseView.m */; };
 		C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
@@ -120,7 +117,6 @@
 		C0273B391C79C09B00CC364B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
 		C0273B3A1C79C09B00CC364B /* GLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7701C381E6800138BAB /* GLRequest.m */; };
 		C0273B3B1C79C09B00CC364B /* TNJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7831C38205E00138BAB /* TNJSONModel.m */; };
-		C0273B3C1C79C09B00CC364B /* GLSearchMoreTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */; };
 		C0273B3D1C79C09B00CC364B /* GLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA807E1C3BFBA800ABE564 /* GLUserLoginViewController.m */; };
 		C0273B3E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA802C1C3BE88C00ABE564 /* NSString+URLEncoding.m */; };
 		C0273B3F1C79C09B00CC364B /* GLNavigationMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C54B1C64AC3900507F3B /* GLNavigationMap.m */; };
@@ -151,9 +147,7 @@
 		C0273B601C79C09B00CC364B /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B6A1C3E05D700E13CB7 /* MainCell.xib */; };
 		C0273B611C79C09B00CC364B /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; };
 		C0273B621C79C09B00CC364B /* GLNetWorkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4A1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard */; };
-		C0273B631C79C09B00CC364B /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B871C3E0B0300E13CB7 /* AttachCell.xib */; };
 		C0273B641C79C09B00CC364B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4B1C3DFF1E00E13CB7 /* LaunchScreen.xib */; };
-		C0273B651C79C09B00CC364B /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */; };
 		C0273B661C79C09B00CC364B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F07B4C1C3DFF1E00E13CB7 /* Main.storyboard */; };
 		C0273B671C79C09B00CC364B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ECE87B1B588AA9003134B2 /* Images.xcassets */; };
 		C0273C041C79C9BB00CC364B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0273C031C79C9BB00CC364B /* InterfaceController.m */; };
@@ -319,6 +313,12 @@
 		65ACB7791D3F1E11009C755C /* NetWorkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkCell.m; sourceTree = "<group>"; };
 		65ACB77B1D3F1E51009C755C /* TestNet101ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNet101ViewController.h; sourceTree = "<group>"; };
 		65ACB77C1D3F1E55009C755C /* TestNet101ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNet101ViewController.m; sourceTree = "<group>"; };
+		65ACB77E1D3F1F6D009C755C /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		65ACB77F1D3F1F71009C755C /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		65ACB7811D3F1F77009C755C /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		65ACB7831D3F1FC6009C755C /* AttachCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachCell.h; sourceTree = "<group>"; };
+		65ACB7841D3F1FC6009C755C /* AttachCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachCell.m; sourceTree = "<group>"; };
+		65ACB7851D3F1FC6009C755C /* AttachCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachCell.xib; sourceTree = "<group>"; };
 		65B86E641D0FAB78004E6235 /* Param-local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Param-local.h"; sourceTree = "<group>"; };
 		65B86E731D0FAFCC004E6235 /* GLReactBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLReactBaseViewController.h; sourceTree = "<group>"; };
 		65B86E741D0FAFCC004E6235 /* GLReactBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLReactBaseViewController.m; sourceTree = "<group>"; };
@@ -351,14 +351,6 @@
 		65F07B6E1C3E062C00E13CB7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		65F07B7C1C3E082F00E13CB7 /* TarBarDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TarBarDemoVC.h; sourceTree = "<group>"; };
 		65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TarBarDemoVC.m; sourceTree = "<group>"; };
-		65F07B851C3E0B0300E13CB7 /* AttachCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachCell.h; sourceTree = "<group>"; };
-		65F07B861C3E0B0300E13CB7 /* AttachCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachCell.m; sourceTree = "<group>"; };
-		65F07B871C3E0B0300E13CB7 /* AttachCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachCell.xib; sourceTree = "<group>"; };
-		65F07B8A1C3E0B0300E13CB7 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
-		65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
-		65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
-		65F07B931C3E0B0300E13CB7 /* GLSearchMoreTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSearchMoreTypeView.h; sourceTree = "<group>"; };
-		65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSearchMoreTypeView.m; sourceTree = "<group>"; };
 		65F07BE91C3E0B0300E13CB7 /* WebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDemo.h; sourceTree = "<group>"; };
 		65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDemo.m; sourceTree = "<group>"; };
 		65F07C1E1C3E145000E13CB7 /* UIImageView+GLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GLExtensions.h"; sourceTree = "<group>"; };
@@ -797,6 +789,9 @@
 			children = (
 				65ACB7781D3F1E0C009C755C /* NetWorkCell.h */,
 				65ACB7791D3F1E11009C755C /* NetWorkCell.m */,
+				65ACB77E1D3F1F6D009C755C /* CustomCell.h */,
+				65ACB77F1D3F1F71009C755C /* CustomCell.m */,
+				65ACB7811D3F1F77009C755C /* CustomCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -947,14 +942,6 @@
 		65F07B821C3E0AD800E13CB7 /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				65F07B851C3E0B0300E13CB7 /* AttachCell.h */,
-				65F07B861C3E0B0300E13CB7 /* AttachCell.m */,
-				65F07B871C3E0B0300E13CB7 /* AttachCell.xib */,
-				65F07B8A1C3E0B0300E13CB7 /* CustomCell.h */,
-				65F07B8B1C3E0B0300E13CB7 /* CustomCell.m */,
-				65F07B8C1C3E0B0300E13CB7 /* CustomCell.xib */,
-				65F07B931C3E0B0300E13CB7 /* GLSearchMoreTypeView.h */,
-				65F07B941C3E0B0300E13CB7 /* GLSearchMoreTypeView.m */,
 				65F07BE91C3E0B0300E13CB7 /* WebViewDemo.h */,
 				65F07BEA1C3E0B0300E13CB7 /* WebViewDemo.m */,
 			);
@@ -1339,6 +1326,9 @@
 		C0CA806E1C3BF98900ABE564 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65ACB7831D3F1FC6009C755C /* AttachCell.h */,
+				65ACB7841D3F1FC6009C755C /* AttachCell.m */,
+				65ACB7851D3F1FC6009C755C /* AttachCell.xib */,
 				C0CA809C1C3BFDA500ABE564 /* GLLoginView.h */,
 				C0CA809D1C3BFDA500ABE564 /* GLLoginView.m */,
 				C0CA80A21C3C00AC00ABE564 /* GLUserRegisterView.h */,
@@ -1768,12 +1758,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ACB7821D3F1F77009C755C /* CustomCell.xib in Resources */,
 				65F07B6C1C3E05D700E13CB7 /* MainCell.xib in Resources */,
 				6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */,
 				65F07B4D1C3DFF1E00E13CB7 /* GLNetWorkDemo.storyboard in Resources */,
-				65F07BED1C3E0B0300E13CB7 /* AttachCell.xib in Resources */,
 				65F07B4E1C3DFF1E00E13CB7 /* LaunchScreen.xib in Resources */,
-				65F07BF01C3E0B0300E13CB7 /* CustomCell.xib in Resources */,
+				65ACB7871D3F1FC6009C755C /* AttachCell.xib in Resources */,
 				653EDAC91D1BDA2200BF8005 /* ResourceWeibo.bundle in Resources */,
 				65F07B4F1C3DFF1E00E13CB7 /* Main.storyboard in Resources */,
 				65ECE87C1B588AA9003134B2 /* Images.xcassets in Resources */,
@@ -1794,9 +1784,7 @@
 				C0273B601C79C09B00CC364B /* MainCell.xib in Resources */,
 				C0273B611C79C09B00CC364B /* AppVersion.plist in Resources */,
 				C0273B621C79C09B00CC364B /* GLNetWorkDemo.storyboard in Resources */,
-				C0273B631C79C09B00CC364B /* AttachCell.xib in Resources */,
 				C0273B641C79C09B00CC364B /* LaunchScreen.xib in Resources */,
-				C0273B651C79C09B00CC364B /* CustomCell.xib in Resources */,
 				C0273B661C79C09B00CC364B /* Main.storyboard in Resources */,
 				C0273B671C79C09B00CC364B /* Images.xcassets in Resources */,
 			);
@@ -1894,6 +1882,7 @@
 				6506F62E1C61F22F00A4D747 /* UIButton+Position.m in Sources */,
 				65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */,
 				C0FEFA761C6DDB2D00C2345B /* GLCDataBaseOperationManager.m in Sources */,
+				65ACB7861D3F1FC6009C755C /* AttachCell.m in Sources */,
 				C0CA805E1C3BF35F00ABE564 /* AddTBCellViewController.m in Sources */,
 				653EDABE1D1BC21300BF8005 /* GLWeiboComposeViewController.m in Sources */,
 				C0CA80951C3BFD4A00ABE564 /* FifthViewController.m in Sources */,
@@ -1911,7 +1900,6 @@
 				C0CA80971C3BFD4A00ABE564 /* SecondViewController.m in Sources */,
 				C059BE751C46A77B00225A21 /* TextViewCollectionViewCell.m in Sources */,
 				C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */,
-				65F07BEF1C3E0B0300E13CB7 /* CustomCell.m in Sources */,
 				C0CA80811C3BFBF300ABE564 /* LoginDemoVC.m in Sources */,
 				C0E9D76B1C381D2100138BAB /* NSArray+GLStuff.m in Sources */,
 				6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */,
@@ -1936,7 +1924,6 @@
 				6530E4EF1D2DF55100BCF3C1 /* GLMantleViewController.m in Sources */,
 				C0F6C5491C645F7400507F3B /* GLNavigationURLHelper.m in Sources */,
 				65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */,
-				65F07BEC1C3E0B0300E13CB7 /* AttachCell.m in Sources */,
 				6506F62C1C61F22F00A4D747 /* NSTimer+Addition.m in Sources */,
 				C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */,
 				6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */,
@@ -1962,7 +1949,6 @@
 				65ACB7741D3F1D84009C755C /* GLNetWorkDemo.m in Sources */,
 				C0E9D7741C381E6800138BAB /* GLRequest.m in Sources */,
 				C0E9D78F1C38205E00138BAB /* TNJSONModel.m in Sources */,
-				65F07BF41C3E0B0300E13CB7 /* GLSearchMoreTypeView.m in Sources */,
 				C0C92E711D36781E00A9124E /* AnimationDemoVC.m in Sources */,
 				C0CA807F1C3BFBA800ABE564 /* GLUserLoginViewController.m in Sources */,
 				C0CA802E1C3BE88C00ABE564 /* NSString+URLEncoding.m in Sources */,
@@ -1989,6 +1975,7 @@
 				C0C92E7D1D36793F00A9124E /* GLTrainScrollBarView.m in Sources */,
 				C0E69F0D1D2AA9E4002C2FBE /* GLThreadViewController.m in Sources */,
 				65F07B6B1C3E05D700E13CB7 /* MainCell.m in Sources */,
+				65ACB7801D3F1F71009C755C /* CustomCell.m in Sources */,
 				653EDAC71D1BD7A400BF8005 /* GLWeiboStatusXComposeTextParser.m in Sources */,
 				C0FEFA6F1C6DD94000C2345B /* FMResultSet.m in Sources */,
 				C04D14B71C68485A006E5490 /* GLButtonCardDatas.m in Sources */,
@@ -2034,7 +2021,6 @@
 				C0273B0E1C79C09B00CC364B /* SecondViewController.m in Sources */,
 				C0273B0F1C79C09B00CC364B /* TextViewCollectionViewCell.m in Sources */,
 				C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */,
-				C0273B111C79C09B00CC364B /* CustomCell.m in Sources */,
 				C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */,
 				C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */,
 				C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */,
@@ -2051,7 +2037,6 @@
 				C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */,
 				C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */,
 				C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */,
-				C0273B271C79C09B00CC364B /* AttachCell.m in Sources */,
 				C0273B281C79C09B00CC364B /* NSTimer+Addition.m in Sources */,
 				C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */,
 				C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */,
@@ -2070,7 +2055,6 @@
 				C0273B391C79C09B00CC364B /* RootViewController.m in Sources */,
 				C0273B3A1C79C09B00CC364B /* GLRequest.m in Sources */,
 				C0273B3B1C79C09B00CC364B /* TNJSONModel.m in Sources */,
-				C0273B3C1C79C09B00CC364B /* GLSearchMoreTypeView.m in Sources */,
 				C0273B3D1C79C09B00CC364B /* GLUserLoginViewController.m in Sources */,
 				C0273B3E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */,
 				C0273B3F1C79C09B00CC364B /* GLNavigationMap.m in Sources */,
