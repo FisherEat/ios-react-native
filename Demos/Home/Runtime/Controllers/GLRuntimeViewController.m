@@ -9,5 +9,9 @@
 #import "GLRuntimeViewController.h"
 
 @implementation GLRuntimeViewController
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+}
 
 @end
