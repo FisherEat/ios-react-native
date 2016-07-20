@@ -147,13 +147,4 @@
     }
 }
 
-//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//    if (viewController == self) {
-//        [navigationController setNavigationBarHidden:YES];
-//    }else if ([navigationController isNavigationBarHidden]) {
-//        [navigationController setNavigationBarHidden:NO];
-//    }
-//}
-
 @end
