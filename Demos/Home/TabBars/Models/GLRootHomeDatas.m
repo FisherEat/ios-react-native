@@ -46,11 +46,10 @@
 
 + (NSMutableArray *)getToUrlString
 {
-    NSString *defaultURL = @"defualtURL";
     NSMutableArray *urls = [NSMutableArray arrayWithArray:@[
                                 GLURLDemoButtonCell, GLURLDemoScrollCell,
-                                GLURLDemoTabBarCell, GLURLDemoAnimationCell, GLURLDemoTestCell,
-                                defaultURL, GLURLDemoNetWorkCell,GLURLDemoAdScrollTimerCell, GLURLDemoLoginCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoTableViewCell,        GLURLDemoThreadViewCell, GLURLDemoMantleViewCell,
+                                GLURLDemoTabBarCell, GLURLDemoAnimationCell,
+                                GLURLDemoRuntimeCell, GLURLDemoNetWorkCell,GLURLDemoAdScrollTimerCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoLoginCell,        GLURLDemoThreadViewCell, GLURLDemoMantleViewCell,
                                 GLURLDemoReactViewCell
                                 ]];
     return urls;
@@ -60,9 +59,9 @@
 {
      NSMutableArray *demoArray = [NSMutableArray arrayWithArray:@[
                                         @"简单按钮", @"ScrollView滚动", @"底部TabBar",
-                                        @"动画Demo", @"自定义AlertView", @"网络框架",
-                                          @"滚动动画计时器", @"登录",
-                                        @"微博H5跳转", @"自定义TopBarView", @"自定义TabelView", @"多线程Demo", @"测试Mantle框架", @"ReactNative入口"]];
+                                        @"动画Demo", @"运行时", @"网络框架",
+                                          @"滚动动画计时器",
+                                        @"微博H5跳转", @"自定义TabelView", @"自定义登录页面", @"多线程Demo", @"测试Mantle框架", @"ReactNative入口"]];
     return demoArray;
 }
 

@@ -18,7 +18,6 @@ NSString *const GLURLDemoButtonCell = @"demoapp://demo/home/buttoncell";
 NSString *const GLURLDemoScrollCell = @"demoapp://demo/home/scrollcell";
 NSString *const GLURLDemoTabBarCell = @"demoapp://demo/home/tabbarcell";
 NSString *const GLURLDemoAnimationCell = @"demoapp://demo/home/animationcell";
-NSString *const GLURLDemoTestCell = @"demoapp://demo/home/testcell";
 NSString *const GLURLDemoNetWorkCell = @"demoapp://demo/home/networkcell";
 NSString *const GLURLDemoAdScrollTimerCell = @"demoapp://demo/home/adscrolltimercell";
 NSString *const GLURLDemoLoginCell = @"demoapp://demo/home/logincell";
@@ -28,6 +27,7 @@ NSString *const GLURLDemoTableViewCell = @"demoapp://demo/home/tableviewcell";
 NSString *const GLURLDemoThreadViewCell = @"demoapp://demo/home/threadviewcell";
 NSString *const GLURLDemoMantleViewCell = @"demoapp://demo/home/mantleviewcell";
 NSString *const GLURLDemoReactViewCell = @"demoapp://demo/home/reactviewcell";
+NSString *const GLURLDemoRuntimeCell = @"demoapp://demo/home/runtimecell";
 
 @implementation GLNavigationURLHelper
 
@@ -45,7 +45,8 @@ NSString *const GLURLDemoReactViewCell = @"demoapp://demo/home/reactviewcell";
                         GLURLDemoScrollCell :@"ScrollDemoVC",
                         GLURLDemoTabBarCell :@"TarBarDemoVC",
                         GLURLDemoAnimationCell :@"AnimationDemoVC",
-                        GLURLDemoTestCell :@"TestDemoVC",GLURLDemoAdScrollTimerCell :@"AdScrollTimerViewController",
+                        GLURLDemoNetWorkCell :@"GLNetWorkDemo",
+                        GLURLDemoAdScrollTimerCell :@"AdScrollTimerViewController",
                         GLURLDemoLoginCell :@"LoginDemoVC",
                         GLURLDemoTopBarCell :@"GLPresentViewController",
                         GLURLDemoWebViewCell :@"WebViewDemo",
@@ -53,6 +54,7 @@ NSString *const GLURLDemoReactViewCell = @"demoapp://demo/home/reactviewcell";
                         GLURLDemoThreadViewCell :@"GLThreadViewController",
                         GLURLDemoMantleViewCell :@"GLMantleViewController",
                         GLURLDemoReactViewCell: @"GLReactBaseViewController",
+                        GLURLDemoRuntimeCell: @"GLRuntimeViewController"
                         };
     });
     

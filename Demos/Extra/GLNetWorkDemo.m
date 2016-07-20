@@ -20,13 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
     self.netWorkTableView.delegate   = self;
     self.netWorkTableView.dataSource = self;
-    
 }
 
-#pragma mark - 
 #pragma mark tableview delegate 、 tableview datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
