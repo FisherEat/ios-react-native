@@ -13,15 +13,6 @@
 		6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
 		6506F6081C618F8100A4D747 /* AppVersion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6506F6071C618F8100A4D747 /* AppVersion.plist */; };
 		6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; };
-		6506F6291C61F22F00A4D747 /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */; };
-		6506F62B1C61F22F00A4D747 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */; };
-		6506F62C1C61F22F00A4D747 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */; };
-		6506F62D1C61F22F00A4D747 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61E1C61F22F00A4D747 /* Toast+UIView.m */; };
-		6506F62E1C61F22F00A4D747 /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6201C61F22F00A4D747 /* UIButton+Position.m */; };
-		6506F62F1C61F22F00A4D747 /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */; };
-		6506F6301C61F22F00A4D747 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6241C61F22F00A4D747 /* UIView+Positioning.m */; };
-		6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
-		6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
 		6506F6361C61F2E900A4D747 /* GLCacheToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */; };
 		6530E4EF1D2DF55100BCF3C1 /* GLMantleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6530E4EE1D2DF55100BCF3C1 /* GLMantleViewController.m */; };
 		6530E4F21D2DF56600BCF3C1 /* GLMantleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6530E4F11D2DF56600BCF3C1 /* GLMantleModel.m */; };
@@ -67,7 +58,6 @@
 		C0273AFA1C79C09B00CC364B /* GURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7721C381E6800138BAB /* GURLRequest.m */; };
 		C0273AFB1C79C09B00CC364B /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805D1C3BF35F00ABE564 /* GLHeaderView.m */; };
 		C0273AFC1C79C09B00CC364B /* TNTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80341C3BE8EF00ABE564 /* TNTopBarView.m */; };
-		C0273AFF1C79C09B00CC364B /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6201C61F22F00A4D747 /* UIButton+Position.m */; };
 		C0273B001C79C09B00CC364B /* UIImageView+GLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07C1F1C3E145000E13CB7 /* UIImageView+GLExtensions.m */; };
 		C0273B011C79C09B00CC364B /* GLCDataBaseOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA751C6DDB2D00C2345B /* GLCDataBaseOperationManager.m */; };
 		C0273B021C79C09B00CC364B /* AddTBCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80551C3BF35F00ABE564 /* AddTBCellViewController.m */; };
@@ -86,31 +76,24 @@
 		C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D73C1C38174A00138BAB /* XTOnePixelLine.m */; };
 		C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80801C3BFBF300ABE564 /* LoginDemoVC.m */; };
 		C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D76A1C381D2100138BAB /* NSArray+GLStuff.m */; };
-		C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */; };
 		C0273B171C79C09B00CC364B /* GLRootHomeDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A8328E1C6AE18700F802BF /* GLRootHomeDatas.m */; };
 		C0273B181C79C09B00CC364B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA611C6DD94000C2345B /* FMDatabase.m */; };
 		C0273B191C79C09B00CC364B /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7771C381F1700138BAB /* UIButton+Position.m */; };
 		C0273B1A1C79C09B00CC364B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA808C1C3BFD4A00ABE564 /* ThirdViewController.m */; };
 		C0273B1B1C79C09B00CC364B /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80881C3BFD4A00ABE564 /* ForthViewController.m */; };
 		C0273B1D1C79C09B00CC364B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80301C3BE8AD00ABE564 /* NSTimer+Addition.m */; };
-		C0273B1E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */; };
 		C0273B201C79C09B00CC364B /* GLTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80371C3BE95800ABE564 /* GLTopBarView.m */; };
 		C0273B211C79C09B00CC364B /* TNHomeSpecialSaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A832911C6AE3F500F802BF /* TNHomeSpecialSaleCell.m */; };
 		C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7791C381F1700138BAB /* UIColor+TKCategory.m */; };
 		C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C5481C645F7400507F3B /* GLNavigationURLHelper.m */; };
 		C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B7D1C3E083800E13CB7 /* TarBarDemoVC.m */; };
-		C0273B281C79C09B00CC364B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */; };
 		C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA805B1C3BF35F00ABE564 /* AdvertiseView.m */; };
 		C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6031C61897B00A4D747 /* GLCommonModel.m */; };
-		C0273B2B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */; };
 		C0273B2D1C79C09B00CC364B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FEFA631C6DD94000C2345B /* FMDatabaseAdditions.m */; };
 		C0273B301C79C09B00CC364B /* GLJSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */; };
 		C0273B311C79C09B00CC364B /* AdScrollTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80571C3BF35F00ABE564 /* AdScrollTimerViewController.m */; };
-		C0273B321C79C09B00CC364B /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */; };
 		C0273B331C79C09B00CC364B /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7611C381C3900138BAB /* UIView+Positioning.m */; };
-		C0273B341C79C09B00CC364B /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F61E1C61F22F00A4D747 /* Toast+UIView.m */; };
 		C0273B351C79C09B00CC364B /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80631C3BF95000ABE564 /* base64.m */; };
-		C0273B361C79C09B00CC364B /* NSArray+GLStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */; };
 		C0273B371C79C09B00CC364B /* GLCBaseMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C5561C67050F00507F3B /* GLCBaseMessageViewController.m */; };
 		C0273B381C79C09B00CC364B /* TNCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80231C3BE6DA00ABE564 /* TNCycleScrollView.m */; };
 		C0273B391C79C09B00CC364B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B6E1C3E062C00E13CB7 /* RootViewController.m */; };
@@ -130,7 +113,6 @@
 		C0273B491C79C09B00CC364B /* GLTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F6C55D1C671C2500507F3B /* GLTCollectionViewController.m */; };
 		C0273B4A1C79C09B00CC364B /* TNBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7811C38205E00138BAB /* TNBase64.m */; };
 		C0273B4B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F07B571C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m */; };
-		C0273B4D1C79C09B00CC364B /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506F6241C61F22F00A4D747 /* UIView+Positioning.m */; };
 		C0273B4E1C79C09B00CC364B /* OButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D77F1C38205E00138BAB /* OButton.m */; };
 		C0273B4F1C79C09B00CC364B /* GLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA80A01C3BFDB000ABE564 /* GLLoginManager.m */; };
 		C0273B501C79C09B00CC364B /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9D7631C381C3900138BAB /* UIViewController+Analysis.m */; };
@@ -265,24 +247,6 @@
 		6506F6071C618F8100A4D747 /* AppVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppVersion.plist; sourceTree = "<group>"; };
 		6506F6111C61A5F200A4D747 /* GLJSPatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLJSPatchManager.h; sourceTree = "<group>"; };
 		6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLJSPatchManager.m; sourceTree = "<group>"; };
-		6506F6151C61F22F00A4D747 /* NSArray+GLStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GLStuff.h"; sourceTree = "<group>"; };
-		6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GLStuff.m"; sourceTree = "<group>"; };
-		6506F6191C61F22F00A4D747 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
-		6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		6506F61B1C61F22F00A4D747 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
-		6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
-		6506F61D1C61F22F00A4D747 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
-		6506F61E1C61F22F00A4D747 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
-		6506F61F1C61F22F00A4D747 /* UIButton+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Position.h"; sourceTree = "<group>"; };
-		6506F6201C61F22F00A4D747 /* UIButton+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Position.m"; sourceTree = "<group>"; };
-		6506F6211C61F22F00A4D747 /* UIColor+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TKCategory.h"; sourceTree = "<group>"; };
-		6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TKCategory.m"; sourceTree = "<group>"; };
-		6506F6231C61F22F00A4D747 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
-		6506F6241C61F22F00A4D747 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
-		6506F6251C61F22F00A4D747 /* UIViewController+Analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Analysis.h"; sourceTree = "<group>"; };
-		6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Analysis.m"; sourceTree = "<group>"; };
-		6506F6271C61F22F00A4D747 /* UIViewController+ScrollingNavbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollingNavbar.h"; sourceTree = "<group>"; };
-		6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollingNavbar.m"; sourceTree = "<group>"; };
 		6506F6341C61F2E900A4D747 /* GLCacheToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCacheToolKit.h; sourceTree = "<group>"; };
 		6506F6351C61F2E900A4D747 /* GLCacheToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCacheToolKit.m; sourceTree = "<group>"; };
 		6523294C1B5CC05500D69074 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -649,31 +613,6 @@
 				6506F6121C61A5F200A4D747 /* GLJSPatchManager.m */,
 			);
 			path = GLJSPatchManager;
-			sourceTree = "<group>";
-		};
-		6506F6141C61F22F00A4D747 /* Catogeries */ = {
-			isa = PBXGroup;
-			children = (
-				6506F6151C61F22F00A4D747 /* NSArray+GLStuff.h */,
-				6506F6161C61F22F00A4D747 /* NSArray+GLStuff.m */,
-				6506F6191C61F22F00A4D747 /* NSString+URLEncoding.h */,
-				6506F61A1C61F22F00A4D747 /* NSString+URLEncoding.m */,
-				6506F61B1C61F22F00A4D747 /* NSTimer+Addition.h */,
-				6506F61C1C61F22F00A4D747 /* NSTimer+Addition.m */,
-				6506F61D1C61F22F00A4D747 /* Toast+UIView.h */,
-				6506F61E1C61F22F00A4D747 /* Toast+UIView.m */,
-				6506F61F1C61F22F00A4D747 /* UIButton+Position.h */,
-				6506F6201C61F22F00A4D747 /* UIButton+Position.m */,
-				6506F6211C61F22F00A4D747 /* UIColor+TKCategory.h */,
-				6506F6221C61F22F00A4D747 /* UIColor+TKCategory.m */,
-				6506F6231C61F22F00A4D747 /* UIView+Positioning.h */,
-				6506F6241C61F22F00A4D747 /* UIView+Positioning.m */,
-				6506F6251C61F22F00A4D747 /* UIViewController+Analysis.h */,
-				6506F6261C61F22F00A4D747 /* UIViewController+Analysis.m */,
-				6506F6271C61F22F00A4D747 /* UIViewController+ScrollingNavbar.h */,
-				6506F6281C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m */,
-			);
-			path = Catogeries;
 			sourceTree = "<group>";
 		};
 		6506F6331C61F29500A4D747 /* GLCache */ = {
@@ -1406,7 +1345,6 @@
 				C0C92E5B1D3671AD00A9124E /* BaseViewControllers */,
 				C0C92E571D36717300A9124E /* BaseViews */,
 				6506F6331C61F29500A4D747 /* GLCache */,
-				6506F6141C61F22F00A4D747 /* Catogeries */,
 				6506F6101C61A5F200A4D747 /* GLJSPatchManager */,
 				C0F6C56A1C671F6800507F3B /* GLActivityIdicator */,
 				65F07B591C3E015B00E13CB7 /* CNPPopupController */,
@@ -1878,7 +1816,6 @@
 				C0CA80351C3BE8EF00ABE564 /* TNTopBarView.m in Sources */,
 				C0C92E5A1D36717D00A9124E /* TNTableViewCell.m in Sources */,
 				C0A73B711D1AB9670098A7F5 /* GLThirdTableViewCell.m in Sources */,
-				6506F62E1C61F22F00A4D747 /* UIButton+Position.m in Sources */,
 				65F07C201C3E145000E13CB7 /* UIImageView+GLExtensions.m in Sources */,
 				C0FEFA761C6DDB2D00C2345B /* GLCDataBaseOperationManager.m in Sources */,
 				65ACB7861D3F1FC6009C755C /* AttachCell.m in Sources */,
@@ -1902,7 +1839,6 @@
 				C0E9D73F1C38174A00138BAB /* XTOnePixelLine.m in Sources */,
 				C0CA80811C3BFBF300ABE564 /* LoginDemoVC.m in Sources */,
 				C0E9D76B1C381D2100138BAB /* NSArray+GLStuff.m in Sources */,
-				6506F6311C61F22F00A4D747 /* UIViewController+Analysis.m in Sources */,
 				C0A8328F1C6AE18700F802BF /* GLRootHomeDatas.m in Sources */,
 				C0FEFA6B1C6DD94000C2345B /* FMDatabase.m in Sources */,
 				6530E4F51D2DF58800BCF3C1 /* GLMantleDataSource.m in Sources */,
@@ -1910,7 +1846,6 @@
 				C0CA80981C3BFD4A00ABE564 /* ThirdViewController.m in Sources */,
 				C0CA80961C3BFD4A00ABE564 /* ForthViewController.m in Sources */,
 				C0CA80311C3BE8AD00ABE564 /* NSTimer+Addition.m in Sources */,
-				6506F62B1C61F22F00A4D747 /* NSString+URLEncoding.m in Sources */,
 				C0A73B6B1D1AB6870098A7F5 /* GLPhotoCollectionModel.m in Sources */,
 				C0A73B681D1AB66D0098A7F5 /* GLPhotoCollectionViewController.m in Sources */,
 				C0CA80381C3BE95800ABE564 /* GLTopBarView.m in Sources */,
@@ -1923,23 +1858,18 @@
 				6530E4EF1D2DF55100BCF3C1 /* GLMantleViewController.m in Sources */,
 				C0F6C5491C645F7400507F3B /* GLNavigationURLHelper.m in Sources */,
 				65F07B7E1C3E083800E13CB7 /* TarBarDemoVC.m in Sources */,
-				6506F62C1C61F22F00A4D747 /* NSTimer+Addition.m in Sources */,
 				C0CA80601C3BF35F00ABE564 /* AdvertiseView.m in Sources */,
 				6506F6041C61897B00A4D747 /* GLCommonModel.m in Sources */,
 				C0917F5E1CC50A0E003A9D63 /* GLSpringBoard.m in Sources */,
 				653EDAC11D1BD5E300BF8005 /* GLWeiboStatusHelper.m in Sources */,
-				6506F6321C61F22F00A4D747 /* UIViewController+ScrollingNavbar.m in Sources */,
 				C0FEFA6C1C6DD94000C2345B /* FMDatabaseAdditions.m in Sources */,
 				C0A73B741D1AC83B0098A7F5 /* GLThirdDataSource.m in Sources */,
 				C0A73B7A1D1ADFA50098A7F5 /* GLPhotoFlowLayout.m in Sources */,
 				6506F6131C61A5F200A4D747 /* GLJSPatchManager.m in Sources */,
 				6530E4F21D2DF56600BCF3C1 /* GLMantleModel.m in Sources */,
 				C0CA805F1C3BF35F00ABE564 /* AdScrollTimerViewController.m in Sources */,
-				6506F62F1C61F22F00A4D747 /* UIColor+TKCategory.m in Sources */,
 				C0E9D7641C381C3900138BAB /* UIView+Positioning.m in Sources */,
-				6506F62D1C61F22F00A4D747 /* Toast+UIView.m in Sources */,
 				C0CA80641C3BF95000ABE564 /* base64.m in Sources */,
-				6506F6291C61F22F00A4D747 /* NSArray+GLStuff.m in Sources */,
 				C0CA80641C3BF95000ABE564 /* base64.m in Sources */,
 				C0F6C5571C67050F00507F3B /* GLCBaseMessageViewController.m in Sources */,
 				C0CA80241C3BE6DA00ABE564 /* TNCycleScrollView.m in Sources */,
@@ -1964,7 +1894,6 @@
 				C0F6C55E1C671C2500507F3B /* GLTCollectionViewController.m in Sources */,
 				C0E9D78E1C38205E00138BAB /* TNBase64.m in Sources */,
 				65F07B581C3E010400E13CB7 /* UIViewController+ScrollingNavbar.m in Sources */,
-				6506F6301C61F22F00A4D747 /* UIView+Positioning.m in Sources */,
 				65ACB77A1D3F1E11009C755C /* NetWorkCell.m in Sources */,
 				C0E9D78D1C38205E00138BAB /* OButton.m in Sources */,
 				C0CA80A11C3BFDB000ABE564 /* GLLoginManager.m in Sources */,
@@ -2003,7 +1932,6 @@
 				C0273AFA1C79C09B00CC364B /* GURLRequest.m in Sources */,
 				C0273AFB1C79C09B00CC364B /* GLHeaderView.m in Sources */,
 				C0273AFC1C79C09B00CC364B /* TNTopBarView.m in Sources */,
-				C0273AFF1C79C09B00CC364B /* UIButton+Position.m in Sources */,
 				C0273B001C79C09B00CC364B /* UIImageView+GLExtensions.m in Sources */,
 				C0273B011C79C09B00CC364B /* GLCDataBaseOperationManager.m in Sources */,
 				C0273B021C79C09B00CC364B /* AddTBCellViewController.m in Sources */,
@@ -2022,31 +1950,24 @@
 				C0273B101C79C09B00CC364B /* XTOnePixelLine.m in Sources */,
 				C0273B131C79C09B00CC364B /* LoginDemoVC.m in Sources */,
 				C0273B141C79C09B00CC364B /* NSArray+GLStuff.m in Sources */,
-				C0273B151C79C09B00CC364B /* UIViewController+Analysis.m in Sources */,
 				C0273B171C79C09B00CC364B /* GLRootHomeDatas.m in Sources */,
 				C0273B181C79C09B00CC364B /* FMDatabase.m in Sources */,
 				C0273B191C79C09B00CC364B /* UIButton+Position.m in Sources */,
 				C0273B1A1C79C09B00CC364B /* ThirdViewController.m in Sources */,
 				C0273B1B1C79C09B00CC364B /* ForthViewController.m in Sources */,
 				C0273B1D1C79C09B00CC364B /* NSTimer+Addition.m in Sources */,
-				C0273B1E1C79C09B00CC364B /* NSString+URLEncoding.m in Sources */,
 				C0273B201C79C09B00CC364B /* GLTopBarView.m in Sources */,
 				C0273B211C79C09B00CC364B /* TNHomeSpecialSaleCell.m in Sources */,
 				C0273B221C79C09B00CC364B /* UIColor+TKCategory.m in Sources */,
 				C0273B231C79C09B00CC364B /* GLNavigationURLHelper.m in Sources */,
 				C0273B251C79C09B00CC364B /* TarBarDemoVC.m in Sources */,
-				C0273B281C79C09B00CC364B /* NSTimer+Addition.m in Sources */,
 				C0273B291C79C09B00CC364B /* AdvertiseView.m in Sources */,
 				C0273B2A1C79C09B00CC364B /* GLCommonModel.m in Sources */,
-				C0273B2B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */,
 				C0273B2D1C79C09B00CC364B /* FMDatabaseAdditions.m in Sources */,
 				C0273B301C79C09B00CC364B /* GLJSPatchManager.m in Sources */,
 				C0273B311C79C09B00CC364B /* AdScrollTimerViewController.m in Sources */,
-				C0273B321C79C09B00CC364B /* UIColor+TKCategory.m in Sources */,
 				C0273B331C79C09B00CC364B /* UIView+Positioning.m in Sources */,
-				C0273B341C79C09B00CC364B /* Toast+UIView.m in Sources */,
 				C0273B351C79C09B00CC364B /* base64.m in Sources */,
-				C0273B361C79C09B00CC364B /* NSArray+GLStuff.m in Sources */,
 				C0273B351C79C09B00CC364B /* base64.m in Sources */,
 				C0273B371C79C09B00CC364B /* GLCBaseMessageViewController.m in Sources */,
 				C0273B381C79C09B00CC364B /* TNCycleScrollView.m in Sources */,
@@ -2067,7 +1988,6 @@
 				C0273B491C79C09B00CC364B /* GLTCollectionViewController.m in Sources */,
 				C0273B4A1C79C09B00CC364B /* TNBase64.m in Sources */,
 				C0273B4B1C79C09B00CC364B /* UIViewController+ScrollingNavbar.m in Sources */,
-				C0273B4D1C79C09B00CC364B /* UIView+Positioning.m in Sources */,
 				C0273B4E1C79C09B00CC364B /* OButton.m in Sources */,
 				C0273B4F1C79C09B00CC364B /* GLLoginManager.m in Sources */,
 				C0273B501C79C09B00CC364B /* UIViewController+Analysis.m in Sources */,
