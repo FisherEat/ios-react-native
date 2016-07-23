@@ -10,6 +10,9 @@
 #import "NSObject+BlackMagic.h"
 #import "Toast+UIView.h"
 
+typedef void (*_VIMP) (id, SEL, ...);
+typedef id (*_IMP) (id, SEL, ...);
+
 @implementation UIViewController (Analysis)
 
 + (void)load
@@ -18,6 +21,15 @@
     dispatch_once(&onceToken, ^{
         [self tn_swizzleInstanceSelector:@selector(viewWillAppear:) withSelector:@selector(tna_viewWillAppear:)];
         [self tn_swizzleInstanceSelector:@selector(viewDidAppear:) withSelector:@selector(tna_viewDidAppear:)];
+        
+        //
+        Method viewDidLoad = class_getInstanceMethod(self, @selector(viewDidLoad));
+        _VIMP viewDidLoad_IMP = (_VIMP)method_getImplementation(viewDidLoad);
+        method_setImplementation(viewDidLoad, imp_implementationWithBlock(^(id target, SEL action) {
+            viewDidLoad_IMP(target, @selector(viewDidLoad));
+            NSLog(@"%@ did load", target);
+        }));
+        
     });
 }
 
