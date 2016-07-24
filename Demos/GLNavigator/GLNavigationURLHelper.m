@@ -16,6 +16,7 @@ NSString *const GLURLDemoForth = @"demoapp://demo/forth";
 NSString *const GLURLDemoFifth = @"demoapp://demo/fifth";
 NSString *const GLURLDemoButtonCell = @"demoapp://demo/home/buttoncell";
 NSString *const GLURLDemoScrollCell = @"demoapp://demo/home/scrollcell";
+NSString *const GLURLDemoScrollListCell = @"demoapp://demo/home/scrolllist";
 NSString *const GLURLDemoTabBarCell = @"demoapp://demo/home/tabbarcell";
 NSString *const GLURLDemoAnimationCell = @"demoapp://demo/home/animationcell";
 NSString *const GLURLDemoNetWorkCell = @"demoapp://demo/home/networkcell";
@@ -54,7 +55,8 @@ NSString *const GLURLDemoRuntimeCell = @"demoapp://demo/home/runtimecell";
                         GLURLDemoThreadViewCell :@"GLThreadViewController",
                         GLURLDemoMantleViewCell :@"GLMantleViewController",
                         GLURLDemoReactViewCell: @"GLReactBaseViewController",
-                        GLURLDemoRuntimeCell: @"GLRuntimeViewController"
+                        GLURLDemoRuntimeCell: @"GLRuntimeViewController",
+                        GLURLDemoScrollListCell:@"GLScrollViewListVC"
                         };
     });
     
