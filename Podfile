@@ -23,7 +23,7 @@ pod 'JSPatch', '0.1.5'
 pod 'TMCache', '2.1.0'
 pod 'FLEX', '2.0.0'
 pod 'Magnet-XMPPFramework', '3.6.10'
-
+pod 'SVPullToRefresh', '~> 0.4.1'
 #私有库
 
 pod 'React', :path => './node_modules/react-native', :subspecs => [

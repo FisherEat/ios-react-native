@@ -106,6 +106,7 @@ PODS:
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - SSZipArchive (1.0.1)
+  - SVPullToRefresh (0.4.1)
   - TMCache (2.1.0)
   - UIView+Positioning (1.1)
   - YYKit (1.0.3):
@@ -140,6 +141,7 @@ DEPENDENCIES:
   - React/RCTWebSocket (from `./node_modules/react-native`)
   - SDWebImage (= 3.7.3)
   - SSZipArchive (= 1.0.1)
+  - SVPullToRefresh (~> 0.4.1)
   - TMCache (= 2.1.0)
   - UIView+Positioning (= 1.1)
   - YYKit (~> 1.0.3)
@@ -167,6 +169,7 @@ SPEC CHECKSUMS:
   React: be2dc9f9a325f0b4db1fcd3a0cea29c0e00af9b7
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SSZipArchive: 5f30a0af2cb3d48c0ff83b1e18029f7041ac3c38
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
   UIView+Positioning: e93fe9e3186d1ed7d60e344aa12787911e902056
   YYKit: fa66d61240458f14562c33c85c91d11131e43261

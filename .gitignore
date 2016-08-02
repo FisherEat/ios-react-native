@@ -27,6 +27,9 @@ DerivedData
 *.xcuserstate
 #CocoaPods
 
+# Cocoapods
+  Pods
+  Pods/
 # Android
 .idea
 .gradle
