@@ -25,6 +25,7 @@ pod 'FLEX', '2.0.0'
 pod 'Magnet-XMPPFramework', '3.6.10'
 pod 'SVPullToRefresh', '~> 0.4.1'
 #私有库
+pod 'GLTestSpec', :git => 'https://git.coding.net/schiller/GLTestSpecDemo.git', :tag => '5.0.0'
 
 pod 'React', :path => './node_modules/react-native', :subspecs => [
   'Core',

@@ -36,6 +36,7 @@ PODS:
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
   - FLEX (2.0.0)
+  - GLTestSpec (5.0.0)
   - JGProgressHUD (1.2.7)
   - JSPatch (0.1.5):
     - JSPatch/Core (= 0.1.5)
@@ -117,6 +118,7 @@ DEPENDENCIES:
   - AFNetworking (= 3.0.4)
   - BlocksKit (= 2.2.5)
   - FLEX (= 2.0.0)
+  - GLTestSpec (from `https://git.coding.net/schiller/GLTestSpecDemo.git`, tag `5.0.0`)
   - JGProgressHUD (= 1.2.7)
   - JSPatch (= 0.1.5)
   - LGAlertView (= 1.0.0)
@@ -147,8 +149,16 @@ DEPENDENCIES:
   - YYKit (~> 1.0.3)
 
 EXTERNAL SOURCES:
+  GLTestSpec:
+    :git: https://git.coding.net/schiller/GLTestSpecDemo.git
+    :tag: 5.0.0
   React:
     :path: ./node_modules/react-native
+
+CHECKOUT OPTIONS:
+  GLTestSpec:
+    :git: https://git.coding.net/schiller/GLTestSpecDemo.git
+    :tag: 5.0.0
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
@@ -156,6 +166,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
   FLEX: 9b3d0800d0c06887a00ad8d2b514fb69256ebd1b
+  GLTestSpec: 1d374719b53cab61b8c24ec914b412c7a569f281
   JGProgressHUD: a45c1d16adddf7e38092ce3f0d71d3955d2de2ec
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   LGAlertView: 1d44becef2159b99741c0634216234cb8553c705

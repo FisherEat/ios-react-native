@@ -1,0 +1,25 @@
+{
+  "name": "GLTestSpec",
+  "version": "5.0.0",
+  "summary": "云学堂消息模块",
+  "homepage": "https://coding.net/user",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gaolong": "gaol@yunxuetang.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://git.coding.net/schiller/GLTestSpecDemo.git",
+    "tag": "5.0.0"
+  },
+  "source_files": "GLTestSpec/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
+}
