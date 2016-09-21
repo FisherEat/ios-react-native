@@ -24,22 +24,25 @@ pod 'TMCache', '2.1.0'
 pod 'FLEX', '2.0.0'
 pod 'Magnet-XMPPFramework', '3.6.10'
 pod 'SVPullToRefresh', '~> 0.4.1'
+pod 'FMDB','~> 2.6'
 #私有库
-pod 'GLTestSpec', :git => 'https://git.coding.net/schiller/GLTestSpecDemo.git', :tag => '5.0.0'
+pod 'GLTestSpec', :git => 'https://git.coding.net/schiller/GLTestSpecDemo.git', :branch => 'master'
+#pod 'GLTestSpec', :path => '/Users/yxt/Desktop/GLTestSpecDemo/Spec'
 
 pod 'React', :path => './node_modules/react-native', :subspecs => [
-  'Core',
-  'RCTImage',
-  'RCTNetwork',
-  'RCTText',
-  'RCTWebSocket',
-  'ART',
-  'RCTActionSheet',
-  'RCTGeolocation',
-  'RCTPushNotification',
-  'RCTSettings',
-  'RCTVibration',
-  'RCTLinkingIOS',
+'Core',
+'RCTImage',
+'RCTNetwork',
+'RCTText',
+'RCTWebSocket',
+'ART',
+'RCTActionSheet',
+'RCTGeolocation',
+'RCTPushNotification',
+'RCTSettings',
+'RCTVibration',
+'RCTLinkingIOS',
 ]
+
 
 end

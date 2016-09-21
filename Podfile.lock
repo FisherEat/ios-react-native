@@ -29,14 +29,27 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - CocoaAsyncSocket (7.4.2)
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
   - CocoaLumberjack (1.9.2):
     - CocoaLumberjack/Extensions (= 1.9.2)
   - CocoaLumberjack/Core (1.9.2)
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
   - FLEX (2.0.0)
-  - GLTestSpec (5.0.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GLTestSpec (1.0.0):
+    - GLTestSpec/Controllers (= 1.0.0)
+    - GLTestSpec/Resources (= 1.0.0)
+  - GLTestSpec/Controllers (1.0.0)
+  - GLTestSpec/Resources (1.0.0)
   - JGProgressHUD (1.2.7)
   - JSPatch (0.1.5):
     - JSPatch/Core (= 0.1.5)
@@ -110,15 +123,17 @@ PODS:
   - SVPullToRefresh (0.4.1)
   - TMCache (2.1.0)
   - UIView+Positioning (1.1)
-  - YYKit (1.0.3):
-    - YYKit/no-arc (= 1.0.3)
-  - YYKit/no-arc (1.0.3)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking (= 3.0.4)
   - BlocksKit (= 2.2.5)
   - FLEX (= 2.0.0)
-  - GLTestSpec (from `https://git.coding.net/schiller/GLTestSpecDemo.git`, tag `5.0.0`)
+  - FMDB (~> 2.6)
+  - GLTestSpec (from `https://git.coding.net/schiller/GLTestSpecDemo.git`, branch
+    `master`)
   - JGProgressHUD (= 1.2.7)
   - JSPatch (= 0.1.5)
   - LGAlertView (= 1.0.0)
@@ -150,23 +165,24 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   GLTestSpec:
+    :branch: master
     :git: https://git.coding.net/schiller/GLTestSpecDemo.git
-    :tag: 5.0.0
   React:
     :path: ./node_modules/react-native
 
 CHECKOUT OPTIONS:
   GLTestSpec:
+    :commit: 342eb2b52ee6cb81ee702ebc618e7b0b4dfaad49
     :git: https://git.coding.net/schiller/GLTestSpecDemo.git
-    :tag: 5.0.0
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
   FLEX: 9b3d0800d0c06887a00ad8d2b514fb69256ebd1b
-  GLTestSpec: 1d374719b53cab61b8c24ec914b412c7a569f281
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GLTestSpec: ce52265abfa3de7b25cf1dd0f32d5b76f2748345
   JGProgressHUD: a45c1d16adddf7e38092ce3f0d71d3955d2de2ec
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   LGAlertView: 1d44becef2159b99741c0634216234cb8553c705
@@ -183,6 +199,6 @@ SPEC CHECKSUMS:
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
   UIView+Positioning: e93fe9e3186d1ed7d60e344aa12787911e902056
-  YYKit: fa66d61240458f14562c33c85c91d11131e43261
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
 COCOAPODS: 0.39.0

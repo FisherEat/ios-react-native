@@ -46,6 +46,9 @@
     
     [GLNavigationURLHelper registerAllURLs];
     
+    UITableView *table = [UITableView newAutoLayoutView];
+    
+    
 #if Pro
     NSLog(@"1");
 #else

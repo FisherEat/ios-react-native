@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CC8AE6F79516B1A2FC4D24619448B82CE755F21B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4C7B7AFB041E5CFB0C785FDC9641532B146EDD7D" : 0,
+    "CC8AE6F79516B1A2FC4D24619448B82CE755F21B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "34DD0D40-1281-4576-A816-E1EE212740FB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4C7B7AFB041E5CFB0C785FDC9641532B146EDD7D" : "GLTestSpecDemo\/",
+    "CC8AE6F79516B1A2FC4D24619448B82CE755F21B" : "ios-react-native\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Demos",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Demos.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/schiller\/GLTestSpecDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C7B7AFB041E5CFB0C785FDC9641532B146EDD7D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/schillerGao\/GLDemos-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CC8AE6F79516B1A2FC4D24619448B82CE755F21B"
+    }
+  ]
+}

@@ -17,13 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    [GLThreadDataSource runInSyncThread];
-    
-//    [GLThreadDataSource blockInSyncThread];
-    
-    [GLThreadDataSource groupThreads];
-    
+    //[GLThreadDataSource groupThreads];
+ //   [GLThreadDataSource t_concuerrent_global];
+    //[GLThreadDataSource t_concurrentAsyQue];
+    [GLThreadDataSource runInSyncThread];
 }
 
 

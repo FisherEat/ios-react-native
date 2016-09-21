@@ -10,13 +10,12 @@
 #import "GLButtonCardView.h"
 #import "GLButtonCardDatas.h"
 #import "GLButtonCardScrollView.h"
-
+#import <GLFramework_Test_2/GLFramework_Test_2.h>
 @interface GLButtonDemoViewController ()<GLTopBarViewDelegate, GLButtonCardViewDelegate>
 
 @property (nonatomic, strong) GLButtonCardView *cardView;
 @property (nonatomic, strong) GLButtonCardData *cardData;
 @property (nonatomic, strong) GLButtonCardPackageScrollView *scrollView;
-
 @end
 
 @implementation GLButtonDemoViewController
@@ -28,6 +27,19 @@
     [self setUpTopBar];
     [self setUpCardView];
     [self setUpScrollView];
+    
+    [self initNavBar];
+}
+
+- (void)initNavBar
+{
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStyleDone target:self action:@selector(push)];
+    self.navigationItem.rightBarButtonItem = rightBarItem;
+}
+
+- (void)push
+{
+    [UIManager showViewControllerWithName:@"GLFrameworkHomeViewController"];
 }
 
 - (void)setUpTopBar

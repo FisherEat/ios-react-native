@@ -1,1 +1,1 @@
-../../../GLTestSpec/GLTestSpec/TestUIViewController.h
+../../../GLTestSpec/GLTestSpec/Controllers/TestUIViewController.h

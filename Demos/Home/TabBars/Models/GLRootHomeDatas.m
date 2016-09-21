@@ -50,7 +50,8 @@
                                 GLURLDemoButtonCell, GLURLDemoScrollListCell,
                                 GLURLDemoTabBarCell, GLURLDemoAnimationCell,
                                 GLURLDemoRuntimeCell, GLURLDemoNetWorkCell,GLURLDemoAdScrollTimerCell,GLURLDemoWebViewCell, GLURLDemoTopBarCell, GLURLDemoLoginCell,        GLURLDemoThreadViewCell, GLURLDemoMantleViewCell,
-                                GLURLDemoReactViewCell
+                                GLURLDemoReactViewCell,
+                                GLURLDemoDatabaseCell
                                 ]];
     return urls;
 }
@@ -61,7 +62,8 @@
                                         @"简单按钮", @"ScrollView列表", @"底部TabBar",
                                         @"动画Demo", @"运行时", @"网络框架",
                                           @"滚动动画计时器",
-                                        @"微博H5跳转", @"自定义TabelView", @"自定义登录页面", @"多线程Demo", @"测试Mantle框架", @"ReactNative入口"]];
+                                        @"微博H5跳转", @"自定义TabelView", @"自定义登录页面", @"多线程Demo", @"测试Mantle框架", @"ReactNative入口",
+                                        @"FMDB数据库框架"]];
     return demoArray;
 }
 

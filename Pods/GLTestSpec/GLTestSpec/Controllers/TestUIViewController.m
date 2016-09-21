@@ -9,6 +9,7 @@
 #import "TestUIViewController.h"
 
 @interface TestUIViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *msgLabel;
 
 @end
 
@@ -18,7 +19,9 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor orangeColor];
+    self.msgLabel.text = @"花花草草";
     NSLog(@"This is my first Private spec");
+    NSLog(@"fuck");
 }
 
 @end

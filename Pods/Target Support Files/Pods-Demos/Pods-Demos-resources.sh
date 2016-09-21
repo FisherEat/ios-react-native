@@ -58,6 +58,7 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "GLTestSpec/GLTestSpec/Resources/Converstation.storyboard"
   install_resource "JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle"
   install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "Magnet-XMPPFramework/Extensions/Roster/CoreDataStorage/XMPPRoster.xcdatamodel"
@@ -73,6 +74,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "Magnet-XMPPFramework/Xcode/ServerlessDemo/ServerlessDemo.xcdatamodel"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "GLTestSpec/GLTestSpec/Resources/Converstation.storyboard"
   install_resource "JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle"
   install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "Magnet-XMPPFramework/Extensions/Roster/CoreDataStorage/XMPPRoster.xcdatamodel"

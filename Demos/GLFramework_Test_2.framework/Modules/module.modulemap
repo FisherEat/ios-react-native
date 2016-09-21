@@ -1,0 +1,6 @@
+framework module GLFramework_Test_2 {
+  umbrella header "GLFramework_Test_2.h"
+
+  export *
+  module * { export * }
+}

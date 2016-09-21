@@ -1,6 +1,6 @@
 {
   "name": "GLTestSpec",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "summary": "云学堂消息模块",
   "homepage": "https://coding.net/user",
   "license": {
@@ -14,12 +14,20 @@
     "ios": "7.0"
   },
   "source": {
-    "git": "https://git.coding.net/schiller/GLTestSpecDemo.git",
-    "tag": "5.0.0"
+    "git": "https://git.coding.net/schiller/GLTestSpecDemo.git"
   },
-  "source_files": "GLTestSpec/**/*",
   "frameworks": [
     "UIKit",
     "Foundation"
+  ],
+  "subspecs": [
+    {
+      "name": "Controllers",
+      "source_files": "GLTestSpec/Controllers/**/*.{h,m}"
+    },
+    {
+      "name": "Resources",
+      "resources": "GLTestSpec/Resources/*"
+    }
   ]
 }
